@@ -22,7 +22,10 @@ alarms, electric fences, PLCs, solar PV). Every statement is traceable to a page
    live in `content/private/` and are built into `private/`; both folders are git-ignored. Never commit or publish them. No addresses, IPs, passwords or names in public files.
 6. **Generated files are never edited by hand:** `docs/pdf/*.pdf`, `wiki/*.md`, `wiki/img/*.svg`.
    Change `content/docs/*.yaml`, `tools/*.py` or the catalogue and rebuild.
-7. Code comments: one comment per line explaining it (owner's preference).
+7. **Corrections go through `content/fact_corrections.json`** (fact ID, new claim or drop, reason), never
+   by editing `content/facts.json`. After a correction run `tools/corrections_impact.py` and re-read every
+   place where a sheet's own wording cites the corrected fact.
+8. Code comments: one comment per line explaining it (owner's preference).
 
 ## Making or changing a document
 
