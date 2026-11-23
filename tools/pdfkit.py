@@ -73,10 +73,10 @@ def styles(accent):
     base = ParagraphStyle("base", fontName="Body", fontSize=9.6, leading=13.6, textColor=ink, alignment=TA_LEFT)   # body text
     return {
         "p": ParagraphStyle("p", parent=base, spaceAfter=5),   # normal paragraph
-        "lead": ParagraphStyle("lead", parent=base, fontSize=11, leading=15.5, textColor=col("navy"), spaceAfter=7),   # intro paragraph
+        "lead": ParagraphStyle("lead", parent=base, fontSize=11, leading=15.5, textColor=col("navy"), spaceAfter=7, keepWithNext=1),   # intro paragraph (kept with what follows)
         "h1": ParagraphStyle("h1", parent=base, fontName="Body-Bold", fontSize=15, leading=19, textColor=colors.white,
-                             backColor=a, borderPadding=(7, 9, 7, 9), borderRadius=4, spaceBefore=12, spaceAfter=13, leftIndent=9, rightIndent=9),   # chapter banner
-        "h2": ParagraphStyle("h2", parent=base, fontName="Body-Bold", fontSize=11.5, leading=15, textColor=a, spaceBefore=9, spaceAfter=2),   # section heading
+                             backColor=a, borderPadding=(7, 9, 7, 9), borderRadius=4, spaceBefore=12, spaceAfter=13, leftIndent=9, rightIndent=9, keepWithNext=1),   # chapter banner (never alone at a page foot)
+        "h2": ParagraphStyle("h2", parent=base, fontName="Body-Bold", fontSize=11.5, leading=15, textColor=a, spaceBefore=9, spaceAfter=2, keepWithNext=1),   # section heading (kept with what follows)
         "bullet": ParagraphStyle("bullet", parent=base, leftIndent=13, bulletIndent=2, bulletFontName="Sym", bulletFontSize=7,
                                  bulletColor=a, spaceAfter=3.2),   # fact bullet
         "cell": ParagraphStyle("cell", parent=base, fontSize=8.4, leading=11),   # table body cell

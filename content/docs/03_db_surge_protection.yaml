@@ -1,0 +1,255 @@
+# Document definition. Rules: .claude/skills/colour-pdf/SKILL.md and CLAUDE.md.
+# Every technical statement carries a {{FACT_ID}} citation; IDs come from content/facts.json.
+id: "03"
+slug: distribution_board_surge_protection
+badge: "SHEET 03 · DB SURGE"
+title: "Surge protective devices in the distribution board"
+subtitle: "SPD types, when they are required, connection modes and types per earthing system, RCD position, connecting leads, backup protection, selection, coordination, inspection and point-of-use protectors"
+applies_to: "Main and sub-distribution boards of houses and small buildings on TN-S, TN-C-S (PME) and TT supplies, socket-outlet and plug-in protectors, equipment connected to power and communication lines"
+accent: amber
+version: "1.0"
+contents: true
+sections:
+  - title: "1  SPD types and where each is installed"
+    lead: "Per NIST (US), surge protective devices neither suppress nor arrest a surge; they simply divert it to ground.{{A002}} Type 1 (IEC Class I) SPDs are lightning current or combined arresters, Type 2 (Class II) are surge arresters for distribution boards and fixed installations, and Type 3 (Class III) are surge arresters for socket outlets and terminal devices.{{D043}}"
+    blocks:
+      - numbers:
+          - value: "25 kA"
+            label: "10/350 per mode, Type 1 at the service entrance / main board, BEAMA Table 2 (UK){{I008}}"
+          - value: "40 kA"
+            label: "8/20 per mode, Type 2 at sub-distribution, BEAMA Table 2 (UK){{I008}}"
+          - value: "3 kA / 6 kV"
+            label: "combination wave, Type 3 at socket outlets, BEAMA Table 2 (UK){{I008}}"
+      - table:
+          head: ["Type", "Purpose and test waveform", "Where it is installed", "Zone boundary"]
+          widths: [0.12, 0.38, 0.30, 0.20]
+          rows:
+            - ["Type 1", "Recommended against partial lightning currents from direct lightning strokes; characterised by a 10/350 µs current wave.{{I002}}", "Service entrance / main distribution board{{I008}}", "LPZ 0/1{{I008}}"]
+            - ["Type 2", "The main protection system for all low-voltage installations; stops overvoltages spreading through the installation.{{I003}}", "Each electrical switchboard{{I003}}; sub-distribution{{I008}}", "LPZ 1/2{{I008}}"]
+            - ["Type 3", "Low discharge capacity; only as a supplement to a Type 2 SPD.{{I004}}", "In the vicinity of sensitive loads{{I004}}; socket outlets and terminal equipment{{I008}}", "LPZ 2/3{{I008}}"]
+          caption: "Summary of BEAMA (UK, 2018); the zone boundaries and typical test currents are those of BEAMA Table 2.{{I008}}"
+      - diagram:
+          name: lpz_zones
+          caption: "Concept sketch of the zone concept, not a wiring diagram. (1) SPD where lines enter LPZ 1: at the LPZ 0/1 boundary the SPD provides lightning current protection{{A067}}; BEAMA places the Type 1 SPD at the service entrance / main distribution board on this boundary.{{I008}} (2) SPD at the LPZ 1/2 boundary: it provides overvoltage protection{{A067}}; BEAMA places Type 2 at sub-distribution on this boundary.{{I008}}"
+      - facts: [A081, I012, I009, A070, E063]
+      - callout:
+          kind: note
+          title: "Lightning rods do not stop surges in the wiring"
+          text: "Per NIST (US), lightning rods protect the structure of the house and avoid fires; they do not prevent surges from happening in the wiring.{{A001}}"
+
+  - title: "2  When SPDs are required (UK, BS 7671:2018)"
+    lead: "The rules in this chapter are UK rules from BS 7671:2018 Sections 443 and 534, as presented in the BEAMA guide.{{I069, I072, I075}} The SANS 10142-1 wiring code is not covered by this public sheet."
+    blocks:
+      - h2: "Section 443: protection against transient overvoltages"
+      - facts: [I069, I072, I073, I074, I070, I071, I021, I022]
+      - h2: "Which type, depending on the lightning exposure"
+      - facts: [I075, I013, I016, I017, I076]
+      - callout:
+          kind: note
+          title: "Outside BS 7671"
+          text: "DEHN cites IEC 60364-4-44 as requiring SPDs also for buildings that have no external lightning protection system.{{H003}} ITU-T K.85: regardless of the risk assessment result, a building with a lightning protection system should have primary protection bonded to protective earth at the point of entry for all services.{{B034}}"
+      - callout:
+          kind: note
+          title: "Calculated risk level: the inputs"
+          text: "In CRL = fenv / (Lp × Ng), fenv is 85 for rural and suburban and 850 for urban locations{{I073}}, and Lp weights low-voltage overhead line most heavily.{{I074}} SPD protection shall be installed if CRL is less than 1000.{{I072}} The ground flash density Ng for a South African site is not covered by this sheet."
+
+  - title: "3  Connection modes and connection types"
+    lead: "BEAMA (UK) distinguishes lightning transients, generally disturbances with respect to earth (common mode), from switching transients, generally disturbances between line and neutral (differential mode).{{I001}}"
+    blocks:
+      - h2: "Common mode and differential mode"
+      - facts: [I035, I036, I023, A072, A073, I092]
+      - h2: "Connection types CT1 and CT2 (UK, BS 7671:2018 Section 534)"
+      - facts: [I050, I051, I052, I053, I054]
+      - callout:
+          kind: note
+          title: "Single-phase arrangement designations"
+          text: "BEAMA names CT2 the '3+1' arrangement for a three-phase supply.{{I054}} No verified fact in this library gives the designation used for a single-phase CT1 or CT2 arrangement."
+      - h2: "Which arrangement for TT, TN-S and TN-C-S"
+      - table:
+          head: ["Earthing system", "BEAMA (UK, BS 7671:2018)", "Schneider EIG (IEC 60364)", "DEHN / ABB (IEC)"]
+          widths: [0.14, 0.30, 0.30, 0.26]
+          rows:
+            - ["TN-S", "CT1.{{I050}}", "Phase-to-earth and neutral-to-earth protection needed, phase-to-neutral recommended{{I089}}; 1P+N and 3P+N SPDs, common and differential mode.{{I090}}", "ABB: differential-mode overvoltages concern TN-S where neutral and PE lengths differ significantly.{{I092}}"]
+            - ["TN-C-S (PME)", "CT1{{I050}}; treated the same as TN-S{{I057}}; an N-PE SPD is needed because the board is normally more than 0.5 m from the PEN split.{{I056}}", "2P/3P/4P SPDs, common mode only, suit TN-C-S.{{I090}}", "No TN-C-S-specific arrangement among the verified DEHN and ABB facts."]
+            - ["TT", "CT1 if the SPD is downstream of the RCD{{I050}}; CT2 required if the SPD is upstream of the RCD.{{I051}}", "Phase-to-earth and neutral-to-earth protection needed, phase-to-neutral recommended{{I089}}; 1P+N and 3P+N SPDs.{{I090}}", "DEHN '3+1' circuit: phase-to-neutral Uc ≥ 253 V a.c., neutral-to-PE Uc ≥ 230 V a.c.{{D051}}; ABB: differential mode concerns TT.{{I092}}"]
+          caption: "Each column restates one source. BEAMA and Schneider differ on TN-C-S; see the chapter on where the sources disagree."
+      - diagram:
+          name: earthing_systems
+          caption: "Concept sketch of the three supply earthing systems; a UK low-voltage supply will be TN-S, TN-C-S (PME) or TT.{{A029}} (2) TN-C-S: per BEAMA, if SPDs are within 0.5 m of the PEN split into N and PE no N-PE mode is needed{{I055}}; in the UK they are normally at the main board more than 0.5 m from the split, so an N-PE SPD is needed as in TN-S.{{I056}} (3) TT: the consumer provides their own connection to earth with an earth electrode local to the installation.{{A037}} Marker (1) is not explained: no verified fact in this library describes the TN-S conductor arrangement."
+
+  - title: "4  SPD position relative to the RCD"
+    lead: "BEAMA (UK) recommends installing SPDs upstream of RCDs wherever possible, to prevent unwanted RCD tripping caused by transient overvoltages.{{I047}}"
+    blocks:
+      - facts: [I048, I049, D048, D049, D050, B023, I103, I101, I102]
+      - callout:
+          kind: warn
+          title: "TT: the RCD does not protect against a defective SPD upstream of it"
+          text: "BEAMA (UK): CT2 is required on a TT system if the SPD is upstream of the RCD, because the downstream RCD would not operate if the SPD became defective.{{I051}} A defective CT2 line-to-neutral SPD creates a short-circuit rather than an earth-fault current, so its in-line OCPD operates within the required disconnection time.{{I052}}"
+
+  - title: "5  Connecting leads and conductor sizes"
+    lead: "Schneider takes about 1 µH/m for SPD connection conductors, so an 8 kA 8/20 µs current creates a voltage rise of 1000 V per metre of cable{{I082}}; with 50 cm of total connections the voltage across the equipment terminals is Up + 500 V.{{I083}}"
+    blocks:
+      - numbers:
+          - value: "0.5 m"
+            label: "total connecting lead length l1 + l2, preferably not exceeded, BEAMA (UK){{I028}}"
+          - value: "≈ 1 kV/m"
+            label: "added per metre of lead at 1 kA/µs, BEAMA{{I027}}"
+          - value: "16 mm²"
+            label: "copper, Type 1 connecting cables, BS 7671 via BEAMA{{I040}}"
+          - value: "4 mm²"
+            label: "copper, Type 2 and Type 3 connecting cables, BS 7671 via BEAMA{{I040}}"
+      - diagram:
+          name: spd_db_wiring
+          caption: "Concept sketch of a cited rule, not a product wiring diagram. (1) SPD at the origin: where the structure has an external LPS or needs protection against direct lightning on overhead lines, BS 7671 requires Type 1 SPDs as close as possible to the origin of the installation{{I075}}; supply-authority rules often keep them off the meter side, so they are fitted at the main distribution board.{{I024}} (2) backup OCPD in series with the SPD: Section 534 requires installed SPDs to be protected against short-circuit by OCPDs{{I039}}, and BEAMA gives an SPD at the main intake panel or a distribution board a separate OCPD, depending on the prospective fault current there.{{I059}} (3) short connecting leads, preferably not exceeding 0.5 m in total{{I028}}, tightly bound together.{{I029}} (4) SPD earth to the earth bar / MET: ITU-T K.66 gives under 1.5 m for bonding plus connecting wires from the SPD to the main earth terminal.{{B024}}"
+      - h2: "Lead length"
+      - facts: [I061, I077, D054, D055, B013, B024, D056, I029]
+      - h2: "Measured effect of lead length and binding (BEAMA test)"
+      - table:
+          head: ["Connecting leads", "Let-through voltage", "Source"]
+          widths: [0.42, 0.30, 0.28]
+          rows:
+            - ["25 cm, bound (SPD with Up 600 V, 6 kV / 3 kA test)", "630 V{{I030}}", "BEAMA (UK)"]
+            - ["25 cm, unbound", "810 V{{I031}}", "BEAMA (UK)"]
+            - ["2 m, unbound", "2,300 V{{I031}}", "BEAMA (UK)"]
+          caption: "Values measured by BEAMA on one SPD; they show the effect of lead length and binding, not a rating."
+      - h2: "V-shape (through-wiring) and in-line connection"
+      - facts: [D052, I033]
+      - h2: "Earth connection and conductor cross-sections"
+      - facts: [I032, I084, I040, I085, D068, I043]
+
+  - title: "6  Backup overcurrent protection and coordination"
+    lead: "BEAMA (UK): mains SPDs have internal overload (typically thermal) disconnection, so their connecting conductors need only short-circuit protection by an OCPD in line with the connecting cables.{{I041}}"
+    blocks:
+      - facts: [I039, I059, D053, I042, I045, I091]
+      - callout:
+          kind: dont
+          title: "Never exceed the maximum backup rating"
+          text: "BEAMA (UK): the maximum OCPD rating declared by the SPD manufacturer must never be exceeded.{{I044}} A typical Type 2 SPD rated 40 kA 8/20 is likely to state a maximum OCPD of 125 A.{{I043}}"
+      - h2: "Backup ratings published by one manufacturer"
+      - table:
+          head: ["SPD (ABB OVR)", "Prospective short-circuit current", "Maximum backup"]
+          widths: [0.30, 0.34, 0.36]
+          rows:
+            - ["Type 2", "0.3-2 kA", "25 A C-curve MCB or 16 A gG fuse{{I104}}"]
+            - ["Type 2", "2-6 kA", "32 A MCB / 25 A fuse{{I104}}"]
+            - ["Type 2", "above 6 kA", "50 A MCB / 50 A fuse{{I104}}"]
+            - ["Type 1, 25 kA (10/350)", "-", "125 A gG fuse{{I105}}"]
+          caption: "Values printed by ABB for its own products; the SPD manufacturer's declared maximum applies to any other product."
+
+  - title: "7  Selecting Up, Uc, In and Iimp"
+    blocks:
+      - h2: "Protection level Up against equipment impulse withstand"
+      - table:
+          head: ["Overvoltage category", "Rated impulse voltage (230/240 V)", "Typical equipment"]
+          widths: [0.26, 0.30, 0.44]
+          rows:
+            - ["IV", "6 kV{{I020}}", "Electricity meter"]
+            - ["III", "4 kV{{I020}}", "Distribution board"]
+            - ["II", "2.5 kV{{I020}}", "Sub-distribution board / electrical equipment"]
+            - ["I", "1.5 kV{{I020}}", "Socket outlet / electronic equipment"]
+          caption: "BEAMA Table 5, as BS 7671 Table 443.2 (UK).{{I020}}"
+      - facts: [I025, I037, I038, I026, D044, I088, I093]
+      - callout:
+          kind: note
+          title: "The sources set different Up targets"
+          text: "BEAMA (UK) works from the 1.5 kV category I withstand with allowance for lead voltage and possible doubling{{I038, I020}}; Schneider and ABB name 2.5 kV (category II).{{I088, I093}} See the chapter on where the sources disagree."
+      - h2: "Maximum continuous operating voltage Uc"
+      - facts: [I086, I087, D051]
+      - h2: "Discharge currents In and Iimp"
+      - facts: [I046, I014, D039]
+      - table:
+          head: ["Situation", "Value as published", "Source"]
+          widths: [0.36, 0.40, 0.24]
+          rows:
+            - ["Service by overhead line, no structural LPS (UK)", "Mains Type 1: 12.5 kA 10/350 per mode{{I016}}", "BEAMA (UK)"]
+            - ["Structural LPS, worst case 200 kA, single three-phase service (UK)", "25 kA 10/350 per L-E and N-E SPD{{I014}}", "BEAMA (UK)"]
+            - ["N-PE SPD in a three-phase CT2 installation, Iimp not calculated (UK)", "At least 50 kA 10/350{{I054}}", "BEAMA (UK)"]
+            - ["Type 2, each mode, CT1 (UK)", "In at least 5 kA 8/20{{I046}}", "BS 7671 via BEAMA"]
+            - ["Type 1 per pole", "Minimum Iimp 25 kA, based on a 200 kA strike, half to ground{{I094}}", "ABB"]
+            - ["Type 1 at the service entrance, LPL III/IV", "50 kA/m, m = number of conductors{{D038}}", "DEHN (IEC)"]
+            - ["Type 2 by ground flash density Ng", "Ng < 2: In 5 kA / Imax 15 kA; 2-3: 20/40 kA; 3-4: 30/70 kA; above 4: 60/120 kA{{I095}}", "ABB"]
+          caption: "Each row restates one source for the situation it names; the rows are not interchangeable."
+
+  - title: "8  Protective distance and coordination of several SPDs"
+    lead: "BEAMA (UK): if the distance from an SPD to the protected equipment is over 10 m, oscillations could double the voltage at the equipment.{{I019}}"
+    blocks:
+      - numbers:
+          - value: "10 m"
+            label: "beyond this, oscillation could double the voltage at the equipment, BEAMA{{I019}}"
+          - value: "30 m"
+            label: "beyond this, ABB makes an additional Type 2 SPD compulsory{{I107}}"
+          - value: "5 m"
+            label: "DEHN combined arrester: coordination with terminal equipment within this distance{{E012}}"
+      - facts: [I034, I098, I107]
+      - h2: "Coordination between SPD stages"
+      - facts: [A071, I018, I058, I099, I100, B011]
+      - h2: "Additional Type 2 and Type 3 SPDs at sub-boards and equipment"
+      - facts: [I009, I076, B016]
+
+  - title: "9  Status indication, end of life and inspection"
+    blocks:
+      - facts: [H054, I096, I097, A003, A020]
+      - callout:
+          kind: warn
+          title: "A disconnected SPD can leave the supply on and the equipment unprotected"
+          text: "ABB: a faulty SPD wired for continuity of service disconnects itself without interrupting the supply, but the equipment is then no longer protected.{{I097}} BEAMA's periodic inspection first checks that the SPD's OCPD has not operated and that the SPD's fault indicator shows it serviceable.{{I065}}"
+      - h2: "Inspection and testing (UK, BS 7671:2018)"
+      - facts: [I065, I066, I064, I063, I060, I062, I067, I068, C052]
+      - callout:
+          kind: note
+          title: "Not covered"
+          text: "The sources in this library give no inspection interval specific to SPDs in a distribution board, and no verified fact describes remote signalling contacts."
+
+  - title: "10  Separating protected and unprotected cables"
+    lead: "DEHN: unprotected cable upstream of an SPD must be strictly separated or shielded from the protected cable downstream of it, otherwise interference is coupled onto the protected side.{{D062}}"
+    blocks:
+      - facts: [I078, I080, I079, I081]
+
+  - title: "11  Point-of-use protectors and two-port equipment"
+    lead: "Per NIST (US), a surge protector at the service entrance is sufficient for appliances with a single (power-only) connection but not for appliances connected to two systems (power plus communications).{{A018}}"
+    blocks:
+      - h2: "Plug-in protectors on the power side"
+      - facts: [A004, A017, A016, E025, I026]
+      - h2: "Equipment connected to power and a communication line"
+      - facts: [A009, A022, A023, A010, A011, A012, A008]
+      - h2: "Multiservice SPDs (ITU-T)"
+      - facts: [B028, B018, B020, B021, B019, B037, B098, B041, B048]
+      - callout:
+          kind: dont
+          title: "Do not rely on a multiservice protector on an unearthed socket"
+          text: "ITU-T K.85: the MSPDs it refers to rely on a protective earth connection for safety{{B038}}; if the power point feeding an MSPD is not earthed, equipment damage may not be reduced and users face a possible lightning safety risk.{{B049}}"
+
+  - title: "12  Where the sources disagree"
+    lead: "The sources were written for different countries and purposes. The wiring code that applies at the site decides; this table shows each conflict without choosing a winner."
+    blocks:
+      - table:
+          head: ["Question", "One source says", "Other sources say"]
+          widths: [0.20, 0.40, 0.40]
+          rows:
+            - ["TN-C-S: N-PE protection and SPD type", "BEAMA (UK, BS 7671:2018): TN-C-S (PME) is treated the same as TN-S{{I057}}; an N-PE SPD is needed at a main board more than 0.5 m from the PEN split.{{I056}}", "Schneider EIG (IEC 60364): 2P/3P/4P SPDs, common mode only, suit TN-C-S; 1P+N and 3P+N suit TT and TN-S.{{I090}}"]
+            - ["Up design target", "BEAMA (UK): Type 1 Up no more than 1600 V on 230 V{{I037}}; overvoltage SPDs no more than 600 V in the Class III test.{{I038}}", "Schneider: installed Up of 2.5 kV generally adopted for sensitive equipment{{I088}}; ABB: Up max 2500 V for Un 230 V.{{I093}} DEHN (IEC 60364-5-53): 1.5 kV for category I consumers.{{D044}}"]
+            - ["SPD downstream of the RCD on TT", "BEAMA (UK): CT1 is used on TT where the SPD is downstream of the RCD{{I050}}, with a time-delayed RCD of at least 3 kA 8/20 surge immunity.{{I049}}", "DEHN: in TT systems Type 1 and Type 2 SPDs must always be installed upstream of the RCD.{{D050}}"]
+            - ["SPD downstream of an RCD in general", "ITU-T K.66: a mains SPD may be installed before or after the earth leakage breaker; after may cause nuisance tripping.{{B023}} ABB: nuisance tripping does not make the SPD less effective.{{I103}}", "DEHN (TN): Type 1 and Type 2 SPDs should be upstream, because the RCD could be mechanically damaged by partial lightning current.{{D048}}"]
+            - ["Connecting lead length", "BEAMA (UK): preferably not exceeding 0.5 m total{{I028}}; IEC 60364-5-53 via DEHN: 0.5 m recommended, 1 m mandatory{{D054, D055}}; ITU-T K.66: SPD connecting wires under 0.5 m, up to the MET under 1.5 m.{{B024}}", "NIST (US): panel protector less than about 30 cm from the panel{{A021}}; Motorola R56 (US): 610 mm most desirable.{{D141}}"]
+            - ["Common-mode mains SPDs", "BEAMA (UK): Type 1 SPDs protect against common-mode surges, line to earth and neutral to earth on TN systems.{{I035}}", "Motorola R56 (US communication-site practice): common-mode AC power surge suppression devices shall not be used, because they may fail short-circuit.{{D140}}"]
+            - ["Second SPD less than 10 m downstream", "ABB: below 10 m an additional Type 2 SPD is not necessary and shall not be installed, for coordination reasons{{I107}}; yet ABB Type 2 SPDs coordinate with at least 1 m of cable between them.{{I099}}", "BEAMA (UK): where the cable between SPD types is short, a decoupling element provides inductance for correct coordination.{{I058}}"]
+      - pagebreak: true
+
+  - title: "13  Installation checklist"
+    blocks:
+      - checklist:
+          - "UK: documented Section 443 assessment made; CRL calculated, SPD installed if CRL is less than 1000.{{I070, I072}}"
+          - "Type 1 SPD as close as possible to the origin where the structure has an external LPS or needs protection against direct lightning on overhead lines; for underground services without a structural LPS, Type 2 SPDs are sufficient.{{I075, I017}}"
+          - "Connection type matches the earthing system and the RCD position: CT1 on TN-S and TN-C-S, CT2 on TT with the SPD upstream of the RCD.{{I050, I051}}"
+          - "SPD upstream of RCDs where possible; otherwise an RCD with surge-current immunity of at least 3 kA 8/20 (S-type RCDs satisfy this).{{I047, I048}}"
+          - "Connecting leads preferably not over 0.5 m in total and bound together.{{I028, I029}}"
+          - "Connecting conductors at least 16 mm² copper for Type 1 and 4 mm² for Type 2 and Type 3.{{I040}}"
+          - "ITU-T K.66: SPD connecting wires under 0.5 m in total, bonding plus connecting wires from the SPD to the MET under 1.5 m.{{B024}}"
+          - "Backup OCPD in series with the SPD, not above the manufacturer's maximum rating.{{I039, I044}}"
+          - "Uc at least 1.1 U/√3 for L-N and L-PE modes and U/√3 for N-PE.{{I086}}"
+          - "Up of the Type 1 SPD at the main board well below the 4 kV rated impulse voltage of category III; equipment categories checked against BEAMA Table 5.{{I025, I020}}"
+          - "Equipment more than 10 m of cable from the upstream SPD: additional Type 2 SPD close to it (ABB: recommended, compulsory above 30 m); coordination per the manufacturer's data.{{I107, I019, I058}}"
+          - "Protected outgoing conductors separated from unprotected incoming conductors.{{I078, D062}}"
+          - "Equipment with power and communication connections protected by a combined protector or MSPD on an earthed socket.{{A010, B049}}"
+          - "Durable SPD notice fixed next to the distribution board.{{I062}}"
+          - "Periodic check: OCPD not operated, status indicator serviceable; SPDs isolated before insulation testing.{{I065, I064}}"

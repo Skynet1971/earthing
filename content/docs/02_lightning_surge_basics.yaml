@@ -1,0 +1,140 @@
+# Document definition. Rules: .claude/skills/colour-pdf/SKILL.md and CLAUDE.md.
+# Every technical statement carries a {{FACT_ID}} citation; IDs come from content/facts.json.
+id: "02"
+slug: lightning_and_surge_basics
+badge: "SHEET 02 · LIGHTNING"
+title: "Lightning and surge protection basics"
+subtitle: "Lightning protection levels and zones, coupling mechanisms, external LPS, separation distance, SPD types, coordination, multiservice SPDs and risk"
+applies_to: "Houses and small buildings with or without an external lightning protection system, their power, telecom, antenna and data lines, and equipment connected to more than one service"
+accent: amber
+version: "1.0"
+contents: true
+sections:
+  - title: "1  Lightning parameters and protection levels"
+    lead: "IEC/BS EN 62305 sets four lightning protection levels (LPL I to IV); their lightning current values are based on the 10/350 µs waveform.{{A060, A061}}"
+    blocks:
+      - table:
+          head: ["Level", "Max. peak current", "Min. peak current", "Rolling sphere radius", "Max. mesh size", "Down-conductor spacing"]
+          widths: [0.10, 0.16, 0.16, 0.18, 0.20, 0.20]
+          rows:
+            - ["I", "200 kA{{A060}}", "3 kA", "20 m{{A056}}", "5 m × 5 m{{A054}}", "10 m{{A055}}"]
+            - ["II", "150 kA{{A060}}", "5 kA", "30 m{{A056}}", "10 m × 10 m{{A054}}", "10 m{{A055}}"]
+            - ["III", "100 kA{{A060}}", "10 kA", "45 m{{A056}}", "15 m × 15 m{{A054}}", "15 m{{A055}}"]
+            - ["IV", "100 kA{{A060}}", "16 kA", "60 m{{A056}}", "20 m × 20 m{{A054}}", "20 m{{A055}}"]
+          caption: "Current values per lightning protection level (LPL); rolling sphere, mesh and down-conductor values per class of LPS, as tabulated by Furse for IEC/BS EN 62305.{{A060, A054, A055, A056}} DEHN gives the same currents and sphere radii per LPL.{{D001}}"
+      - facts: [A062, A059, A068]
+
+  - title: "2  Lightning protection zones"
+    lead: "Per IEC/BS EN 62305-4 as summarised by Furse, successive lightning protection zones (LPZ) use a combination of bonding, shielding and coordinated SPDs to reduce the severity of the lightning electromagnetic impulse (LEMP).{{A066}}"
+    blocks:
+      - diagram:
+          name: lpz_zones
+          caption: "Concept sketch of the zone concept. (1) SPD where lines cross the LPZ 0/1 boundary: it provides lightning current protection{{A067}}; DEHN's coaxial arresters for the 0A-1 boundary, for example, are lightning current arresters.{{E026}} (2) SPD at the LPZ 1/2 boundary: it provides overvoltage protection{{A067}}; DEHN lists surge arresters for the 1-2 boundary.{{E026}}"
+      - facts: [D028, D029, A063, A064, A065, D030, A070]
+
+  - title: "3  How lightning reaches equipment"
+    lead: "IEC/BS EN 62305 identifies four sources of damage: S1 flashes to the structure, S2 flashes near the structure, S3 flashes to connected lines and S4 flashes near connected lines.{{A059}}"
+    blocks:
+      - numbers:
+          - value: "63 kV"
+            label: "main earth terminal and equipment rise against remote earth in a K.98 simulation of a strike to the power system{{B108}}"
+          - value: "70 kV"
+            label: "between a bonded cable and a point 20 m from a single rod, K.98 example{{B110}}"
+          - value: "15 kV"
+            label: "telecom equipment above the power network: 50 A through a 300 Ω electrode, K.66 example{{B026}}"
+      - h2: "Direct strike, induction and earth potential rise"
+      - facts: [E059, E061, H116, E021, D059, E062]
+      - h2: "Potential differences between services and earths"
+      - facts: [D094, B012, B047, A022, A009]
+
+  - title: "4  External lightning protection system"
+    lead: "Per NIST (US), lightning rods protect the structure of the house and avoid fires; they do not prevent surges in the wiring.{{A001}}"
+    blocks:
+      - h2: "Air-termination"
+      - p: "Rolling sphere radii and mesh sizes for each class of LPS are in the table in chapter 1.{{A056, A054}}"
+      - facts: [E004, E022, H024, D072]
+      - h2: "Down conductors"
+      - facts: [A074, D091, H121]
+      - h2: "Earth-termination"
+      - facts: [A057, D004, D005, D006, D007, A075, D013]
+      - h2: "Separation distance"
+      - facts: [A076, H013, A080, A079, A087, A088, A089, H032, H033]
+      - table:
+          head: ["Term", "Meaning and value as published", "Source"]
+          widths: [0.16, 0.62, 0.22]
+          rows:
+            - ["s", "separation distance: s = ki × (kc / km) × l{{A082}}", "Crown (South Africa) on SANS/IEC 62305-3"]
+            - ["ki", "0,08 for LPL 1; 0,06 for LPL 2; 0,04 for LPL 3 and LPL 4{{A083}}; DEHN: 0.04 for class of LPS III and IV{{D017}}", "Crown; DEHN"]
+            - ["km", "material coefficient: 1 for air, 0,5 for bricks, masonry etc.{{A084}}", "Crown"]
+            - ["kc", "current-splitting coefficient: 1 for a single air terminal close to the structure{{A085}}; (h + c)/(2h + c) for roofs with two down conductors{{A086}}", "Crown"]
+            - ["l", "length in metres along the air-termination or down conductor from the point considered to the next point of equipotential bonding{{A086}}", "Crown"]
+          caption: "Terms of the separation-distance formula as presented in a South African trade article on SANS/IEC 62305-3.{{A082}}"
+      - pagebreak: true
+
+  - title: "5  Surge protective devices: types and test waveforms"
+    lead: "Per NIST (US), surge protective devices neither suppress nor arrest a surge; they divert it to ground.{{A002}}"
+    blocks:
+      - numbers:
+          - value: "10/350 µs"
+            label: "lightning current waveform (IEC 61643-11 as cited){{A081}}"
+          - value: "8/20 µs"
+            label: "induced surge current waveform{{A081}}"
+          - value: "1.5 kV"
+            label: "voltage protection level for overvoltage category I in a 230/400 V installation, IEC 60364-5-53{{D044}}"
+      - facts: [D043, I002, I003, I004, I012, E063, A058, A069, D038, D039, I014, D041, D042, I001, A072, A073, I035, I036, I023]
+      - h2: "When a type 1 (lightning current) SPD is called for"
+      - facts: [I013, I016, I017, I069, I075, D057, H053, D096, H044, H029, E009, D082, H003]
+      - h2: "Connecting the SPD"
+      - facts: [D056, I027, D054, D055, B013, I028, I029, I030, I031, D052, D053, I039, I040, D048, D049, D050, I047, I049]
+      - h2: "Failure and end of life"
+      - facts: [H054, I041, I096, I097, A003, A020]
+      - pagebreak: true
+
+  - title: "6  Energy coordination"
+    lead: "Per IEC/BS EN 62305-4 as summarised by Furse, in a coordinated (cascaded) SPD system the lightning current SPD at the service entrance handles the majority of the surge energy, relieving the downstream overvoltage SPDs so that they can control the overvoltage.{{A071}}"
+    blocks:
+      - facts: [I018, I020, I026, D044, I037, I038, I019, I034, I098, I107, I099, I100, I058, E012, B011, B037, B099, B102, D101, H022, D060, D061, D062]
+
+  - title: "7  Equipment with mains and data ports"
+    lead: "Per NIST (US), equipment connected to both power and a communications system can be damaged by a surge on either system because of the voltage difference between the two systems during the surge, even when each system has its own surge protector.{{A009}}"
+    blocks:
+      - facts: [A018, A022, A023, A025, A026, B047, B051, B109, B003, B042, B097]
+      - callout:
+          kind: warn
+          title: "Unplugging only the power cord can make it worse"
+          text: "Per NIST (US), pulling out the power cord of an appliance that stays connected to a telephone line or cable TV might not be the best idea, because the appliance loses the grounding normally provided by the power cord.{{A008}}"
+
+  - title: "8  Multiservice SPDs"
+    lead: "ITU-T K.85 defines a multiservice surge protective device (MSPD) as an SPD containing both telecommunications and mains protection, which may also include port protection for video or Ethernet.{{B028}}"
+    blocks:
+      - facts: [A010, A011, B018, B016, B020, B021, B048, B041, B098, B103, A027]
+      - callout:
+          kind: dont
+          title: "An MSPD needs an earthed power point"
+          text: "ITU-T K.85 warns that MSPDs rely on a protective earth connection for safety; without it, users may be exposed to surges exceeding a few hundred volts.{{B038}} If the power point feeding an MSPD is not earthed, equipment damage may not be reduced and users face a possible lightning safety risk.{{B049}}"
+      - facts: [B019, A012]
+
+  - title: "9  Risk assessment and the IEC 62305 edition"
+    blocks:
+      - facts: [B036, B034, B053, B062, D104, E008, B050, B045]
+      - h2: "SPD risk assessment for a dwelling (UK, BS 7671:2018 as described by BEAMA)"
+      - facts: [I069, I070, I071, I072, I073, I074]
+      - h2: "Roof-mounted PV and strike risk"
+      - facts: [H001, H118, H119, H002]
+      - callout:
+          kind: note
+          title: "Not covered by the sources in this library"
+          text: "The sources quote the IEC/BS EN 62305 sources of damage{{A059}} and BEAMA describes the BS 7671:2018 (UK) calculated risk level for SPDs{{I072}}, but none sets out the full risk-assessment method of IEC 62305-2, and none describes the newest edition of IEC 62305 or what that edition changed. Check the edition that applies at the site."
+
+  - title: "10  Where the sources disagree"
+    lead: "The sources were written for different countries and kinds of site. Where they conflict, the wiring code that applies at the site decides; this table shows the conflict rather than choosing for you."
+    blocks:
+      - table:
+          head: ["Question", "One source says", "Other sources say"]
+          widths: [0.22, 0.39, 0.39]
+          rows:
+            - ["Length of SPD connecting leads", "ITU-T K.66: below 0.5 m{{B013}}; IEC 60364-5-53 via DEHN: 0.5 m recommended, 1 m mandatory{{D054, D055}}; BEAMA (UK) and Schneider: preferably not over 0.5 m total.{{I028, I077}}", "NIST (US): panel protector less than about 30 cm from the panel{{A021}}; Motorola R56 (US): 610 mm most desirable.{{D141}}"]
+            - ["SPD before or after the RCD", "DEHN: in TN systems type 1 and type 2 SPDs should be installed upstream of the RCD{{D048}}; in TT systems they must always be upstream of it{{D050}}; BEAMA (UK): upstream wherever possible.{{I047}}", "ITU-T K.66 Annex A: a mains SPD may go before or after the earth leakage breaker; after may cause nuisance tripping{{B023}}; BEAMA (UK, BS 7671:2018): on the load side the RCD needs at least 3 kA 8/20 surge-current immunity.{{I048}}"]
+            - ["Common-mode protection on the mains", "Furse: standard SPDs may protect only against common-mode surges; differential-mode protection can be vital for terminal equipment{{A072, A073}}; BEAMA (UK): select SPDs with differential-mode (L-N) protection for electronic equipment.{{I023}}", "Motorola R56 (US): common-mode AC power surge suppression devices shall not be used, because they may fail short-circuit.{{D140}}"]
+            - ["Does a roof PV array raise the strike risk?", "DEHN: installing PV modules does not increase the risk of a lightning strike.{{H001, D097}}", "BRE (UK, 2006): a typical roof-mounted array presents a very small increased risk{{H118}}, which may not hold for large, tall or exposed arrays.{{H119}}"]
+            - ["Separation distance cannot be kept", "Crown (South Africa): consider lightning current arresters, but only for rooftop structures fed only with electrical or data cables.{{A090}}", "DEHN PV: connect the mounting system to the LPS with at least 16 mm² copper and protect the d.c. lines with type 1 SPDs{{H034, H036}}; SMA: adapting the LPS to increase the separation distance is often the most economical solution.{{H045}}"]

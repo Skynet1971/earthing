@@ -419,3 +419,113 @@ sources:
     kind: pdf
     quotes: public
     url: "https://www.beama.org.uk/static/uploaded/12e08ebc-45fc-459f-8fd8f172853db2f7.pdf"
+  - key: 60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa
+    title: The lightning climatology of South Africa
+    publisher: South African Journal of Science (AOSIS OpenJournals); author Morné Gijben, South African Weather Service
+    edition: S Afr J Sci 2012; 108(3/4)
+    jurisdiction: South Africa
+    type: journal paper
+    kind: pdf
+    quotes: public
+    url: https://sajs.co.za/article/view/9888/12996
+    licence: Creative Commons Attribution License (version not stated in document)
+  - key: 61_Vaisala_Gill_Lightning_Climatology_SA_First_Two_Years
+    title: 'A Lightning Climatology of South Africa for the First Two Years of Operation of the South African Weather Service Lightning Detection Network: 2006-2007'
+    publisher: South African Weather Service (author Tracey Gill); hosted by Vaisala
+    edition: not stated in document
+    jurisdiction: South Africa
+    type: conference paper
+    kind: pdf
+    quotes: public
+    url: https://vaisala.com/sites/default/files/documents/Lightning%20Climatology%20of%20South%20Africa%20-%20First%20Two%20Years%20of%20Operation.PDF
+    licence: not stated
+  - key: 62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation
+    title: Annexure E25 Policy for Embedded Generation Ekurhuleni (Reviewed)
+    publisher: City of Ekurhuleni Metropolitan Municipality
+    edition: Council item A - F (32 – 2026), CM 23/06/2026 (MTREF 2026/27 to 2028/29)
+    jurisdiction: City of Ekurhuleni, Gauteng, South Africa
+    type: municipal policy
+    kind: pdf
+    quotes: public
+    url: https://www.ekurhuleni.gov.za/wp-content/uploads/2026/07/Annexure-E25-Guideline-for-Embedded-Generation.pdf
+    licence: not stated
+  - key: 63_Eskom_240-153339608_Embedded_Generator_Installation_Report
+    title: Compliance Report for Low Voltage SSEG's Operating in Parallel with the Eskom Network (EGI Report) - Embedded Generator Installation Compliance Test Report
+    publisher: Eskom Holdings SOC Ltd, Distribution
+    edition: Unique Identifier 240-153339608, Revision 1
+    jurisdiction: South Africa (Eskom-supplied customers)
+    type: utility standard
+    kind: pdf
+    quotes: public
+    url: https://www.eskom.co.za/distribution/wp-content/uploads/2026/04/EMBEDDED-GENERATOR-INSTALLATION-EGI-REPORT-240-153339608-REV-1.pdf
+    licence: not stated
+  - key: 64_SAIEE_ARJ_2019_v110n4_03
+    title: An Alternative technique for the detection and mitigation of electricity theft in South Africa
+    publisher: SAIEE Africa Research Journal (South African Institute of Electrical Engineers); authors Quentin Louw and Pitshou Bokoro
+    edition: Vol.110 (4) December 2019
+    jurisdiction: South Africa
+    type: journal paper
+    kind: pdf
+    quotes: public
+    url: https://scielo.org.za/pdf/arj/v110n4/03.pdf
+    licence: not stated
+  - key: 65_Ekurhuleni_Electricity_Supply_By-Law_2023
+    title: City of Ekurhuleni Energy Department Electricity Supply By-Laws (Annexure A to report A-WE (02-2023) WSE)
+    publisher: City of Ekurhuleni Metropolitan Municipality
+    edition: Revision of 11 August 2022; committee resolution 28/09/2023
+    jurisdiction: City of Ekurhuleni, Gauteng, South Africa
+    type: by-law
+    kind: pdf
+    quotes: public
+    url: https://www.ekurhuleni.gov.za/wp-content/uploads/2023/11/Electricity-Supply-By-Law.pdf
+    licence: not stated
+  - key: 66_Vaisala_Gijben_Lightning_Climatology_SA_Risk_Maps
+    title: Lightning Climatology of South Africa with a Special Focus on Lightning Risk Maps
+    publisher: South African Weather Service (author Morné Gijben); hosted by Vaisala
+    edition: not stated in document (extended abstract based on S Afr J Sci 2012;108(3/4); data 2006-2011)
+    jurisdiction: South Africa
+    type: conference paper
+    kind: pdf
+    quotes: public
+    url: https://www.vaisala.com/sites/default/files/documents/Lightning%20Climatology%20of%20South%20Africa%20with%20a%20Special%20Focus%20on%20Lightning%20Risk%20Maps.pdf
+    licence: not stated
+  - key: 67_Vaisala_Hunt_Johannesburg_Lightning_Laboratory_Abstract
+    title: The Johannesburg Lightning Laboratory (JLL)
+    publisher: University of the Witwatersrand (Hunt, Schumann), INPE (Saba), ZT Research (Warner); hosted by Vaisala
+    edition: not stated in document
+    jurisdiction: South Africa (Johannesburg)
+    type: conference abstract
+    kind: pdf
+    quotes: local
+    url: https://www.vaisala.com/sites/default/files/documents/The%20Johannesburg%20Lightning%20Laboratory%20.pdf
+    licence: not stated (pages carry a 'Restricted' marking)
+  - key: 68_NHESS_Poelman_2021_Ground_Strike_Points_Part2
+    title: 'Global ground strike point characteristics in negative downward lightning flashes – Part 2: Algorithm validation'
+    publisher: Natural Hazards and Earth System Sciences (Copernicus/EGU); Poelman et al.
+    edition: Nat. Hazards Earth Syst. Sci., 21, 1921–1933, 2021 (published 18 June 2021)
+    jurisdiction: International (includes South African data)
+    type: journal paper
+    kind: pdf
+    quotes: public
+    url: https://nhess.copernicus.org/articles/21/1921/2021/nhess-21-1921-2021.pdf
+    licence: CC BY 4.0
+  - key: 69_ECASA_Neutral_Earth_Bonding_Clarified
+    title: Neutral Earth Bonding Clarified
+    publisher: Electrical Contractors' Association (South Africa), ECA(SA); author Nicholas McDiarmid
+    edition: 18 January 2024
+    jurisdiction: South Africa
+    type: article
+    kind: webprint
+    quotes: public
+    url: https://ecasa.co.za/technical/neutral-earth-bonding-clarified/
+    licence: not stated
+  - key: 70_Crown_Sparks_Surge_Protection_SANS_10142-1
+    title: Using surge protection and how it is described in the wiring code (SANS 10142-1)
+    publisher: 'Crown Publications, Sparks Electrical News (enquiries: DEHN Africa)'
+    edition: 01 March 2023
+    jurisdiction: South Africa
+    type: article
+    kind: webprint
+    quotes: public
+    url: https://www.crown.co.za/latest-news/sparks-electrical-news-latest-news/23866-using-surge-protection-and-how-it-is-described-in-the-wiring-code-sans-10142-1
+    licence: 'not stated (site footer: Copyright 2020 Crown Publications)'

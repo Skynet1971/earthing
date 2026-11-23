@@ -1,0 +1,136 @@
+# Document definition. Rules: .claude/skills/colour-pdf/SKILL.md and CLAUDE.md.
+# Every technical statement carries a {{FACT_ID}} citation; IDs come from content/facts.json.
+id: "12"
+slug: inspection_testing_maintenance
+badge: "SHEET 12 · TESTING"
+title: "Inspection, testing and maintenance"
+subtitle: "Inspection intervals, continuity values, earth electrode measurement, inspection after a strike, SPD end of life, PV insulation tests and who may do the work"
+applies_to: "Earthing and bonding systems, earth electrodes, lightning protection systems, surge protective devices, RCDs and PV arrays of a house and its outbuildings"
+accent: green
+version: "1.0"
+contents: true
+sections:
+  - title: "1  Who may do the work"
+    lead: "DEHN states that inspection of a lightning protection system must be carried out by a lightning protection specialist.{{D064}}"
+    blocks:
+      - facts: [C031, C034, D010, C057, H041, H059, E111, A005, F190, H090]
+      - callout:
+          kind: note
+          title: "Shock protection comes first"
+          text: "DEHN states that measures for protection against electric shock always take priority over surge protection measures.{{D045}}"
+
+  - title: "2  Safety before and during tests"
+    blocks:
+      - callout:
+          kind: warn
+          title: "Isolate before an earth electrode test, re-connect before energising"
+          text: "Per UK guidance (IEE Wiring Matters), the main switch-disconnector must be open before the measurement, because the installation is unprotected against earth faults during the test{{A052}}; the means of earthing must be re-established before the installation is energised.{{A053}}"
+      - facts: [E110, F184, H062, C033, A042, B085]
+      - h2: "PV arrays cannot be switched off"
+      - facts: [H101, H132, H133, H134, H135, H138]
+
+  - title: "3  Inspection intervals"
+    blocks:
+      - table:
+          head: ["Class of LPS", "Visual inspection", "Complete inspection", "Complete inspection, critical situations"]
+          widths: [0.22, 0.22, 0.24, 0.32]
+          rows:
+            - ["I and II", "1 year{{D065}}", "2 years", "1 year"]
+            - ["III and IV", "2 years{{D065}}", "4 years", "1 year"]
+          caption: "Maximum periods between inspections per IEC 62305-3 Table E.2, as quoted by DEHN.{{D065}}"
+      - facts: [D066, C049, C050, C051]
+      - h2: "After a lightning strike"
+      - callout:
+          kind: do
+          title: "Inspect after any strike or change to the building"
+          text: "DEHN: inspect the LPS whenever it is known to have been struck, and after changes of use, modifications, extensions or repairs to the structure.{{D066}} WAPA (South Africa): immediately after lightning damage, inspect and repair all earthing points, earth straps and surge protection devices.{{C052}}"
+      - pagebreak: true
+
+  - title: "4  Continuity of bonding and conductors"
+    blocks:
+      - numbers:
+          - value: "< 1 Ω"
+            label: "continuity of air-terminations, down conductors, bonding and shielding, recommended value{{D067}}"
+          - value: "200 mA"
+            label: "test current for bonding continuity tests per IEC 60364-6 (IEC 61557-4){{D020}}"
+          - value: "100 mΩ"
+            label: "telecom bonding system to building electrode system, US DoD (50 mΩ critical){{C078}}"
+      - facts: [D067, D019, D020, C078, C063, C079, C098]
+
+  - title: "5  Earth electrode measurement"
+    lead: "BS 7671:2001 Regulation 713-10-01 (UK) requires the resistance to earth of an earth electrode to be measured, before the installation is energised.{{A045}}"
+    blocks:
+      - facts: [A046, A047, C077, A051, A050, E100, C025]
+      - callout:
+          kind: note
+          title: "Placing the current spike"
+          text: "Per UK guidance (IEE Wiring Matters), reliable results may be expected if the current spike is at least ten times the maximum dimension of the electrode system away from the electrode under test, for example 30 m for a 3 m rod.{{A047}}"
+      - h2: "Values to compare the result with"
+      - table:
+          head: ["Purpose", "Value as published", "Source"]
+          widths: [0.36, 0.42, 0.22]
+          rows:
+            - ["TT installation with a 30 mA RCD (UK)", "RA × IΔn ≤ 50 V, approximately 1666 Ω{{A048, A049}}", "IEE Wiring Matters"]
+            - ["Measured loop impedance (UK)", "above 200 Ω requires further investigation{{A050}}", "IEE GN3 via Wiring Matters"]
+            - ["Building grounding electrode system (US DoD)", "not over 25 Ω (5 Ω option), dry weather, not earlier than 48 hours after rain{{C077}}", "UFGS 27 05 26"]
+            - ["Lightning protection earth-termination", "10 Ω overall{{A057}}; 10 Ω or less at low frequency, generally recommended{{D004}}", "Furse (UK); DEHN"]
+            - ["High-site earthing (South Africa)", "preferably below 10 Ω{{C039}}", "WAPA"]
+          caption: "Each value applies to the purpose and jurisdiction in its row. The earthing and bonding fundamentals sheet lists the full set of resistance values found in the sources."
+
+  - title: "6  Surge protective devices: status and end of life"
+    blocks:
+      - facts: [I065, I096, I097, H054, A003, A020, C052]
+      - h2: "Insulation resistance tests with SPDs installed"
+      - facts: [I064, I066, I063, H138, I060]
+      - h2: "Visual inspection of the surge protection system"
+      - facts: [I067, I068, I062]
+      - callout:
+          kind: note
+          title: "Not covered by the sources in this library"
+          text: "No verified fact in this library describes remote signalling contacts on SPDs. Follow the SPD manufacturer's instructions for replacement."
+
+
+  - title: "7  RCD, PV and other commissioning tests"
+    blocks:
+      - h2: "RCDs and earth leakage"
+      - facts: [H081]
+      - h2: "PV arrays and inverters"
+      - facts: [H096, H137, H139, H140, H082, H080, H097, H007, H136]
+      - h2: "Electric fences"
+      - facts: [E080]
+
+  - title: "8  Where the sources disagree"
+    lead: "The sources were written for different countries and kinds of site. Where they conflict, the wiring code that applies at the site decides; this table shows the conflict rather than choosing for you."
+    blocks:
+      - table:
+          head: ["Question", "One source says", "Other sources say"]
+          widths: [0.22, 0.39, 0.39]
+          rows:
+            - ["How often to inspect the earthing", "IEC 62305-3 via DEHN: by class of LPS, visual every 1 or 2 years, complete every 2 or 4 years.{{D065}}", "WAPA (South Africa, high sites): check the earthing system and inspect all earthing points once a year.{{C050, C051}}"]
+            - ["Acceptable bonding resistance", "DEHN: below 1 Ω for bonding and LPS connections.{{D019, D067}}", "UFGS 27 05 26 (US DoD): 100 mΩ maximum, 50 mΩ for critical facilities{{C078}}; cable-tray bonds at most 1 mΩ.{{C063}}"]
+            - ["Acceptable earth electrode resistance", "UFGS 27 05 26 (US DoD): 25 Ω, or 5 Ω as an option.{{C077}}", "DEHN: 10 Ω or less for an LPS{{D004}}; IEE Wiring Matters (UK): about 1666 Ω meets the 50 V rule with a 30 mA RCD, values above 200 Ω need investigation.{{A049, A050}}"]
+
+  - title: "9  Printable inspection checklist"
+    blocks:
+      - checklist:
+          - "Inspection of the lightning protection system done by a lightning protection specialist.{{D064}}"
+          - "Earthing work carried out and certified by a competent registered person (South African practice per WAPA).{{C031}}"
+          - "LPS inspected within the maximum interval for its class: visual and complete inspection dates recorded.{{D065}}"
+          - "LPS inspected after any known strike and after changes, extensions or repairs to the structure.{{D066}}"
+          - "All earthing points and earth straps inspected for damage, arcing or corrosion and repaired.{{C051}}"
+          - "Continuity of air-terminations, down conductors, bonding conductors and shielding measured below 1 Ω.{{D067}}"
+          - "Bonding continuity tested with a 200 mA test current (IEC 60364-6, IEC 61557-4).{{D020}}"
+          - "Installation isolated at the main switch-disconnector before the earth electrode test.{{A052}}"
+          - "Earth electrode resistance measured, ideally in the least favourable (dry) ground conditions, with the current spike at least ten times the maximum dimension of the electrode system away.{{A046, A047}}"
+          - "Means of earthing re-established before the installation is energised.{{A053}}"
+          - "Earth leakage protection devices tested (WAPA: once a year).{{C049}}"
+          - "SPDs inspected and repaired after lightning damage.{{C052}}"
+          - "Each SPD's overcurrent protective device not operated and its fault indicator showing it serviceable.{{I065}}"
+          - "SPDs isolated during insulation resistance testing.{{I064}}"
+          - "Bonding conductors and cable shields intact and cable segregation maintained.{{I067}}"
+          - "Later additions (for example a power line to outdoor cameras) that cross a lightning protection zone checked for an SPD.{{I068}}"
+          - "Durable SPD notice fixed next to the distribution board (UK, BS 7671:2018).{{I062}}"
+          - "PV array SPDs disconnected before an array insulation resistance test.{{H138}}"
+          - "Before switching on a PV inverter: earth bond, RCD and earth leakage tests completed.{{H081}}"
+          - "Voltage tested for on PV parts before touching them.{{H132}}"
+      - pagebreak: true

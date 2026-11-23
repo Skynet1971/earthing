@@ -1,0 +1,120 @@
+# Document definition. Rules: .claude/skills/colour-pdf/SKILL.md and CLAUDE.md.
+# Every technical statement carries a {{FACT_ID}} citation; IDs come from content/facts.json.
+id: "08"
+slug: alarms_electric_fences
+badge: "SHEET 08 · ALARMS & FENCES"
+title: "Electric fences and intruder alarms"
+subtitle: "Energizer earthing, earth spikes, lightning diverters, separation from other earth systems, and the wiring of alarm and fence circuits"
+applies_to: "Nemtek Druid electric fence energizers, Nemtek lightning inhibitor / diverter and Super Earthing Kit, fence earth systems, IDS X-Series intruder alarm panels, keypad bus and sensor wiring"
+accent: purple
+version: "1.0"
+contents: true
+sections:
+  - title: "1  Earthing the fence energizer"
+    lead: "Nemtek's Druid installer manual makes the fence earth a set of earth electrodes close to the energizer, at a minimum distance from any other earth system.{{E076, E077}} In South Africa it refers fence installation to the latest edition of SANS 10222-3.{{E071}}"
+    blocks:
+      - numbers:
+          - value: "3"
+            label: "earth electrodes close to the energizer (Nemtek Druid){{E076}}"
+          - value: "≥ 2 m"
+            label: "fence earth to any other earth system, security fence (Nemtek Druid){{E077}}"
+          - value: "≥ 10 m"
+            label: "fence earth to any other earth system, agricultural fence (Nemtek Druid){{E077}}"
+          - value: "≤ 2 m"
+            label: "lightning diverter from the earth spike (Nemtek LIDii){{E092}}"
+      - diagram:
+          name: fence_energizer
+          caption: "Concept sketch, not a product wiring diagram. (1) The main earth spikes are installed close to the energizer, and the fence earth wire is connected to the main earth spike, not directly to the energizer{{E073, E072}} (3) the lightning inhibitor / diverter sits between the energizer and the start of the fence, closer to the fence, and as close as possible to the earth spike, no more than 2 m away{{E091, E092}} (4) the fence earth electrode is not less than 2 m (security fence) or 10 m (agricultural fence) from any other earth system.{{E077}} Marker (2), the spacing between the spikes, is not given in any source in this library."
+      - h2: "Fence earth wiring (Nemtek Druid)"
+      - facts: [E072, E073, E076, E074, E075, E077, E087, E086]
+
+  - title: "2  Earth spikes"
+    lead: "Nemtek's Super Earthing Kit is offered for fences where earthing is poor or earth spikes alone are not sufficient.{{E095}}"
+    blocks:
+      - numbers:
+          - value: "1.2 m"
+            label: "galvanised earth spike in the Nemtek Super Earthing Kit{{E097}}"
+          - value: "6 kg"
+            label: "bentonite sleeve per kit{{E097}}"
+          - value: "6-8 cm"
+            label: "hole diameter, drilled just under 1.2 m deep{{E098}}"
+          - value: "≥ 24 h"
+            label: "bentonite cure time before testing{{E100}}"
+      - facts: [E095, E096, E097, E098, E099, E100]
+      - callout:
+          kind: note
+          title: "Spike spacing for fences is not covered"
+          text: "The Nemtek manuals in this library do not state the spacing between fence earth spikes or a target earth resistance for the fence earth. The rules below are written for earth rods in general, not for fence energizers."
+      - h2: "General earth-rod spacing (not written for electric fences)"
+      - facts: [A032, A044, D106]
+
+  - title: "3  Lightning inhibitor and diverter (Nemtek LIDii)"
+    lead: "Nemtek's lightning inhibitor / diverter protects the energizer against surges arriving from the fence; surges arriving through the mains need a separate product.{{E089, E090}}"
+    blocks:
+      - facts: [E089, E090, E091, E092, E093, E094]
+      - callout:
+          kind: do
+          title: "Place the diverter at the earth spike, on the fence side"
+          text: "Install it between the energizer and the beginning of the fence, closer to the fence than to the energizer{{E091}}, as close to the earth spike as possible and no more than 2 m away.{{E092}}"
+
+  - title: "4  Mains, battery and fence wiring"
+    blocks:
+      - facts: [E081, E088]
+      - h2: "Keep fence wiring away from other wiring"
+      - facts: [E078, E084, E085]
+      - callout:
+          kind: dont
+          title: "Never share a conduit or hole with low-voltage wiring"
+          text: "Nemtek requires HT wire between fence and energizer, including the earth wire, and these wires must never share a conduit or hole with low voltage wiring.{{E079}}"
+
+  - title: "5  Safety warnings"
+    blocks:
+      - facts: [E082, E083, E080]
+
+  - title: "6  Intruder alarm panels and their wiring"
+    lead: "For optimum lightning protection the IDS X-Series installer manual connects a low-resistance earth to the telephone communicator's earth input.{{I135}}"
+    blocks:
+      - callout:
+          kind: note
+          title: "Not covered in the IDS facts"
+          text: "The facts extracted from the IDS manuals do not cover earthing of the panel enclosure, the mains transformer or the screens of keypad-bus and zone cables, and give no earth resistance value."
+      - h2: "Supply and battery"
+      - facts: [I137, I139, I138, I140, I141, I145]
+      - h2: "Keypad bus and zones"
+      - facts: [I136, I146, I147, I148, I143, I142, I144]
+      - h2: "Sensor, bus and signal lines: other sources"
+      - facts: [A015, D149, E078, D088, D060]
+      - callout:
+          kind: warn
+          title: "Installer and warranty"
+          text: "IDS states that the serial X-Series panel should only be installed by an accredited professional alarm installer{{I149}}, and that its 24-month warranty excludes lightning damage.{{I150}}"
+
+  - title: "7  Where the sources disagree"
+    lead: "The energizer manual keeps the fence earth away from other earths; the general bonding sources join all earths into one system. Where they conflict, the wiring code that applies at the site decides; this table shows the conflict rather than choosing for you.{{E077, D013}}"
+    blocks:
+      - table:
+          head: ["Question", "Fence energizer source", "Other sources say"]
+          widths: [0.22, 0.39, 0.39]
+          rows:
+            - ["Bond the fence earth to the building earth?", "Nemtek Druid: the fence earth electrode shall be not less than 2 m (security fence) or 10 m (agricultural fence) from any other earth system.{{E077}}", "DEHN: one earth-termination system must serve all earthing tasks of a structure.{{D013}} ITU-T K.66: nothing connected to a separate earth electrode that is not bonded to the main earth bar.{{B002}} ITU-T K.98, citing IEC 60364-4-44: all earth electrodes associated with a building interconnected.{{B096}}"]
+            - ["Separate earths and lightning", "Nemtek Druid: separation from other earth systems as above.{{E077}}", "DEHN: a separate earth kept apart from the lightning protection and protective earth can see potential differences of up to some 100 kV.{{D014}} ITU-T K.85: unbonded separate electrodes can damage the ports of equipment connected to each.{{B040}}"]
+            - ["Metal near an earth electrode", "Nemtek Druid: fence earth at least 2 m from any other earth system.{{E077}}", "Motorola R56 (US communication-site practice): metallic objects within 1.8 m of the external grounding electrode system shall be bonded to it.{{D126}}"]
+          caption: "The Nemtek rule is specific to electric fence energizers; the DEHN, ITU-T and Motorola statements are general bonding rules that do not mention electric fences.{{E077, D013, B002, D126}}"
+
+  - title: "8  Installation checklist"
+    blocks:
+      - checklist:
+          - "Three earth electrodes close to the energizer (Nemtek Druid).{{E076}}"
+          - "Fence earth wire connected to the main earth spike, not directly to the energizer.{{E072}}"
+          - "Fence earth electrode not less than 2 m (security) or 10 m (agricultural) from any other earth system, or the conflict with the site's bonding rules resolved under the applicable wiring code.{{E077, D013}}"
+          - "Lightning inhibitor / diverter between energizer and fence, closer to the fence, no more than 2 m from the earth spike; one per zone.{{E091, E092, E093}}"
+          - "Arc gap set; Nemtek recommends position 1 (14.5 kV) for most applications.{{E094}}"
+          - "Surges arriving through the mains handled by a separate product; the LIDii does not cover them.{{E090}}"
+          - "HT cable for fence and earth leads; never in the same conduit or hole as low-voltage, mains, communication or data cables.{{E079, E085}}"
+          - "Underground leads in insulating conduit or insulated high voltage cable.{{E084}}"
+          - "Exposed conductive parts of the physical barrier effectively earthed.{{E087}}"
+          - "Super Earthing Kit bentonite cured for at least 24 hours before testing.{{E100}}"
+          - "Fence tested for short-circuit and open-circuit alarming at various points.{{E080}}"
+          - "IDS X-Series: low-resistance earth on the telephone communicator's earth input.{{I135}}"
+          - "IDS X-Series: RS485 isolator fitted where extra power supplies power peripherals on the keypad bus.{{I136}}"
+          - "IDS X-Series: every zone terminated with a 3k3 end-of-line resistor at or near the sensor.{{I143}}"

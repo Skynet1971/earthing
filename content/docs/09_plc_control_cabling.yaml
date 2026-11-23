@@ -1,0 +1,155 @@
+# Document definition. Rules: .claude/skills/colour-pdf/SKILL.md and CLAUDE.md.
+# Every technical statement carries a {{FACT_ID}} citation; IDs come from content/facts.json.
+id: "09"
+slug: plc_control_cabling
+badge: "SHEET 09 · PLC & CONTROL"
+title: "PLCs, instrumentation and control cabling"
+subtitle: "Supply, functional earth, isolation, cable lengths, shields and surge immunity of the Siemens LOGO! 8, and the earthing and surge protection of instrumentation, control and bus lines"
+applies_to: "Siemens LOGO! 8 base modules, expansion modules, TDE and CSM, their power supplies and I/O cabling; instrumentation and control cables, cable screens and armour; measuring, control, bus and RS-485 lines"
+accent: purple
+version: "1.0"
+contents: true
+sections:
+  - title: "1  LOGO! 8 supply and its protection"
+    lead: "Siemens builds LOGO! 8 in mains (230 V) and low-voltage (24 V and 12 V) versions; the supply limits and the protection of the supply lines differ between them.{{F197}}"
+    blocks:
+      - numbers:
+          - value: "+20 %"
+            label: "varistor operating voltage above the rated voltage, LOGO! AC supplies{{F182}}"
+          - value: "100 m"
+            label: "max. unshielded digital input line, LOGO! 24CE and 230RCE{{F223, F234}}"
+          - value: "10 m"
+            label: "max. shielded, twisted analog input line, LOGO! 24CE and AM2{{F223, F235}}"
+          - value: "B16"
+            label: "max. protection of an output relay, LOGO! 230 V versions{{F221}}"
+      - h2: "Supply ranges"
+      - facts: [F197, F219, F222, F224, F225, F227]
+      - h2: "Protecting the supply lines"
+      - facts: [F182, F183, F198]
+      - h2: "Outputs"
+      - facts: [F189, F221, F208]
+
+  - title: "2  Functional earth"
+    lead: "Siemens describes LOGO! as double-insulated switchgear whose FE (functional earth) terminal must still be connected to earth ground.{{F181}}"
+    blocks:
+      - diagram:
+          name: plc_cabling
+          caption: "Concept sketch, not a product wiring diagram. (1) The LOGO! FE terminal is connected to earth ground{{F181}} (2) shield termination: Siemens clamps the shield of a LOGO! analog encoder wire on one side only, to the FE terminal of the expansion module{{F205}}, whereas DEHN requires shields to be earthed at least at both ends; see the chapter on where the sources disagree{{D031}} (3) DEHN: where a building has an external lightning protection system, a measuring/control cable running outside it needs a type 1 lightning current arrester{{D057}}, and a signal-line SPD should be as close as possible to the terminal device{{D060}} (4) Siemens keeps AC wiring, switched high-voltage DC circuits and low-voltage signal wiring separate{{F186}}; DEHN separates or shields unprotected cable upstream of an SPD from the protected cable downstream.{{D062}}"
+      - facts: [F180, F181, F203, F226, F210, F230]
+      - callout:
+          kind: do
+          title: "Connect FE even though the device is double-insulated"
+          text: "The LOGO! FE terminal must be connected to earth ground{{F181}}; on the AM2 analog module the same terminal takes the shield of the analog measuring cable.{{F203}}"
+      - h2: "Reference potential and ungrounded supplies"
+      - facts: [F202, F206]
+
+  - title: "3  Isolation and voltage classes"
+    lead: "Which LOGO! interfaces are galvanically isolated decides which devices may share a voltage class and a reference potential.{{F195, F194}}"
+    blocks:
+      - facts: [F195, F194, F233, F235, F207, F220]
+      - callout:
+          kind: dont
+          title: "Do not mix phases on an input group"
+          text: "Siemens states that current safety regulations do not permit connecting different phases to a LOGO! AC input group (I1 to I4 or I5 to I8) or to the inputs of a digital module.{{F199}}"
+
+  - title: "4  Cable lengths, shields and routing (LOGO! 8)"
+    blocks:
+      - table:
+          head: ["Line", "Cable", "Maximum length", "Source"]
+          widths: [0.30, 0.30, 0.18, 0.22]
+          rows:
+            - ["Digital inputs, LOGO! 24CE / 24CEo", "Unshielded", "100 m{{F223}}", "LOGO! manual"]
+            - ["Digital inputs, LOGO! 230RCE / 230RCEo", "Unshielded", "100 m{{F234}}", "LOGO! manual"]
+            - ["Analog inputs, LOGO! 24CE / 24CEo and AM2", "Shielded and twisted", "10 m{{F223, F235}}", "LOGO! manual"]
+            - ["Analog encoder wire, AM2 / AM2 RTD", "Shielded only", "10 m{{F204}}", "LOGO! manual"]
+            - ["Base module to base module", "CAT5e shielded network cable", "100 m{{F211}}", "LOGO! manual"]
+            - ["LOGO! TDE Ethernet interfaces", "Not stated in the facts", "30 m{{F228}}", "LOGO! manual"]
+          caption: "Lengths as printed in the Siemens LOGO! system manual for its own modules."
+      - h2: "General wiring rules"
+      - facts: [F185, F186, F201, F209, F196, F188]
+      - h2: "Analog shields"
+      - facts: [F204, F205]
+
+  - title: "5  Surge and interference immunity (LOGO! 8)"
+    lead: "Siemens publishes the immunity levels to which LOGO! is tested. They show how much a surge arrester adds for the low-voltage modules.{{F217}}"
+    blocks:
+      - table:
+          head: ["Test", "Level as published", "Source"]
+          widths: [0.28, 0.52, 0.20]
+          rows:
+            - ["Electrostatic discharge (IEC 61000-4-2)", "2 kV, 4 kV and 8 kV air discharge; 6 kV contact discharge{{F214}}", "LOGO! manual"]
+            - ["Fast transient burst (IEC 61000-4-4)", "Power port 2 kV; signal lines under 30 m 1 kV, over 30 m 2 kV{{F215}}", "LOGO! manual"]
+            - ["Surge (IEC 61000-4-5), LOGO! 230 and DM8/16 230R", "1 kV line-to-line, 2 kV line-to-earth{{F216}}", "LOGO! manual"]
+            - ["Surge, 12 V / 24 V modules with a surge arrester", "1 kV line-to-line, 2 kV line-to-earth{{F217}}", "LOGO! manual"]
+            - ["Surge, 12 V / 24 V modules without a surge arrester", "0.5 kV line-to-line, 1 kV line-to-earth{{F217}}", "LOGO! manual"]
+            - ["Ethernet port insulation, LOGO! CSM12/24", "1.5 kV{{F229}}", "LOGO! manual"]
+          caption: "Test levels printed by Siemens for its own products; they are not installation requirements."
+      - facts: [F218, F187, F212]
+
+  - title: "6  Instrumentation and control cable earthing"
+    lead: "Two sources in this library deal with instrument earthing: a UK InstMC article and an Indian cable manufacturer's article (RR Kabel). They describe a reference (clean) earth and screen earthing practices for analogue loops.{{I120, I113}}"
+    blocks:
+      - h2: "Clean (reference) earth: InstMC (UK)"
+      - facts: [I127, I120, I121, I126, I125, I124, I134, I133]
+      - h2: "Intrinsic-safety earth: InstMC (UK)"
+      - facts: [I122, I123]
+      - h2: "Instrument cable screens"
+      - facts: [I128, I129, I130, I131, I132, I113, I114, I115, I116]
+      - h2: "Data cables, armour and cable trays: RR Kabel"
+      - facts: [I117, I118, I110, I111, I112, I119]
+      - h2: "Shared earth paths: RR Kabel"
+      - facts: [I108, I109]
+
+  - title: "7  Measuring, control and bus lines: surge protection"
+    lead: "For a measuring/control cable that runs outside a building with an external lightning protection system, DEHN requires a type 1 lightning current arrester on that cable.{{D057}}"
+    blocks:
+      - facts: [D041, D042, D088, D060, D061, D062, D069]
+      - h2: "Shields of control and data lines (DEHN)"
+      - facts: [D031, D032, D033, D034, D035]
+      - h2: "Routing and entry of control and data lines (DEHN)"
+      - facts: [D040, D024, D089, D063, D093]
+      - h2: "RS-485 lines"
+      - facts: [E010, E013, H050, I136]
+      - callout:
+          kind: note
+          title: "Current-loop and fieldbus lines not covered"
+          text: "The sources in this library give no specific surge-protection or earthing rules for current-loop (milliampere) instrument signals or named fieldbus systems; the general DEHN rules for measuring and control lines and the references on serial bus lines are listed above."
+
+  - title: "8  Safety and installation warnings (LOGO! 8)"
+    blocks:
+      - callout:
+          kind: dont
+          title: "Never wire LOGO! with power applied"
+          text: "Siemens requires power to be switched off before wiring or installing or removing a module{{F184}}, and warns that working with power applied could cause electric shock or faulty operation.{{F193}}"
+      - facts: [F190, F191, F192, F231, F232, F200]
+
+  - title: "9  Where the sources disagree"
+    lead: "Screen earthing, the clean earth and armour bonding are the points where the sources for this sheet conflict. Where they conflict, the wiring code and the equipment manual that apply at the site decide; this table shows the conflict rather than choosing for you."
+    blocks:
+      - table:
+          head: ["Question", "One source says", "Other sources say"]
+          widths: [0.20, 0.40, 0.40]
+          rows:
+            - ["Earth a signal screen at one end or both?", "Siemens LOGO!: analog encoder shield clamped on one side only, to the module FE terminal.{{F205}} InstMC (UK): unless the manufacturer advises otherwise, instrument screens earthed at one point only.{{I129}} RR Kabel: analogue loops earthed at one end.{{I114}}", "DEHN: a shield must be earthed at least at both ends; one-end earthing gives no protection against lightning induction.{{D031, D032}} RR Kabel: for high-frequency or digital signals, both ends may improve performance.{{I115}}"]
+            - ["Why not both ends?", "InstMC (UK): earthing both ends lets plant-structure earth return current flow in the screen as a noise source.{{I132}} RR Kabel: both ends often creates a ground loop on analogue loops.{{I113}}", "DEHN: equalising currents in shields earthed at both ends can be avoided by indirect earthing of the far ends through isolating spark gaps.{{D033, D034}}"]
+            - ["Independent instrument earth?", "InstMC (UK): the IS earth, the 0 V reference earth and the power earth are to be independent of each other{{I127}}; the clean earth cable joins the general earth at one point only.{{I120}}", "DEHN: one earth-termination system must serve all earthing tasks; a separate clean earth is extremely unfavourable and can be dangerous.{{D013, D014}} InstMC itself: a separate clean earth electrode should be avoided.{{I124}}"]
+            - ["Armour of low-voltage cables", "RR Kabel: on low-voltage systems armour is typically bonded at both ends.{{I110}}", "Centurion (gate operators, sheet 07): one end of the SWA screening is to be earthed.{{E116, E127}}"]
+
+  - title: "10  Installation checklist"
+    blocks:
+      - checklist:
+          - "LOGO! FE terminal connected to earth ground.{{F181}}"
+          - "LOGO! mounted only in a housing or cabinet that opens only with a key or tool.{{F191, F192}}"
+          - "Varistor on AC supply lines at least 20 % above the rated voltage, or a protection device on DC supply lines.{{F182, F183}}"
+          - "AC wiring, switched high-voltage DC circuits and low-voltage signal wiring kept separate.{{F186}}"
+          - "Analog lines shielded, twisted and no longer than 10 m; shield on the module FE terminal.{{F201, F204, F205}}"
+          - "Unshielded digital input lines no longer than 100 m.{{F223, F234}}"
+          - "Shielded Ethernet cable with shielded RJ45 connectors; FE terminal earthed.{{F209, F210}}"
+          - "No different phases on one AC input group.{{F199}}"
+          - "LOGO! 12/24 and LOGO! 24 inputs given a common reference potential (chassis ground).{{F202}}"
+          - "Inrush current limiter on relay contacts that switch low-energy or LED lamps.{{F208}}"
+          - "Unprotected cable upstream of each SPD separated or shielded from the protected cable downstream.{{D062}}"
+          - "LOGO! AM2 analog encoder shield clamped on one side only, to the module FE terminal; for other lines see the conflict table in chapter 9.{{F205}}"
+          - "Type 1 lightning current arrester on measuring/control cables that leave a building with an external lightning protection system.{{D057}}"
+          - "Signal-line SPDs close to the terminal device, with a low-impedance bond to it, and a copper bonding conductor of at least 6 mm² (or as the SPD instructions specify).{{D060, D061, D069}}"
+          - "Power switched off before wiring or changing a LOGO! module.{{F184}}"

@@ -1,0 +1,100 @@
+id: "13"
+slug: south_africa_ekurhuleni_gauteng
+badge: "SHEET 13 · SOUTH AFRICA"
+title: "South Africa: supply earthing, Ekurhuleni rules and Gauteng lightning"
+subtitle: "How house supplies are earthed, the neutral-earth rules for inverters, what the City of Ekurhuleni and Eskom require, and how often lightning strikes the Gauteng Highveld"
+applies_to: "Houses supplied by the City of Ekurhuleni or Eskom in Gauteng, including installations with inverters, batteries and solar PV"
+accent: navy
+version: "1.0"
+contents: true
+sections:
+  - title: "1  How South African house supplies are earthed"
+    lead: "The published South African wiring code (SANS 10142-1) and the supply-earthing standard (SANS 10292) are not in this library. The statements below come from sources that describe or quote them.{{J039, J074}}"
+    blocks:
+      - facts: [J039, J040, J041, J077, J053]
+      - diagram:
+          name: earthing_systems
+          caption: "Concept sketch. (2) TN-C-S: the PEN conductor of the supply provides the household earth, as Louw and Bokoro describe for South African networks.{{J039}} (3) TT is shown for comparison only. Marker (1) is not described by a South African source in this library."
+      - callout:
+          kind: note
+          title: "No earth electrode value is required by these sources for a TN supply"
+          text: "ECA(SA), quoting the wiring code, states that in a TN supply an earth electrode is normally not required in the installation.{{J077}} Where one is installed, the bonding conductor size rule below applies.{{J076}}"
+
+  - title: "2  Neutral-earth bonding with inverters and generators"
+    lead: "ECA(SA) published a clarification that quotes the relevant clauses of SANS 10142-1.{{J071, J074}}"
+    blocks:
+      - facts: [J071, J074, J075, J072, J073, J076, J078, J079]
+      - callout:
+          kind: warn
+          title: "One neutral-earth bond at a time"
+          text: "No permanent bond between earth and neutral may exist downstream of the main switch.{{J071}} An inverter's own bond must be absent while the grid is connected and present while islanded.{{J073}}"
+
+  - title: "3  City of Ekurhuleni and Eskom requirements"
+    blocks:
+      - h2: "Electricity Supply By-Law (City of Ekurhuleni, 2023)"
+      - facts: [J058, J059, J062, J063, J064, J065, J066, J060, J061]
+      - h2: "Policy for Embedded Generation (Annexure E25, City of Ekurhuleni, 2026)"
+      - facts: [J043, J044, J045, J046, J047, J048, J049, J050, J051, J052, J054, J055, J056, J057]
+      - h2: "Eskom"
+      - facts: [J067, J068, J069, J070]
+      - callout:
+          kind: note
+          title: "Who supplies the house decides whose rules apply"
+          text: "Consumers inside the City's boundary who are supplied by Eskom apply to Eskom, not to the City, for consent to connect embedded generation.{{J047}}"
+
+  - title: "4  Surge protection in South African practice"
+    lead: "A Sparks Electrical News article (Crown Publications, 2023, enquiries to DEHN Africa) summarises how the wiring code describes SPDs.{{J085, J086}}"
+    blocks:
+      - facts: [J080, J081, J082, J083, J084, J085, J086, J087, J088]
+      - callout:
+          kind: note
+          title: "Secondary source"
+          text: "These are a trade article's statements about the wiring code, not the code itself. Check the current edition of SANS 10142-1 before relying on them.{{J085}}"
+
+  - title: "5  Lightning exposure of Gauteng and the Highveld"
+    lead: "The South African Weather Service lightning detection network (SALDN) started in 2006.{{J019}} The ground flash density values below are averages over the periods stated."
+    blocks:
+      - numbers:
+          - value: "10-15"
+            label: "flashes per km² per year, band that includes the southern parts of Gauteng (SALDN 2006-2010){{J010, J011}}"
+          - value: "15-20"
+            label: "flashes per km² per year stated for Johannesburg (no data period stated){{J032}}"
+          - value: "1.5-1.7"
+            label: "ground strike points per flash on average (Poelman et al. 2021){{J035}}"
+      - h2: "Flash density maps"
+      - facts: [J009, J010, J011, J012, J013, J014, J027, J029, J030, J031, J032, J033]
+      - callout:
+          kind: site
+          title: "No value for Ekurhuleni or Kempton Park"
+          text: "None of the sources gives a ground flash density for Ekurhuleni or Kempton Park; the maps name the southern parts of Gauteng within a band.{{J011, J029}} Do not interpolate a single value from them."
+      - h2: "Storm character"
+      - facts: [J001, J020, J021, J022, J023, J024, J025, J016, J015]
+      - h2: "Flash density versus strike points"
+      - facts: [J034, J035, J036]
+      - h2: "Network accuracy"
+      - facts: [J006, J007, J008, J026, J037, J038]
+      - h2: "Losses"
+      - facts: [J002, J017, J018, J003, J004, J005]
+
+  - title: "6  Where the sources disagree"
+    blocks:
+      - table:
+          head: ["Question", "One source", "Another source"]
+          widths: [0.24, 0.38, 0.38]
+          rows:
+            - ["Flash density, Johannesburg area", "Wits laboratory abstract: 15-20 flashes/km² per year for Johannesburg.{{J032}}", "SAWS 2006-2010 and 2006-2011 maps: southern Gauteng in the 10-15 band.{{J011, J029}} Different areas and periods."]
+            - ["Lightning deaths", "Gijben, citing earlier literature: 1.5-8.8 per million per year, about four times the global average.{{J002}}", "Gill, citing Blumenthal: 6.3 per million, more than 15 times the global average.{{J017, J018}}"]
+            - ["Number of SALDN sensors", "19 sensors (network at installation).{{J019}}", "23 by 2010 and 24 later; the network was upgraded over time.{{J026, J037}}"]
+            - ["SPD connecting lead length", "Sparks: total should not exceed 0.5 m; some manufacturers allow 1 m.{{J087}}", "BEAMA (UK) and IEC 60364-5-53 via DEHN: see Sheet 03."]
+
+  - title: "7  Checklist for a house in Ekurhuleni"
+    blocks:
+      - checklist:
+          - "Confirm who supplies the house (City or Eskom); embedded-generation applications go to that utility.{{J047, J065}}"
+          - "Record the earthing arrangement (the City's form asks for it, giving TN-C-S as the example).{{J053}}"
+          - "Check there is no permanent neutral-earth bond downstream of the main switch.{{J071}}"
+          - "Check that the inverter's neutral-earth bond is present only while islanded.{{J073}}"
+          - "Place earth leakage devices so a parallel neutral/earth path cannot cause incorrect operation.{{J078}}"
+          - "Use a change-over switch that meets the City's 4 kV impulse, 20 ms break-before-make and 4 mm contact-gap requirements.{{J055, J056, J057}}"
+          - "Keep a current certificate of compliance (a new one is required if the old one is more than two years old or the installation changed).{{J048}}"
+          - "Protect the installation against transients and overvoltages; the by-law puts this on the consumer.{{J059}}"

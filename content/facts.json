@@ -9195,5 +9195,883 @@
   "id": "I150",
   "source": "54_IDS_XSeries_Serial_Installer_Manual",
   "quote_sha256": "c591c7463376c0a3"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (South African Weather Service), S Afr J Sci 2012: the summer (October to March) rainfall region of South Africa is dominated by convective storms, a large portion of it receives more than 60 thunderstorm days a year, and areas over the Highveld and the eastern escarpment record on average between 10 and 15 lightning flashes/km2/year (no specific measurement period is given in this sentence).",
+  "quote": "The summer (October to March) rainfall region is dominated by convective storms, and a large portion of this region receives more than 60 thunderstorm days a year,5 whilst areas over the Highveld and the eastern escarpment record on average between 10 and 15 lightning flashes/km2/year.",
+  "page": 1,
+  "section": "Introduction",
+  "id": "J001",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "43f0acc9e7b156db"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012), citing earlier literature: lightning-related deaths in South Africa average between 1.5 and 8.8 per million of the population per year, said to be about four times the global average.",
+  "quote": "Lightning-related deaths in South Africa account for an average of between 1.5 and 8.8 per million of the population,4 which is said to be about four",
+  "page": 1,
+  "section": "Introduction",
+  "id": "J002",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "94ca958efb2b21ee"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012): insurance claims in South Africa as a result of lightning amount to more than R500 million per year.",
+  "quote": "Insurance claims in South Africa as a result of lightning Licensee: AOSIS amount to more than R500 million per year.",
+  "page": 1,
+  "section": "Introduction (text interleaved with the margin licence note 'Licensee: AOSIS' by extraction)",
+  "id": "J003",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "2e456f969695c325"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012): during the 2010/2011 financial year the South African Weather Service received 2103 insurance queries for lightning verification.",
+  "quote": "During the 2010/2011 financial year, 2103 insurance queries for lightning",
+  "page": 1,
+  "section": "Introduction",
+  "id": "J004",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "caad800579dd00f8"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012): these lightning insurance queries made up 72% of all commercial enquiries received by the SAWS Climate Information section.",
+  "quote": "at the SAWS. These queries made up 72% of all commercial",
+  "page": 2,
+  "section": "Introduction",
+  "id": "J005",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "62dc309b23239b7c"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012): the SAWS sensor distribution makes it possible to detect lightning flashes with a 90% predicted detection efficiency (over most of the country).",
+  "quote": "it possible to detect lightning flashes with a 90% predicted",
+  "page": 2,
+  "section": "Introduction",
+  "id": "J006",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "8b7cb60a640a751d"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012): the stated median location accuracy of the SALDN is 0.5 km (paired with 90% predicted detection efficiency).",
+  "quote": "detection efficiency and a 0.5-km median location accuracy",
+  "page": 2,
+  "section": "Introduction",
+  "id": "J007",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "c481dd78fdce1f6b"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012): it is recommended that a lightning climatology be produced over a period of at least 11 years (about one solar cycle); the 2012 climatology covers only 5 years (2006-2010).",
+  "quote": "least 11 years, which is also the approximate period of a solar",
+  "page": 2,
+  "section": "Introduction",
+  "id": "J008",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "027698d84d6a4873"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012): the ground flash density map in this paper is based on the flashes recorded by the SALDN over the 5-year period 2006-2010 (averaged to flashes per km2 per year).",
+  "quote": "recorded by the SALDN for the 5-year period 2006–2010 was",
+  "page": 4,
+  "section": "Lightning ground flash density map",
+  "id": "J009",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "046b991a3e593289"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012), 2006-2010 SALDN map: flash densities of between 10/km2 and 15/km2 per year are seen in a band that the paper describes in one sentence (this fragment holds the numeric range; the next fact holds the Gauteng part of the same sentence).",
+  "quote": "between 10/km2 and 15/km2 are seen from the western to",
+  "page": 8,
+  "section": "Results - Lightning ground flash density",
+  "id": "J010",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "e5573db74f14de70"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012), 2006-2010 SALDN map: the southern parts of Gauteng are among the areas listed in the 10/km2 to 15/km2 (average annual) ground flash density band; the paper gives no separate value for Ekurhuleni or Kempton Park.",
+  "quote": "Mpumalanga Lowveld, the southern parts of Gauteng as well as the northern and north-eastern Free State.",
+  "page": 8,
+  "section": "Results - Lightning ground flash density",
+  "id": "J011",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "78c35a309ec92aef"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012), 2006-2010 SALDN map: most of the central interior of South Africa receives between 5 and 10 flashes/km2 per year, decreasing towards the west.",
+  "quote": "5 and 10 flashes/km2, from where it decreases towards the",
+  "page": 8,
+  "section": "Results - Lightning ground flash density",
+  "id": "J012",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "52e934c0799ce0f6"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012): areas over Gauteng receive fewer flashes on the older CSIR (1990s flash-counter) map than on the 2006-2010 SALDN map, i.e. the older map under-represents Gauteng.",
+  "quote": "Areas over Gauteng receive fewer flashes on",
+  "page": 8,
+  "section": "Results - Lightning ground flash density",
+  "id": "J013",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "78775a45bcc67bed"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012): the highest concentrations of lightning are found over the central to northern interior of South Africa.",
+  "quote": "of lightning are found over the central to northern interior",
+  "page": 9,
+  "section": "Conclusions",
+  "id": "J014",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "59b905174b22dcdd"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012): almost the entire country is at severe risk from both positive-polarity lightning and lightning in general (2006-2010 risk maps).",
+  "quote": "severe risk from both lightning with positive polarity as well",
+  "page": 9,
+  "section": "Conclusions",
+  "id": "J015",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "8c2ecb8eece8fbf8"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (S Afr J Sci 2012): positive-polarity lightning typically results in more severe damage (it discharges more energy and its channel stays conductive longer).",
+  "quote": "lightning typically results in more severe damage.1 This type",
+  "page": 9,
+  "section": "Positive lightning risk",
+  "id": "J016",
+  "source": "60_SAJS_Gijben_2012_Lightning_Climatology_South_Africa",
+  "quote_sha256": "2dbabb10520601d9"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gill (South African Weather Service), climatology for 2006-2007: citing Blumenthal (2005), the average number of lightning-related deaths in South Africa is 6.3 per million of the population.",
+  "quote": "related deaths is 6.3 per million of the population",
+  "page": 1,
+  "section": "1. Introduction",
+  "id": "J017",
+  "source": "61_Vaisala_Gill_Lightning_Climatology_SA_First_Two_Years",
+  "quote_sha256": "aa22d7062b93996a"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gill (SAWS, 2006-2007 climatology): this South African lightning death rate is more than 15 times the global average (given as about 0.4 deaths per million).",
+  "quote": "thus more than 15 times the global average.",
+  "page": 1,
+  "section": "1. Introduction",
+  "id": "J018",
+  "source": "61_Vaisala_Gill_Lightning_Climatology_SA_First_Two_Years",
+  "quote_sha256": "f22c61cdeb3f916f"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gill (SAWS): the SAWS lightning detection network consisted of 19 Vaisala LS7000 sensors located across the country, with installation complete by the beginning of 2006.",
+  "quote": "19 VAISALA LS7000 sensors located across the",
+  "page": 1,
+  "section": "1. Introduction",
+  "id": "J019",
+  "source": "61_Vaisala_Gill_Lightning_Climatology_SA_First_Two_Years",
+  "quote_sha256": "bae158f3522fd576"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gill (SAWS, data 2006-2007): flash densities exceed 5 flashes per square kilometre (per year) over most of the central and eastern plateau, decreasing towards the west as elevation decreases.",
+  "quote": "exceed 5 flashes per square kilometer over most of",
+  "page": 3,
+  "section": "3.1 Ground Flash Density",
+  "id": "J020",
+  "source": "61_Vaisala_Gill_Lightning_Climatology_SA_First_Two_Years",
+  "quote_sha256": "6a8c560885c340bb"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gill (SAWS, data 2006-2007): heat-generated isolated or scattered thunderstorm activity is common over the interior plateau, especially in the late afternoon.",
+  "quote": "especially in the late afternoon. The lightning flash",
+  "page": 3,
+  "section": "3.1 Ground Flash Density",
+  "id": "J021",
+  "source": "61_Vaisala_Gill_Lightning_Climatology_SA_First_Two_Years",
+  "quote_sha256": "507fd3c2e9c019d2"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gill (SAWS): of the flashes recorded in 2006-2007, only 9.7% were of positive polarity.",
+  "quote": "9.7% of these were of a positive polarity. The",
+  "page": 4,
+  "section": "3.1 Ground Flash Density",
+  "id": "J022",
+  "source": "61_Vaisala_Gill_Lightning_Climatology_SA_First_Two_Years",
+  "quote_sha256": "efffa3aa0b753b7f"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gill (SAWS), citing Preston-Whyte and Tyson (1988): scattered thunderstorms occur on about 54% of storm days over the Highveld (the high-lying interior).",
+  "quote": "occur on about 54% of storm days over the high",
+  "page": 4,
+  "section": "3.1 Ground Flash Density",
+  "id": "J023",
+  "source": "61_Vaisala_Gill_Lightning_Climatology_SA_First_Two_Years",
+  "quote_sha256": "0c6f95489fa9be7b"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gill (SAWS), citing Preston-Whyte and Tyson (1988): isolated thunderstorms occur on a further 39% of storm days over the Highveld.",
+  "quote": "that isolated thunderstorms occur on a further 39%",
+  "page": 4,
+  "section": "3.1 Ground Flash Density",
+  "id": "J024",
+  "source": "61_Vaisala_Gill_Lightning_Climatology_SA_First_Two_Years",
+  "quote_sha256": "a37734fe56dfee67"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gill (SAWS): more than 90% of all thunderstorm activity over the Highveld is of the scattered/isolated type dominated by negative cloud-to-ground discharges (the quote holds the 90% figure; the sentence continues over the next lines).",
+  "quote": "of storm days. More than 90% of all thunderstorm",
+  "page": 4,
+  "section": "3.1 Ground Flash Density",
+  "id": "J025",
+  "source": "61_Vaisala_Gill_Lightning_Climatology_SA_First_Two_Years",
+  "quote_sha256": "260bb109e0166f9a"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (SAWS extended abstract): the 19-sensor SAWS lightning detection network installed in 2005 was upgraded to a 23-sensor network in 2010.",
+  "quote": "This network was upgraded to a 23 sensor network in",
+  "page": 1,
+  "section": "1. Introduction",
+  "id": "J026",
+  "source": "66_Vaisala_Gijben_Lightning_Climatology_SA_Risk_Maps",
+  "quote_sha256": "db89b8337b27caff"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (SAWS extended abstract): the ground flash density map counts flashes over the 6-year period 2006-2011 per 0.1 deg grid box, divided by area and by six to give average annual flashes per km2.",
+  "quote": "over the 6-year period 2006–2011 for each individual",
+  "page": 2,
+  "section": "2. Data and methods",
+  "id": "J027",
+  "source": "66_Vaisala_Gijben_Lightning_Climatology_SA_Risk_Maps",
+  "quote_sha256": "136ac6efa1f47843"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (SAWS extended abstract, 2006-2011 map): flash densities of between 10 and 15 flashes per km2 (per year) are seen from the western to north-western parts of KwaZulu-Natal (the same sentence goes on to list the southern parts of Gauteng; see next fact).",
+  "quote": "10 and 15 flashes per square kilometer are seen from the western to north-western parts of Kwazulu-Natal",
+  "page": 3,
+  "section": "3.1 Lightning ground flash density",
+  "id": "J028",
+  "source": "66_Vaisala_Gijben_Lightning_Climatology_SA_Risk_Maps",
+  "quote_sha256": "5c0d72929892f5ff"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (SAWS extended abstract, 2006-2011 map): the southern parts of Gauteng are listed in the 10-15 flashes per km2 per year band; no value is given for Ekurhuleni or Kempton Park specifically.",
+  "quote": "the southern parts of Gauteng and the northern and",
+  "page": 3,
+  "section": "3.1 Lightning ground flash density",
+  "id": "J029",
+  "source": "66_Vaisala_Gijben_Lightning_Climatology_SA_Risk_Maps",
+  "quote_sha256": "801414c127c84bdf"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (SAWS extended abstract, 2006-2011 map): the central interior of the country receives between 5 and 10 flashes per km2 (per year).",
+  "quote": "the country receives between 5 and 10 flashes per",
+  "page": 3,
+  "section": "3.1 Lightning ground flash density",
+  "id": "J030",
+  "source": "66_Vaisala_Gijben_Lightning_Climatology_SA_Risk_Maps",
+  "quote_sha256": "0589de3abf216482"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Gijben (SAWS extended abstract, 2006-2011): on the total lightning risk map the central to northern interior of South Africa is at extreme risk from lightning.",
+  "quote": "country is at extreme risk from lightning. The highest",
+  "page": 3,
+  "section": "3.1 Total lightning risk",
+  "id": "J031",
+  "source": "66_Vaisala_Gijben_Lightning_Climatology_SA_Risk_Maps",
+  "quote_sha256": "482ee276db872dc8"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Hunt, Schumann (Wits), Saba (INPE) and Warner (ZT Research), Johannesburg Lightning Laboratory abstract (Vaisala-hosted, circa 2020): Johannesburg has a lightning flash density between 15 and 20 flashes/km2/year; the abstract states no data period or source map for this range.",
+  "page": 1,
+  "section": "Abstract",
+  "id": "J032",
+  "source": "67_Vaisala_Hunt_Johannesburg_Lightning_Laboratory_Abstract",
+  "quote_sha256": "d435ad82855b5bef"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "JLL abstract (Wits): the Johannesburg Lightning Laboratory project started measuring in the summer thunderstorm season of 2019-2020.",
+  "page": 2,
+  "section": "Abstract",
+  "id": "J033",
+  "source": "67_Vaisala_Hunt_Johannesburg_Lightning_Laboratory_Abstract",
+  "quote_sha256": "6d853428cbab9a6d"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Poelman et al. (NHESS 2021): it is known that lightning flashes tend to have more than one ground termination point on average (the abstract concludes that ground strike point densities are more appropriate than flash densities for risk assessment).",
+  "quote": "that flashes tend to have more than one ground termination",
+  "page": 1,
+  "section": "Abstract",
+  "id": "J034",
+  "source": "68_NHESS_Poelman_2021_Ground_Strike_Points_Part2",
+  "quote_sha256": "2b9a50e4e0f3963b"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Poelman et al. (NHESS 2021): roughly half of downward negative CG multiple-stroke flashes show more than one ground strike point, averaging around 1.5 to 1.7 ground strike points per flash.",
+  "quote": "erage value varying from around 1.5 to 1.7 GSPs per flash",
+  "page": 2,
+  "section": "1 Introduction",
+  "id": "J035",
+  "source": "68_NHESS_Poelman_2021_Ground_Strike_Points_Part2",
+  "quote_sha256": "270afd8532085b78"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Poelman et al. (NHESS 2021): using the flash density NG in lightning-protection risk calculations underestimates the hazard, so NG should be replaced by the lightning strike point density.",
+  "quote": "of the hazard. It is for this reason that NG should be replaced by the lightning strike point density.",
+  "page": 2,
+  "section": "1 Introduction",
+  "id": "J036",
+  "source": "68_NHESS_Poelman_2021_Ground_Strike_Points_Part2",
+  "quote_sha256": "993eab86319b0332"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Poelman et al. (NHESS 2021): the SALDN, installed by SAWS in 2006 with 19 Vaisala LS7000 sensors, has since been upgraded to 24 sensors.",
+  "quote": "network has since been upgraded to 24 sensors with an aver-",
+  "page": 3,
+  "section": "2.4 SALDN",
+  "id": "J037",
+  "source": "68_NHESS_Poelman_2021_Ground_Strike_Points_Part2",
+  "quote_sha256": "532272f02e3c00a7"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Poelman et al. (NHESS 2021): SALDN self-evaluation estimates flash detection efficiencies above 90% and location accuracies within 500 m for the whole country, dropping only at the borders.",
+  "quote": "ciencies of above 90 % and location accuracies within 500 m",
+  "page": 3,
+  "section": "2.4 SALDN",
+  "id": "J038",
+  "source": "68_NHESS_Poelman_2021_Ground_Strike_Points_Part2",
+  "quote_sha256": "abc062c0f430c301"
+ },
+ {
+  "topic": "FUND",
+  "claim": "Louw and Bokoro (SAIEE Africa Research Journal, Dec 2019): LV earthing in South African networks follows IEC 60364 and SANS 10292, using TN-C and TN-C-S configurations; the PEN conductor provides the household earth and lets earth-fault (zero-sequence) current return to the distribution transformer star point, avoiding dependence on soil resistivity for the fault current needed to operate protection.",
+  "quote": "LV earthing in these networks is adopted by the IEC 60364 and SANS 10292 where the TN-C and TN-C-S configurations are used [25], [26]. This method of earthing allows for a PEN conductor (protective earth and neutral) to be used to ensure that the appropriate earthing is achieved in the household",
+  "page": 4,
+  "section": "II.B LV earthing arrangement",
+  "id": "J039",
+  "source": "64_SAIEE_ARJ_2019_v110n4_03",
+  "quote_sha256": "57bac186a3060752"
+ },
+ {
+  "topic": "FUND",
+  "claim": "Louw and Bokoro (SAIEE ARJ 2019): the TN-C-S arrangement is used so that earth-fault current does not depend on soil resistivity for the fault impedance and fault current required to operate protection.",
+  "quote": "This is done to avoid the impact of the soil resistivity on the associated fault impedance and fault currents required for invoking protection operation.",
+  "page": 4,
+  "section": "II.B LV earthing arrangement",
+  "id": "J040",
+  "source": "64_SAIEE_ARJ_2019_v110n4_03",
+  "quote_sha256": "03e87a99e84241bd"
+ },
+ {
+  "topic": "FUND",
+  "claim": "Louw and Bokoro (SAIEE ARJ 2019): at the supply point the neutral terminal and earth conductor are bonded together and the earth conductor is taken into the soil via an earthing arrangement, typically of less than 10 ohm.",
+  "quote": "The neutral ter- minal (n) and earth conductor are electrically bonded together at the supply point.",
+  "page": 5,
+  "section": "II.D Measurement of zero-sequence current",
+  "id": "J041",
+  "source": "64_SAIEE_ARJ_2019_v110n4_03",
+  "quote_sha256": "6f8ff70414ab7aec"
+ },
+ {
+  "topic": "FUND",
+  "claim": "Louw and Bokoro (SAIEE ARJ 2019): the supply-point earthing arrangement is designed to yield the least resistance possible, typically less than 10 ohm.",
+  "quote": "yield the least resistance possible − typically less than 10 Ω.",
+  "page": 5,
+  "section": "II.D Measurement of zero-sequence current",
+  "id": "J042",
+  "source": "64_SAIEE_ARJ_2019_v110n4_03",
+  "quote_sha256": "6964e731d3c2a4cf"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni Policy for Embedded Generation (Annexure E25, council 23/06/2026): the Electricity Supply By-Law states that no generation equipment may be connected to the municipal grid without the express consent of the HOD: Energy; failure is an offence which could lead to a fine and/or disconnection.",
+  "quote": "The CoE Electricity Supply By-Law states that no generation equipment may be connected to the municipal electrical grid without the express consent of the HOD: Energy.",
+  "page": 13,
+  "section": "2.1 Legal connection of EG",
+  "id": "J043",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "25082465e87c3924"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni EG policy (2026): a copy of the Certificate of Compliance (for LV installations) and supporting test reports must be provided to the municipality upon commissioning and testing.",
+  "quote": "A copy of the Certificate of Compliance (CoC) {for Low Voltage installations} and or a Safety Report {for Medium Voltage Installations} and supporting test reports must be provided to the municipality upon commissioning and testing of the installation.",
+  "page": 15,
+  "section": "3.1 Registered professional sign off",
+  "id": "J044",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "55bee8d2fdca3b04"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni EG policy (2026): all SSEG designs and projects above 18 kVA must be signed off on commissioning by a registered professional (Pr Eng, Pr Cert Eng, Pr Tech Eng or Pr Techni Eng).",
+  "quote": "all SSEG designs and projects above 18kVA must be signed off on commissioning by a registered professional engineer",
+  "page": 15,
+  "section": "3.1 Registered professional sign off",
+  "id": "J045",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "02926124b42ceaa2"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni EG policy (2026): inverters must carry third-party type-test certificates of compliance with NRS 097-2-1; inverters without such certification are not permitted in new or existing installations.",
+  "quote": "The use of inverters without such certification is not permitted, both in new and existing installations.",
+  "page": 15,
+  "section": "3.2 Testing of inverters",
+  "id": "J046",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "9341444e94563f79"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni EG policy (2026): consumers inside the municipal boundary but supplied by Eskom must apply to Eskom for consent to connect EG; the City is not involved.",
+  "quote": "Consumers residing within the municipal boundaries, but connected to the Eskom distribution grid, need to apply to Eskom for consent to connect EG to the Eskom electrical grid.",
+  "page": 16,
+  "section": "3.5 Eskom grid connection",
+  "id": "J047",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "db89d285d1b919ed"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni EG policy (2026): a new CoC is required if the current one is more than two years old or if the installation was changed within the two-year period.",
+  "quote": "A new CoC is required if the current one is more than two years old, or if any changes have been made to the electrical installation within the two-year period.",
+  "page": 16,
+  "section": "3.8 Transfer/change of ownership",
+  "id": "J048",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "f59a38b99ea1a143"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni EG policy (2026): grid-tied inverters must have an anti-islanding function (immediate disconnection during a general power outage) as stipulated in NRS 097-2-1.",
+  "quote": "Grid-tied inverters are required to have an anti-islanding function (immediate disconnection when there is a general power outage), as stipulated in the NRS 097-2-1.",
+  "page": 16,
+  "section": "3.9 Islanding / anti-islanding installations",
+  "id": "J049",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "ef63f42e2a3e0df4"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni EG policy (2026): an EG installation that operates in islanded mode must be effectively isolated from the municipal grid during that operation, as required of any standby generator, and the SANS 10142-1 alternative-supplies requirements apply.",
+  "quote": "it shall be effectively isolated from the municipal electrical grid during operation, (as is legally required of any standby generator).",
+  "page": 16,
+  "section": "3.9 Islanding / anti-islanding installations",
+  "id": "J050",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "6ace63e79bdd58c1"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni EG policy (2026): the NRS 097-2 series and the Renewable Power Plant Grid Code cover, among other aspects, isolation, earthing, short-circuit protection and labelling of EG systems (the policy itself does not restate the earthing rules).",
+  "quote": "network faults; response to utility recovery; isolation; earthing; short-circuit protection; labelling.",
+  "page": 17,
+  "section": "3.12 Applicable technical standards",
+  "id": "J051",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "ed0e73e8502c96a7"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni EG policy (2026): EG installations must also comply with SANS 10142 Parts 1 and 2 (wiring of premises) and the City of Ekurhuleni Electricity Supply By-law, among others.",
+  "quote": "SANS 10142- Parts 1 and 2: The wiring of premises (as amended and published)",
+  "page": 18,
+  "section": "3.12 Applicable technical standards",
+  "id": "J052",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "3430ac86a63dc680"
+ },
+ {
+  "topic": "FUND",
+  "claim": "City of Ekurhuleni EG application form (2026): the applicant must state the earthing arrangement, with TN-C-S given as the example.",
+  "quote": "off-grid). Earthing arrangements i.e. TN-C-S:",
+  "page": 40,
+  "section": "Appendix 5, Section D2",
+  "id": "J053",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "05451795c457b9b7"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni EG policy (2026), change-over switch for hybrid EG / passive standby UPS: the switch must feed back its position to the inverter/charger so that inverter mode is impossible if the contacts fail (e.g. fused closed).",
+  "quote": "The switch shall provide feedback of its position to the inverter/charger so that if the contacts fail to operate or malfunction [e.g. fused-closed contacts, inadvertent energising of the change-over switch coil, etc.], use of the inverter mode will be impossible.",
+  "page": 36,
+  "section": "Appendix 3, item 2",
+  "id": "J054",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "751fbdc549a4142f"
+ },
+ {
+  "topic": "SPD",
+  "claim": "City of Ekurhuleni EG policy (2026): the change-over switch must have a rated lightning impulse withstand voltage (BIL) of 4 kV at 1,2/50 us per SANS/IEC 60947-1.",
+  "quote": "The switch shall have a rated lightning impulse withstand voltage (BIL) of 4 kV at 1,2/50 μs in accordance with SANS / IEC 60947-1 (Tables H.1 and 12).",
+  "page": 36,
+  "section": "Appendix 3, item 5",
+  "id": "J055",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "f0e0215825d924df"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni EG policy (2026): the change-over transfer must be break-before-make (open transition) with a transfer time of at least 20 ms.",
+  "quote": "Characteristics of the transfer shall be break-before-make (open transition) – no transient cross-conduction during transfer. The transfer time of the switch shall be ≥ 20 ms.",
+  "page": 36,
+  "section": "Appendix 3, item 6",
+  "id": "J056",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "50ef2df526cb81f6"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni EG policy (2026): the change-over switch contact gap must exceed 4 mm (SANS 60950-1, fixed installation, overvoltage category 2).",
+  "quote": "The contactor gap of the switch shall exceed 4 mm in accordance with SANS 60950-1, S 2.10.3.3 and Table 2K for a fixed installation with overvoltage category 2.",
+  "page": 36,
+  "section": "Appendix 3, item 7",
+  "id": "J057",
+  "source": "62_Ekurhuleni_Annexure_E25_Guideline_Embedded_Generation",
+  "quote_sha256": "f9eb0785bfd61934"
+ },
+ {
+  "topic": "FUND",
+  "claim": "City of Ekurhuleni Electricity Supply By-Law (revision of 11 August 2022, approved 28/09/2023): the point of supply is the point determined by the City at which electricity is supplied to the premises.",
+  "quote": "“point of supply” means the point determined by the City at which electricity (electrical energy) is supplied to any premises by the City;",
+  "page": 10,
+  "section": "Definitions",
+  "id": "J058",
+  "source": "65_Ekurhuleni_Electricity_Supply_By-Law_2023",
+  "quote_sha256": "307e8fccff383ba0"
+ },
+ {
+  "topic": "SPD",
+  "claim": "City of Ekurhuleni Electricity Supply By-Law (2023): the consumer's protection duty explicitly covers voltage swells and transients, undervoltages and overvoltages in the supply to the installation.",
+  "quote": "unbalance, voltage swells and transients, undervoltages and overvoltages in the supply to his electrical installation.",
+  "page": 12,
+  "section": "Clause 4(4)",
+  "id": "J059",
+  "source": "65_Ekurhuleni_Electricity_Supply_By-Law_2023",
+  "quote_sha256": "2fb3379a2ecc4a19"
+ },
+ {
+  "topic": "FUND",
+  "claim": "City of Ekurhuleni Electricity Supply By-Law (2023): no rebate is given for metered electricity wasted owing to leakage or any other fault in the consumer's installation.",
+  "quote": "Under no circumstances shall any rebate be given on the account for electricity (electrical energy) supplied and metered in respect of electricity (electrical energy) wasted owing to leakage or any other fault in the electrical installation.",
+  "page": 28,
+  "section": "Clause 23 Leakage of electricity",
+  "id": "J060",
+  "source": "65_Ekurhuleni_Electricity_Supply_By-Law_2023",
+  "quote_sha256": "77ea7aaf4784a66f"
+ },
+ {
+  "topic": "FUND",
+  "claim": "City of Ekurhuleni Electricity Supply By-Law (2023): the City does not attend to failures in the consumer's installation except when caused by operation of a City service protective device.",
+  "quote": "The City does not undertake to attend to a failure of the supply of electricity (electrical energy) in the electrical installation of the consumer, except when such failure is due to the operation of a service protective device of the City.",
+  "page": 28,
+  "section": "Clause 24 Failure of supply",
+  "id": "J061",
+  "source": "65_Ekurhuleni_Electricity_Supply_By-Law_2023",
+  "quote_sha256": "29a9a1c1e69e43ad"
+ },
+ {
+  "topic": "SPD",
+  "claim": "City of Ekurhuleni Electricity Supply By-Law (2023): the consumer must provide an approved cabinet for the meter board and space for the City's metering equipment, service apparatus, circuit breakers, surge arrestors and other protective devices.",
+  "quote": "service apparatus, circuit breakers, surge arrestors and other protective devices, and load management relays.",
+  "page": 35,
+  "section": "Clause 35(2)",
+  "id": "J062",
+  "source": "65_Ekurhuleni_Electricity_Supply_By-Law_2023",
+  "quote_sha256": "6b657276ece42832"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "City of Ekurhuleni Electricity Supply By-Law (2023): LV installation work must be signed off by a suitably qualified person, the certificate of compliance submitted to the City at least 3 business days before energizing, and the work must comply with SANS 10142-1.",
+  "quote": "the certificate of compliance must be submitted to the City for written approval no less than 3 (three) business days prior to energizing the installation, alteration or extension.",
+  "page": 35,
+  "section": "Clause 35(4)",
+  "id": "J063",
+  "source": "65_Ekurhuleni_Electricity_Supply_By-Law_2023",
+  "quote_sha256": "bb60ab9bb916fbe9"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni Electricity Supply By-Law (2023): a consumer energy source run in parallel with the City network must have the safety isolation equipment required by the City to prevent back feed after the City supply has been isolated.",
+  "quote": "the consumer must ensure that the necessary safety isolation equipment, as required by the City, is installed, to prevent any back feed of electricity (electrical energy) after the electricity (electrical energy) supply of the City has been isolated.",
+  "page": 38,
+  "section": "Clause 39(1)",
+  "id": "J064",
+  "source": "65_Ekurhuleni_Electricity_Supply_By-Law_2023",
+  "quote_sha256": "9b7d2a23a0cd792b"
+ },
+ {
+  "topic": "SITE",
+  "claim": "City of Ekurhuleni Electricity Supply By-Law (2023): no embedded generator may be connected to the City's grid without written consent of the Head of Department: Energy.",
+  "quote": "No embedded generator may be connected to the City’s electrical grid without the written consent of the Head of Department: Energy.",
+  "page": 39,
+  "section": "Clause 40(1)",
+  "id": "J065",
+  "source": "65_Ekurhuleni_Electricity_Supply_By-Law_2023",
+  "quote_sha256": "ea3c81b313081cd9"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "City of Ekurhuleni Electricity Supply By-Law (2023): if a fault in the installation is a hazard to persons, livestock or property, the consumer must immediately disconnect the supply.",
+  "quote": "If any fault develops in the electrical installation, which constitutes a hazard to persons, livestock or property, the consumer shall immediately disconnect the",
+  "page": 39,
+  "section": "Clause 43(1)",
+  "id": "J066",
+  "source": "65_Ekurhuleni_Electricity_Supply_By-Law_2023",
+  "quote_sha256": "3e58fac4d2f29e3c"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Eskom Distribution EGI compliance report 240-153339608 Rev 1: applies to all low-voltage SSEG installations below 1 MVA total capacity operating in parallel with the Eskom network.",
+  "quote": "All Low voltage SSEG Installations <1 MVA total capacity.",
+  "page": 1,
+  "section": "Scope",
+  "id": "J067",
+  "source": "63_Eskom_240-153339608_Embedded_Generator_Installation_Report",
+  "quote_sha256": "ab68212df5016c65"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "Eskom EGI report 240-153339608 Rev 1: a valid Certificate of Compliance must be issued for every SSEG installation by a Registered Person as defined in the Electrical Installation Regulations.",
+  "quote": "A valid Certificate of Compliance (CoC) must be issued for every SSEG installation by a Registered Person as defined in the EIR.",
+  "page": 2,
+  "section": "Note 2",
+  "id": "J068",
+  "source": "63_Eskom_240-153339608_Embedded_Generator_Installation_Report",
+  "quote_sha256": "b771549ef4f1f112"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "Eskom EGI report 240-153339608 Rev 1: for installations up to 1 kV a.c. / 1.5 kV d.c. the sign-off must be by a Department of Labour registered Installation Electrician or Master Electrician.",
+  "quote": "must be a department of labour registered Installation Electrician or Master Electrician",
+  "page": 2,
+  "section": "Note 3",
+  "id": "J069",
+  "source": "63_Eskom_240-153339608_Embedded_Generator_Installation_Report",
+  "quote_sha256": "606fff0844172cae"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Eskom EGI report 240-153339608 Rev 1, Part C checklist for non-inverter generators: anti-islanding protection must be verified to operate in under 2 seconds and the reconnection delay set and verified at 60 seconds or more (quote is the checklist text including its Y/N/N/A tick columns).",
+  "quote": "confirm correct operation. (<2 seconds) Y N A N/ Comment: Reconnection Delay set and verified (≥ 60 seconds)",
+  "page": 6,
+  "section": "Part C (checklist rows)",
+  "id": "J070",
+  "source": "63_Eskom_240-153339608_Embedded_Generator_Installation_Report",
+  "quote_sha256": "5e214a1f02a8c4be"
+ },
+ {
+  "topic": "FUND",
+  "claim": "ECA(SA) National Technical Committee (18 Jan 2024): there shall not be a permanently connected bond between earth and neutral downstream of the main switch (point of control).",
+  "quote": "There shall not be a permanently connected bond between the earth and the neutral downstream of the main switch (point of control).",
+  "page": 2,
+  "section": "Pointers from ECA's National Technical Committee",
+  "id": "J071",
+  "source": "69_ECASA_Neutral_Earth_Bonding_Clarified",
+  "quote_sha256": "6826c7eec85f6b2a"
+ },
+ {
+  "topic": "SITE",
+  "claim": "ECA(SA) (2024): there shall be an arrangement (device, switch, contact, relay or changeover switch) to bond neutral to earth while fed from an alternate supply, and this bond must be removed when the mains supply is connected.",
+  "quote": "There shall be an arrangement (device/ switch/ contact/ relay/ changeover switch etc.) to bond Neutral to Earth while fed from an alternate supply.",
+  "page": 2,
+  "section": "Pointers from ECA's National Technical Committee",
+  "id": "J072",
+  "source": "69_ECASA_Neutral_Earth_Bonding_Clarified",
+  "quote_sha256": "3154b371fda18869"
+ },
+ {
+  "topic": "SITE",
+  "claim": "ECA(SA) (2024): for inverters, when the grid is connected the installation relies on the supply authority's neutral-earth bond and the device's own bond must not be present; during islanding the device's bond must be present.",
+  "quote": "Specific to the installation of inverters when the grid is connected you rely on the supply authority neutral- earth bond during this parallel operation and your bond on your device must not be present, during islanding condition the bond on your device must be present.",
+  "page": 2,
+  "section": "Pointers from ECA's National Technical Committee",
+  "id": "J073",
+  "source": "69_ECASA_Neutral_Earth_Bonding_Clarified",
+  "quote_sha256": "227f1aecad0db811"
+ },
+ {
+  "topic": "FUND",
+  "claim": "ECA(SA) (2024) quoting SANS 10142-1 clause 6.1.6: the neutral conductor shall not be connected direct to earth or to the earth continuity conductor (the clause continues on the next printed page: on the load side of the point of control, except as allowed in 7.16.4).",
+  "quote": "The neutral conductor shall not be connected direct to earth or to the earth continuity",
+  "page": 2,
+  "section": "Citation a (SANS 10142-1 6.1.6)",
+  "id": "J074",
+  "source": "69_ECASA_Neutral_Earth_Bonding_Clarified",
+  "quote_sha256": "32ba152d322d3fcb"
+ },
+ {
+  "topic": "FUND",
+  "claim": "ECA(SA) (2024) quoting SANS 10142-1 clause 6.12.4: with combined sources, the single neutral bar is the only point at which the installation neutral is connected to the consumer's earth terminal (except 7.12.3.1.3 or 7.16.4).",
+  "quote": "This neutral bar shall be the only point at which the neutral of the installation is connected to the consumer’s earth terminal except as in the case in 7.12.3.1.3 or 7.16.4.",
+  "page": 3,
+  "section": "Citation b (SANS 10142-1 6.12.4)",
+  "id": "J075",
+  "source": "69_ECASA_Neutral_Earth_Bonding_Clarified",
+  "quote_sha256": "61fb8ef2794a8fbf"
+ },
+ {
+  "topic": "FUND",
+  "claim": "ECA(SA) (2024) quoting SANS 10142-1 7.12.3.1.1: where no earth electrode exists, one may be installed per SANS 10199 and bonded to the consumer's earth terminal and the alternate-supply earthing point with a conductor of at least half the phase-conductor cross-section but not less than 6 mm2 copper.",
+  "quote": "When installed, the electrode shall be bonded to the consumer’s earth terminal and to the earthing point on the alternate supply by a conductor of at least half the cross-section of that of the phase conductor, but not less than 6 mm2 copper, or equivalent.",
+  "page": 3,
+  "section": "Citation c (SANS 10142-1 7.12.3.1.1)",
+  "id": "J076",
+  "source": "69_ECASA_Neutral_Earth_Bonding_Clarified",
+  "quote_sha256": "1a41905cf8c248c5"
+ },
+ {
+  "topic": "FUND",
+  "claim": "ECA(SA) (2024) quoting SANS 10142-1 7.12.3.1.1 Note 1: in a TN system earthing of the electricity supply, an earth electrode is normally not required in an electrical installation.",
+  "quote": "NOTE 1 In a TN system earthing of electricity supply, an earth electrode is normally not required in an electrical installation.",
+  "page": 4,
+  "section": "Citation c (SANS 10142-1 7.12.3.1.1 Note 1)",
+  "id": "J077",
+  "source": "69_ECASA_Neutral_Earth_Bonding_Clarified",
+  "quote_sha256": "7f3bf10b99ab1e0c"
+ },
+ {
+  "topic": "FUND",
+  "claim": "ECA(SA) (2024) quoting SANS 10142-1 7.12.3.1.2: any earth leakage device shall be positioned so as to avoid incorrect operation due to a parallel neutral/earth path.",
+  "quote": "Any earth leakage device shall be positioned in such a way as to avoid incorrect operation due to the existence of any parallel neutral/earth path.",
+  "page": 4,
+  "section": "Citation c (SANS 10142-1 7.12.3.1.2)",
+  "id": "J078",
+  "source": "69_ECASA_Neutral_Earth_Bonding_Clarified",
+  "quote_sha256": "d5285fe445749839"
+ },
+ {
+  "topic": "SITE",
+  "claim": "ECA(SA) (2024) quoting SANS 10142-1 7.12.6.1 Note 1: suitable precautions against unintended parallel operation of an alternate supply include interlocks, a break-before-make changeover switch, or an inverter if it complies with IEC 62116.",
+  "quote": "f) an inverter (if it complies with IEC 62116).",
+  "page": 5,
+  "section": "Citation d (SANS 10142-1 7.12.6.1 Note 1)",
+  "id": "J079",
+  "source": "69_ECASA_Neutral_Earth_Bonding_Clarified",
+  "quote_sha256": "6c47aa0929abc3cf"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Sparks Electrical News (Crown Publications, 1 March 2023, DEHN Africa): surge current is an induced, secondary effect of a nearby lightning strike up to 2 km away from a structure.",
+  "quote": "Surge current is an induced, secondary effect from a nearby lightning strike up to 2km away from a structure.",
+  "page": 2,
+  "section": "Article body",
+  "id": "J080",
+  "source": "70_Crown_Sparks_Surge_Protection_SANS_10142-1",
+  "quote_sha256": "db8bb39d50b8a0bc"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Sparks Electrical News (2023): impulse (direct lightning) current is described by the 10/350 us test waveshape and surge current by the 8/20 us waveshape.",
+  "quote": "Impulse current is described with a test waveshape known as 10/350µs and surge current with a test waveshape known as 8/20µs.",
+  "page": 2,
+  "section": "Article body",
+  "id": "J081",
+  "source": "70_Crown_Sparks_Surge_Protection_SANS_10142-1",
+  "quote_sha256": "968f9d8dc6790e53"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Sparks Electrical News (2023): the likelihood of direct strikes and induced surges for a structure is determined by a lightning risk analysis per SANS 62305-2; the latest wiring code uses a simplified method.",
+  "quote": "a calculation known as a Lightning Risk Analysis is conducted as per the probability calculation methods from SANS 62305-2. The latest wiring code uses a simplified method of this calculation for practical purposes.",
+  "page": 2,
+  "section": "Article body",
+  "id": "J082",
+  "source": "70_Crown_Sparks_Surge_Protection_SANS_10142-1",
+  "quote_sha256": "de47d97ddb35e90a"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "Sparks Electrical News (2023): an external lightning protection system must be connected to the electrical system's main earth bar with at least 16 mm2 copper.",
+  "quote": "These external lightning protection systems must then be connected to the electrical system’s main earth bar with at least 16mm² copper cable from the lightning protection earth",
+  "page": 2,
+  "section": "Article body",
+  "id": "J083",
+  "source": "70_Crown_Sparks_Surge_Protection_SANS_10142-1",
+  "quote_sha256": "5bc0e0f6792d51fc"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Sparks Electrical News (2023): a Type 1+2 SPD is required if the structure has an external lightning protection system; otherwise at least a Type 2 device is recommended.",
+  "quote": "In short, it is then required to install a Type 1+2 device if the structure has an existing external lightning protection system. If there is no external lightning protection system, it is recommended to install at least a Type 2 device",
+  "page": 3,
+  "section": "Article body",
+  "id": "J084",
+  "source": "70_Crown_Sparks_Surge_Protection_SANS_10142-1",
+  "quote_sha256": "8b019dd01f85a8ec"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Sparks Electrical News (2023): per SANS 10142-1 the SPD must be installed on both conductors (live-to-earth and neutral-to-earth), not only live-to-earth.",
+  "quote": "As per SANS 10142-1, it is required to have the SPD installed on both conductors, with connection from Live to Earth and Neutral to Earth.",
+  "page": 3,
+  "section": "Article body",
+  "id": "J085",
+  "source": "70_Crown_Sparks_Surge_Protection_SANS_10142-1",
+  "quote_sha256": "1d28d3f7626ee726"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Sparks Electrical News (2023): SPD connection conductors start at a minimum of 6 mm2 copper for Type 2 and 16 mm2 copper for Type 1+2 devices (SANS 10142-1 via SANS 62305-4).",
+  "quote": "will start with a minimum of 6mm² copper for Type 2 devices and 16mm² copper for Type 1+2 devices, in line with minimum requirements in SANS 10142-1 by means of SANS 62305-4.",
+  "page": 3,
+  "section": "Article body",
+  "id": "J086",
+  "source": "70_Crown_Sparks_Surge_Protection_SANS_10142-1",
+  "quote_sha256": "e7aa11a2a8b53520"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Sparks Electrical News (2023): the total SPD connecting-lead length (live + earth, or neutral + earth) should not exceed 0.5 m to the earth bar; some manufacturers allow 1 m.",
+  "quote": "the maximum length of conductors should not exceed 0.5m from the live or neutral terminal to the earth bar.",
+  "page": 3,
+  "section": "Article body",
+  "id": "J087",
+  "source": "70_Crown_Sparks_Surge_Protection_SANS_10142-1",
+  "quote_sha256": "91eae82124a0a232"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Sparks Electrical News (2023): load-shedding supply switching causes switching surges resembling the 8/20 us waveshape, which Type 2 devices can partly mitigate.",
+  "quote": "These switching surges are also described as impulses with waveshape like that of the 8/20µs test waveshape",
+  "page": 3,
+  "section": "Article body",
+  "id": "J088",
+  "source": "70_Crown_Sparks_Surge_Protection_SANS_10142-1",
+  "quote_sha256": "38ded0ba50724aa6"
  }
 ]

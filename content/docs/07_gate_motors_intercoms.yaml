@@ -1,0 +1,132 @@
+# Document definition. Rules: .claude/skills/colour-pdf/SKILL.md and CLAUDE.md.
+# Every technical statement carries a {{FACT_ID}} citation; IDs come from content/facts.json.
+id: "07"
+slug: gate_motors_intercoms
+badge: "SHEET 07 · GATES"
+title: "Gate motors, intercoms and public-address lines"
+subtitle: "Earthing, surge protection, mains isolation and cabling of sliding gate operators, their intercom and accessory cables, and intercom / public-address lines"
+applies_to: "Centurion D5-Evo and D6 SMART sliding gate operators, gate intercoms, safety beams, keypads, access control devices, pillar lights, public-address and intercom connecting cables"
+accent: purple
+version: "1.0"
+contents: true
+sections:
+  - title: "1  Why a gate operator is exposed"
+    lead: "A gate operator is outdoor equipment connected to the house by its mains and signal cables. DEHN lists barrier (gate) systems among the equipment that partial lightning currents can reach along those cables, and Centurion makes the surge protection of its operators depend on a proper earth.{{D086, E102, E118}}"
+    blocks:
+      - numbers:
+          - value: "> 1 m"
+            label: "copper earth rod in the D5-Evo earthing diagram{{E104}}"
+          - value: "40 kA"
+            label: "optional surge arrestor at the D5-Evo mains input{{E105}}"
+          - value: "30 mA"
+            label: "earth leakage breaker upstream of the D5-Evo{{E108}}"
+          - value: "≥ 3 mm"
+            label: "contact opening of the all-pole mains switch (D5-Evo, D6 SMART){{E107, E123}}"
+      - diagram:
+          name: gate_motor
+          caption: "Concept sketch, not a product wiring diagram. (1) earth spike next to the operator: in the D5-Evo earthing diagram a copper rod longer than 1 m{{E101, E104}}; for the D6 SMART not supplied, its cable connected by a ring lug to the gearbox mounting bolt{{E119, E120}} (2) the mains supply earth is the other earth return for the controller's surge protection; the mains cable is 3 core (L, N, E) SWA{{E101, E117, E112, E124}} (3) surge protection in the operator: the controller's own surge protection, plus the optional 40 kA surge arrestor at the mains input in the D5-Evo earthing diagram{{E101, E105}} (4) low-voltage cables for intercom, safety beams and accessories, SWA recommended with one end of the screening earthed.{{E113, E114, E116, E127}}"
+      - facts: [D086, D084, D085]
+
+  - title: "2  Earthing the operator"
+    blocks:
+      - h2: "Centurion D5-Evo"
+      - facts: [E101, E102, E103, E104, E105, E106, E109]
+      - h2: "Centurion D6 SMART"
+      - facts: [E117, E118, E119, E120, E121, E122]
+      - h2: "Gate posts and leaves: US communication-site practice"
+      - p: "Motorola R56 is a standard for communication sites (US practice), not for domestic gates; its rules for gate posts and gates are listed for reference only.{{D127, D128}}"
+      - facts: [D127, D128]
+      - callout:
+          kind: note
+          title: "Not covered for domestic sliding gates"
+          text: "The facts extracted from the Centurion manuals do not say whether the gate leaf, the rack or the steel track is to be bonded to the operator earth, and they give no earth resistance value for the earth spike."
+
+  - title: "3  Mains supply, isolation and protection"
+    lead: "Both operators are fed through a double-pole mains isolator with three-core SWA cable; the protective devices recommended differ between the two manuals.{{E112, E124}}"
+    blocks:
+      - table:
+          head: ["Item", "Centurion D5-Evo", "Centurion D6 SMART"]
+          widths: [0.22, 0.39, 0.39]
+          rows:
+            - ["Mains switching", "All-pole switch, contact opening 3 mm or greater{{E107}}", "All-pole switch, contact opening 3 mm or greater{{E123}}"]
+            - ["Recommended breaker", "5 A thermal breaker with all-pole circuit break{{E107}}", "5 A hydraulic breaker with all-pole circuit break{{E123}}"]
+            - ["Earth leakage", "Earth leakage circuit breaker with a 30 mA threshold must be fitted upstream{{E108}}", "Not stated in the facts extracted from this manual"]
+            - ["Mains cable", "220 V AC via a double pole mains isolator switch, 3 core (L, N, E) 1.5 mm² SWA{{E112}}", "90-240 V AC via a double-pole mains isolator switch, 3 core (L, N, E) 1.5 mm² SWA{{E124}}"]
+            - ["Input rating", "Not stated in the facts extracted from this manual", "110-240 V AC 50/60 Hz, 430 mA mains current consumption{{E128}}"]
+            - ["Surge arrestor at the mains input", "Optional 40 kA surge arrestor at the 220 V input (E, N, L) shown in the earthing diagram{{E105}}", "Not stated in the facts extracted from this manual"]
+          caption: "Values as printed in each manufacturer's installation manual for its own product. The two manuals quote different mains voltages for the same cable specification."
+      - callout:
+          kind: do
+          title: "Earth the controller and the charger"
+          text: "Centurion requires both the controller and the charger of the D5-Evo to be effectively earthed for improved lightning protection.{{E103}} In the D6 SMART the earth harness runs from the mounting bolt on the right-hand side of the gearbox into the right-hand side of the charger.{{E121, E122}}"
+
+  - title: "4  Intercom, beam and accessory cables"
+    lead: "Cable types and core counts for the low-voltage cables that leave the operator, as printed in each Centurion manual."
+    blocks:
+      - table:
+          head: ["Cable", "Centurion D5-Evo", "Centurion D6 SMART"]
+          widths: [0.24, 0.38, 0.38]
+          rows:
+            - ["Intercom, motor to dwelling", "(n1 + 6) core 0.5 mm² multi-stranded{{E113}}", "n1 + 6 core 0.22 mm² multi-strand shielded{{E125}}"]
+            - ["Intercom, motor to entry panel", "n2 core 0.5 mm² multi-stranded{{E113}}", "n2 core 0.22 mm² multi-strand shielded{{E125}}"]
+            - ["Safety beams, access control, keypad, external receiver", "3 core 0.5 mm² multi-stranded each{{E114}}", "3 core 0.22 mm² multi-stranded each{{E126}}"]
+            - ["Pedestrian key-switch", "2 core{{E114}}", "2 core{{E126}}"]
+            - ["Pillar lights", "3 core (L, N, E) SWA sized to the load{{E115}}", "Not stated in the facts extracted from this manual"]
+            - ["Free-exit ground loop", "1 core 0.5 mm² multi-stranded silicone-coated{{E115}}", "Not stated in the facts extracted from this manual"]
+          caption: "n1 and n2 are the numbers of cores the intercom itself requires.{{E113, E125}} Sizes are those printed in each manufacturer's manual; they differ between the two products."
+      - facts: [E116, E127]
+      - callout:
+          kind: warn
+          title: "One-end screen earthing is a product instruction, not a universal rule"
+          text: "DEHN states that only a shield connected at both ends can reduce inductive and capacitive coupling{{D031}} and that a shield earthed at one end gives no protection against induction caused by lightning strikes.{{D032}} The conflict is tabled in the chapter on where the sources disagree."
+
+  - title: "5  Intercom and public-address lines (DEHN WPX012)"
+    lead: "DEHN's white paper WPX012 covers public address systems and their connecting cables to a PC or intercom; its rules are written for that equipment.{{E017}}"
+    blocks:
+      - h2: "When arresters are needed on the PC / intercom cable"
+      - facts: [E017]
+      - callout:
+          kind: warn
+          title: "Two DEHN publications give different cable lengths"
+          text: "White paper WPX012 requires surge protective devices on the PC / intercom connecting cable above 10 m{{E018}}, while the DEHN Lightning Protection Guide gives 5 m for the same cable.{{D087}}"
+      - h2: "Common potential point"
+      - facts: [E020]
+      - h2: "Loudspeaker lines and exterior loudspeakers"
+      - facts: [E021, E022, E019, E023, E024, E025]
+
+  - title: "6  Safety warnings"
+    blocks:
+      - facts: [E111, E108, E109, D045]
+      - callout:
+          kind: dont
+          title: "Never work on the operator with the mains connected"
+          text: "Before electrical work on the D5-Evo, Centurion requires a check that the circuit breaker is OFF and that all high voltage circuits (more than 42.4 V) are completely isolated from the mains supply.{{E110}}"
+      - callout:
+          kind: note
+          title: "Lightning damage and the warranty"
+          text: "Centurion states that the D6 SMART warranty may be voidable for damage caused by atmospheric conditions including lightning, or by power surges.{{E129}}"
+
+  - title: "7  Where the sources disagree"
+    lead: "The sources were written for different equipment and countries. Where they conflict, the wiring code that applies at the site decides; this table shows the conflict rather than choosing for you."
+    blocks:
+      - table:
+          head: ["Question", "One source says", "Other sources say"]
+          widths: [0.22, 0.39, 0.39]
+          rows:
+            - ["Cable length above which the PC / intercom cable needs SPDs", "DEHN white paper WPX012: SPDs required when the cable exceeds 10 m.{{E018}}", "DEHN Lightning Protection Guide (3rd ed.): SPDs required when the cable is longer than 5 m.{{D087}}"]
+            - ["Earth the cable screen at one end or both?", "Centurion D5-Evo and D6 SMART: one end of the SWA screening is to be earthed.{{E116, E127}}", "DEHN: a shield must be earthed at least at both ends; one-end earthing gives no protection against lightning induction.{{D031, D032}} DEHN also notes equalising currents in shields earthed at both ends on systems at different potentials.{{D033}}"]
+            - ["Earth spike at the operator", "Centurion: surge-protection earth return via the mains supply earth and/or an earth spike next to the operator.{{E101, E117}}", "ITU-T K.66: nothing connected to a separate earth electrode that is not bonded to the main earth bar.{{B002}} DEHN: earth electrodes of external equipment in LPZ 0A must be interconnected with the building's earth-termination system.{{D084, D085}}"]
+
+  - title: "8  Installation checklist"
+    blocks:
+      - checklist:
+          - "Operator earthed through the mains supply earth and/or an earth spike next to the operator (Centurion D5-Evo, D6 SMART).{{E101, E117}}"
+          - "D5-Evo: controller and charger both effectively earthed; earth spike a copper rod longer than 1 m.{{E103, E104}}"
+          - "D6 SMART: earth harness ring lug on the right-hand gearbox mounting bolt and the other end into the charger; any earth spike cable on the same bolt.{{E121, E122, E119}}"
+          - "All-pole mains switch with a contact opening of 3 mm or greater (D5-Evo, D6 SMART).{{E107, E123}}"
+          - "D5-Evo: earth leakage circuit breaker with a 30 mA threshold upstream.{{E108}}"
+          - "Mains via a double-pole isolator, 3 core (L, N, E) 1.5 mm² SWA (D5-Evo, D6 SMART).{{E112, E124}}"
+          - "Intercom, beam and accessory cables sized as the operator manual states; SWA screening earthed as the manual states.{{E113, E125, E116, E127}}"
+          - "PC / intercom connecting cable of a public address system checked against the DEHN length threshold that applies.{{E018, D087}}"
+          - "All surge-arrester earth connections near a public address system taken to one nearby common potential point.{{E020}}"
+          - "Breaker OFF and all circuits above 42.4 V isolated before working on the D5-Evo.{{E110}}"

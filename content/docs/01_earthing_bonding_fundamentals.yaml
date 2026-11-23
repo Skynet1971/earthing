@@ -1,0 +1,148 @@
+# Document definition. Rules: .claude/skills/colour-pdf/SKILL.md and CLAUDE.md.
+# Every technical statement carries a {{FACT_ID}} citation; IDs come from content/facts.json.
+id: "01"
+slug: earthing_bonding_fundamentals
+badge: "SHEET 01 · EARTHING"
+title: "Earthing and bonding fundamentals"
+subtitle: "Earthing systems, the main earthing terminal, main bonding of services, earth electrodes and the conductor sizes stated in the sources"
+applies_to: "The earthing and protective bonding of a house: supply earthing system, main earthing terminal, bonding of incoming services, earth electrodes, and the earth references of connected equipment"
+accent: green
+version: "1.0"
+contents: true
+sections:
+  - title: "1  Earthing and bonding: two different jobs"
+    lead: "ITU-T K.98 separates the two terms: earthing connects the earth bar to earth, usually through an installed electrode, while bonding interconnects earth electrodes and metallic parts to minimise the potential differences between them.{{B092}}"
+    blocks:
+      - numbers:
+          - value: "< 1.5 m"
+            label: "bonding conductor length from services to the main earth terminal, ITU-T K.66{{B004}}"
+          - value: "1 kV/m"
+            label: "voltage drop K.66 assumes along a bonding conductor during a direct strike{{B005}}"
+          - value: "50 V a.c."
+            label: "typical limit for permanently permissible touch voltage (120 V d.c.){{D046}}"
+      - facts: [E039, D018, C030, D013]
+      - callout:
+          kind: note
+          title: "Shock protection comes first"
+          text: "DEHN states that measures for protection against electric shock always take priority over surge protection measures.{{D045}}"
+
+  - title: "2  Earthing systems: TN-S, TN-C-S (PME) and TT"
+    lead: "BS 7671 (UK) names five earthing systems: TN-S, TN-C-S, TT, TN-C and IT.{{A028}} A UK public low-voltage supply is one of the first three.{{A029}}"
+    blocks:
+      - diagram:
+          name: earthing_systems
+          caption: "Concept sketch of the three supply earthing systems a UK low-voltage supply will use{{A029}}; TN-C-S is the system known in the UK as protective multiple earthing (PME).{{A036}} (3) TT: the consumer provides their own connection to earth with an earth electrode local to the installation.{{A037}} No verified fact in this library describes the conductor arrangements at markers (1) and (2); the drawing shows them by system name only."
+      - facts: [A029, A030, A036, A035, A037, A038, H112]
+      - h2: "What the sources recommend for equipment buildings"
+      - facts: [B081, C093, D093, B027]
+      - h2: "Automatic disconnection and touch voltage"
+      - facts: [D046, D047]
+      - h2: "RCDs in TT systems: the RA × IΔn rule"
+      - facts: [I102, A048, A049, D050, D048, D049, B023]
+      - callout:
+          kind: note
+          title: "Edition of the rule quoted here"
+          text: "The RA × IΔn ≤ 50 V rule above is quoted from BS 7671:2001 Regulation 413-02-20 as cited by IEE Wiring Matters (UK).{{A048}} No public source in this library quotes the current edition of BS 7671 on this point; South African wiring-code requirements are handled in a separate document."
+
+  - title: "3  Main earthing terminal and main bonding of services"
+    lead: "ITU-T K.66 requires overvoltage protection to start with bonding the metallic services and cable screens to the building earth and fitting SPDs at the building entry point on both the power and the telecommunication conductors.{{B001}}"
+    blocks:
+      - h2: "Where the main earthing terminal goes"
+      - facts: [B079, C088, C089, B007, A077, B008, D040]
+      - diagram:
+          name: common_bonding
+          caption: "Concept sketch, not an installation drawing. (1) SPDs at the service entries connected to the main earthing terminal with short conductors: K.66 gives under 0.5 m for the SPD connecting wires and under 1.5 m for connecting plus bonding wires to the terminal{{B024}}, which reduces surge voltage differences between telecom lines and the power protective conductor.{{B014}} (2) Earthing: the earth bar connected to earth, usually via an installed electrode.{{B092}} (3) All protective and functional earthing conductors connected to one single main earth terminal (IEC 60364-4-44 as cited by K.98).{{B096}}"
+      - h2: "One earth for everything"
+      - facts: [B096, B002, I010, A075, D103, B004, B006, D022, D023, A058, B010, A078]
+      - h2: "Water, gas and other metal pipes"
+      - facts: [D003, B107, B009]
+      - callout:
+          kind: warn
+          title: "A metal water pipe is not automatically an earth"
+          text: "K.66 warns that national safety regulations may prohibit a metallic water pipe as the main earth terminal{{B009}}, and K.98 notes that a path to earth through underground metal services may be missing where plastic pipes have been fitted.{{B107}}"
+      - h2: "Bonding between power and communication services (US practice)"
+      - facts: [A007, A024, A025, A026, A006]
+
+  - title: "4  Earth electrodes"
+    lead: "Most of an electrode's resistance arises in the soil immediately around it: in DEHN's example of a 20 cm sphere, 90 % of the total earth resistance is reached within 5 m of the electrode centre.{{D002}}"
+    blocks:
+      - facts: [D105, B093, D117, I133]
+      - h2: "Types and minimum dimensions"
+      - facts: [D009, D011, D012, D015, D005, D006, D007, D107, D110, D111, D112, A033]
+      - h2: "Installing an electrode"
+      - facts: [A031, A040, A039, D008, A034, D016, D115, D113, D116, D109, A042]
+      - pagebreak: true
+      - h2: "Several electrodes and their spacing"
+      - numbers:
+          - value: "1 / n"
+            label: "parallel rods: overall resistance virtually proportional to the reciprocal of the number of rods, each outside the others' resistance area{{A043}}"
+          - value: "≈ 40 %"
+            label: "lower resistance from doubling the rod length in homogeneous soil, Motorola R56{{D120}}"
+          - value: "≥ 1.8 m"
+            label: "minimum distance between rods, Motorola R56 citing NFPA 70 (US){{D108}}"
+      - facts: [A043, A044, A032, D106, D108, D120, I134]
+      - h2: "Earth resistance values and what each is for"
+      - table:
+          head: ["Purpose", "Value as published", "Source"]
+          widths: [0.34, 0.44, 0.22]
+          rows:
+            - ["Earth-termination of a lightning protection system", "10 Ω overall (IEC/BS EN 62305, Type A or Type B arrangement){{A057}}; 10 Ω or less at low frequency, generally recommended{{D004}}", "Furse (UK); DEHN"]
+            - ["High-site earthing (South Africa)", "preferably below 10 Ω{{C039}}; below 1 Ω for a single integrated lightning and safety earth{{C040}}", "WAPA"]
+            - ["Communication sites (US practice)", "25 Ω or less, single electrode, light-duty Type A{{D118}}; not over 10 Ω, Type B{{D119}}; Motorola recommends 5 Ω or less for Type B{{D152}}", "Motorola R56"]
+            - ["Building grounding electrode system before telecom bonding (US DoD)", "not over 25 Ω (5 Ω option), fall-of-potential, dry weather{{C077}}", "UFGS 27 05 26"]
+            - ["TT installation protected by a 30 mA RCD (UK)", "approximately 1666 Ω, from RA × IΔn ≤ 50 V{{A048, A049}}", "IEE Wiring Matters"]
+            - ["Measured loop impedance, TT (UK)", "above 200 Ω requires further investigation{{A050}}", "IEE GN3 via Wiring Matters"]
+            - ["Customer-premises electrode, as found", "anywhere from tens to hundreds of ohms{{B093}}", "ITU-T K.98"]
+            - ["Maximum Ze specified by the distributor (UK)", "0.35 Ω TN-C-S (PME); 0.8 Ω TN-S{{A035}}", "IET"]
+            - ["Outdoor camera (manufacturer)", "below 4 Ω{{E050}}", "TP-Link Omada"]
+          caption: "Each value applies to the purpose and jurisdiction in its row and is not interchangeable with the others. Motorola R56 adds that for dispersing lightning energy the shape and dimensions of the electrode system matter more than a specific resistance value.{{D117}}"
+
+  - title: "5  Protective and bonding conductor sizes stated in the sources"
+    blocks:
+      - table:
+          head: ["Conductor", "Minimum size as published", "Source"]
+          widths: [0.36, 0.42, 0.22]
+          rows:
+            - ["Internal metal installations to the equipotential bonding bar, all classes of LPS", "6 mm² copper or 10 mm² aluminium{{D021}}", "IEC 62305-3 Table 9 via DEHN"]
+            - ["Between two equipotential bonding bars", "16 mm² copper{{D027}}", "IEC 62305-3 Table 8 via DEHN"]
+            - ["Earthing conductor where SPDs are used, power systems", "16 mm² copper{{D068}}", "DEHN"]
+            - ["SPD connecting cables (UK, BS 7671:2018 via BEAMA)", "16 mm² copper for Type 1; 4 mm² copper for Type 2 and Type 3{{I040}}", "BEAMA"]
+            - ["Earthing conductor where SPDs are used, information technology systems", "6 mm² copper, or as the installation instructions specify{{D069}}", "DEHN"]
+            - ["Copper earth electrode / earthing conductor", "50 mm² stranded; 15 mm solid rod; 50 mm² solid round or tape; 20 mm pipe{{D015}}", "IEC 62305-3 Table 7 via DEHN"]
+            - ["Foundation earth electrode, galvanised steel", "10 mm round wire or 30 mm × 3.5 mm strip{{D009}}", "DEHN"]
+            - ["Antenna mast earthing conductor", "16 mm² copper, 25 mm² insulated aluminium or 50 mm² steel{{D076}}", "DEHN"]
+            - ["Antenna cable shields to the main earthing busbar", "4 mm² copper{{D074}}", "DEHN"]
+            - ["Parallel bonding conductor between two buildings' earthing systems", "50 mm² copper, when the potential difference cannot be determined{{B091}}", "ITU-T K.73"]
+            - ["Buried ground ring (US practice)", "35 mm² bare solid copper{{D110}}", "Motorola R56"]
+            - ["Panel SPD connecting conductors (US practice)", "16 mm²{{D141}}", "Motorola R56"]
+            - ["Equipotential bonding of rack equipment", "10 AWG or larger, as short as possible{{E040}}", "TP-Link"]
+            - ["PV mounting system, functional earthing", "6 mm² copper{{H008}}; 16 mm² copper when tied into a class III LPS{{H012}}", "DEHN WPX029"]
+          caption: "Sizes are quoted with the jurisdiction and purpose of each source. They are not a sizing method for a particular installation; the wiring code that applies at the site decides."
+      - callout:
+          kind: note
+          title: "Not covered by the sources in this library"
+          text: "The sources in this library give no rule for sizing the main earthing conductor or the main protective bonding conductors of a house installation. Use the wiring code that applies at the site."
+
+  - title: "6  Why separate, unbonded earth electrodes harm equipment"
+    lead: "ITU-T K.66 lists as good practice for every installation that every earth point is bonded to the main earth bar and that nothing is connected to a separate earth electrode that is not bonded to it.{{B002}}"
+    blocks:
+      - callout:
+          kind: dont
+          title: "Do not install a separate 'clean earth' for electronics"
+          text: "DEHN calls a separate clean earth for electronic equipment, kept apart from the lightning protection and protective earth, extremely unfavourable and possibly dangerous, because lightning can produce potential differences of up to some 100 kV in the earth-termination system.{{D014}}"
+      - facts: [D013, B040, B094, B015, B033, B026, B110, B012, A009, B043, B044, B047]
+
+  - title: "7  Where the sources disagree"
+    lead: "The sources were written for different countries and kinds of site. Where they conflict, the wiring code that applies at the site decides; this table shows the conflict rather than choosing for you."
+    blocks:
+      - table:
+          head: ["Question", "One source says", "Other sources say"]
+          widths: [0.22, 0.39, 0.39]
+          rows:
+            - ["Spacing between parallel earth rods", "IET (UK, 2011): at least equal to the rods' combined driven depth.{{A032}}", "IEE Wiring Matters (UK, 2006): a separation equal to the driven depth of the rod is generally deemed enough, more than twice gives little benefit{{A044}}; Motorola R56 (US): the sum of their lengths{{D106}}, and never closer than 1.8 m.{{D108}}"]
+            - ["Target earth resistance", "DEHN and Furse (IEC 62305): 10 Ω for the lightning protection earth.{{D004, A057}}", "Motorola R56 (US): 25, 10 or 5 Ω by site type{{D118, D119, D152}}, with shape and dimensions mattering more than a value{{D117}}; WAPA (South Africa): below 1 Ω for an integrated earth.{{C040}}"]
+            - ["Separate earth for some equipment", "TP-Link Omada: surveillance equipment earth separate from other electrical earths{{E045}}; ITU-T K.71: no need to bond a mast electrode to the building earth where lightning protection is not required.{{B062}}", "ITU-T K.66, K.98 and DEHN: bond every earth point to the main earth bar; an unbonded separate electrode is a problem for equipment and can be dangerous.{{B002, B094, D014}}"]
+            - ["Electric fence earth", "Nemtek (South Africa): at least 2 m (security fence) or 10 m (agricultural fence) from any other earth system.{{E077}}", "ITU-T K.66: nothing connected to a separate electrode not bonded to the main earth bar.{{B002}}"]
+            - ["Earthing equipment through the power cord", "TP-Link: in a normal environment, through the PE conductor of the AC supply.{{E036}}", "UFGS 27 05 26 (US DoD): earthing through the AC power cord does not meet the specification; a dedicated ground path is required.{{C065}}"]
+            - ["Conductor size for mains SPDs", "DEHN: the copper earthing conductor for equipotential bonding is at least 16 mm² for SPDs in power supply systems.{{D068}}", "BEAMA (UK, BS 7671:2018) and Schneider (IEC 60364): 16 mm² copper for Type 1, 4 mm² copper for Type 2 connecting cables.{{I040, I085}}"]
+            - ["Braided bonding conductors", "BRE (UK, 2006): bond a PV array frame with 10 mm² braid or equivalent.{{H110}}", "Motorola R56 (US): braided grounding conductors shall not be used under any circumstances.{{D125}}"]
