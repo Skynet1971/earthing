@@ -1,0 +1,421 @@
+# Reference library catalogue.
+# key      = file stem of the PDF in references/pdf/ (the number prefix is the citation number, e.g. R18)
+# kind     = pdf (original PDF from the publisher/host) | webprint (web page printed to PDF on the fetch date)
+# quotes   = public  -> short verbatim evidence quotes may be stored in content/facts.json
+#            local   -> the document forbids reproduction; quotes are kept only in references/local/ (not committed)
+# private  = true    -> the document's own terms restrict its use; facts from it are NOT used in public documents
+# The PDFs themselves are third-party copyright and are NOT committed; tools/download_references.py re-fetches them.
+fetched: "2026-11-23"
+sources:
+  - key: 01_NIST_SP960-6_Surges_Happen
+    title: "Surges Happen! How to Protect the Appliances in Your Home (NIST Special Publication 960-6)"
+    publisher: "National Institute of Standards and Technology (USA)"
+    edition: "May 2001"
+    jurisdiction: "USA"
+    type: guide
+    kind: pdf
+    quotes: public
+    url: "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication960-6.pdf"
+  - key: 05_Motorola_R56_2005_Communication_Sites
+    title: "Standards and Guidelines for Communication Sites (R56), 68P81089E50-B"
+    publisher: "Motorola, Inc."
+    edition: "9/1/05 (2005)"
+    jurisdiction: "USA practice (AWG sizes)"
+    type: manufacturer standard
+    kind: pdf
+    quotes: local
+    url: "https://www.blm.gov/sites/blm.gov/files/Lands_ROW_Motorola_R56_2005_manual.pdf"
+  - key: 06_DEHN_Lightning_Protection_Guide_3rd_Ed
+    title: "Lightning Protection Guide, 3rd updated edition"
+    publisher: "DEHN + SÖHNE"
+    edition: "2014"
+    jurisdiction: "IEC / EN 62305 (Germany)"
+    type: handbook
+    kind: pdf
+    quotes: public
+    url: "https://www.dehn-international.com/sites/default/files/media/files/lpg_en_complete.pdf"
+  - key: 08_IET_Earthing_Questions_Answered
+    title: "Earthing: your questions answered (IET Wiring Matters, Autumn 2011)"
+    publisher: "The Institution of Engineering and Technology (UK)"
+    edition: "Autumn 2011"
+    jurisdiction: "UK (BS 7671)"
+    type: article
+    kind: pdf
+    quotes: public
+    url: "https://electrical.theiet.org/media/1549/earthing.pdf"
+  - key: 09_IET_Multiple_Earth_Electrodes_TT_Dwelling
+    title: "Multiple earth electrodes in a TT system for a dwelling (IET Wiring Matters, Winter 2006)"
+    publisher: "The Institution of Engineering and Technology (UK)"
+    edition: "Winter 2006"
+    jurisdiction: "UK (BS 7671)"
+    type: article
+    kind: pdf
+    quotes: public
+    url: "https://electrical.theiet.org/media/1659/multiple-earth-electrodes-in-a-tt-system-for-a-dwelling.pdf"
+  - key: 10_SouthwestMicrowave_TN1003_Surge_Lightning_Suppression
+    title: "Technical Note #1003: Best Practices for Surge and Lightning Suppression of POE Devices"
+    publisher: "Southwest Microwave, Inc."
+    edition: "not stated in document"
+    jurisdiction: "USA"
+    type: manufacturer note
+    kind: pdf
+    quotes: public
+    url: "https://southwestmicrowave.com/pdfs/1003-Best-Practices-for-Surge-and-Lightning-Suppression.pdf"
+  - key: 12_Furse_ABB_IEC_BS_EN_62305_Parts_1-4
+    title: "IEC/BS EN 62305 parts 1-4: technical reference (Furse)"
+    publisher: "ABB Furse"
+    edition: "not stated in document"
+    jurisdiction: "IEC / BS EN 62305 (UK)"
+    type: manufacturer technical reference
+    kind: pdf
+    quotes: public
+    url: "https://library.e.abb.com/public/ee4d371685e544e09e8d9712fbd716c9/IEC%20BS%20EN%2062305%201%20-%204.pdf"
+  - key: 13_WAPA_Wireless_High_Site_Engineering_Guideline
+    title: "Wireless High Site Engineering Guideline V1.0.0"
+    publisher: "Wireless Access Providers' Association (South Africa)"
+    edition: "V1.0.0, 2014-07-21"
+    jurisdiction: "South Africa"
+    type: industry guideline
+    kind: pdf
+    quotes: local
+    url: "https://wapa.org.za/sites/default/files/2018-08/WAPA%20Wireless%20High%20Site%20Engineering%20Guideline%20V1%200%200%2020140721.pdf"
+  - key: 14_Crown_Lightning_Protection_Separation_Distance
+    title: "Lightning protection: 'Separation Distance' concept (Electricity+Control, January 2016)"
+    publisher: "Crown Publications (South Africa); author Trevor Manas"
+    edition: "January 2016"
+    jurisdiction: "IEC 62305 (South Africa)"
+    type: article
+    kind: pdf
+    quotes: public
+    url: "https://www.crown.co.za/images/magazines/electricity-control/FaceValue/Lightning_protection_Separation_Distance_concept.pdf"
+  - key: 17_UFGS_27_05_26_Grounding_Bonding_Communications
+    title: "UFGS-27 05 26 Grounding and Bonding for Communications Systems"
+    publisher: "USACE / NAVFAC / AFCEC (US Department of Defense)"
+    edition: "November 2025"
+    jurisdiction: "USA (guide specification with designer-selectable options)"
+    type: guide specification
+    kind: pdf
+    quotes: public
+    url: "https://www.wbdg.org/FFC/DOD/UFGS/UFGS%2027%2005%2026.pdf"
+  - key: 18_ITU-T_K.66_Protection_Customer_Premises_Overvoltages
+    title: "Recommendation ITU-T K.66: Protection of customer premises from overvoltages"
+    publisher: "International Telecommunication Union"
+    edition: "11/2019"
+    jurisdiction: "International"
+    type: standard (recommendation)
+    kind: pdf
+    quotes: public
+    url: "https://www.itu.int/rec/T-REC-K.66-201911-I"
+    download: "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-K.66-201911-I!!PDF-E&type=items"
+  - key: 19_ITU-T_K.85_Lightning_Home_Networks_Customer_Premises
+    title: "Recommendation ITU-T K.85: Requirements for the mitigation of lightning effects on home networks installed in customer premises"
+    publisher: "International Telecommunication Union"
+    edition: "11/2011"
+    jurisdiction: "International"
+    type: standard (recommendation)
+    kind: pdf
+    quotes: public
+    url: "https://www.itu.int/rec/T-REC-K.85-201111-I"
+    download: "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-K.85-201111-I!!PDF-E&type=items"
+  - key: 20_Axis_Power_Surges_White_Paper
+    title: "Power surges (white paper, web page)"
+    publisher: "Axis Communications"
+    edition: "web page as fetched 2026-11-23"
+    jurisdiction: "International"
+    type: manufacturer white paper
+    kind: webprint
+    quotes: public
+    url: "https://whitepapers.axis.com/en/power-surges"
+  - key: 21_MikroTik_Grounding_Manual_Page
+    title: "Grounding (RouterOS documentation, hardware section)"
+    publisher: "MikroTik"
+    edition: "page last updated 23 September 2025"
+    jurisdiction: "International"
+    type: manufacturer documentation
+    kind: webprint
+    quotes: public
+    url: "https://help.mikrotik.com/docs/display/ROS/Grounding"
+  - key: 22_ITU-T_K.71_Protection_Customer_Antenna_Installations
+    title: "Recommendation ITU-T K.71: Protection of customer antenna installations"
+    publisher: "International Telecommunication Union"
+    edition: "06/2011"
+    jurisdiction: "International"
+    type: standard (recommendation)
+    kind: pdf
+    quotes: public
+    url: "https://www.itu.int/rec/T-REC-K.71-201106-I"
+    download: "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-K.71-201106-I!!PDF-E&type=items"
+  - key: 23_ITU-T_K.73_Shielding_Bonding_Cables_Between_Buildings
+    title: "Recommendation ITU-T K.73: Shielding and bonding for cables between buildings"
+    publisher: "International Telecommunication Union"
+    edition: "11/2019"
+    jurisdiction: "International"
+    type: standard (recommendation)
+    kind: pdf
+    quotes: public
+    url: "https://www.itu.int/rec/T-REC-K.73-201911-I"
+    download: "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-K.73-201911-I!!PDF-E&type=items"
+  - key: 24_ITU-T_K.27_Bonding_Configurations_Earthing_Telecom_Building
+    title: "Recommendation ITU-T K.27: Bonding configurations and earthing inside a telecommunication building"
+    publisher: "International Telecommunication Union"
+    edition: "03/2015"
+    jurisdiction: "International"
+    type: standard (recommendation)
+    kind: pdf
+    quotes: public
+    url: "https://www.itu.int/rec/T-REC-K.27-201503-I"
+    download: "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-K.27-201503-I!!PDF-E&type=items"
+  - key: 25_ITU-T_K.98_Overvoltage_Protection_Guide_Customer_Premises
+    title: "Recommendation ITU-T K.98: Overvoltage protection guide for telecommunication equipment installed in customer premises"
+    publisher: "International Telecommunication Union"
+    edition: "08/2014"
+    jurisdiction: "International"
+    type: standard (recommendation)
+    kind: pdf
+    quotes: public
+    url: "https://www.itu.int/rec/T-REC-K.98-201408-I"
+    download: "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-K.98-201408-I!!PDF-E&type=items"
+  - key: 26_DEHN_WP007_Surge_Protection_CCTV_Systems
+    title: "White paper WP007: Surge protection for CCTV systems"
+    publisher: "DEHN + SÖHNE"
+    edition: "WP007/E/0615 (June 2015)"
+    jurisdiction: "IEC / EN (Germany)"
+    type: manufacturer white paper
+    kind: pdf
+    quotes: public
+    url: "https://www.dehn-international.com/sites/default/files/media/files/cctv-wp007-e.pdf"
+  - key: 27_DEHN_WPX012_Surge_Protection_Public_Address_Intercom
+    title: "White paper WPX012: Surge protection for public address systems"
+    publisher: "DEHN SE"
+    edition: "WPX012/EN/0122 (January 2022)"
+    jurisdiction: "IEC / EN (Germany)"
+    type: manufacturer white paper
+    kind: pdf
+    quotes: public
+    url: "https://www.dehn-international.com/sites/default/files/media/files/public-address-systems-wpx012-en.pdf"
+  - key: 28_Siemens_LOGO8_System_Manual_2023
+    title: "LOGO! System Manual, A5E33039675-AL"
+    publisher: "Siemens AG"
+    edition: "03/2023"
+    jurisdiction: "International"
+    type: manufacturer manual
+    kind: pdf
+    quotes: public
+    url: "https://cache.industry.siemens.com/dl/files/499/109826499/att_1161914/v1/logo_system_manual_en-US_en-US.pdf"
+  - key: 29_TP-Link_Lightning_Protection_Guide
+    title: "Lightning Protection Guide: Rack-mountable Devices, 1910012320 REV1.0.1"
+    publisher: "TP-Link Technologies Co., Ltd."
+    edition: "December 2017"
+    jurisdiction: "International"
+    type: manufacturer guide
+    kind: pdf
+    quotes: public
+    url: "https://static.tp-link.com/configurationguide/lightning_protection_guide.pdf"
+  - key: 30_Nemtek_Druid_LCD_2x_Installer_Manual
+    title: "DRUID LCD 2x Electric Fence Energizer: Installer Manual, Revision 1.2"
+    publisher: "Nemtek Group"
+    edition: "25 September 2013"
+    jurisdiction: "South Africa"
+    type: manufacturer manual
+    kind: pdf
+    quotes: public
+    url: "https://nemtek.co.za/wp-content/uploads/2021/11/installer-manual-druid-2.pdf"
+  - key: 31_Nemtek_Lightning_Inhibitor_Diverter_LIDii_Manual
+    title: "Lightning Inhibitor and Diverter, Dual Pole Protection: Instruction Manual"
+    publisher: "Nemtek Group"
+    edition: "file dated September 2025"
+    jurisdiction: "South Africa"
+    type: manufacturer manual
+    kind: pdf
+    quotes: public
+    url: "https://www.nemtek.co.za/wp-content/uploads/2021/09/NemtekEA-LIDiiManual250925.pdf"
+  - key: 32_Nemtek_Super_Earthing_Kit
+    title: "Super Earthing Kit EA-CEC/KIT: Instruction Manual"
+    publisher: "Nemtek Group"
+    edition: "file dated November 2025"
+    jurisdiction: "South Africa"
+    type: manufacturer manual
+    kind: pdf
+    quotes: public
+    url: "https://www.nemtek.co.za/wp-content/uploads/2025/03/SuperEarthingKit111125.pdf"
+  - key: 33_Centurion_D5-Evo_Installation_Manual
+    title: "D5-Evo light-industrial sliding gate operator: installation manual"
+    publisher: "Centurion Systems (Pty) Ltd"
+    edition: "not stated on the pages read"
+    jurisdiction: "South Africa"
+    type: manufacturer manual
+    kind: pdf
+    quotes: public
+    url: "https://cdn.shopify.com/s/files/1/0398/4615/0189/files/D5-Evo_Installation_Manual.pdf"
+  - key: 34_Ubiquiti_ETH-SP-G2_Datasheet
+    title: "Ethernet Surge Protector ETH-SP-G2: datasheet"
+    publisher: "Ubiquiti Networks, Inc."
+    edition: "2017"
+    jurisdiction: "International"
+    type: manufacturer datasheet
+    kind: pdf
+    quotes: public
+    url: "https://dl.ubnt.com/datasheets/ETH-SP/ETH-SP-G2_DS.pdf"
+  - key: 37_SANS_10142-1_Ed3.3_Public_Enquiry_Draft
+    title: "DRAFT South African Standard SANS 10142-1 Ed 3.3: The wiring of premises, Part 1: Low-voltage installations (public enquiry stage)"
+    publisher: "South African Bureau of Standards, SABS/TC 067/SC 06"
+    edition: "DRAFT circulated 30 January 2026, comments closed 1 March 2026; NOT the published standard"
+    jurisdiction: "South Africa"
+    type: draft standard
+    kind: pdf
+    quotes: local
+    private: true
+    url: "https://sapvia.co.za/wp-content/uploads/2026/02/SANS10142-1ED3.3_TC067SC06_DSS_1.pdf"
+  - key: 38_Centurion_D6_Smart_Installation_Manual
+    title: "D6 SMART sliding gate operator: installation manual, doc number 1401.D.01.0012"
+    publisher: "Centurion Systems (Pty) Ltd"
+    edition: "02 April 2024"
+    jurisdiction: "South Africa"
+    type: manufacturer manual
+    kind: pdf
+    quotes: public
+    url: "https://cdn.shopify.com/s/files/1/1794/9761/files/Centurion_D6_Smart_Installation_Manual.pdf"
+  - key: 39_i-PRO_Countermeasure_for_Lightning_Surge
+    title: "Countermeasure for lightning surge (knowledge base article)"
+    publisher: "i-PRO Co., Ltd."
+    edition: "updated May 2025"
+    jurisdiction: "International"
+    type: manufacturer documentation
+    kind: webprint
+    quotes: public
+    url: "https://i-pro.com/products_and_solutions/en/surveillance/learning-and-support/knowledge-base/technical-information/surge-protection"
+  - key: 41_TP-Link_Omada_Waterproof_Lightning_Protection_Security_Devices
+    title: "Waterproof and Lightning Protection Installation Guide for Omada Security Devices"
+    publisher: "TP-Link (Omada Network Support)"
+    edition: "web page as fetched 2026-11-23"
+    jurisdiction: "International"
+    type: manufacturer guide
+    kind: webprint
+    quotes: public
+    url: "https://support.omadanetworks.com/za/document/44713/"
+  - key: 42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables
+    title: "Earthing in Practice: How to Ground Power, Instrumentation & Communication Cables Correctly?"
+    publisher: "RR Kabel (blog)"
+    edition: "12 March 2026"
+    jurisdiction: "India (cable manufacturer article)"
+    type: article
+    kind: webprint
+    quotes: public
+    url: "https://rrkabel.com/blog/earthing-in-practice-how-to-ground-power-instrumentation-communication-cables-correctly/"
+  - key: 43_InstMC_Tech_Talk_12_Down_to_Earth
+    title: "Tech Talk (12) Down to Earth: A Discussion of the General Requirements for the Earthing of Control and Instrumentation Systems"
+    publisher: "Institute of Measurement and Control; Measurement and Control 2017, Vol. 50(2) 39-44"
+    edition: "2017"
+    jurisdiction: "UK"
+    type: journal paper
+    kind: pdf
+    quotes: public
+    url: "https://www.instmc.org/_userfiles/pages/files/technical/tech_talk_12_down_to_earth.pdf"
+  - key: 44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV
+    title: "White paper WPX029: Lightning and surge protection for rooftop photovoltaic systems"
+    publisher: "DEHN SE"
+    edition: "WPX029/EN/0422 (April 2022)"
+    jurisdiction: "IEC / EN (Germany)"
+    type: manufacturer white paper
+    kind: pdf
+    quotes: public
+    url: "https://www.dehn-africa.com/sites/default/files/media/files/photovoltaic-wpx029-en.pdf"
+  - key: 45_SMA_Lightning_Overvoltage_Protection_TI
+    title: "Technical Information: Overvoltage Protection. Lightning Protection and Overvoltage Protection for Sunny Boy and Sunny Tripower (U_Schutz-TI-en-13)"
+    publisher: "SMA Solar Technology AG"
+    edition: "version 1.3"
+    jurisdiction: "International"
+    type: manufacturer technical information
+    kind: pdf
+    quotes: public
+    url: "https://files.sma.de/downloads/U_Schutz-TI-en-13.pdf"
+  - key: 46_Sunsynk_8kW_Hybrid_Inverter_Manual
+    title: "Hybrid Parity (Super) Inverter User Manual, SUNSYNK-8K-SG01LP1 / SUNSYNK-8K-SG03LP1"
+    publisher: "Sunsynk (Global Tech China Ltd)"
+    edition: "v.18 (12/09/22)"
+    jurisdiction: "International"
+    type: manufacturer manual
+    kind: pdf
+    quotes: public
+    url: "https://cdn.shopify.com/s/files/1/0521/6006/9799/files/sunsynk_8kw_manual.pdf"
+  - key: 47_SAPVIA_Solar_PV_Installation_Guidelines
+    title: "Solar PV Installation Guidelines, Iteration 1.0 (PV GreenCard)"
+    publisher: "South African Photovoltaic Industry Association (SAPVIA)"
+    edition: "May 2017"
+    jurisdiction: "South Africa"
+    type: industry guideline
+    kind: pdf
+    quotes: public
+    url: "https://portal.segensolar.co.za/reseller/docs/SAPVIASolarPVGuidelines.pdf"
+  - key: 48_BEAMA_Guide_to_Surge_Protection_Devices_2018
+    title: "BEAMA Guide to Surge Protection Devices (SPDs): selection, application and theory"
+    publisher: "BEAMA Ltd (UK)"
+    edition: "July 2018"
+    jurisdiction: "UK (BS 7671:2018)"
+    type: industry guide
+    kind: pdf
+    quotes: public
+    url: "https://www.beama.org.uk/static/uploaded/0125b82e-8c76-4106-88bedb0f4fc85d52.pdf"
+  - key: 49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed
+    title: "Photovoltaics in Buildings: Guide to the installation of PV systems, 2nd edition (DTI/Pub URN 06/1972)"
+    publisher: "UK Department for Enterprise (DTI) / BRE"
+    edition: "2006"
+    jurisdiction: "UK"
+    type: guide
+    kind: pdf
+    quotes: public
+    url: "https://files.bregroup.com/solar/Guide_to_the_installation_of_PV_systems_2nd_Edition.pdf"
+  - key: 50_Schneider_EIG_SPD_Cabling_Connection_Characteristics
+    title: "Electrical Installation Guide (wiki): Cabling rules of SPD; Connection of SPD; Common characteristics of SPDs according to the installation characteristics"
+    publisher: "Schneider Electric"
+    edition: "web pages as fetched 2026-11-23"
+    jurisdiction: "IEC 60364 / IEC 61643"
+    type: manufacturer guide
+    kind: webprint
+    quotes: public
+    url: "https://www.electrical-installation.org/enwiki/Cabling_rules_of_Surge_Protection_Device"
+  - key: 51_ABB_Solar_Lightning_Overvoltage_Protection
+    title: "Solar energy: lightning and surge protective devices (brochure 1TXH 000 118 B0201)"
+    publisher: "ABB"
+    edition: "2011"
+    jurisdiction: "IEC"
+    type: manufacturer brochure
+    kind: pdf
+    quotes: public
+    url: "https://library.e.abb.com/public/77266805bb3868adc12578f10033b12b/1TXH%20000%20118%20B0201_Solar%20energy%20Lightning%20and%20overvoltage%20protection_br.pdf"
+  - key: 52_ABB_OVR_Surge_Protective_Devices_System_proM
+    title: "System pro M compact: OVR surge protective devices (main catalogue 1TXH000083C0201)"
+    publisher: "ABB"
+    edition: "2011"
+    jurisdiction: "IEC"
+    type: manufacturer catalogue
+    kind: pdf
+    quotes: public
+    url: "https://library.e.abb.com/public/d614bdefa272767ac125784c005b65e8/1TXH000083C0201_ABB%20OVR%20%20RANGE%20SYSTEM%20proM_2011.pdf"
+  - key: 53_IDS_X-Series_Installer_Manual
+    title: "IDS X-Series Installer Manual 700-398-02O"
+    publisher: "Inhep Digital Security (IDS)"
+    edition: "700-398-02O"
+    jurisdiction: "South Africa"
+    type: manufacturer manual
+    kind: pdf
+    quotes: public
+    url: "https://www.idsprotect.co.za/site-documents/product-download/intrusion/xseries/IDS%20X-Series%20Installer%20Manual.pdf"
+  - key: 54_IDS_XSeries_Serial_Installer_Manual
+    title: "IDS XSeries Serial Installer Manual 700-678-02A"
+    publisher: "Inhep Digital Security (IDS)"
+    edition: "700-678-02A"
+    jurisdiction: "South Africa"
+    type: manufacturer manual
+    kind: pdf
+    quotes: public
+    url: "https://www.idsprotect.co.za/za/en/product-assets/xseries/control-panels/860-1-864-xs-ids-x64-control-panel/assets/documents/IDS%20XSeries%20Serial%20Installer%20Manual.pdf"
+  - key: 55_BEAMA_Guide_to_Surge_Protection_Devices_2014
+    title: "BEAMA Guide to Surge Protection Devices (SPDs): selection, application and theory (superseded edition, kept for comparison)"
+    publisher: "BEAMA Ltd (UK)"
+    edition: "May 2014"
+    jurisdiction: "UK"
+    type: industry guide
+    kind: pdf
+    quotes: public
+    url: "https://www.beama.org.uk/static/uploaded/12e08ebc-45fc-459f-8fd8f172853db2f7.pdf"

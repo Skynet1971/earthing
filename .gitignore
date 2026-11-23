@@ -1,0 +1,8 @@
+# Third-party reference PDFs: copyrighted, re-fetched by tools/download_references.py
+references/pdf/
+# Local-only: quotes from sources that forbid reproduction, restricted-source facts, audit files
+references/local/
+# Site-specific documents (equipment at the owner's properties) are built here and never committed
+private/
+__pycache__/
+*.pyc
