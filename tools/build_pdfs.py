@@ -116,6 +116,26 @@ def build_doc(doc, catalog, facts):
                 rows = [[f'<b>{esc(d.get("badge", d["id"]))}</b>', f'<b>{esc(d["title"])}</b><br/><font size="7.4" color="{k.PAL["muted"]}">{esc(d.get("applies_to", ""))}</font>', f'{d["id"]}_{d["slug"]}.pdf']
                         for d in c.load_docs() if not d.get("private") and d["id"] != doc["id"]]   # one row per other public document
                 story += k.data_table(st, accent, ["Sheet", "Title and scope", "File"], rows, [0.2, 0.55, 0.25])   # the index table
+            elif "prices" in b:   # observed web prices from a JSON file (data, not author text: every row carries its URL and date)
+                import json   # local import: only this block needs it
+                data = json.loads((c.ROOT / b["prices"]).read_text())   # suppliers file
+                groups = b.get("groups", {})   # item-group number -> heading
+                for g in sorted({r["item_group"] for r in data["prices"]}):   # one table per item group
+                    rows = [r for r in data["prices"] if r["item_group"] == g]   # rows of this group
+                    rows.sort(key=lambda r: (r["price_zar"] is None, r["price_zar"] or 0))   # cheapest first
+                    story.append(Paragraph(esc(groups.get(str(g), f"Item group {g}")), st["h2"]))   # group heading
+                    trs = [[f'<b>{esc(r["item"])}</b><br/><font size="7" color="{k.PAL["muted"]}">{esc(r.get("spec", ""))}</font>',
+                            esc(r["seller"]),
+                            (f'R {r["price_zar"]:,.2f}'.replace(",", " ") if r["price_zar"] is not None else "not shown") + f'<br/><font size="7">{esc(r.get("unit", ""))} · VAT {esc(r.get("vat", "not stated"))}</font>',
+                            esc(r.get("in_stock", "not stated"))[:60],
+                            f'<font size="6.5" color="{k.PAL["blue"]}"><a href="{esc(r["url"])}">{esc(r["url"][:60])}</a></font>' + ('' if r.get("confirmed") == "page" else '<br/><font size="6.5" color="#DC2626">search snippet only</font>')]
+                           for r in rows]   # one row per observed price
+                    story += k.data_table(st, accent, ["Product as listed", "Seller", "Price", "Stock (as shown)", "Page"], trs, [0.33, 0.13, 0.14, 0.15, 0.25])   # the table
+            elif "sellers" in b:   # seller list from the same JSON file
+                import json   # local import
+                data = json.loads((c.ROOT / b["sellers"]).read_text())   # suppliers file
+                trs = [[f'<b>{esc(x["name"])}</b><br/><font size="6.5" color="{k.PAL["blue"]}">{esc(x.get("website", ""))}</font>', esc(x.get("type", "")), esc(x.get("east_rand_branch", "not stated"))[:260]] for x in data["sellers"]]   # one row per seller
+                story += k.data_table(st, accent, ["Seller", "Type", "East Rand branch (as the seller's site states)"], trs, [0.27, 0.13, 0.60])   # the table
             elif "pagebreak" in b:   # forced page break
                 story.append(PageBreak())   # new page
             else:   # unknown block type is an authoring error
