@@ -77,7 +77,8 @@ def render_doc(doc, catalog, facts):
                 out.append("")   # spacing
             elif "diagram" in b:   # SVG image + caption
                 dg = b["diagram"]   # definition
-                out += [f"![{dg['name']}](img/{dg['name']}.svg)", "", f"*{T(dg.get('caption', ''))}*", ""]   # image and caption
+                out += [f'<a href="img/{dg["name"]}.svg"><img src="img/{dg["name"]}.svg" alt="{dg["name"]}" width="100%"></a>', "",
+                        "*Click the diagram to open it full size.* " + f"*{T(dg.get('caption', ''))}*", ""]   # full-width image, click to enlarge, caption
             elif "checklist" in b:   # task list
                 out += [f"- [ ] {T(i)}" for i in b["checklist"]] + [""]   # unticked boxes
     out += ["## Sources cited on this page", "",

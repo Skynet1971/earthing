@@ -20,9 +20,9 @@ The published South African wiring code (SANS 10142-1) and the supply-earthing s
 - ECA(SA) (2024) quoting SANS 10142-1 7.12.3.1.1 Note 1: in a TN system earthing of the electricity supply, an earth electrode is normally not required in an electrical installation.<sup>[R69 p.4](#sources-cited-on-this-page)</sup>
 - City of Ekurhuleni EG application form (2026): the applicant must state the earthing arrangement, with TN-C-S given as the example.<sup>[R62 p.40](#sources-cited-on-this-page)</sup>
 
-![earthing_systems](img/earthing_systems.svg)
+<a href="img/earthing_systems.svg"><img src="img/earthing_systems.svg" alt="earthing_systems" width="100%"></a>
 
-*Concept sketch. (2) TN-C-S: the PEN conductor of the supply provides the household earth, as Louw and Bokoro describe for South African networks.<sup>[R64 p.4](#sources-cited-on-this-page)</sup> (3) TT is shown for comparison only. Marker (1) is not described by a South African source in this library.*
+*Click the diagram to open it full size.* *Concept sketch. (2) TN-C-S: the PEN conductor of the supply provides the household earth, as Louw and Bokoro describe for South African networks.<sup>[R64 p.4](#sources-cited-on-this-page)</sup> (3) TT is shown for comparison only. Marker (1) is not described by a South African source in this library.*
 
 > ℹ️ **NOTE** — **No earth electrode value is required by these sources for a TN supply**
 >

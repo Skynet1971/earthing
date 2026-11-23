@@ -36,9 +36,9 @@ ITU-T K.71 covers two antenna cases when direct-strike protection is required: a
 
 On a building without a lightning protection system, DEHN states that the antenna mast must be earthed.<sup>[R6 p.294](#sources-cited-on-this-page)</sup>
 
-![antenna_mast](img/antenna_mast.svg)
+<a href="img/antenna_mast.svg"><img src="img/antenna_mast.svg" alt="antenna_mast" width="100%"></a>
 
-*Concept sketch, not a product installation drawing. (1) antenna mast earthed (DEHN)<sup>[R6 p.294](#sources-cited-on-this-page)</sup>; ITU-T K.71 requires the mast bonding conductor to be installed straight and vertical, giving the shortest, most direct path<sup>[R22 p.20](#sources-cited-on-this-page)</sup> (2) coaxial cable outer conductor bonded to the bonding bar at the entrance of the building (ITU-T K.71)<sup>[R22 p.19](#sources-cited-on-this-page)</sup> (3) SPD at the point of entry, with the bond wire from cable screen and SPD to the main earth terminal shorter than 1.5 m (ITU-T K.71)<sup>[R22 p.24](#sources-cited-on-this-page)</sup> (4) lowest point of the antenna cable shields connected to the main earthing busbar by copper bonding conductors of at least 4 mm² (DEHN).<sup>[R6 p.294](#sources-cited-on-this-page)</sup>*
+*Click the diagram to open it full size.* *Concept sketch, not a product installation drawing. (1) antenna mast earthed (DEHN)<sup>[R6 p.294](#sources-cited-on-this-page)</sup>; ITU-T K.71 requires the mast bonding conductor to be installed straight and vertical, giving the shortest, most direct path<sup>[R22 p.20](#sources-cited-on-this-page)</sup> (2) coaxial cable outer conductor bonded to the bonding bar at the entrance of the building (ITU-T K.71)<sup>[R22 p.19](#sources-cited-on-this-page)</sup> (3) SPD at the point of entry, with the bond wire from cable screen and SPD to the main earth terminal shorter than 1.5 m (ITU-T K.71)<sup>[R22 p.24](#sources-cited-on-this-page)</sup> (4) lowest point of the antenna cable shields connected to the main earthing busbar by copper bonding conductors of at least 4 mm² (DEHN).<sup>[R6 p.294](#sources-cited-on-this-page)</sup>*
 
 ### Buildings with and without a lightning protection system
 

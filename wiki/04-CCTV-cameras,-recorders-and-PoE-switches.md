@@ -34,9 +34,9 @@ Outdoor cameras sit at the end of long cables that leave the building. The sourc
 
 The sources read for this sheet describe the same basic layout: a protector near the camera, a second protector where the cable enters the building, and earthed equipment at both ends. The section on where the sources disagree lists the exceptions.
 
-![camera_both_ends](img/camera_both_ends.svg)
+<a href="img/camera_both_ends.svg"><img src="img/camera_both_ends.svg" alt="camera_both_ends" width="100%"></a>
 
-*Concept sketch, not a product wiring diagram. (1) protector near the camera<sup>[R34 p.2](#sources-cited-on-this-page)</sup><sup>[R10 p.1](#sources-cited-on-this-page)</sup> (2) protector at the building entry, bonded to the main earthing bar with a short conductor<sup>[R10 p.1](#sources-cited-on-this-page)</sup><sup>[R18 p.22](#sources-cited-on-this-page)</sup> (3) the PoE switch or recorder is earthed so that the cable shield has a path to earth<sup>[R20 p.2](#sources-cited-on-this-page)</sup><sup>[R20 p.3](#sources-cited-on-this-page)</sup> (4) the camera pole or pipe is earthed and the camera is bonded to it.<sup>[R41 p.4](#sources-cited-on-this-page)</sup>*
+*Click the diagram to open it full size.* *Concept sketch, not a product wiring diagram. (1) protector near the camera<sup>[R34 p.2](#sources-cited-on-this-page)</sup><sup>[R10 p.1](#sources-cited-on-this-page)</sup> (2) protector at the building entry, bonded to the main earthing bar with a short conductor<sup>[R10 p.1](#sources-cited-on-this-page)</sup><sup>[R18 p.22](#sources-cited-on-this-page)</sup> (3) the PoE switch or recorder is earthed so that the cable shield has a path to earth<sup>[R20 p.2](#sources-cited-on-this-page)</sup><sup>[R20 p.3](#sources-cited-on-this-page)</sup> (4) the camera pole or pipe is earthed and the camera is bonded to it.<sup>[R41 p.4](#sources-cited-on-this-page)</sup>*
 
 ### Protect both ends of the cable
 

@@ -71,9 +71,9 @@ PBB, SBB, RBB and MGB are US terms from the UFGS 27 05 26 guide specification an
 
 ## 3  Conductors and how they are installed
 
-![rack_bonding](img/rack_bonding.svg)
+<a href="img/rack_bonding.svg"><img src="img/rack_bonding.svg" alt="rack_bonding" width="100%"></a>
 
-*Concept sketch, not a product wiring diagram. (1) rack-mounted equipment with metallic parts and patch panels for shielded cabling bonded to the rack bonding busbar with a unit bonding conductor (UFGS 27 05 26, US)<sup>[R17 p.29](#sources-cited-on-this-page)</sup> (2) each cabinet and rack bonded to the bonding network or busbar with its own dedicated conductor, not daisy-chained (UFGS 27 05 26, US)<sup>[R17 p.31](#sources-cited-on-this-page)</sup><sup>[R17 p.31](#sources-cited-on-this-page)</sup> (3) the PBB bonded by the telecommunications bonding conductor to the building's electrical service equipment ground (UFGS 27 05 26, US)<sup>[R17 p.8](#sources-cited-on-this-page)</sup>; Motorola R56 (US practice): conductor from the MGB to the grounding electrode system at least 35 mm² (#2 AWG) copper.<sup>[R5 p.207](#sources-cited-on-this-page)</sup>*
+*Click the diagram to open it full size.* *Concept sketch, not a product wiring diagram. (1) rack-mounted equipment with metallic parts and patch panels for shielded cabling bonded to the rack bonding busbar with a unit bonding conductor (UFGS 27 05 26, US)<sup>[R17 p.29](#sources-cited-on-this-page)</sup> (2) each cabinet and rack bonded to the bonding network or busbar with its own dedicated conductor, not daisy-chained (UFGS 27 05 26, US)<sup>[R17 p.31](#sources-cited-on-this-page)</sup><sup>[R17 p.31](#sources-cited-on-this-page)</sup> (3) the PBB bonded by the telecommunications bonding conductor to the building's electrical service equipment ground (UFGS 27 05 26, US)<sup>[R17 p.8](#sources-cited-on-this-page)</sup>; Motorola R56 (US practice): conductor from the MGB to the grounding electrode system at least 35 mm² (#2 AWG) copper.<sup>[R5 p.207](#sources-cited-on-this-page)</sup>*
 
 ### Sizes as published
 

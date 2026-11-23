@@ -31,9 +31,9 @@ IEC/BS EN 62305 sets four lightning protection levels (LPL I to IV); their light
 
 Per IEC/BS EN 62305-4 as summarised by Furse, successive lightning protection zones (LPZ) use a combination of bonding, shielding and coordinated SPDs to reduce the severity of the lightning electromagnetic impulse (LEMP).<sup>[R12 p.14](#sources-cited-on-this-page)</sup>
 
-![lpz_zones](img/lpz_zones.svg)
+<a href="img/lpz_zones.svg"><img src="img/lpz_zones.svg" alt="lpz_zones" width="100%"></a>
 
-*Concept sketch of the zone concept. (1) SPD where lines cross the LPZ 0/1 boundary: it provides lightning current protection<sup>[R12 p.14](#sources-cited-on-this-page)</sup>; DEHN's coaxial arresters for the 0A-1 boundary, for example, are lightning current arresters.<sup>[R27 p.14](#sources-cited-on-this-page)</sup> (2) SPD at the LPZ 1/2 boundary: it provides overvoltage protection<sup>[R12 p.14](#sources-cited-on-this-page)</sup>; DEHN lists surge arresters for the 1-2 boundary.<sup>[R27 p.14](#sources-cited-on-this-page)</sup>*
+*Click the diagram to open it full size.* *Concept sketch of the zone concept. (1) SPD where lines cross the LPZ 0/1 boundary: it provides lightning current protection<sup>[R12 p.14](#sources-cited-on-this-page)</sup>; DEHN's coaxial arresters for the 0A-1 boundary, for example, are lightning current arresters.<sup>[R27 p.14](#sources-cited-on-this-page)</sup> (2) SPD at the LPZ 1/2 boundary: it provides overvoltage protection<sup>[R12 p.14](#sources-cited-on-this-page)</sup>; DEHN lists surge arresters for the 1-2 boundary.<sup>[R27 p.14](#sources-cited-on-this-page)</sup>*
 
 - LPZ 0A is the zone exposed to direct lightning strikes and the full lightning electromagnetic field, where internal systems may be subjected to the full lightning current.<sup>[R6 p.188](#sources-cited-on-this-page)</sup>
 - LPZ 0B is protected against direct lightning strikes but still exposed to the full lightning electromagnetic field; internal systems may carry partial lightning currents.<sup>[R6 p.188](#sources-cited-on-this-page)</sup>

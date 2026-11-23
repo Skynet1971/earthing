@@ -31,9 +31,9 @@ ITU-T K.98 separates the two terms: earthing connects the earth bar to earth, us
 
 BS 7671 (UK) names five earthing systems: TN-S, TN-C-S, TT, TN-C and IT.<sup>[R8 p.2](#sources-cited-on-this-page)</sup> A UK public low-voltage supply is one of the first three.<sup>[R8 p.2](#sources-cited-on-this-page)</sup>
 
-![earthing_systems](img/earthing_systems.svg)
+<a href="img/earthing_systems.svg"><img src="img/earthing_systems.svg" alt="earthing_systems" width="100%"></a>
 
-*Concept sketch of the three supply earthing systems a UK low-voltage supply will use<sup>[R8 p.2](#sources-cited-on-this-page)</sup>; TN-C-S is the system known in the UK as protective multiple earthing (PME).<sup>[R8 p.5](#sources-cited-on-this-page)</sup> (3) TT: the consumer provides their own connection to earth with an earth electrode local to the installation.<sup>[R8 p.8](#sources-cited-on-this-page)</sup> No verified fact in this library describes the conductor arrangements at markers (1) and (2); the drawing shows them by system name only.*
+*Click the diagram to open it full size.* *Concept sketch of the three supply earthing systems a UK low-voltage supply will use<sup>[R8 p.2](#sources-cited-on-this-page)</sup>; TN-C-S is the system known in the UK as protective multiple earthing (PME).<sup>[R8 p.5](#sources-cited-on-this-page)</sup> (3) TT: the consumer provides their own connection to earth with an earth electrode local to the installation.<sup>[R8 p.8](#sources-cited-on-this-page)</sup> No verified fact in this library describes the conductor arrangements at markers (1) and (2); the drawing shows them by system name only.*
 
 - In the UK, a low-voltage supply given in accordance with the Electricity Safety, Quality and Continuity Regulations 2002 will be TN-S, TN-C-S (PME) or TT.<sup>[R8 p.2](#sources-cited-on-this-page)</sup>
 - An IT system is not permitted for a low-voltage public supply in the UK because the source is not directly earthed; TN-C and IT systems are both very uncommon in the UK.<sup>[R8 p.2](#sources-cited-on-this-page)</sup>
@@ -83,9 +83,9 @@ ITU-T K.66 requires overvoltage protection to start with bonding the metallic se
 - Where services enter at different points, ITU-T K.66 requires an earthed equipotential bonding bar or bonding terminal near each entry point, each connected to an earthing system, with all the bonding bars bonded together, for example by a ring conductor.<sup>[R18 p.19](#sources-cited-on-this-page)</sup>
 - Lightning equipotential bonding of all incoming metal lines, power lines and data lines should be made centrally at one point; where that is not possible, a ring equipotential bonding bar is recommended.<sup>[R6 p.205](#sources-cited-on-this-page)</sup>
 
-![common_bonding](img/common_bonding.svg)
+<a href="img/common_bonding.svg"><img src="img/common_bonding.svg" alt="common_bonding" width="100%"></a>
 
-*Concept sketch, not an installation drawing. (1) SPDs at the service entries connected to the main earthing terminal with short conductors: K.66 gives under 0.5 m for the SPD connecting wires and under 1.5 m for connecting plus bonding wires to the terminal<sup>[R18 p.33](#sources-cited-on-this-page)</sup>, which reduces surge voltage differences between telecom lines and the power protective conductor.<sup>[R18 p.22](#sources-cited-on-this-page)</sup> (2) Earthing: the earth bar connected to earth, usually via an installed electrode.<sup>[R25 p.27](#sources-cited-on-this-page)</sup> (3) All protective and functional earthing conductors connected to one single main earth terminal (IEC 60364-4-44 as cited by K.98).<sup>[R25 p.30](#sources-cited-on-this-page)</sup>*
+*Click the diagram to open it full size.* *Concept sketch, not an installation drawing. (1) SPDs at the service entries connected to the main earthing terminal with short conductors: K.66 gives under 0.5 m for the SPD connecting wires and under 1.5 m for connecting plus bonding wires to the terminal<sup>[R18 p.33](#sources-cited-on-this-page)</sup>, which reduces surge voltage differences between telecom lines and the power protective conductor.<sup>[R18 p.22](#sources-cited-on-this-page)</sup> (2) Earthing: the earth bar connected to earth, usually via an installed electrode.<sup>[R25 p.27](#sources-cited-on-this-page)</sup> (3) All protective and functional earthing conductors connected to one single main earth terminal (IEC 60364-4-44 as cited by K.98).<sup>[R25 p.30](#sources-cited-on-this-page)</sup>*
 
 ### One earth for everything
 

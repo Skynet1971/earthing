@@ -98,6 +98,24 @@ real characters `Ω µ ² ≤ ≥ ±` in text. Never use Unicode sub/superscript
 - Preview: `python3 tools/preview_diagrams.py /tmp/x.pdf name && pdftoppm -r 110 -png /tmp/x.pdf /tmp/x`
   then look at the PNG. Check that no text overlaps a line or box and nothing runs off the frame.
 
+## 4a. Readability rules for diagrams (mandatory)
+
+The owner could not read the first diagrams in the wiki. These rules exist so that never happens again.
+
+1. **Minimum text size 8.5 pt at full size.** `Dg.text` enforces it: every size written in a diagram
+   function is multiplied by `TEXT_SCALE` (1.25) and never drops below `MIN_TEXT` (8.5). Do not bypass
+   `Dg.text` with raw `String(...)`. Do not lower these constants.
+2. **Labels must fit.** A label never overflows its box, crosses a wire or sits on another label. Widen the
+   box (`spd(..., w=...)`, `box(...)`) or move the label; do not shrink the text.
+3. **Drawing size.** Draw at 480 pt wide (it then fills the PDF text width). If a diagram needs more than
+   about 12 labels, split it into two diagrams instead of cramming it.
+4. **Numbered markers** (`tag`) are 15 pt discs with 9 pt numbers; explain every marker in the caption.
+5. **Wiki:** diagrams are SVG with the font chain `Helvetica, Arial, sans-serif`, shown at 100 % of the
+   page width and linked to the full-size file (click to enlarge). `export_svg` and `build_wiki.py` do this;
+   keep it.
+6. **Check at real size before committing:** render with `tools/preview_diagrams.py` at 80 dpi and look at
+   every diagram you changed. Text that is hard to read at 80 dpi is too small.
+
 ## 5. Build and check
 
 ```bash

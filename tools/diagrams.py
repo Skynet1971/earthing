@@ -14,6 +14,9 @@ C = {   # diagram palette (matches tools/pdfkit.py)
     "sand": "#FEF4E2", "rose": "#FDECEC", "lilac": "#F1EAFE", "white": "#FFFFFF", "ground": "#D6C7A8",
 }
 
+TEXT_SCALE = 1.25   # every label is drawn 25 % larger than the size written in a diagram function
+MIN_TEXT = 8.5   # readability rule: no diagram text below 8.5 pt at full size (see the colour-pdf skill)
+
 def hx(name):
     """Palette name or #hex -> colour object."""
     return colors.HexColor(C.get(name, name))   # palette lookup with hex fallback
@@ -27,11 +30,12 @@ class Dg:
 
     def text(self, x, y, s, size=7.5, color="ink", anchor="start", bold=False):
         """Single line of text."""
+        size = max(size * TEXT_SCALE, MIN_TEXT)   # readability rule: scale up and never below the minimum
         self.d.add(String(x, y, s, fontName="Helvetica-Bold" if bold else "Helvetica", fontSize=size, fillColor=hx(color), textAnchor=anchor))   # label
 
     def lines(self, x, y, rows, size=7.5, color="ink", anchor="middle", bold_first=False, lead=None):
         """Several lines of text stacked downward from y."""
-        lead = lead or size * 1.22   # line spacing
+        lead = lead or max(size * TEXT_SCALE, MIN_TEXT) * 1.18   # line spacing follows the scaled text size
         for i, s in enumerate(rows):   # one String per row
             self.text(x, y - i * lead, s, size=size, color=color, anchor=anchor, bold=(bold_first and i == 0))   # stacked label
 
@@ -39,8 +43,8 @@ class Dg:
         """Rounded box with centred multi-line label (first row bold). x,y = bottom-left."""
         self.d.add(Rect(x, y, w, h, fillColor=hx(fill) if fill else None, strokeColor=hx(stroke), strokeWidth=sw, rx=r, ry=r, strokeDashArray=dash))   # the box
         rows = [rows] if isinstance(rows, str) else rows   # accept one string or a list
-        lead = size * 1.22   # line spacing
-        top = y + h / 2.0 + (len(rows) - 1) * lead / 2.0 - size * 0.35   # baseline of the first row (vertically centred)
+        eff = max(size * TEXT_SCALE, MIN_TEXT); lead = eff * 1.18   # scaled text size and line spacing
+        top = y + h / 2.0 + (len(rows) - 1) * lead / 2.0 - eff * 0.35   # baseline of the first row (vertically centred)
         self.lines(x + w / 2.0, top, rows, size=size, color=color, bold_first=True)   # label
 
     def wire(self, pts, color="ink", width=1.4, dash=None):
@@ -69,8 +73,8 @@ class Dg:
 
     def tag(self, x, y, n, color="navy"):
         """Numbered marker (white number in a filled circle) that the caption or legend explains."""
-        self.d.add(Circle(x, y, 6.2, fillColor=hx(color), strokeColor=hx("white"), strokeWidth=0.8))   # marker disc
-        self.text(x, y - 2.7, str(n), size=7.5, color="white", anchor="middle", bold=True)   # marker number
+        self.d.add(Circle(x, y, 7.6, fillColor=hx(color), strokeColor=hx("white"), strokeWidth=0.9))   # marker disc (larger for legibility)
+        self.text(x, y - 3.2, str(n), size=7.2, color="white", anchor="middle", bold=True)   # marker number (scaled to 9 pt)
 
     def bolt(self, x, y, s=26, color="amber"):
         """Lightning bolt; x,y = top-left, s = height."""
@@ -188,7 +192,7 @@ def lpz_zones():
         g.d.add(Line(x, 181, x, 212, strokeColor=hx("muted"), strokeWidth=2)); g.d.add(Circle(x, 213, 2, fillColor=hx("muted"), strokeColor=None))   # rod and tip
     g.wire([160, 212, 110, 41], "muted", 0.8, dash=[3, 3]); g.wire([380, 212, 430, 41], "muted", 0.8, dash=[3, 3])   # edge of the protected volume (sketch)
     g.text(78, 200, "LPZ 0A", size=9, color="amber", anchor="middle", bold=True); g.text(78, 189, "direct strike possible", size=6.5, color="muted", anchor="middle")   # zone 0A
-    g.text(124, 120, "LPZ 0B", size=8.5, color="amber", anchor="middle", bold=True)   # zone 0B
+    g.text(112, 132, "LPZ 0B", size=8.5, color="amber", anchor="middle", bold=True)   # zone 0B
     g.text(196, 165, "LPZ 1", size=9, color="teal", anchor="middle", bold=True)   # zone 1
     g.d.add(Rect(285, 60, 90, 70, fillColor=hx("mint"), strokeColor=hx("green"), strokeWidth=1.2, rx=3, ry=3))   # equipment cabinet = LPZ 2
     g.text(330, 118, "LPZ 2", size=9, color="green", anchor="middle", bold=True)   # zone 2
@@ -218,7 +222,7 @@ def spd_db_wiring():
     g.text(243, 72, "SPD", size=8, color="amber", anchor="middle", bold=True)   # SPD label
     g.box(200, 36, 120, 14, ["Earth bar"], fill="mint", stroke="green", size=6.5)   # board earth bar
     g.pe([243, 62, 243, 50])   # SPD earth to the earth bar
-    g.pe([320, 43, 420, 43, 420, 30]); g.text(424, 50, "to MET /", size=6.5, color="green"); g.text(424, 42, "earth electrode", size=6.5, color="green")   # bar to the main earthing terminal
+    g.pe([320, 43, 420, 43, 420, 30]); g.text(476, 60, "to MET /", size=6.5, color="green", anchor="end"); g.text(476, 50, "earth electrode", size=6.5, color="green", anchor="end")   # bar to the main earthing terminal
     g.wire([290, 160, 290, 60], "amber", 0.8, dash=[2, 2]); g.wire([286, 160, 294, 160], "amber", 0.8); g.wire([286, 60, 294, 60], "amber", 0.8)   # length bracket
     g.text(298, 110, "lead length:", size=6.5, color="amber"); g.text(298, 101, "keep short", size=6.5, color="amber")   # bracket label
     g.tag(195, 75, 1); g.tag(200, 113, 2); g.tag(318, 128, 3); g.tag(230, 56, 4)   # markers
@@ -233,13 +237,13 @@ def pv_protection():
     g.d.add(Rect(150, 41, 280, 129, fillColor=None, strokeColor=hx("navy"), strokeWidth=1.2))   # walls
     g.d.add(Polygon([200, 192, 270, 222, 285, 216, 215, 186], fillColor=hx("blue"), strokeColor=hx("navy"), strokeWidth=0.8))   # PV array on the roof
     g.text(318, 222, "PV array + frame", size=6.8, color="navy")   # array label
-    g.spd(170, 182, "DC SPD", w=38)   # optional SPD near the array
-    g.d.add(Rect(149, 172, 42, 20, fillColor=None, strokeColor=hx("amber"), strokeWidth=0.7, strokeDashArray=[2, 2]))   # dashed = optional
+    g.spd(170, 182, "DC SPD", w=44)   # optional SPD near the array
+    g.d.add(Rect(146, 172, 48, 20, fillColor=None, strokeColor=hx("amber"), strokeWidth=0.7, strokeDashArray=[2, 2]))   # dashed = optional
     g.wire([208, 189, 189, 182], "orange", 1.6)   # array to the optional SPD
     g.wire([170, 174, 170, 120, 205, 120], "orange", 1.6)   # d.c. cable to the inverter
-    g.spd(222, 120, "DC SPD", w=36)   # SPD at the inverter input
+    g.spd(219, 120, "DC SPD", w=42)   # SPD at the inverter input
     g.box(240, 100, 54, 40, ["Inverter"], fill="sand", stroke="orange", size=7)   # inverter
-    g.wire([294, 120, 312, 120], "red", 1.6); g.spd(328, 120, "AC SPD", w=34); g.wire([345, 120, 360, 120], "red", 1.6)   # a.c. side with SPD
+    g.wire([294, 120, 312, 120], "red", 1.6); g.spd(327, 120, "AC SPD", w=40); g.wire([345, 120, 360, 120], "red", 1.6)   # a.c. side with SPD
     g.box(360, 96, 56, 48, ["Distribution", "board"], fill="white", stroke="navy", size=6.8)   # distribution board
     g.box(220, 52, 120, 16, ["Equipotential bonding bar"], fill="mint", stroke="green", size=6.5)   # bonding bar
     g.pe([245, 190, 245, 160, 200, 160, 200, 60, 220, 60])   # frame bonding conductor (sketch)
@@ -261,7 +265,7 @@ def gate_motor():
     g.spd(271, 76, "SPD", w=28, h=13)   # surge protection inside the operator
     g.pe([256, 69, 256, 40]); g.earth(256, 40)   # earth spike next to the operator
     g.box(390, 150, 72, 40, ["House", "board"], fill="paper", stroke="navy", size=7)   # supply board
-    g.wire([400, 150, 400, 100, 302, 100], "red", 1.6); g.text(352, 136, "mains cable with PE", size=6.5, color="red", anchor="middle")   # mains supply
+    g.wire([400, 150, 400, 100, 302, 100], "red", 1.6); g.text(346, 78, "mains cable with PE", size=6.5, color="red")   # mains supply
     g.pe([420, 150, 420, 92, 302, 92])   # protective earth with the mains cable
     g.d.add(Rect(330, 60, 10, 60, fillColor=hx("muted"), strokeColor=None)); g.text(335, 124, "intercom", size=6.5, color="blue", anchor="middle")   # intercom post
     g.wire([302, 70, 330, 70], "blue", 1.5)   # intercom cable
@@ -384,5 +388,8 @@ def export_svg(out_dir):
     import pathlib   # path handling
     out = pathlib.Path(out_dir); out.mkdir(parents=True, exist_ok=True)   # target folder
     for name, fn in DIAGRAMS.items():   # every registered diagram
-        renderSVG.drawToFile(fn(), str(out / f"{name}.svg"))   # write the SVG
+        f = out / f"{name}.svg"; renderSVG.drawToFile(fn(), str(f))   # write the SVG
+        t = f.read_text().replace("font-family: Helvetica-Bold", "font-family: Helvetica, Arial, sans-serif; font-weight: bold")   # bold fallback chain
+        t = t.replace("font-family: Helvetica;", "font-family: Helvetica, Arial, sans-serif;").replace("font-family=\"Helvetica\"", "font-family=\"Helvetica, Arial, sans-serif\"")   # regular fallback chain (Windows has no Helvetica)
+        f.write_text(t)   # save
     return sorted(DIAGRAMS)   # names written
