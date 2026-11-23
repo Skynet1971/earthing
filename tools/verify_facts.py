@@ -66,6 +66,17 @@ def main():
             f.pop("file", None)   # the key above replaces the file name
             kept.append(f)   # accepted
     import yaml   # YAML for the catalogue flags
+    corr_file = ROOT / "content" / "fact_corrections.json"   # reviewed corrections, applied by fact ID
+    corr = json.loads(corr_file.read_text()) if corr_file.exists() else {}   # {id: {"claim": "...", "reason": "..."} or {"drop": true, "reason": "..."}}
+    fixed = []   # facts after corrections
+    for f in kept:   # apply each correction
+        cfix = corr.get(f["id"])   # correction for this fact, if any
+        if cfix and cfix.get("drop"):   # the claim could not be made faithful
+            f["reject"] = "dropped in review: " + cfix.get("reason", ""); rejected.append(f); continue   # move it to the audit list
+        if cfix and cfix.get("claim"):   # a faithful rewording
+            f["claim"], f["review"] = cfix["claim"], cfix.get("reason", "corrected in review")   # replace and record why
+        fixed.append(f)   # keep it
+    kept = fixed   # continue with the corrected list
     cat = {s["key"]: s for s in yaml.safe_load((ROOT / "references" / "catalog.yaml").read_text())["sources"]}   # catalogue entries by key
     unknown = sorted({f["source"] for f in kept} - set(cat))   # sources that are not catalogued
     if unknown: raise SystemExit(f"sources missing from references/catalog.yaml: {unknown}")   # the catalogue must be complete

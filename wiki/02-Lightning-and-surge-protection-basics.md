@@ -58,7 +58,7 @@ IEC/BS EN 62305 identifies four sources of damage: S1 flashes to the structure, 
 - BRE PV guide (UK, 2nd ed. 2006): lightning can cause damage by a direct strike or by surges from a nearby strike, and induced surges are the more likely cause of lightning damage in the majority of installations.<sup>[R49 p.14](#sources-cited-on-this-page)</sup>
 - DEHN (white paper WPX012, Surge protection for public address systems): exterior loudspeakers on a building roof can be damaged by indirect lightning effects (inductive / capacitive coupling) whether or not the building has external lightning protection.<sup>[R27 p.3](#sources-cited-on-this-page)</sup>
 - With copper cabling of about 500 m (building backbone) or about 100 m (horizontal), a direct strike to the building can induce common-mode interference exceeding the insulation strength of a router or PC network card, so both the distributor (hub, switch, router) and the terminal equipment need protection.<sup>[R6 p.256](#sources-cited-on-this-page)</sup>
-- i-PRO (knowledge-base article 'Countermeasure for lightning surge'): a potential difference occurring in the GND causes equipment breakdown, and induced lightning on a ground loop is named as one suspected cause of burnt circuit boards.<sup>[R39 p.2](#sources-cited-on-this-page)</sup>
+- i-PRO (knowledge-base article 'Countermeasure for lightning surge'): where the GND line is separated, a potential difference occurs in the GND that causes equipment breakdown, and i-PRO suspects inductive lightning on a ground loop as one cause of burnt circuit boards.<sup>[R39 p.2](#sources-cited-on-this-page)</sup>
 
 ### Potential differences between services and earths
 
@@ -91,7 +91,7 @@ Rolling sphere radii and mesh sizes for each class of LPS are in the table in ch
 
 - IEC/BS EN 62305 has a 10 Ω overall earthing requirement for the LPS, achieved by either a Type A arrangement (rods) or a Type B arrangement (ring conductor) (the words 'down conductors' in the quote belong to the BS 6651 column).<sup>[R12 p.1](#sources-cited-on-this-page)</sup>
 - For a lightning protection earth-termination system a low earth resistance of 10 ohm or less (measured at low frequency) is generally recommended.<sup>[R6 p.128](#sources-cited-on-this-page)</sup>
-- A type A earth electrode arrangement (individual earth rods or radial electrodes on each down conductor) requires at least two earth electrodes.<sup>[R6 p.129](#sources-cited-on-this-page)</sup>
+- A type A earth electrode arrangement requires at least two earth electrodes, although a single earth electrode is sufficient for individually positioned air-termination rods or masts.<sup>[R6 p.129](#sources-cited-on-this-page)</sup>
 - For class of LPS III and IV the minimum earth electrode length l1 is 5 m.<sup>[R6 p.129](#sources-cited-on-this-page)</sup>
 - For type A arrangements, each vertical or inclined earth electrode must be at least 0.5 x l1 long, and each radial electrode at least l1 long.<sup>[R6 p.129](#sources-cited-on-this-page)</sup>
 - IEC/BS EN 62305-3 recommends a single integrated earth termination system for a structure, combining lightning protection, power and telecommunication systems.<sup>[R12 p.11](#sources-cited-on-this-page)</sup>
@@ -150,7 +150,7 @@ Per NIST (US), surge protective devices neither suppress nor arrest a surge; the
 ### When a type 1 (lightning current) SPD is called for
 
 - BEAMA SPD guide (UK, 2018): where a structural lightning protection system is required, lightning current (equipotential bonding) SPDs are always required on every metallic electrical service entering the structure: mains Type 1 and data/telecom Category D.<sup>[R48 p.32](#sources-cited-on-this-page)</sup>
-- BEAMA SPD guide (UK, 2018): where no structural LPS is required but a service arrives by overhead line, lightning current SPDs are needed: 12.5 kA 10/350 per mode for mains Type 1 and 2.5 kA 10/350 per mode for signal/telecom SPDs.<sup>[R48 p.34](#sources-cited-on-this-page)</sup>
+- BEAMA SPD guide (UK, 2018): if the BS EN 62305 risk evaluation shows a structural LPS is not required but there is an indirect risk, services fed by an overhead line need lightning current SPDs: 12.5 kA 10/350 per mode for mains Type 1 and 2.5 kA 10/350 per mode for signal/telecom SPDs.<sup>[R48 p.34](#sources-cited-on-this-page)</sup>
 - BEAMA SPD guide (UK, 2018): underground services without a structural LPS do not need lightning current SPDs; overvoltage (Type 2 / Category C) SPDs are sufficient.<sup>[R48 p.35](#sources-cited-on-this-page)</sup>
 - BEAMA SPD guide (UK, BS 7671:2018 Section 443): if there is a risk of a direct lightning strike to the structure or to overhead lines feeding it, SPDs are required per BS EN 62305.<sup>[R48 p.63](#sources-cited-on-this-page)</sup>
 - BEAMA SPD guide (UK, BS 7671:2018 534.4.1.3): where the structure has an external LPS or needs protection against direct lightning on overhead lines, Type 1 SPDs shall be installed as close as possible to the origin of the installation.<sup>[R48 p.68](#sources-cited-on-this-page)</sup>
@@ -159,7 +159,7 @@ Per NIST (US), surge protective devices neither suppress nor arrest a surge; the
 - Outdoor lighting circuits located in LPZ 0A (exposed to direct strikes) need type 1 lightning current arresters where they enter the building.<sup>[R6 p.273](#sources-cited-on-this-page)</sup>
 - SMA technical information (Overvoltage Protection, v1.3): type I SPDs are needed where lightning or partial lightning currents can flow via electrical cables, for example if the protected system is directly connected to the external LPS or the distance between the DC cables and the external lightning protection is too small.<sup>[R45 p.3](#sources-cited-on-this-page)</sup>
 - DEHN rooftop-PV white paper (WPX029, 2022): on a building with external LPS the grid connection point must be protected by a multipole type 1 SPD (for example a spark-gap-based combined arrester).<sup>[R44 p.9](#sources-cited-on-this-page)</sup>
-- DEHN (white paper WP007, Surge protection for CCTV systems): for a building without an external lightning protection system, the white paper specifies the installation of surge arresters (rather than lightning current arresters) as the protection measure.<sup>[R26 p.3](#sources-cited-on-this-page)</sup>
+- DEHN (white paper WP007, Surge protection for CCTV systems): for a building without an external lightning protection system, the white paper states that installing surge arresters provides sufficient protection.<sup>[R26 p.3](#sources-cited-on-this-page)</sup>
 - For CCTV on buildings without an external lightning protection system the direct/nearby strike risk is taken as low, and surge arresters (rather than lightning current arresters) provide sufficient protection.<sup>[R6 p.303](#sources-cited-on-this-page)</sup>
 - DEHN rooftop-PV white paper (WPX029, 2022): according to IEC 60364-4-44, surge protective devices must also be installed for buildings that have no external lightning protection system.<sup>[R44 p.2](#sources-cited-on-this-page)</sup>
 
@@ -177,7 +177,7 @@ Per NIST (US), surge protective devices neither suppress nor arrest a surge; the
 - IEC 60364-5-53 suggests connecting SPDs in series (through-wiring, V-shaped connection) so that the voltage at the protected equipment equals the SPD's voltage protection level.<sup>[R6 p.235](#sources-cited-on-this-page)</sup>
 - If the next upstream fuse in the installation is larger than the maximum backup fuse permitted for the SPD, the SPD's cable branch must have its own backup fuse (or an SPD with integrated backup fuse must be used).<sup>[R6 p.236](#sources-cited-on-this-page)</sup>
 - BEAMA SPD guide (UK, BS 7671:2018): Section 534 requires installed SPDs to be protected against short-circuit by overcurrent protective devices (OCPDs).<sup>[R48 p.48](#sources-cited-on-this-page)</sup>
-- BEAMA SPD guide (UK, BS 7671:2018 Section 534): SPD connecting cables shall be at least 16 mm2 copper for Type 1 SPDs and 4 mm2 copper for Type 2 and Type 3 SPDs (or not less than the line conductor where that is below 4 mm2).<sup>[R48 p.48](#sources-cited-on-this-page)</sup>
+- BEAMA SPD guide (UK, BS 7671:2018 Section 534): Section 534 advises minimum SPD connecting-cable cross-sections of 16 mm2 copper for Type 1 SPDs and 4 mm2 copper for Type 2 and Type 3 SPDs (or not less than the line conductor where that is below 4 mm2).<sup>[R48 p.48](#sources-cited-on-this-page)</sup>
 - In TN systems, type 1 and type 2 SPDs should be installed upstream of the RCD, because an RCD would see the discharged impulse current as residual current and could be mechanically damaged by partial lightning current.<sup>[R6 p.222](#sources-cited-on-this-page)</sup>
 - Type 3 SPDs are installed downstream of the RCD.<sup>[R6 p.222](#sources-cited-on-this-page)</sup>
 - In TT systems type 1 and type 2 SPDs must always be installed upstream of the RCD.<sup>[R6 p.229](#sources-cited-on-this-page)</sup>

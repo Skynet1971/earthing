@@ -35,7 +35,7 @@ A gate operator is outdoor equipment connected to the house by its mains and sig
 - Centurion (D5-Evo sliding gate operator installation manual): both the controller and the charger must be effectively earthed for improved lightning protection.<sup>[R33 p.31](#sources-cited-on-this-page)</sup>
 - Centurion (D5-Evo sliding gate operator installation manual): the earthing diagram specifies the earth spike as a copper rod longer than 1 m hammered into the ground.<sup>[R33 p.37](#sources-cited-on-this-page)</sup>
 - Centurion (D5-Evo sliding gate operator installation manual): the earthing diagram shows an optional 40 kA surge arrestor at the 220 V mains input (E, N, L).<sup>[R33 p.37](#sources-cited-on-this-page)</sup>
-- Centurion (D5-Evo sliding gate operator installation manual): the earthing diagram shows an earth harness with a spade connection and a ring lug as the earthing links inside the operator.<sup>[R33 p.37](#sources-cited-on-this-page)</sup>
+- Centurion (D5-Evo sliding gate operator installation manual): the 'Earthing for effective lightning protection' diagram labels a spade connection, an earth harness, a ring lug and an earth spike.<sup>[R33 p.37](#sources-cited-on-this-page)</sup>
 - Centurion (D5-Evo sliding gate operator installation manual): the earthing system must be correctly constructed and all metal parts of the system suitably earthed.<sup>[R33 p.7](#sources-cited-on-this-page)</sup>
 
 ### Centurion D6 SMART

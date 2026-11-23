@@ -1,0 +1,78 @@
+{
+ "A041": {
+  "claim": "Under the UK ESQCR, electricity distributors have a duty to make, and so far as is reasonably practicable keep up to date, maps showing the position of their underground and overhead networks.",
+  "reason": "overstated: The claim drops the qualifier 'so far as is reasonably practicable' on the duty to keep the maps up to date, so the duty reads as absolute. (review 2026-11-23)"
+ },
+ "B101": {
+  "claim": "ITU-T K.98 says most Ethernet ports have a signal transformer that is generally sufficient against line-to-earth surges, but Power over Ethernet equipment may be more susceptible to damage, and where off-the-shelf protection is not available an engineering solution may be needed.",
+  "reason": "overstated: Drops the condition: the source says an engineering solution may be needed only where off-the-shelf protection is not available. (review 2026-11-23)"
+ },
+ "D005": {
+  "claim": "A type A earth electrode arrangement requires at least two earth electrodes, although a single earth electrode is sufficient for individually positioned air-termination rods or masts.",
+  "reason": "overstated: The claim gives the two-electrode minimum as an absolute rule, but the same passage says a single earth electrode is enough for individually positioned air-termination rods or masts. (review 2026-11-23)"
+ },
+ "D073": {
+  "claim": "Antenna systems inside a building, or located at least 2 m below the roof and protruding no more than 1.5 m from the wall, do not need an earthing conductor, although equipotential bonding is still required.",
+  "reason": "overstated: The source sets a limit of no more than 1.5 m projection from the wall; the claim replaces it with the vague 'not protruding far', which drops the condition. (review 2026-11-23)"
+ },
+ "E009": {
+  "claim": "DEHN (white paper WP007, Surge protection for CCTV systems): for a building without an external lightning protection system, the white paper states that installing surge arresters provides sufficient protection.",
+  "reason": "overstated: The source only says surge arresters provide sufficient protection; 'specifies' and '(rather than lightning current arresters)' are not on the page, and Table 1 also lists combined arresters. (review 2026-11-23)"
+ },
+ "E034": {
+  "claim": "TP-Link (Lightning Protection Guide for rack-mountable devices): where no metal raceway is used, the table gives the minimum distance between an Ethernet cable and a lightning down-conductor as a parallel net length L of 1000 mm and a parallel-overlapping net height H of 300 mm; for a PE conductor 50 mm and 20 mm, and for a service pipe 150 mm and 20 mm.",
+  "reason": "overstated: Leaves out the table note that these minimum distances apply only when no metal raceway is used; a steel tube or metal raceway can be added instead. (review 2026-11-23)"
+ },
+ "E062": {
+  "claim": "i-PRO (knowledge-base article 'Countermeasure for lightning surge'): where the GND line is separated, a potential difference occurs in the GND that causes equipment breakdown, and i-PRO suspects inductive lightning on a ground loop as one cause of burnt circuit boards.",
+  "reason": "overstated: Drops the condition: the source says a potential difference occurs in the GND (causing breakdown) in the case where the GND line is separated. (review 2026-11-23)"
+ },
+ "E106": {
+  "claim": "Centurion (D5-Evo sliding gate operator installation manual): the 'Earthing for effective lightning protection' diagram labels a spade connection, an earth harness, a ring lug and an earth spike.",
+  "reason": "unsupported: The diagram labels a spade connection, earth harness, ring lug and earth spike, but nothing on the page places them 'inside the operator' or calls them the earthing links. (review 2026-11-23)"
+ },
+ "H020": {
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): every DC input (MPPT) of the inverter must be protected by a type 2 surge protective device (case without external LPS).",
+  "reason": "overstated: Source says every DC input (MPPT) must be protected by a type 2 SPD; 'its own' SPD is not stated, and the product table lists a single 2-MPPT unit covering two inputs. (review 2026-11-23)"
+ },
+ "H096": {
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): according to IEC 62446, for each string the measurement of Voc and Isc and a polarity and isolation (insulation) check are mandatory, and as a minimum Voc and polarity must be checked before the strings are connected to the inverter.",
+  "reason": "overstated: The page says IEC 62446 makes Voc, Isc, polarity and insulation checks mandatory per string, but only Voc and polarity are named as the minimum before connecting strings to the inverter. (review 2026-11-23)"
+ },
+ "H114": {
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): earthing one of the live d.c. conductors is permitted only if there is at least simple separation between the a.c. side and the d.c. side, including in the inverter.",
+  "reason": "unsupported: The parenthetical '(i.e. not with a transformerless inverter)' is an inference; the guide does not mention transformerless inverters. (review 2026-11-23)"
+ },
+ "H128": {
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): where an installation includes a PV system without at least simple separation between the a.c. and d.c. sides, an RCD installed for fault protection by automatic disconnection of supply must be a type B RCD.",
+  "reason": "unsupported: The parenthetical '(transformerless inverter)' is not in the source, which speaks only of a system without at least simple separation. (review 2026-11-23)"
+ },
+ "I016": {
+  "claim": "BEAMA SPD guide (UK, 2018): if the BS EN 62305 risk evaluation shows a structural LPS is not required but there is an indirect risk, services fed by an overhead line need lightning current SPDs: 12.5 kA 10/350 per mode for mains Type 1 and 2.5 kA 10/350 per mode for signal/telecom SPDs.",
+  "reason": "overstated: Drops the condition that the risk evaluation shows an indirect risk; the source applies the requirement only when no structural LPS is required but there is an indirect risk. (review 2026-11-23)"
+ },
+ "I040": {
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018 Section 534): Section 534 advises minimum SPD connecting-cable cross-sections of 16 mm2 copper for Type 1 SPDs and 4 mm2 copper for Type 2 and Type 3 SPDs (or not less than the line conductor where that is below 4 mm2).",
+  "reason": "overstated: Source says Section 534 'advises' these minimum cross-sections; the claim turns it into 'shall'. (review 2026-11-23)"
+ },
+ "I104": {
+  "claim": "ABB OVR brochure: for OVR T2 pluggable (and T2 & T3 non-pluggable) SPDs the maximum backup is a 25 A C-curve MCB or 16 A gG fuse for prospective short-circuit 0.3-2 kA, 32 A / 25 A for 2-6 kA, and 50 A / 50 A from 6 kA up to Iscw.",
+  "reason": "overstated: The table values apply to OVR T2 pluggable and T2&T3 non-pluggable SPDs; the same page lists OVR T2 non-pluggable 15/40 kA SPDs at 50 A / 50 A for all prospective currents, so 'ABB Type 2 SPDs' generally is too broad. (review 2026-11-23)"
+ },
+ "I127": {
+  "claim": "InstMC Tech Talk 12 (UK, 2017): a fundamental requirement for earthing IS zener barriers is that the IS earth, the control-signal 0 V reference earth and the electrical power earth are independent of each other and only meet at the 'body of earth'.",
+  "reason": "overstated: The source states this as a requirement for the earthing of IS zener barriers, with the three earths meeting only at the 'body of earth'; the claim turns it into a general rule. (review 2026-11-23)"
+ },
+ "I128": {
+  "claim": "InstMC Tech Talk 12 (UK, 2017): theoretically an ELV signal cable screen need not be earthed, but it is common practice to bond it to a clean earth, or to the IS earth for hazardous-area systems.",
+  "reason": "overstated: The source says bonding to the IS earth applies in the case of hazardous-area systems; the claim offers it as a general alternative. (review 2026-11-23)"
+ },
+ "J002": {
+  "claim": "Gijben (S Afr J Sci 2012), citing earlier literature: lightning-related deaths in South Africa account for an average of between 1.5 and 8.8 per million of the population, said to be about four times higher than the global average.",
+  "reason": "unsupported: 'per year' is added; the source gives 1.5 to 8.8 deaths per million of the population without a time unit. (review 2026-11-23)"
+ },
+ "J045": {
+  "claim": "City of Ekurhuleni EG policy (2026): until SANS 10142-1-2 covering EG installation requirements and DC wiring is published, all SSEG designs and projects above 18 kVA must be signed off on commissioning by a registered professional (Pr Eng, Pr Cert Eng, Pr Tech Eng or Pr Techni Eng).",
+  "reason": "overstated: Drops the interim condition: the sign-off rule applies until SANS 10142-1-2 (covering EG installations and DC wiring) is published. (review 2026-11-23)"
+ }
+}

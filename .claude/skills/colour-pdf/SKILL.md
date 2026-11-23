@@ -52,6 +52,8 @@ sections:
     blocks:
       - h2: "Sub-heading"
       - p: "Paragraph text.{{B002}}"
+      - meta: "Text about the library itself (how to read it). Lint-exempt; never a technical statement; may not cite."
+      - index: true                       # generated table of all public sheets
       - facts: [C008, C009, {id: E060, text: "Own shorter wording.{{E060}}"}]   # bullet list, chip added automatically
       - callout: {kind: do|dont|warn|note|site, title: "...", text: "...{{ID}}"}
       - numbers: [{value: "0.5 m", label: "what it is{{ID}}"}]                # 2-4 key-number tiles

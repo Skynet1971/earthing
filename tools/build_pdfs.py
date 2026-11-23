@@ -85,6 +85,9 @@ def build_doc(doc, catalog, facts):
                 story.append(Paragraph(amp(b["h2"]), st["h2"]))   # heading paragraph
             elif "p" in b:   # normal paragraph
                 story.append(Paragraph(T(b["p"]), st["p"]))   # body text
+            elif "meta" in b:   # text about the library itself (exempt from the citation lint; never technical content)
+                if c.TOKEN.search(b["meta"]): raise SystemExit(f'{doc["_file"]}: a meta block must not cite facts')   # keep meta and facts apart
+                story.append(Paragraph(amp(b["meta"]), st["p"]))   # body text
             elif "facts" in b:   # list of verified facts, each with its citation
                 for item in b["facts"]:   # one bullet per fact
                     fid, wording = c.fact_text(facts, item)   # resolve ID and wording
@@ -109,6 +112,10 @@ def build_doc(doc, catalog, facts):
                 story.append(KeepTogether([Spacer(1, 4), fig, Spacer(1, 4), cap]))   # keep figure and caption together
             elif "checklist" in b:   # printable checklist
                 story += k.checklist(st, accent, [T(i) for i in b["checklist"]])   # tick-box list
+            elif "index" in b:   # table of all public documents, generated from content/docs (no author text)
+                rows = [[f'<b>{esc(d.get("badge", d["id"]))}</b>', f'<b>{esc(d["title"])}</b><br/><font size="7.4" color="{k.PAL["muted"]}">{esc(d.get("applies_to", ""))}</font>', f'{d["id"]}_{d["slug"]}.pdf']
+                        for d in c.load_docs() if not d.get("private") and d["id"] != doc["id"]]   # one row per other public document
+                story += k.data_table(st, accent, ["Sheet", "Title and scope", "File"], rows, [0.2, 0.55, 0.25])   # the index table
             elif "pagebreak" in b:   # forced page break
                 story.append(PageBreak())   # new page
             else:   # unknown block type is an authoring error

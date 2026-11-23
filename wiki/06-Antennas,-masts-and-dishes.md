@@ -20,7 +20,7 @@ ITU-T K.71 covers two antenna cases when direct-strike protection is required: a
 
 - Per ITU-T K.71, when the risk of loss of human life for the building with its antenna is below the tolerable risk, the site is considered inherently protected against direct lightning and the antenna need only be protected against mains contact.<sup>[R22 p.11](#sources-cited-on-this-page)</sup>
 - One prerequisite of ITU-T K.71's generic low-risk roof-antenna assessment is that the top of the antenna is attached to the outside of the building, less than 2.5 m above the gutter line and below the peak of the roof.<sup>[R22 p.27](#sources-cited-on-this-page)</sup>
-- Antenna systems located at least 2 m below the roof and not protruding far from the wall (or inside the building) do not need an earthing conductor, although equipotential bonding is still required.<sup>[R6 p.293](#sources-cited-on-this-page)</sup>
+- Antenna systems inside a building, or located at least 2 m below the roof and protruding no more than 1.5 m from the wall, do not need an earthing conductor, although equipotential bonding is still required.<sup>[R6 p.293](#sources-cited-on-this-page)</sup>
 - An earthed antenna standpipe is no substitute for a lightning protection system.<sup>[R6 p.292](#sources-cited-on-this-page)</sup>
 - ITU-T K.71 prohibits installing antennas on buildings whose roofs are covered with highly flammable materials such as thatch or reed-like material.<sup>[R22 p.16](#sources-cited-on-this-page)</sup>
 

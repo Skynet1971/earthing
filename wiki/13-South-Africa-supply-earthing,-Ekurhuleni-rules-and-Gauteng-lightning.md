@@ -63,7 +63,7 @@ ECA(SA) published a clarification that quotes the relevant clauses of SANS 10142
 
 - City of Ekurhuleni Policy for Embedded Generation (Annexure E25, council 23/06/2026): the Electricity Supply By-Law states that no generation equipment may be connected to the municipal grid without the express consent of the HOD: Energy; failure is an offence which could lead to a fine and/or disconnection.<sup>[R62 p.13](#sources-cited-on-this-page)</sup>
 - City of Ekurhuleni EG policy (2026): a copy of the Certificate of Compliance (for LV installations) and supporting test reports must be provided to the municipality upon commissioning and testing.<sup>[R62 p.15](#sources-cited-on-this-page)</sup>
-- City of Ekurhuleni EG policy (2026): all SSEG designs and projects above 18 kVA must be signed off on commissioning by a registered professional (Pr Eng, Pr Cert Eng, Pr Tech Eng or Pr Techni Eng).<sup>[R62 p.15](#sources-cited-on-this-page)</sup>
+- City of Ekurhuleni EG policy (2026): until SANS 10142-1-2 covering EG installation requirements and DC wiring is published, all SSEG designs and projects above 18 kVA must be signed off on commissioning by a registered professional (Pr Eng, Pr Cert Eng, Pr Tech Eng or Pr Techni Eng).<sup>[R62 p.15](#sources-cited-on-this-page)</sup>
 - City of Ekurhuleni EG policy (2026): inverters must carry third-party type-test certificates of compliance with NRS 097-2-1; inverters without such certification are not permitted in new or existing installations.<sup>[R62 p.15](#sources-cited-on-this-page)</sup>
 - City of Ekurhuleni EG policy (2026): consumers inside the municipal boundary but supplied by Eskom must apply to Eskom for consent to connect EG; the City is not involved.<sup>[R62 p.16](#sources-cited-on-this-page)</sup>
 - City of Ekurhuleni EG policy (2026): a new CoC is required if the current one is more than two years old or if the installation was changed within the two-year period.<sup>[R62 p.16](#sources-cited-on-this-page)</sup>
@@ -161,7 +161,7 @@ The South African Weather Service lightning detection network (SALDN) started in
 
 ### Losses
 
-- Gijben (S Afr J Sci 2012), citing earlier literature: lightning-related deaths in South Africa average between 1.5 and 8.8 per million of the population per year, said to be about four times the global average.<sup>[R60 p.1](#sources-cited-on-this-page)</sup>
+- Gijben (S Afr J Sci 2012), citing earlier literature: lightning-related deaths in South Africa account for an average of between 1.5 and 8.8 per million of the population, said to be about four times higher than the global average.<sup>[R60 p.1](#sources-cited-on-this-page)</sup>
 - Gill (South African Weather Service), climatology for 2006-2007: citing Blumenthal (2005), the average number of lightning-related deaths in South Africa is 6.3 per million of the population.<sup>[R61 p.1](#sources-cited-on-this-page)</sup>
 - Gill (SAWS, 2006-2007 climatology): this South African lightning death rate is more than 15 times the global average (given as about 0.4 deaths per million).<sup>[R61 p.1](#sources-cited-on-this-page)</sup>
 - Gijben (S Afr J Sci 2012): insurance claims in South Africa as a result of lightning amount to more than R500 million per year.<sup>[R60 p.1](#sources-cited-on-this-page)</sup>
@@ -173,7 +173,7 @@ The South African Weather Service lightning detection network (SALDN) started in
 | Question | One source | Another source |
 |---|---|---|
 | Flash density, Johannesburg area | Wits laboratory abstract: 15-20 flashes/km² per year for Johannesburg.<sup>[R67 p.1](#sources-cited-on-this-page)</sup> | SAWS 2006-2010 and 2006-2011 maps: southern Gauteng in the 10-15 band.<sup>[R60 p.8](#sources-cited-on-this-page)</sup><sup>[R66 p.3](#sources-cited-on-this-page)</sup> Different areas and periods. |
-| Lightning deaths | Gijben, citing earlier literature: 1.5-8.8 per million per year, about four times the global average.<sup>[R60 p.1](#sources-cited-on-this-page)</sup> | Gill, citing Blumenthal: 6.3 per million, more than 15 times the global average.<sup>[R61 p.1](#sources-cited-on-this-page)</sup><sup>[R61 p.1](#sources-cited-on-this-page)</sup> |
+| Lightning deaths | Gijben, citing earlier literature: 1.5-8.8 per million of the population (no time unit stated), about four times the global average.<sup>[R60 p.1](#sources-cited-on-this-page)</sup> | Gill, citing Blumenthal: 6.3 per million, more than 15 times the global average.<sup>[R61 p.1](#sources-cited-on-this-page)</sup><sup>[R61 p.1](#sources-cited-on-this-page)</sup> |
 | Number of SALDN sensors | 19 sensors (network at installation).<sup>[R61 p.1](#sources-cited-on-this-page)</sup> | 23 by 2010 and 24 later; the network was upgraded over time.<sup>[R66 p.1](#sources-cited-on-this-page)</sup><sup>[R68 p.3](#sources-cited-on-this-page)</sup> |
 | SPD connecting lead length | Sparks: total should not exceed 0.5 m; some manufacturers allow 1 m.<sup>[R70 p.3](#sources-cited-on-this-page)</sup> | BEAMA (UK) and IEC 60364-5-53 via DEHN: see Sheet 03. |
 

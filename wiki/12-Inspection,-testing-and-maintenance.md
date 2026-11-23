@@ -149,7 +149,7 @@ BS 7671:2001 Regulation 713-10-01 (UK) requires the resistance to earth of an ea
 
 ### PV arrays and inverters
 
-- SAPVIA PV guidelines (South Africa, 2017): according to IEC 62446, for each string the measurement of Voc and Isc and a polarity and isolation (insulation) check are mandatory before the PV array is connected to the inverter.<sup>[R47 p.34](#sources-cited-on-this-page)</sup>
+- SAPVIA PV guidelines (South Africa, 2017): according to IEC 62446, for each string the measurement of Voc and Isc and a polarity and isolation (insulation) check are mandatory, and as a minimum Voc and polarity must be checked before the strings are connected to the inverter.<sup>[R47 p.34](#sources-cited-on-this-page)</sup>
 - BRE PV guide (UK, 2nd ed. 2006): one permitted array insulation test method is a test between array negative and earth followed by a test between array positive and earth (the other is between earth and the short-circuited array positive and negative).<sup>[R49 p.28](#sources-cited-on-this-page)</sup>
 - BRE PV guide (UK, 2nd ed. 2006): for an array insulation test with positive and negative shorted together on a 120 V system, the test voltage is 250 V and the minimum insulation resistance is 0.25 megohm.<sup>[R49 p.29](#sources-cited-on-this-page)</sup>
 - BRE PV guide (UK, 2nd ed. 2006): for separate insulation tests to array positive and array negative on systems below 600 V, the test voltage is 500 V minus Voc(stc) and the minimum insulation resistance is 0.5 megohm.<sup>[R49 p.29](#sources-cited-on-this-page)</sup>

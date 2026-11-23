@@ -83,7 +83,7 @@ sections:
           widths: [0.24, 0.38, 0.38]
           rows:
             - ["Flash density, Johannesburg area", "Wits laboratory abstract: 15-20 flashes/km² per year for Johannesburg.{{J032}}", "SAWS 2006-2010 and 2006-2011 maps: southern Gauteng in the 10-15 band.{{J011, J029}} Different areas and periods."]
-            - ["Lightning deaths", "Gijben, citing earlier literature: 1.5-8.8 per million per year, about four times the global average.{{J002}}", "Gill, citing Blumenthal: 6.3 per million, more than 15 times the global average.{{J017, J018}}"]
+            - ["Lightning deaths", "Gijben, citing earlier literature: 1.5-8.8 per million of the population (no time unit stated), about four times the global average.{{J002}}", "Gill, citing Blumenthal: 6.3 per million, more than 15 times the global average.{{J017, J018}}"]
             - ["Number of SALDN sensors", "19 sensors (network at installation).{{J019}}", "23 by 2010 and 24 later; the network was upgraded over time.{{J026, J037}}"]
             - ["SPD connecting lead length", "Sparks: total should not exceed 0.5 m; some manufacturers allow 1 m.{{J087}}", "BEAMA (UK) and IEC 60364-5-53 via DEHN: see Sheet 03."]
 

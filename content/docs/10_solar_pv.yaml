@@ -89,7 +89,7 @@ sections:
     blocks:
       - diagram:
           name: pv_protection
-          caption: "Concept sketch, not a product wiring diagram. (1) mounting-rail bonding conductor, at least 6 mm² copper for functional earthing{{H008, H009}} (2) d.c. SPD at the inverter d.c. input, one per MPP input{{H018, H020}} (3) additional d.c. SPD at the PV generator when the d.c. cable is longer than the threshold{{H018, H021}} (4) a.c. SPD at the inverter output when the a.c. cable to the protected input is longer than the threshold{{H019, H022}} (5) equipotential bonding bar for the inverter, its SPDs and the board: Sunsynk makes an earth cable to the inverter grid-side earth plate mandatory; ABB keeps the a.c. SPD connections to the earthing bar and to the inverter ground short and straight.{{H070, H057}}"
+          caption: "Concept sketch, not a product wiring diagram. (1) mounting-rail bonding conductor, at least 6 mm² copper for functional earthing{{H008, H009}} (2) d.c. SPD at the inverter d.c. input; every MPP input protected{{H018, H020}} (3) additional d.c. SPD at the PV generator when the d.c. cable is longer than the threshold{{H018, H021}} (4) a.c. SPD at the inverter output when the a.c. cable to the protected input is longer than the threshold{{H019, H022}} (5) equipotential bonding bar for the inverter, its SPDs and the board: Sunsynk makes an earth cable to the inverter grid-side earth plate mandatory; ABB keeps the a.c. SPD connections to the earthing bar and to the inverter ground short and straight.{{H070, H057}}"
       - h2: "Selecting the d.c. SPD"
       - facts: [H017, H058, H040, H054, H046, H044]
       - callout:
@@ -182,7 +182,7 @@ sections:
             - ["Frame bonding conductor", "BRE (UK): 10 mm² braid or equivalent.{{H110}}", "DEHN and SAPVIA: at least 6 mm² copper for functional earthing{{H008, H092}}; DEHN: at least 16 mm² copper when tied to a class III LPS.{{H012}}"]
             - ["Separate earth for the array", "BRE (UK): one outcome is bonding the frame to an earth spike, since a PME earth must not leave the equipotential zone.{{H109, H112}}", "IEC/BS EN 62305-3 as summarised by Furse recommends a single integrated earth termination system.{{A075}}"]
             - ["Earthing a d.c. pole", "BRE (UK): not recommended, permitted only with at least simple separation between the a.c. and d.c. sides.{{H113, H114}}", "Sunsynk: do not connect the positive or negative pole to ground.{{H077}}"]
-            - ["RCD type", "BRE (UK): type B where there is no simple separation (transformerless inverter).{{H128}}", "Sunsynk: external RCD Type A/AC{{H083}}; RCBO Type A.{{H086}}"]
+            - ["RCD type", "BRE (UK): type B where there is no simple separation between the a.c. and d.c. sides.{{H128}}", "Sunsynk: external RCD Type A/AC{{H083}}; RCBO Type A.{{H086}}"]
             - ["Second d.c. SPD at the array", "DEHN: required if the d.c. cable exceeds the length threshold{{H018, H021}}; ABB: if the array-to-inverter distance is less than 10 m, a PV SPD at only one end is recommended.{{H055}}", "BRE (UK): SPDs can be fitted at the inverter end and at the array, with no length threshold given.{{H127}}"]
             - ["A.C. SPD", "ABB: a Type 1 SPD at the main board is mandatory when a lightning rod is present{{H053}}; SMA: SPDs on the d.c. side mean SPDs are also required on the a.c. side.{{H048}}", "BRE (UK): surge suppression devices may be fitted at the main incoming point of the a.c. supply.{{H126}}"]
             - ["Lightning protection standard named", "BRE (UK, 2006): a separate LPS in accordance with BS 6651.{{H117}}", "DEHN: LPS class III per German DIN EN 62305-3 Supplement 5 meets the usual requirements for PV.{{H002}}"]
@@ -194,7 +194,7 @@ sections:
     blocks:
       - checklist:
           - "Case identified: no external LPS, separation distance kept, or separation distance not kept.{{H018, H031, H036}}"
-          - "Each inverter MPP input has its own d.c. SPD of the type the case requires.{{H020, H047}}"
+          - "Every inverter MPP input is protected by a d.c. SPD of the type the case requires.{{H020, H047}}"
           - "Second d.c. SPD at the generator end where the d.c. cable exceeds the DEHN length threshold.{{H018, H021}}"
           - "SPD voltage protection level at least 20 % below the dielectric strength of the PV system.{{H017}}"
           - "A.C. SPD at the grid connection point, plus one at the inverter output where the a.c. cable exceeds the length threshold.{{H029, H019}}"
@@ -205,5 +205,5 @@ sections:
           - "Neutral-earth bond made only in island mode on a hybrid inverter (Sunsynk).{{H073}}"
           - "Neither PV pole connected to earth on a Sunsynk inverter.{{H077}}"
           - "Battery over-current protection and isolation between battery and inverter.{{H063, H065}}"
-          - "Voc, Isc, polarity and insulation checked per string before connection to the inverter.{{H096}}"
+          - "Voc, Isc, polarity and insulation checked per string; as a minimum, Voc and polarity checked before the strings are connected to the inverter.{{H096}}"
           - "Warning signs at the inverter and the distribution board.{{H095}}"

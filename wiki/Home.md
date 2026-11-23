@@ -4,6 +4,7 @@ Colour PDF sheets and wiki pages on earthing, bonding, surge protection and ligh
 
 | Sheet | Wiki page | PDF | Sources |
 |---|---|---|---|
+| SHEET 00 · INDEX | [Earthing, bonding, surge and lightning protection: library index](00-Earthing,-bonding,-surge-and-lightning-protection-library-index) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/00_library_index.pdf) | 0 |
 | SHEET 01 · EARTHING | [Earthing and bonding fundamentals](01-Earthing-and-bonding-fundamentals) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/01_earthing_bonding_fundamentals.pdf) | 23 |
 | SHEET 02 · LIGHTNING | [Lightning and surge protection basics](02-Lightning-and-surge-protection-basics) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/02_lightning_and_surge_basics.pdf) | 19 |
 | SHEET 03 · DB SURGE | [Surge protective devices in the distribution board](03-Surge-protective-devices-in-the-distribution-board) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/03_distribution_board_surge_protection.pdf) | 18 |

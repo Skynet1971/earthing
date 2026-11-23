@@ -95,9 +95,9 @@ sections:
           - value: "≈ 1 kV/m"
             label: "added per metre of lead at 1 kA/µs, BEAMA{{I027}}"
           - value: "16 mm²"
-            label: "copper, Type 1 connecting cables, BS 7671 via BEAMA{{I040}}"
+            label: "copper, Type 1 connecting cables, minimum advised by BS 7671 Section 534 (via BEAMA){{I040}}"
           - value: "4 mm²"
-            label: "copper, Type 2 and Type 3 connecting cables, BS 7671 via BEAMA{{I040}}"
+            label: "copper, Type 2 and Type 3 connecting cables, minimum advised by BS 7671 Section 534 (via BEAMA){{I040}}"
       - diagram:
           name: spd_db_wiring
           caption: "Concept sketch of a cited rule, not a product wiring diagram. (1) SPD at the origin: where the structure has an external LPS or needs protection against direct lightning on overhead lines, BS 7671 requires Type 1 SPDs as close as possible to the origin of the installation{{I075}}; supply-authority rules often keep them off the meter side, so they are fitted at the main distribution board.{{I024}} (2) backup OCPD in series with the SPD: Section 534 requires installed SPDs to be protected against short-circuit by OCPDs{{I039}}, and BEAMA gives an SPD at the main intake panel or a distribution board a separate OCPD, depending on the prospective fault current there.{{I059}} (3) short connecting leads, preferably not exceeding 0.5 m in total{{I028}}, tightly bound together.{{I029}} (4) SPD earth to the earth bar / MET: ITU-T K.66 gives under 1.5 m for bonding plus connecting wires from the SPD to the main earth terminal.{{B024}}"
@@ -127,7 +127,7 @@ sections:
           text: "BEAMA (UK): the maximum OCPD rating declared by the SPD manufacturer must never be exceeded.{{I044}} A typical Type 2 SPD rated 40 kA 8/20 is likely to state a maximum OCPD of 125 A.{{I043}}"
       - h2: "Backup ratings published by one manufacturer"
       - table:
-          head: ["SPD (ABB OVR)", "Prospective short-circuit current", "Maximum backup"]
+          head: ["SPD (ABB OVR T2 pluggable, T2 & T3 non-pluggable)", "Prospective short-circuit current", "Maximum backup"]
           widths: [0.30, 0.34, 0.36]
           rows:
             - ["Type 2", "0.3-2 kA", "25 A C-curve MCB or 16 A gG fuse{{I104}}"]
@@ -161,7 +161,7 @@ sections:
           head: ["Situation", "Value as published", "Source"]
           widths: [0.36, 0.40, 0.24]
           rows:
-            - ["Service by overhead line, no structural LPS (UK)", "Mains Type 1: 12.5 kA 10/350 per mode{{I016}}", "BEAMA (UK)"]
+            - ["Service by overhead line, no structural LPS required but an indirect risk shown by the risk evaluation (UK)", "Mains Type 1: 12.5 kA 10/350 per mode{{I016}}", "BEAMA (UK)"]
             - ["Structural LPS, worst case 200 kA, single three-phase service (UK)", "25 kA 10/350 per L-E and N-E SPD{{I014}}", "BEAMA (UK)"]
             - ["N-PE SPD in a three-phase CT2 installation, Iimp not calculated (UK)", "At least 50 kA 10/350{{I054}}", "BEAMA (UK)"]
             - ["Type 2, each mode, CT1 (UK)", "In at least 5 kA 8/20{{I046}}", "BS 7671 via BEAMA"]
@@ -243,7 +243,7 @@ sections:
           - "Connection type matches the earthing system and the RCD position: CT1 on TN-S and TN-C-S, CT2 on TT with the SPD upstream of the RCD.{{I050, I051}}"
           - "SPD upstream of RCDs where possible; otherwise an RCD with surge-current immunity of at least 3 kA 8/20 (S-type RCDs satisfy this).{{I047, I048}}"
           - "Connecting leads preferably not over 0.5 m in total and bound together.{{I028, I029}}"
-          - "Connecting conductors at least 16 mm² copper for Type 1 and 4 mm² for Type 2 and Type 3.{{I040}}"
+          - "Connecting conductors checked against the minimum cross-sections advised by BS 7671 Section 534: 16 mm² copper for Type 1 and 4 mm² for Type 2 and Type 3.{{I040}}"
           - "ITU-T K.66: SPD connecting wires under 0.5 m in total, bonding plus connecting wires from the SPD to the MET under 1.5 m.{{B024}}"
           - "Backup OCPD in series with the SPD, not above the manufacturer's maximum rating.{{I039, I044}}"
           - "Uc at least 1.1 U/√3 for L-N and L-PE modes and U/√3 for N-PE.{{I086}}"

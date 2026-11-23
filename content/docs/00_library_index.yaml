@@ -1,0 +1,32 @@
+id: "00"
+slug: library_index
+badge: "SHEET 00 · INDEX"
+title: "Earthing, bonding, surge and lightning protection: library index"
+subtitle: "What each sheet covers, how to read the citations, and what the colours mean"
+applies_to: "The whole library"
+accent: navy
+version: "1.0"
+sections:
+  - title: "The sheets"
+    blocks:
+      - index: true
+  - title: "How to read a citation"
+    blocks:
+      - meta: "Every technical statement ends with a small blue citation such as <b>[R18 p.19]</b>. R18 is the reference number of the source document; the list of cited sources is at the end of each sheet, and the complete list is on the wiki page Sources. The page is the page index of the PDF file, which can differ from the number printed on the page."
+      - meta: "Each cited statement was extracted together with a verbatim quote from that page. A script checks that the quote appears on the page, and an independent review compared each statement with its page. Statements whose wording was changed in that review are listed in content/fact_corrections.json in the repository."
+      - callout:
+          kind: note
+          title: "Sources from different countries"
+          text: "The sources include international standards (IEC, ITU-T), national guidance (UK, USA, South Africa) and manufacturer documents. Each sheet names the origin of every statement where it matters, and a table at the end of each sheet lists where the sources disagree. Where they differ, the wiring code that applies at the site decides."
+      - callout:
+          kind: warn
+          title: "Information, not a design or a certificate"
+          text: "The sheets summarise published guidance. They do not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person. Work inside distribution boards and on lightning protection systems is for qualified persons only."
+  - title: "Colour key"
+    blocks:
+      - callout: {kind: do, title: "Green: what the sources tell you to do", text: ""}
+      - callout: {kind: dont, title: "Red: what the sources tell you not to do", text: ""}
+      - callout: {kind: warn, title: "Amber: warnings and hazards", text: ""}
+      - callout: {kind: note, title: "Blue: notes, limits of the sources and missing information", text: ""}
+      - callout: {kind: site, title: "Purple: items to check on site", text: ""}
+      - meta: "In the diagrams, red lines are power, blue lines are data or signal cables, orange lines are photovoltaic direct current, green lines with yellow dashes are protective earth and bonding conductors, and amber boxes are surge protective devices. Numbered markers on a diagram are explained, with citations, in its caption."

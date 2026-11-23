@@ -41,7 +41,7 @@ DEHN distinguishes three cases: a building without external lightning protection
 ### Building without an external lightning protection system
 
 - DEHN rooftop-PV white paper (WPX029, 2022): on a building without external LPS, the DC SPD goes at the DC input of the inverter, and if the DC cable length l1 to the PV generator exceeds 10 m an additional SPD is required at the PV generator.<sup>[R44 p.6](#sources-cited-on-this-page)</sup>
-- DEHN rooftop-PV white paper (WPX029, 2022): every DC input (MPPT) of the inverter must be protected by its own surge protective device (type 2 in the case without external LPS).<sup>[R44 p.7](#sources-cited-on-this-page)</sup>
+- DEHN rooftop-PV white paper (WPX029, 2022): every DC input (MPPT) of the inverter must be protected by a type 2 surge protective device (case without external LPS).<sup>[R44 p.7](#sources-cited-on-this-page)</sup>
 - Every d.c. (MPP) input of a PV inverter must be protected by a type 2 SPD.<sup>[R6 p.371](#sources-cited-on-this-page)</sup>
 - DEHN rooftop-PV white paper (WPX029, 2022): an additional type 2 DC arrester is to be installed on the module side if the distance between the inverter input and the PV generator exceeds 10 m.<sup>[R44 p.7](#sources-cited-on-this-page)</sup>
 - DEHN rooftop-PV white paper (WPX029, 2022): an SPD at the AC output of the inverter is required if the AC cable length l2 back to the protected low-voltage input exceeds 10 m.<sup>[R44 p.6](#sources-cited-on-this-page)</sup>
@@ -156,7 +156,7 @@ DEHN and SAPVIA require the mounting system to be connected with copper conducto
 
 ![pv_protection](img/pv_protection.svg)
 
-*Concept sketch, not a product wiring diagram. (1) mounting-rail bonding conductor, at least 6 mm² copper for functional earthing<sup>[R44 p.3](#sources-cited-on-this-page)</sup><sup>[R44 p.3](#sources-cited-on-this-page)</sup> (2) d.c. SPD at the inverter d.c. input, one per MPP input<sup>[R44 p.6](#sources-cited-on-this-page)</sup><sup>[R44 p.7](#sources-cited-on-this-page)</sup> (3) additional d.c. SPD at the PV generator when the d.c. cable is longer than the threshold<sup>[R44 p.6](#sources-cited-on-this-page)</sup><sup>[R44 p.7](#sources-cited-on-this-page)</sup> (4) a.c. SPD at the inverter output when the a.c. cable to the protected input is longer than the threshold<sup>[R44 p.6](#sources-cited-on-this-page)</sup><sup>[R44 p.7](#sources-cited-on-this-page)</sup> (5) equipotential bonding bar for the inverter, its SPDs and the board: Sunsynk makes an earth cable to the inverter grid-side earth plate mandatory; ABB keeps the a.c. SPD connections to the earthing bar and to the inverter ground short and straight.<sup>[R46 p.25](#sources-cited-on-this-page)</sup><sup>[R51 p.5](#sources-cited-on-this-page)</sup>*
+*Concept sketch, not a product wiring diagram. (1) mounting-rail bonding conductor, at least 6 mm² copper for functional earthing<sup>[R44 p.3](#sources-cited-on-this-page)</sup><sup>[R44 p.3](#sources-cited-on-this-page)</sup> (2) d.c. SPD at the inverter d.c. input; every MPP input protected<sup>[R44 p.6](#sources-cited-on-this-page)</sup><sup>[R44 p.7](#sources-cited-on-this-page)</sup> (3) additional d.c. SPD at the PV generator when the d.c. cable is longer than the threshold<sup>[R44 p.6](#sources-cited-on-this-page)</sup><sup>[R44 p.7](#sources-cited-on-this-page)</sup> (4) a.c. SPD at the inverter output when the a.c. cable to the protected input is longer than the threshold<sup>[R44 p.6](#sources-cited-on-this-page)</sup><sup>[R44 p.7](#sources-cited-on-this-page)</sup> (5) equipotential bonding bar for the inverter, its SPDs and the board: Sunsynk makes an earth cable to the inverter grid-side earth plate mandatory; ABB keeps the a.c. SPD connections to the earthing bar and to the inverter ground short and straight.<sup>[R46 p.25](#sources-cited-on-this-page)</sup><sup>[R51 p.5](#sources-cited-on-this-page)</sup>*
 
 ### Selecting the d.c. SPD
 
@@ -245,7 +245,7 @@ Statements in this chapter that name Sunsynk come from the Sunsynk 8 kW hybrid i
 - Sunsynk 8 kW hybrid inverter manual: an RCD installed for the inverter must disconnect all live conductors, including both active and neutral conductors (the manual cites AS/NZS 3000).<sup>[R46 p.71](#sources-cited-on-this-page)</sup>
 - Sunsynk 8 kW hybrid inverter manual: an RCD is recommended on all circuits and sub-circuits connected to the inverter.<sup>[R46 p.71](#sources-cited-on-this-page)</sup>
 - Sunsynk 8 kW hybrid inverter manual: the recommended RCBO specification is earth-leakage class Type A, 30 mA sensitivity, curve C, AC network, 2-pole.<sup>[R46 p.71](#sources-cited-on-this-page)</sup>
-- BRE PV guide (UK, 2nd ed. 2006): where a PV system has no at least simple separation between the a.c. and d.c. sides (transformerless inverter), an RCD installed for fault protection by automatic disconnection of supply must be a type B RCD.<sup>[R49 p.15](#sources-cited-on-this-page)</sup>
+- BRE PV guide (UK, 2nd ed. 2006): where an installation includes a PV system without at least simple separation between the a.c. and d.c. sides, an RCD installed for fault protection by automatic disconnection of supply must be a type B RCD.<sup>[R49 p.15](#sources-cited-on-this-page)</sup>
 - In TN systems, type 1 and type 2 SPDs should be installed upstream of the RCD, because an RCD would see the discharged impulse current as residual current and could be mechanically damaged by partial lightning current.<sup>[R6 p.222](#sources-cited-on-this-page)</sup>
 - In TT systems type 1 and type 2 SPDs must always be installed upstream of the RCD.<sup>[R6 p.229](#sources-cited-on-this-page)</sup>
 
@@ -279,7 +279,7 @@ Statements in this chapter that name Sunsynk come from the Sunsynk 8 kW hybrid i
 - Sunsynk 8 kW hybrid inverter manual: WARNING - do not connect the PV array's positive or negative poles to ground, as this can seriously damage the inverter.<sup>[R46 p.29](#sources-cited-on-this-page)</sup>
 - Sunsynk 8 kW hybrid inverter manual: PV modules with possible current leakage must not be connected to the inverter; grounded PV modules, for example, will cause current leakage to the inverter.<sup>[R46 p.29](#sources-cited-on-this-page)</sup>
 - BRE PV guide (UK, 2nd ed. 2006): bonding any of the current-carrying d.c. conductors of the PV array to earth is not recommended.<sup>[R49 p.14](#sources-cited-on-this-page)</sup>
-- BRE PV guide (UK, 2nd ed. 2006): earthing one of the live d.c. conductors is permitted only if there is at least simple separation between the a.c. side and the d.c. side, including in the inverter (i.e. not with a transformerless inverter).<sup>[R49 p.14](#sources-cited-on-this-page)</sup>
+- BRE PV guide (UK, 2nd ed. 2006): earthing one of the live d.c. conductors is permitted only if there is at least simple separation between the a.c. side and the d.c. side, including in the inverter.<sup>[R49 p.14](#sources-cited-on-this-page)</sup>
 
 ## 7  Inspection and testing, including after a strike
 
@@ -296,7 +296,7 @@ Statements in this chapter that name Sunsynk come from the Sunsynk 8 kW hybrid i
 
 ### Insulation and earth checks on the PV system
 
-- SAPVIA PV guidelines (South Africa, 2017): according to IEC 62446, for each string the measurement of Voc and Isc and a polarity and isolation (insulation) check are mandatory before the PV array is connected to the inverter.<sup>[R47 p.34](#sources-cited-on-this-page)</sup>
+- SAPVIA PV guidelines (South Africa, 2017): according to IEC 62446, for each string the measurement of Voc and Isc and a polarity and isolation (insulation) check are mandatory, and as a minimum Voc and polarity must be checked before the strings are connected to the inverter.<sup>[R47 p.34](#sources-cited-on-this-page)</sup>
 - Sunsynk 8 kW hybrid inverter manual: before switching on, the installation engineer must have completed the earth bond, RCD and earth leakage tests, checked that the PV Voc does not exceed 480 V and checked the battery voltage.<sup>[R46 p.68](#sources-cited-on-this-page)</sup>
 - Sunsynk 8 kW hybrid inverter manual: before connecting to the grid the inverter measures the impedance of PV+ to ground and PV- to ground, and if either is below 33 kOhm it will not connect and reports error F24.<sup>[R46 p.69](#sources-cited-on-this-page)</sup>
 - Sunsynk 8 kW hybrid inverter manual: fault F24 (DC insulation impedance failure, PV isolation resistance too low) calls for checking that the earth bond cable on the inverter is connected to ground.<sup>[R46 p.66](#sources-cited-on-this-page)</sup>
@@ -359,7 +359,7 @@ The sources were written for different countries and dates: BRE for the UK, SAPV
 | Frame bonding conductor | BRE (UK): 10 mm² braid or equivalent.<sup>[R49 p.13](#sources-cited-on-this-page)</sup> | DEHN and SAPVIA: at least 6 mm² copper for functional earthing<sup>[R44 p.3](#sources-cited-on-this-page)</sup><sup>[R47 p.31](#sources-cited-on-this-page)</sup>; DEHN: at least 16 mm² copper when tied to a class III LPS.<sup>[R44 p.3](#sources-cited-on-this-page)</sup> |
 | Separate earth for the array | BRE (UK): one outcome is bonding the frame to an earth spike, since a PME earth must not leave the equipotential zone.<sup>[R49 p.13](#sources-cited-on-this-page)</sup><sup>[R49 p.13](#sources-cited-on-this-page)</sup> | IEC/BS EN 62305-3 as summarised by Furse recommends a single integrated earth termination system.<sup>[R12 p.11](#sources-cited-on-this-page)</sup> |
 | Earthing a d.c. pole | BRE (UK): not recommended, permitted only with at least simple separation between the a.c. and d.c. sides.<sup>[R49 p.14](#sources-cited-on-this-page)</sup><sup>[R49 p.14](#sources-cited-on-this-page)</sup> | Sunsynk: do not connect the positive or negative pole to ground.<sup>[R46 p.29](#sources-cited-on-this-page)</sup> |
-| RCD type | BRE (UK): type B where there is no simple separation (transformerless inverter).<sup>[R49 p.15](#sources-cited-on-this-page)</sup> | Sunsynk: external RCD Type A/AC<sup>[R46 p.71](#sources-cited-on-this-page)</sup>; RCBO Type A.<sup>[R46 p.71](#sources-cited-on-this-page)</sup> |
+| RCD type | BRE (UK): type B where there is no simple separation between the a.c. and d.c. sides.<sup>[R49 p.15](#sources-cited-on-this-page)</sup> | Sunsynk: external RCD Type A/AC<sup>[R46 p.71](#sources-cited-on-this-page)</sup>; RCBO Type A.<sup>[R46 p.71](#sources-cited-on-this-page)</sup> |
 | Second d.c. SPD at the array | DEHN: required if the d.c. cable exceeds the length threshold<sup>[R44 p.6](#sources-cited-on-this-page)</sup><sup>[R44 p.7](#sources-cited-on-this-page)</sup>; ABB: if the array-to-inverter distance is less than 10 m, a PV SPD at only one end is recommended.<sup>[R51 p.7](#sources-cited-on-this-page)</sup> | BRE (UK): SPDs can be fitted at the inverter end and at the array, with no length threshold given.<sup>[R49 p.14](#sources-cited-on-this-page)</sup> |
 | A.C. SPD | ABB: a Type 1 SPD at the main board is mandatory when a lightning rod is present<sup>[R51 p.2](#sources-cited-on-this-page)</sup>; SMA: SPDs on the d.c. side mean SPDs are also required on the a.c. side.<sup>[R45 p.5](#sources-cited-on-this-page)</sup> | BRE (UK): surge suppression devices may be fitted at the main incoming point of the a.c. supply.<sup>[R49 p.14](#sources-cited-on-this-page)</sup> |
 | Lightning protection standard named | BRE (UK, 2006): a separate LPS in accordance with BS 6651.<sup>[R49 p.14](#sources-cited-on-this-page)</sup> | DEHN: LPS class III per German DIN EN 62305-3 Supplement 5 meets the usual requirements for PV.<sup>[R44 p.2](#sources-cited-on-this-page)</sup> |
@@ -370,7 +370,7 @@ The sources were written for different countries and dates: BRE for the UK, SAPV
 ## 10  Installation checklist
 
 - [ ] Case identified: no external LPS, separation distance kept, or separation distance not kept.<sup>[R44 p.6](#sources-cited-on-this-page)</sup><sup>[R44 p.9](#sources-cited-on-this-page)</sup><sup>[R44 p.9](#sources-cited-on-this-page)</sup>
-- [ ] Each inverter MPP input has its own d.c. SPD of the type the case requires.<sup>[R44 p.7](#sources-cited-on-this-page)</sup><sup>[R45 p.5](#sources-cited-on-this-page)</sup>
+- [ ] Every inverter MPP input is protected by a d.c. SPD of the type the case requires.<sup>[R44 p.7](#sources-cited-on-this-page)</sup><sup>[R45 p.5](#sources-cited-on-this-page)</sup>
 - [ ] Second d.c. SPD at the generator end where the d.c. cable exceeds the DEHN length threshold.<sup>[R44 p.6](#sources-cited-on-this-page)</sup><sup>[R44 p.7](#sources-cited-on-this-page)</sup>
 - [ ] SPD voltage protection level at least 20 % below the dielectric strength of the PV system.<sup>[R44 p.5](#sources-cited-on-this-page)</sup>
 - [ ] A.C. SPD at the grid connection point, plus one at the inverter output where the a.c. cable exceeds the length threshold.<sup>[R44 p.9](#sources-cited-on-this-page)</sup><sup>[R44 p.6](#sources-cited-on-this-page)</sup>
@@ -381,7 +381,7 @@ The sources were written for different countries and dates: BRE for the UK, SAPV
 - [ ] Neutral-earth bond made only in island mode on a hybrid inverter (Sunsynk).<sup>[R46 p.25](#sources-cited-on-this-page)</sup>
 - [ ] Neither PV pole connected to earth on a Sunsynk inverter.<sup>[R46 p.29](#sources-cited-on-this-page)</sup>
 - [ ] Battery over-current protection and isolation between battery and inverter.<sup>[R46 p.17](#sources-cited-on-this-page)</sup><sup>[R46 p.18](#sources-cited-on-this-page)</sup>
-- [ ] Voc, Isc, polarity and insulation checked per string before connection to the inverter.<sup>[R47 p.34](#sources-cited-on-this-page)</sup>
+- [ ] Voc, Isc, polarity and insulation checked per string; as a minimum, Voc and polarity checked before the strings are connected to the inverter.<sup>[R47 p.34](#sources-cited-on-this-page)</sup>
 - [ ] Warning signs at the inverter and the distribution board.<sup>[R47 p.33](#sources-cited-on-this-page)</sup>
 
 ## Sources cited on this page

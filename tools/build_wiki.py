@@ -52,6 +52,9 @@ def render_doc(doc, catalog, facts):
         for b in sec.get("blocks", []):   # blocks in order
             if "h2" in b: out += [f"### {b['h2']}", ""]   # sub-heading
             elif "p" in b: out += [T(b["p"]), ""]   # paragraph
+            elif "meta" in b: out += [md_inline(b["meta"]), ""]   # text about the library itself
+            elif "index" in b:   # table of the other public documents
+                out += ["| Sheet | Title and scope | Wiki page |", "|---|---|---|"] + [f"| {cell(d.get('badge', d['id']))} | **{cell(d['title'])}** — {cell(d.get('applies_to', ''))} | [{d['id']}]({page_name(d)}) |" for d in c.load_docs() if not d.get("private") and d["id"] != doc["id"]] + [""]   # rows
             elif "facts" in b:   # cited fact bullets
                 for item in b["facts"]:   # one bullet each
                     fid, wording = c.fact_text(facts, item)   # ID and wording

@@ -59,7 +59,7 @@ The rules in this chapter are UK rules from BS 7671:2018 Sections 443 and 534, a
 
 - BEAMA SPD guide (UK, BS 7671:2018 534.4.1.3): where the structure has an external LPS or needs protection against direct lightning on overhead lines, Type 1 SPDs shall be installed as close as possible to the origin of the installation.<sup>[R48 p.68](#sources-cited-on-this-page)</sup>
 - BEAMA SPD guide (UK, 2018): where a structural lightning protection system is required, lightning current (equipotential bonding) SPDs are always required on every metallic electrical service entering the structure: mains Type 1 and data/telecom Category D.<sup>[R48 p.32](#sources-cited-on-this-page)</sup>
-- BEAMA SPD guide (UK, 2018): where no structural LPS is required but a service arrives by overhead line, lightning current SPDs are needed: 12.5 kA 10/350 per mode for mains Type 1 and 2.5 kA 10/350 per mode for signal/telecom SPDs.<sup>[R48 p.34](#sources-cited-on-this-page)</sup>
+- BEAMA SPD guide (UK, 2018): if the BS EN 62305 risk evaluation shows a structural LPS is not required but there is an indirect risk, services fed by an overhead line need lightning current SPDs: 12.5 kA 10/350 per mode for mains Type 1 and 2.5 kA 10/350 per mode for signal/telecom SPDs.<sup>[R48 p.34](#sources-cited-on-this-page)</sup>
 - BEAMA SPD guide (UK, 2018): underground services without a structural LPS do not need lightning current SPDs; overvoltage (Type 2 / Category C) SPDs are sufficient.<sup>[R48 p.35](#sources-cited-on-this-page)</sup>
 - BEAMA SPD guide (UK, BS 7671:2018 534.4.1.1): SPDs installed close to sensitive equipment against internally generated switching transients shall be Type 2 or Type 3.<sup>[R48 p.68](#sources-cited-on-this-page)</sup>
 
@@ -134,7 +134,7 @@ Schneider takes about 1 µH/m for SPD connection conductors, so an 8 kA 8/20 µs
 
 | **0.5 m** | **≈ 1 kV/m** | **16 mm²** | **4 mm²** |
 |---|---|---|---|
-| total connecting lead length l1 + l2, preferably not exceeded, BEAMA (UK)<sup>[R48 p.40](#sources-cited-on-this-page)</sup> | added per metre of lead at 1 kA/µs, BEAMA<sup>[R48 p.40](#sources-cited-on-this-page)</sup> | copper, Type 1 connecting cables, BS 7671 via BEAMA<sup>[R48 p.48](#sources-cited-on-this-page)</sup> | copper, Type 2 and Type 3 connecting cables, BS 7671 via BEAMA<sup>[R48 p.48](#sources-cited-on-this-page)</sup> |
+| total connecting lead length l1 + l2, preferably not exceeded, BEAMA (UK)<sup>[R48 p.40](#sources-cited-on-this-page)</sup> | added per metre of lead at 1 kA/µs, BEAMA<sup>[R48 p.40](#sources-cited-on-this-page)</sup> | copper, Type 1 connecting cables, minimum advised by BS 7671 Section 534 (via BEAMA)<sup>[R48 p.48](#sources-cited-on-this-page)</sup> | copper, Type 2 and Type 3 connecting cables, minimum advised by BS 7671 Section 534 (via BEAMA)<sup>[R48 p.48](#sources-cited-on-this-page)</sup> |
 
 ![spd_db_wiring](img/spd_db_wiring.svg)
 
@@ -170,7 +170,7 @@ Schneider takes about 1 µH/m for SPD connection conductors, so an 8 kA 8/20 µs
 
 - BEAMA SPD guide (UK, 2018): where the SPD earth lead would be long, in metal enclosures use two earth conductors: one closely connected to the enclosure metalwork and one to the earth bar, which is itself connected directly to the metal of the assembly.<sup>[R48 p.42](#sources-cited-on-this-page)</sup>
 - Schneider Electrical Installation Guide: in a metal switchgear enclosure it may be wise to connect the SPD directly to the enclosure, using the enclosure as the protective conductor (the assembly manufacturer must confirm this per IEC 61439-2).<sup>[R50 p.5](#sources-cited-on-this-page)</sup>
-- BEAMA SPD guide (UK, BS 7671:2018 Section 534): SPD connecting cables shall be at least 16 mm2 copper for Type 1 SPDs and 4 mm2 copper for Type 2 and Type 3 SPDs (or not less than the line conductor where that is below 4 mm2).<sup>[R48 p.48](#sources-cited-on-this-page)</sup>
+- BEAMA SPD guide (UK, BS 7671:2018 Section 534): Section 534 advises minimum SPD connecting-cable cross-sections of 16 mm2 copper for Type 1 SPDs and 4 mm2 copper for Type 2 and Type 3 SPDs (or not less than the line conductor where that is below 4 mm2).<sup>[R48 p.48](#sources-cited-on-this-page)</sup>
 - Schneider Electrical Installation Guide (IEC 60364): minimum SPD connection cross-section at the incoming end is 4 mm2 copper for a Type 2 SPD and 16 mm2 copper for a Type 1 SPD (lightning protection system present).<sup>[R50 p.6](#sources-cited-on-this-page)</sup>
 - Where SPDs are used, the copper earthing conductor for equipotential bonding must be at least 16 mm2 for SPDs in power supply systems.<sup>[R6 p.288](#sources-cited-on-this-page)</sup>
 - BEAMA SPD guide (UK, 2018): a typical Type 2 SPD rated 40 kA 8/20 is likely to state a maximum OCPD of 125 A and may recommend 10 mm2 connecting cables.<sup>[R48 p.49](#sources-cited-on-this-page)</sup>
@@ -192,7 +192,7 @@ BEAMA (UK): mains SPDs have internal overload (typically thermal) disconnection,
 
 ### Backup ratings published by one manufacturer
 
-| SPD (ABB OVR) | Prospective short-circuit current | Maximum backup |
+| SPD (ABB OVR T2 pluggable, T2 & T3 non-pluggable) | Prospective short-circuit current | Maximum backup |
 |---|---|---|
 | Type 2 | 0.3-2 kA | 25 A C-curve MCB or 16 A gG fuse<sup>[R52 p.10](#sources-cited-on-this-page)</sup> |
 | Type 2 | 2-6 kA | 32 A MCB / 25 A fuse<sup>[R52 p.10](#sources-cited-on-this-page)</sup> |
@@ -240,7 +240,7 @@ BEAMA (UK): mains SPDs have internal overload (typically thermal) disconnection,
 
 | Situation | Value as published | Source |
 |---|---|---|
-| Service by overhead line, no structural LPS (UK) | Mains Type 1: 12.5 kA 10/350 per mode<sup>[R48 p.34](#sources-cited-on-this-page)</sup> | BEAMA (UK) |
+| Service by overhead line, no structural LPS required but an indirect risk shown by the risk evaluation (UK) | Mains Type 1: 12.5 kA 10/350 per mode<sup>[R48 p.34](#sources-cited-on-this-page)</sup> | BEAMA (UK) |
 | Structural LPS, worst case 200 kA, single three-phase service (UK) | 25 kA 10/350 per L-E and N-E SPD<sup>[R48 p.33](#sources-cited-on-this-page)</sup> | BEAMA (UK) |
 | N-PE SPD in a three-phase CT2 installation, Iimp not calculated (UK) | At least 50 kA 10/350<sup>[R48 p.51](#sources-cited-on-this-page)</sup> | BEAMA (UK) |
 | Type 2, each mode, CT1 (UK) | In at least 5 kA 8/20<sup>[R48 p.50](#sources-cited-on-this-page)</sup> | BS 7671 via BEAMA |
@@ -373,7 +373,7 @@ The sources were written for different countries and purposes. The wiring code t
 - [ ] Connection type matches the earthing system and the RCD position: CT1 on TN-S and TN-C-S, CT2 on TT with the SPD upstream of the RCD.<sup>[R48 p.50](#sources-cited-on-this-page)</sup><sup>[R48 p.50](#sources-cited-on-this-page)</sup>
 - [ ] SPD upstream of RCDs where possible; otherwise an RCD with surge-current immunity of at least 3 kA 8/20 (S-type RCDs satisfy this).<sup>[R48 p.50](#sources-cited-on-this-page)</sup><sup>[R48 p.50](#sources-cited-on-this-page)</sup>
 - [ ] Connecting leads preferably not over 0.5 m in total and bound together.<sup>[R48 p.40](#sources-cited-on-this-page)</sup><sup>[R48 p.40](#sources-cited-on-this-page)</sup>
-- [ ] Connecting conductors at least 16 mm² copper for Type 1 and 4 mm² for Type 2 and Type 3.<sup>[R48 p.48](#sources-cited-on-this-page)</sup>
+- [ ] Connecting conductors checked against the minimum cross-sections advised by BS 7671 Section 534: 16 mm² copper for Type 1 and 4 mm² for Type 2 and Type 3.<sup>[R48 p.48](#sources-cited-on-this-page)</sup>
 - [ ] ITU-T K.66: SPD connecting wires under 0.5 m in total, bonding plus connecting wires from the SPD to the MET under 1.5 m.<sup>[R18 p.33](#sources-cited-on-this-page)</sup>
 - [ ] Backup OCPD in series with the SPD, not above the manufacturer's maximum rating.<sup>[R48 p.48](#sources-cited-on-this-page)</sup><sup>[R48 p.49](#sources-cited-on-this-page)</sup>
 - [ ] Uc at least 1.1 U/√3 for L-N and L-PE modes and U/√3 for N-PE.<sup>[R50 p.8](#sources-cited-on-this-page)</sup>
