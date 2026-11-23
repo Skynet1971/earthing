@@ -1,0 +1,120 @@
+# Document definition. Rules: .claude/skills/colour-pdf/SKILL.md and CLAUDE.md.
+# Every technical statement carries a {{FACT_ID}} citation; IDs come from content/facts.json.
+id: "06"
+slug: antennas_masts_dishes
+badge: "SHEET 06 · ANTENNAS"
+title: "Antennas, masts and dishes"
+subtitle: "Earthing of antenna masts and towers, bonding of coaxial cable shields and surge protection at the building entry"
+applies_to: "Roof and wall antennas, antenna masts near the building, radio towers and high sites, coaxial antenna cables, satellite dishes, outdoor radios and cameras on masts"
+accent: blue
+version: "1.0"
+contents: true
+sections:
+  - title: "1  Scope and risk"
+    lead: "ITU-T K.71 covers two antenna cases when direct-strike protection is required: an antenna on the building, and an antenna on a mast near the building at a maximum distance of about ten metres.{{B052}}"
+    blocks:
+      - numbers:
+          - value: "under 1.5 m"
+            label: "bond wire from cable screen and SPD to the main earth terminal, ITU-T K.71{{B075}}"
+          - value: "16 mm²"
+            label: "minimum copper antenna mast earthing conductor, DEHN{{D076}}"
+          - value: "2 m"
+            label: "clearance from LPS components for an antenna not bonded to the LPS, one- or two-storey buildings, ITU-T K.71{{B061}}"
+      - facts: [B053, B077, D073, D072, B058]
+      - h2: "Contact with mains conductors"
+      - facts: [B054, B055, B056, B057, B071]
+      - pagebreak: true
+
+  - title: "2  Earthing the mast"
+    lead: "On a building without a lightning protection system, DEHN states that the antenna mast must be earthed.{{D075}}"
+    blocks:
+      - diagram:
+          name: antenna_mast
+          caption: "Concept sketch, not a product installation drawing. (1) antenna mast earthed (DEHN){{D075}}; ITU-T K.71 requires the mast bonding conductor to be installed straight and vertical, giving the shortest, most direct path{{B065}} (2) coaxial cable outer conductor bonded to the bonding bar at the entrance of the building (ITU-T K.71){{B063}} (3) SPD at the point of entry, with the bond wire from cable screen and SPD to the main earth terminal shorter than 1.5 m (ITU-T K.71){{B075}} (4) lowest point of the antenna cable shields connected to the main earthing busbar by copper bonding conductors of at least 4 mm² (DEHN).{{D074}}"
+      - h2: "Buildings with and without a lightning protection system"
+      - facts: [B059, B060, B061, B062, B065]
+      - callout:
+          kind: dont
+          title: "No borrowed conductors for antenna bonding"
+          text: "ITU-T K.71 forbids using the electricity supply's protective earth and/or neutral conductors, or the outer conductor of any coaxial cable, as the antenna bonding conductor; a dedicated bonding conductor must be used.{{B067}}"
+      - h2: "Conductor sizes as published"
+      - table:
+          head: ["Conductor", "Minimum size as published", "Source"]
+          widths: [0.34, 0.44, 0.22]
+          rows:
+            - ["Antenna bonding conductor for the full lightning current, bare", "14 mm² copper, 22 mm² aluminium or 50 mm² steel{{B068}}", "ITU-T K.71"]
+            - ["The same, insulated, enclosed or close to flammable material", "35 mm² copper, 55 mm² aluminium or 125 mm² steel{{B069}}", "ITU-T K.71"]
+            - ["Antenna bonding conductor for a partial lightning current", "5 mm² copper, 8 mm² aluminium or 16 mm² steel{{B070}}", "ITU-T K.71"]
+            - ["Protective conductor to the main earth terminal against mains contact", "2.5 mm² copper (16 mm² aluminium) if mechanically protected, 4 mm² copper (16 mm² aluminium) if not, in most cases{{B071}}", "ITU-T K.71 (IEC 60364-5-54)"]
+            - ["Antenna mast earthing conductor", "16 mm² copper, 25 mm² insulated aluminium or 50 mm² steel, vertical and straight{{D076}}", "DEHN"]
+            - ["Antenna earth electrode", "50 mm² copper or 90 mm² galvanised or stainless steel{{D071}}", "DEHN"]
+            - ["Antenna cable shields to the main earthing busbar", "4 mm² copper{{D074}}", "DEHN"]
+            - ["Down-conductor from a roof-mounted antenna mast, buildings up to 22.9 m", "35 mm² (#2 AWG) copper{{D129}}", "Motorola R56 (US, citing NFPA 780)"]
+            - ["Tower leg to tower ground ring", "35 mm² (#2 AWG) bare solid tinned copper{{D121}}", "Motorola R56 (US)"]
+            - ["Coaxial cable shields at the building entry / inside", "No. 2 AWG to the external grounding system, No. 6 AWG to the interior grounding system{{C075}}", "UFGS 27 05 26 (US)"]
+            - ["Outdoor router grounding wire", "2.5-4 mm² copper (AWG 12-14) with corrosion-resistant connectors{{C024}}", "MikroTik"]
+            - ["Earthing cable for individual equipment units", "typically 16 mm² yellow/green{{C046}}", "WAPA (South Africa)"]
+          caption: "Each value applies to the scope its source states; AWG sizes are US sizes as printed by the source."
+      - h2: "Earth electrodes"
+      - facts: [D070, B072, B073, C074]
+
+  - title: "3  Coaxial cable: shield bonding and SPD at the entry"
+    lead: "ITU-T K.71 requires the outer conductors of all coaxial cables from the antenna to be connected to the antenna mast or the building earthing system through an equipotential bonding conductor of specified minimum cross-section, avoiding loops.{{B066}}"
+    blocks:
+      - facts: [B063, B064, B074, B076, A078, C036, C022]
+      - h2: "Motorola R56 and UFGS (US practice)"
+      - facts: [D123, D124, D145]
+      - h2: "Coaxial arresters by zone boundary (DEHN)"
+      - facts: [E026]
+
+  - title: "4  Satellite dishes and TV coax"
+    blocks:
+      - callout:
+          kind: note
+          title: "Not covered as a separate subject"
+          text: "No verified fact in this library deals with domestic satellite dishes as such. The only dish-specific fact is the US guide specification's bonding of a dish frame to a tower ring electrode, quoted below; the facts on cable television coax that follow are general."
+      - facts: [C074, D146, D147, A025]
+      - pagebreak: true
+
+  - title: "5  Outdoor radio masts and high sites"
+    lead: "Per Motorola R56 (US practice), any communications facility with a tower shall be considered exposed to lightning, regardless of thunderstorm activity and soil resistivity.{{D104}}"
+    blocks:
+      - h2: "WAPA high-site guideline (South Africa)"
+      - facts: [C030, C031, C032, C035, C037, C042, C047, C048, C038, C045, C039, C040, C034, C033]
+      - h2: "Motorola R56 (US practice)"
+      - facts: [D103, D131, D119, D152, D117, D125, D114]
+      - h2: "MikroTik outdoor routers"
+      - facts: [C021, C027, C028, C023, C025]
+      - h2: "Inspection (WAPA, South Africa)"
+      - facts: [C050, C051, C052]
+
+  - title: "6  Cameras on masts"
+    lead: "Cameras on poles and masts are treated in full in the CCTV sheet of this library; the facts below concern the mast."
+    blocks:
+      - facts: [E004, E005, E006, D083, D084, D085]
+      - pagebreak: true
+
+  - title: "7  Where the sources disagree"
+    lead: "The sources were written for different countries and kinds of site. Where they conflict, the wiring code that applies at the site decides; this table shows the conflict rather than choosing for you."
+    blocks:
+      - table:
+          head: ["Question", "One source says", "Other sources say"]
+          widths: [0.22, 0.39, 0.39]
+          rows:
+            - ["Copper size of the mast earthing or down conductor", "ITU-T K.71: full lightning current, bare, at least 14 mm²; partial lightning current at least 5 mm².{{B068, B070}} DEHN: mast earthing conductor at least 16 mm².{{D076}}", "Motorola R56 (US, citing NFPA 780): down-conductors from roof-mounted antenna masts 35 mm² (#2 AWG) or coarser for buildings up to 22.9 m.{{D129}}"]
+            - ["Bond the mast earth to the building earth?", "ITU-T K.71: where lightning protection is not required, it is not necessary to bond the tower earth electrode system to the building electrical installation earth.{{B062}}", "Motorola R56 (US): a communications site shall have only one grounding electrode system, all grounds bonded together{{D103}}; DEHN: earth electrodes of external equipment at exposed points must be interconnected.{{D085}}"]
+            - ["Coax shield bonding conductor", "DEHN: at least 4 mm² copper from the lowest point of the shields to the main earthing busbar.{{D074}}", "UFGS 27 05 26 (US): at least No. 2 AWG at the building entry and No. 6 AWG inside.{{C075}}"]
+            - ["Earth resistance target", "WAPA (South Africa): preferably less than 10 ohms; less than 1 ohm for a single integrated system.{{C039, C040}}", "Motorola R56 (US): not over 10 ohms for Type B sites{{D119}}, Motorola recommending 5 ohms or less{{D152}}; R56 also says shape and dimensions matter more than a specific resistance value.{{D117}}"]
+
+  - title: "8  Installation checklist"
+    blocks:
+      - checklist:
+          - "Antenna mast earthed on a building without a lightning protection system; on a building with one, the antenna system bonded to it or adequately isolated or insulated from it.{{D075, B059}}"
+          - "Mast bonding conductor straight and vertical, sized for full or partial lightning current as applicable.{{B065, B068, B070}}"
+          - "Dedicated bonding conductor; not the PE, the neutral or a coaxial outer conductor.{{B067}}"
+          - "Coaxial outer conductors bonded to the bonding bar at the building entrance.{{B063}}"
+          - "SPD at the point of entry; bond wire from cable screen and SPD to the main earth terminal shorter than 1.5 m.{{B075}}"
+          - "Lightning arresters on all external antenna cables, near or on the antennas.{{C022}}"
+          - "Antenna and lead-in kept clear of overhead power lines; lead-in not crossing over or under them.{{B055, B056}}"
+          - "Each equipment unit and antenna on its own earthing connection, no daisy-chaining.{{C037}}"
+          - "Earthing points, straps and surge protectors inspected yearly and after lightning damage.{{C051, C052}}"

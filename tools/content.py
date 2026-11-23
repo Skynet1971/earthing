@@ -9,7 +9,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent   # repository root
 CATALOG = ROOT / "references" / "catalog.yaml"   # list of source documents
 FACTS = ROOT / "content" / "facts.json"   # verified public facts
 PRIVATE_FACTS = ROOT / "references" / "local" / "facts_private.json"   # facts from restricted sources (not committed)
-DOCS = ROOT / "content" / "docs"   # one YAML file per document
+DOCS = ROOT / "content" / "docs"   # one YAML file per public document
+PRIVATE_DOCS = ROOT / "content" / "private"   # site-specific documents (git-ignored: the repository is public)
 TOKEN = re.compile(r"\{\{([A-Z]\d{3}(?:\s*,\s*[A-Z]\d{3})*)\}\}")   # inline citation token, e.g. {{B017}} or {{B017, C004}}
 
 def load_catalog():
@@ -30,7 +31,11 @@ def load_facts(include_private=False):
 
 def load_docs():
     """Return the document definitions sorted by file name."""
-    return [yaml.safe_load(p.read_text()) | {"_file": p.name} for p in sorted(DOCS.glob("*.yaml"))]   # parse each YAML file
+    files = sorted(DOCS.glob("*.yaml")) + sorted(PRIVATE_DOCS.glob("*.yaml"))   # public documents, then private ones (git-ignored folder)
+    docs = [yaml.safe_load(p.read_text()) | {"_file": p.name, "_private_dir": p.parent == PRIVATE_DOCS} for p in files]   # parse each YAML file
+    for d in docs:   # a private document must live in content/private and a public one must not
+        if bool(d.get("private")) != d["_private_dir"]: raise SystemExit(f'{d["_file"]}: private: true documents belong in content/private/, public ones in content/docs/')   # stop on a misplaced file
+    return docs   # all documents
 
 class Cites:
     """Resolves fact IDs to citation labels and remembers which sources and pages a document used."""

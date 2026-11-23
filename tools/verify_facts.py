@@ -33,10 +33,19 @@ def main():
     facts_dir = pathlib.Path(sys.argv[1])   # directory holding facts_*.json from the readers
     text_dir = pathlib.Path(sys.argv[2]) if len(sys.argv) > 2 else facts_dir.parent / "text"   # page-marked text directory
     cache, kept, rejected = {}, [], []   # per-file page cache, accepted facts, rejected facts
+    import hashlib   # quote fingerprints keep IDs stable between runs
+    pinned = {}   # (source stem, quote fingerprint) -> ID already published
+    for old in (OUT, LOCAL / "facts_private.json"):   # IDs issued by earlier runs
+        if old.exists():
+            for f in json.loads(old.read_text()): pinned[(f["source"], f["quote_sha256"])] = f["id"]   # remember each one
+    used = set(pinned.values())   # IDs that must never be reused for a different fact
     for fj in sorted(facts_dir.glob("facts_*.json")):   # one file per reader
         letter = fj.stem.split("_")[1]   # reader letter becomes the fact-ID prefix
+        nxt = 1 + max([int(i[1:]) for i in used if i[0] == letter] or [0])   # next free number for this reader
         for n, f in enumerate(json.loads(fj.read_text()), 1):   # every fact in the file
-            f["id"] = f"{letter}{n:03d}"   # stable ID such as B017
+            key = (pathlib.Path(str(f.get("file", ""))).stem, hashlib.sha256(norm(str(f.get("quote", ""))).encode()).hexdigest()[:16])   # identity of the fact
+            if key in pinned: f["id"] = pinned[key]   # same fact as before: keep its ID
+            else: f["id"] = f"{letter}{nxt:03d}"; nxt += 1; used.add(f["id"])   # new fact: next unused ID
             name = pathlib.Path(str(f.get("file", ""))).name   # ignore any directory part
             if not name.endswith(".txt"):   # readers may have given the PDF name
                 name = pathlib.Path(name).stem + ".txt"   # map to the text file name
@@ -56,14 +65,14 @@ def main():
             f["source"] = pathlib.Path(name).stem   # catalogue key = file stem
             f.pop("file", None)   # the key above replaces the file name
             kept.append(f)   # accepted
-    import hashlib, yaml   # hashing for quote fingerprints; YAML for the catalogue flags
+    import yaml   # YAML for the catalogue flags
     cat = {s["key"]: s for s in yaml.safe_load((ROOT / "references" / "catalog.yaml").read_text())["sources"]}   # catalogue entries by key
     unknown = sorted({f["source"] for f in kept} - set(cat))   # sources that are not catalogued
     if unknown: raise SystemExit(f"sources missing from references/catalog.yaml: {unknown}")   # the catalogue must be complete
     public, private, local_quotes = [], [], {}   # committed facts, restricted-source facts, quotes that may not be reproduced
     for f in kept:   # apply the per-source rules
         s = cat[f["source"]]   # catalogue entry of the fact's source
-        f["quote_sha256"] = hashlib.sha256(norm(f["quote"]).encode()).hexdigest()[:16]   # fingerprint of the evidence quote
+        f["quote_sha256"] = hashlib.sha256(norm(f["quote"]).encode()).hexdigest()[:16]   # fingerprint of the evidence quote (same as the ID key)
         if s.get("private"):   # the source's own terms restrict its use
             private.append(f); continue   # keep the whole fact out of the repository
         if s.get("quotes") == "local":   # the source forbids reproduction

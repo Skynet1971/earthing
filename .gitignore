@@ -2,7 +2,8 @@
 references/pdf/
 # Local-only: quotes from sources that forbid reproduction, restricted-source facts, audit files
 references/local/
-# Site-specific documents (equipment at the owner's properties) are built here and never committed
+# Site-specific documents (equipment at the owner's properties): sources and PDFs are never committed (public repository)
+content/private/
 private/
 __pycache__/
 *.pyc

@@ -29,16 +29,53 @@ def amp(text):
     """Escape bare ampersands in author-written text while keeping the allowed inline tags."""
     return re.sub(r"&(?!#?\w+;)", "&amp;", str(text))   # leave existing entities alone
 
+SITE = re.compile(r"\[\[([a-z_]+):([^\]:]+)(?::(\d+(?:-\d+)?))?\]\]")   # site-record citation [[repo:path:line]] (private documents only)
+
+def site_chip(m, used):
+    """Purple chip for a site record; records the file so it is listed at the end of the document."""
+    repo, path, line = m.group(1), m.group(2), m.group(3)   # parts of the token
+    used.add((repo, path))   # remember the file
+    return f'&nbsp;<font size="6.6" color="{k.PAL["purple"]}">[{repo}: {esc(path)}{":" + line if line else ""}]</font>'   # chip markup
+
 def chip(ref, page, section):
     """Citation chip markup: small coloured '[R18 p.12]' that links to the source list."""
     return f'&nbsp;<font size="6.6" color="{k.PAL["blue"]}"><a href="#ref{ref}">[R{ref}&nbsp;p.{page}]</a></font>'   # internal link
+
+def lint(doc):
+    """Authoring rule check: author-written text that contains a digit must carry a {{FACT}} citation.
+
+    Applies to leads, paragraphs, callouts, number tiles, captions, checklist items and table rows
+    (a table row passes when any of its cells carries a citation). Headings are exempt.
+    Returns a list of problems; the build stops if the list is not empty.
+    """
+    bad = []   # problems found
+    def need(where, text):   # one rule check
+        bare = SITE.sub("", re.sub(c.TOKEN, "", str(text)))   # text without citation tokens
+        if re.search(r"\d", bare) and not (c.TOKEN.search(str(text)) or SITE.search(str(text))):   # digit present, no citation
+            bad.append(f"{where}: {str(text)[:90]}")   # record it
+    for si, sec in enumerate(doc["sections"]):   # every chapter
+        if sec.get("lead"): need(f"s{si} lead", sec["lead"])   # intro paragraph
+        for bi, b in enumerate(sec.get("blocks", [])):   # every block
+            w = f"s{si} b{bi}"   # location label
+            if "p" in b: need(w, b["p"])   # paragraph
+            if "callout" in b: need(w + " callout", b["callout"].get("title", "") + " " + b["callout"].get("text", ""))   # callout
+            if "numbers" in b: [need(w + " tile", n["value"] + " " + n["label"]) for n in b["numbers"]]   # tiles
+            if "diagram" in b: need(w + " caption", b["diagram"].get("caption", ""))   # figure caption
+            if "checklist" in b: [need(w + " check", i) for i in b["checklist"]]   # checklist items
+            if "table" in b:   # table rows (the caption may state a general note without numbers)
+                for ri, row in enumerate(b["table"]["rows"]): need(f"{w} row{ri}", " | ".join(map(str, row)))   # whole row
+                if b["table"].get("caption"): need(w + " table caption", b["table"]["caption"])   # caption
+            if "facts" in b: [need(w + " fact text", i["text"]) for i in b["facts"] if isinstance(i, dict) and i.get("text")]   # custom wording
+    return bad   # empty list = clean
 
 def build_doc(doc, catalog, facts):
     """Turn one document definition into a PDF; returns (path, cites)."""
     accent = doc.get("accent", "teal")   # accent colour of this document
     st = k.styles(accent)   # paragraph styles
     cites = c.Cites(catalog, facts)   # citation tracker for this document
-    T = lambda s: cites.expand(amp(s), chip)   # author text -> markup with citation chips
+    site_used = set()   # site records cited (private documents)
+    if not doc.get("private") and SITE.search(str(doc)): raise SystemExit(f'{doc["_file"]}: site-record citations are only allowed in private documents')   # keep site data out of public files
+    T = lambda s: SITE.sub(lambda m: site_chip(m, site_used), cites.expand(amp(s), chip))   # author text -> markup with citation chips
     story = []   # the flowables of the document body
     for sec in doc["sections"]:   # every chapter
         story.append(Paragraph(amp(sec["title"]), st["h1"]))   # chapter banner
@@ -87,6 +124,9 @@ def build_doc(doc, catalog, facts):
                  f'<br/><font size="7" color="{k.PAL["blue"]}"><a href="{esc(s["url"])}">{esc(s["url"])}</a></font>')   # anchor, title, publisher, link
         rows.append([f'<b>R{s["ref"]}</b>', title, c.page_ranges(pages)])   # one row per source
     story += k.data_table(st, accent, ["Ref", "Document", "PDF pages cited"], rows, [0.08, 0.72, 0.20])   # the source table
+    if site_used:   # private documents also list the owner's own records they cite
+        story.append(Paragraph("Site records cited (owner's own repositories, read on the date of the build)", st["h2"]))   # sub-heading
+        story += k.data_table(st, "purple", ["Repository", "File"], [[r, esc(f)] for r, f in sorted(site_used)], [0.25, 0.75])   # file list
     if cites.missing:   # content referenced facts that do not exist
         raise SystemExit(f'{doc["_file"]}: unknown fact IDs {sorted(cites.missing)}')   # stop the build
     meta = {   # cover and header metadata
@@ -114,8 +154,10 @@ def main():
     for doc in c.load_docs():   # every document definition
         if wanted and doc["id"] not in wanted: continue   # build only the requested ones
         private = bool(doc.get("private"))   # site-specific document?
-        if private and not c.PRIVATE_FACTS.exists() and doc.get("needs_private_facts"):   # restricted facts are not available here
+        if private and not c.PRIVATE_FACTS.exists():   # private documents need the local-only files (not present in CI)
             print(f'skip  {doc["_file"]} (needs references/local/facts_private.json)'); continue   # cannot build it
+        problems = lint(doc)   # authoring rule check
+        if problems: raise SystemExit(f'{doc["_file"]}: numbers without a citation:\n  ' + "\n  ".join(problems))   # stop on violations
         facts = c.load_facts(include_private=private)   # fact store for this document
         path, cites = build_doc(doc, catalog, facts)   # build it
         print(f'built {path.relative_to(ROOT)}  ({len(cites.used)} sources)')   # progress line

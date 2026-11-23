@@ -227,11 +227,26 @@ class Doc(BaseDocTemplate):
         self.meta = meta   # title, subtitle, accent, doc number, series, date, notice
         self.accent = meta.get("accent", "teal")   # accent colour name
         self.section = ""   # current chapter title (shown in the header)
+        self.page_h1 = None   # first chapter that starts on the current page
         super().__init__(str(path), pagesize=A4, leftMargin=MARGIN, rightMargin=MARGIN, topMargin=TOP, bottomMargin=BOTTOM,
                          title=meta["title"], author=meta.get("series", ""), subject=meta.get("subtitle", ""))   # PDF metadata
         body = Frame(MARGIN, BOTTOM, FRAME_W, PAGE_H - TOP - BOTTOM, id="body", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)   # text frame
         self.addPageTemplates([PageTemplate(id="cover", frames=[body], onPage=self._cover),
-                               PageTemplate(id="body", frames=[body], onPage=self._page)])   # the two page layouts
+                               PageTemplate(id="body", frames=[body], onPage=self._page, onPageEnd=self._page_end)])   # the two page layouts
+
+    def beforeDocument(self):
+        """Reset the running header at the start of every build pass (multiBuild runs several)."""
+        self.section, self.page_h1 = "", None   # no chapter yet
+
+    def _page_end(self, c, doc):
+        """Write the chapter name into the header once the page content is known."""
+        name = (self.page_h1 or self._carried)[:60]   # a chapter starting here wins over the one carried over
+        left = f'{self.meta.get("badge", "")}  ·  {self.meta["title"]}'   # document badge and title
+        room = FRAME_W - pdfmetrics.stringWidth(name, "Body", 8.5) - 12   # width left for the title
+        while left and pdfmetrics.stringWidth(left, "Body-Bold", 8.5) > room: left = left[:-2].rstrip() + "…"   # shorten until it fits
+        c.saveState(); c.setFillColor(colors.white)   # header text colour
+        c.setFont("Body-Bold", 8.5); c.drawString(MARGIN, PAGE_H - 7.2 * mm, left)   # title, left side
+        c.setFont("Body", 8.5); c.drawRightString(PAGE_W - MARGIN, PAGE_H - 7.2 * mm, name); c.restoreState()   # chapter name, right side
 
     def afterFlowable(self, fl):
         """Feed headings to the contents page, the PDF outline and the running header."""
@@ -241,7 +256,9 @@ class Doc(BaseDocTemplate):
             key = f"h{self.seq.nextf('heading')}"   # unique bookmark name
             self.canv.bookmarkPage(key); self.canv.addOutlineEntry(text, key, level=level, closed=(level == 0))   # PDF outline entry
             self.notify("TOCEntry", (level, text, self.page, key))   # contents entry
-            if level == 0: self.section = text   # header shows the current chapter
+            if level == 0:   # a chapter starts
+                self.section = text   # it is now the current chapter
+                if self.page_h1 is None: self.page_h1 = text   # first chapter starting on this page
 
     def _cover(self, c, doc):
         """Paint the cover page background, title block and notice."""
@@ -275,8 +292,7 @@ class Doc(BaseDocTemplate):
         m, a = self.meta, col(self.accent)   # metadata and accent colour
         c.setFillColor(a); c.rect(0, PAGE_H - 11 * mm, PAGE_W, 11 * mm, stroke=0, fill=1)   # header band
         pe_stripe(c, 0, PAGE_H - 12.2 * mm, PAGE_W, 1.2 * mm, seg=9)   # thin green/yellow line under the band
-        c.setFillColor(colors.white); c.setFont("Body-Bold", 8.5); c.drawString(MARGIN, PAGE_H - 7.2 * mm, f'{m.get("badge", "")}  ·  {m["title"]}'[:95])   # document title
-        c.setFont("Body", 8.5); c.drawRightString(PAGE_W - MARGIN, PAGE_H - 7.2 * mm, self.section[:60])   # current chapter
+        self._carried, self.page_h1 = self.section, None   # chapter carried over from the previous page; reset the per-page record
         c.setStrokeColor(col("line")); c.setLineWidth(0.5); c.line(MARGIN, 12.5 * mm, PAGE_W - MARGIN, 12.5 * mm)   # footer rule
         c.setFillColor(col("muted")); c.setFont("Body", 7.6); c.drawString(MARGIN, 8.5 * mm, m.get("footer", ""))   # build line
         c.setFont("Body-Bold", 8.5); c.setFillColor(a); c.drawRightString(PAGE_W - MARGIN, 8.5 * mm, f"Page {doc.page}")   # page number

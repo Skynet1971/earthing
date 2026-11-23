@@ -1,0 +1,172 @@
+# Document definition. Rules: .claude/skills/colour-pdf/SKILL.md and CLAUDE.md.
+# Every technical statement carries a {{FACT_ID}} citation; IDs come from content/facts.json.
+id: "05"
+slug: data_network_poe
+badge: "SHEET 05 · DATA"
+title: "Data networks, telecom entry and PoE"
+subtitle: "Bonding of telephone, ADSL and fibre entries, multiservice surge protectors, Ethernet and PoE ports, cable shields, outdoor radios and cabling between buildings"
+applies_to: "Telephone and ADSL lines, fibre entries, routers and modems, Ethernet switches and PoE midspans, shielded and unshielded twisted-pair cabling, outdoor radios and access points, data links between buildings"
+accent: teal
+version: "1.0"
+contents: true
+sections:
+  - title: "1  How network equipment is damaged"
+    lead: "NIST (US) explains that equipment connected to both power and a communications system can be damaged by a surge on either system because of the voltage difference between the two systems during the surge, and that this can happen even when each system has its own surge protector.{{A009}}"
+    blocks:
+      - numbers:
+          - value: "under 1.5 m"
+            label: "earthing conductor from the telecom primary protector to the main earth terminal, ITU-T K.66{{B014}}"
+          - value: "10 m²"
+            label: "loop area ITU-T K.85 suggests always assuming for Ethernet ports in the risk assessment{{B050}}"
+          - value: "15 kV"
+            label: "rise of telecom equipment above the power network in the ITU-T K.66 example without a common bonding point{{B026}}"
+      - facts: [A022, A023, B026, B047, B094, D094, B108, B029, B003]
+      - h2: "Where the services enter the house"
+      - facts: [A006, A007, A025]
+
+  - title: "2  Telephone, ADSL and fibre entry"
+    lead: "ITU-T K.66 says that locating the telecommunication primary protectors near the power mains entrance lets the earthing conductor from protector to main earth terminal be kept under 1.5 m, and that this short, low-impedance conductor reduces surge voltage differences between the telecom lines and the power system protective conductor.{{B014}}"
+    blocks:
+      - diagram:
+          name: common_bonding
+          caption: "Concept sketch, not a wiring diagram. (1) all services connected with low-impedance bonding conductors to the main earth terminal, low impedance being obtained by keeping them shorter than 1.5 m (ITU-T K.66){{B004}} (2) earthing connects the earth bar to earth, usually via an installed electrode (ITU-T K.98){{B092}} (3) every earth point bonded to the main earth bar, with nothing connected to a separate electrode that is not bonded to it (ITU-T K.66).{{B002}}"
+      - h2: "One entry point, one main earth terminal"
+      - facts: [B001, B007, B008, C088, B079, B005, B006, B031, A024, A026, A027, B096]
+      - h2: "The telecom primary protector"
+      - facts: [A013, B095, B099, B017, D151, D143, C068]
+      - callout:
+          kind: dont
+          title: "Do not earth the primary protector to its own electrode"
+          text: "ITU-T K.66 warns that earthing telecommunication primary protectors only to a separate earth electrode is not compatible with protecting equipment and may even cause a fire in the premises or injury or death of a person using telecommunication equipment.{{B015}}"
+      - callout:
+          kind: note
+          title: "ADSL modems and fibre terminals"
+          text: "No verified fact in this library gives a rule for the ADSL modem or the fibre network terminal itself. This sheet quotes the general rules for telecommunication lines, ports and equipment; fibre is treated in the chapter on fibre and wireless."
+
+  - title: "3  Equipment with both a mains and a data port"
+    lead: "NIST (US) gives as the simple solution for equipment with both power and communications connections a special surge protector that combines, in one package, input/output connections for both systems.{{A010}}"
+    blocks:
+      - facts: [A011, A008]
+      - h2: "Multiservice surge protective devices (MSPDs)"
+      - facts: [B028, B018, B016, B020, B021, B019, B048, B051, B041, B037, B011]
+      - callout:
+          kind: warn
+          title: "An MSPD depends on an earthed socket"
+          text: "ITU-T K.85 warns that the MSPDs it refers to rely on a protective earth connection for safety{{B038}}, and that if the power point feeding an MSPD is not earthed, equipment damage may not be reduced and users face a possible lightning safety risk.{{B049}}"
+      - h2: "What ITU-T K.98 concludes for homes"
+      - facts: [B098, B103, B104, B105, B106]
+
+  - title: "4  Ethernet and PoE ports"
+    lead: "ITU-T K.98 says most Ethernet ports have a signal transformer that is generally sufficient against line-to-earth surges, but Power over Ethernet equipment may be more susceptible to damage and may need an engineered protection solution.{{B101}}"
+    blocks:
+      - h2: "Internal and external ports"
+      - facts: [B097, B042, B030, B035, B102, B045, B050, D059, B043, B044]
+      - h2: "Ethernet and PoE surge protectors"
+      - facts: [C018, C019, C002, C005, E042, E043, D060, D061, D069, E041]
+      - callout:
+          kind: dont
+          title: "PoE source with its positive terminal on protective earth"
+          text: "MikroTik warns against powering its devices from PoE power sourcing equipment whose positive terminal is connected to protective earth, because it may cause a short circuit and harm the person and the device.{{C029}}"
+      - p: "Published ratings of LAN and PoE protectors from DEHN and Ubiquiti are tabulated in the CCTV sheet of this library."
+
+  - title: "5  Shielded cable and shield bonding"
+    lead: "DEHN states that a cable shield must be earthed at least at both ends, and that only a shield connected at both ends can reduce inductive and capacitive coupling.{{D031}}"
+    blocks:
+      - facts: [D032, D090, D026, B010, C026, C044, C043, C003, C012, C017, D035, C092, C090]
+      - h2: "Both ends, one end, or isolated"
+      - table:
+          head: ["Arrangement", "What the source says", "Source"]
+          widths: [0.22, 0.58, 0.20]
+          rows:
+            - ["Earthed at both ends", "Connection of both ends of metallic cable screens to the main earthing terminal is required if high unbalanced currents are expected due to different earthing potentials, with precautions taken to limit such currents.{{B078}}", "ITU-T K.73"]
+            - ["Earthed at both ends on a CBN", "The common bonding network makes it practical to bond shields and coaxial outer conductors at both ends, because its parallel low-impedance path carries most of the current.{{C092}}", "ITU-T K.27"]
+            - ["Earthed at one end only", "Attenuates capacitive interference fields but gives no protection against the electromagnetic induction caused by lightning strikes.{{D032}}", "DEHN"]
+            - ["One end earthed, other end insulated", "The non-earthed end is protected against direct contact and labelled to warn of a potential electric shock risk.{{B085}}", "ITU-T K.73"]
+            - ["Direct at one point, indirect at the far ends", "Shields earthed directly at one central point and indirectly at the far ends through isolating spark gaps, which block equalising currents in surge-free operation.{{D034}}", "DEHN"]
+            - ["Screen isolated from earth (between buildings)", "Galvanic isolation: the cable covering must then withstand the screen-to-earth potential difference{{B083}}; an SPD between screen and earth is required if the insulation cannot withstand the expected lightning overvoltage.{{B084}}", "ITU-T K.73"]
+            - ["Shield bonded through an SPD", "An SPD may be used instead of a direct bond to give galvanic isolation if corrosion requires it.{{B010}}", "ITU-T K.66"]
+          caption: "Each row is the arrangement as the cited source describes it; the sources do not rank these arrangements against each other."
+      - callout:
+          kind: warn
+          title: "Equalising currents on shields bonded at both ends"
+          text: "DEHN notes that where a shield is earthed at both ends on earth-termination systems at different potentials, low-frequency equalising currents of up to a few amperes can flow in the shield, in extreme cases causing cable fires.{{D033}} ITU-T K.73 uses a parallel bonding conductor to reduce the current on an inter-building cable screen.{{B086}}"
+
+  - title: "6  Earthing switches, routers and midspans"
+    lead: "Axis calls proper grounding of the PSE (PoE switch or midspan) imperative for the cable shield to protect the camera.{{C014}}"
+    blocks:
+      - facts: [{id: C015, text: "Axis says its PoE midspan should always be plugged into a grounded socket so that the cable shield can function.{{C015}}"}, C016, E036, E037, E038, E040, B032, B033, C065]
+      - p: "Bonding of equipment racks and rack-mounted switches is treated in the racks and cabinets sheet of this library."
+      - pagebreak: true
+
+  - title: "7  Outdoor radios and access points"
+    lead: "MikroTik requires that towers and masts carrying the shielded cable installation, the antennas and the router itself are all properly grounded.{{C021}}"
+    blocks:
+      - h2: "MikroTik"
+      - facts: [C022, C023, C024, C027, C028, C025]
+      - h2: "Ubiquiti (Ethernet surge protector datasheet)"
+      - facts: [E065, E066, E067]
+      - h2: "WAPA high-site guideline (South Africa)"
+      - facts: [C041, C045, C037, C038]
+      - h2: "Motorola R56 (US practice)"
+      - facts: [D131, D150]
+      - callout:
+          kind: note
+          title: "Radio product manuals"
+          text: "Of Ubiquiti's documents, only the Ethernet surge protector datasheet is among the sources of this library; no Ubiquiti radio installation manual is. Masts and antenna cables are treated in the antennas sheet."
+      - pagebreak: true
+
+  - title: "8  Cabling between buildings"
+    lead: "ITU-T K.73 explains that when equipment in different buildings is interconnected, current can flow on the cable screen because of the potential difference between the buildings' earthing systems, damaging the cable or equipment and injuring people.{{B080}}"
+    blocks:
+      - diagram:
+          name: between_buildings
+          caption: "Concept sketch, not a wiring diagram. Option A, copper: (1) Motorola R56 (US practice): in lightning-prone areas a primary SPD on each end of an inter-building telephone/data cable run{{D142}}; ITU-T K.66: the telecommunications equipment of each building earthed and protected as for an individual building{{B022}} (2) ITU-T K.73: a parallel bonding conductor routed close to the cable if the fault-condition current through the screen is unacceptable{{B090}}; Motorola R56 (US practice): buildings less than 61 m apart linked by metallic-shielded cables should share one grounding electrode system or have their systems interconnected by two buried conductors{{D130}}. Option B: (3) DEHN: optical fibre cables should be used between different buildings.{{D092}}"
+      - facts: [B082, B088, B030, B097, B100, B087, B091, D088, D063, B040]
+      - callout:
+          kind: note
+          title: "Different earthing and power feeding"
+          text: "For buildings with different earthing and power feeding, ITU-T K.73 calls for the cable screen to be connected to the main earthing terminal at the entrance of each building and for measurement of the possible current between the two METs.{{B089}}"
+
+  - title: "9  Fibre and wireless as isolation"
+    lead: "ITU-T K.85 names wireless links within the home network as a method of protection and says an optical fibre solution could also be used.{{B039}}"
+    blocks:
+      - facts: [D092, D058, B027, C041, D025, D144, B046]
+
+  - title: "10  Routing and separation of data and power cables"
+    lead: "To minimise induction loops inside a building, DEHN says cables and metal pipes should enter the building at the same location{{D023}}, and power and data lines should be laid spatially close together, but shielded.{{D024}}"
+    blocks:
+      - h2: "Inside the building"
+      - facts: [D089, D062, D091, E033, D063, C068, D135, H005]
+      - h2: "Distances in TP-Link's rack-device guide"
+      - facts: [E034, E035]
+      - h2: "Outdoor runs (TP-Link)"
+      - facts: [E027, E028, E029, E030, E031, E032]
+
+  - title: "11  Where the sources disagree"
+    lead: "The sources were written for different countries and kinds of site. Where they conflict, the wiring code that applies at the site decides; this table shows the conflict rather than choosing for you."
+    blocks:
+      - table:
+          head: ["Question", "One source says", "Other sources say"]
+          widths: [0.22, 0.39, 0.39]
+          rows:
+            - ["Power and data cables: together or apart?", "DEHN: power and data lines laid spatially close together, but shielded{{D024}}; shielded data cables and power lines in the same riser duct, no more than 20 cm apart.{{D089}}", "TP-Link rack guide: minimum distances between Ethernet cable and power lines, smaller when the cables are in grounded metal raceways{{E035}}; TP-Link Omada: signal lines at least 50 m from high-voltage equipment or cables.{{E053}}"]
+            - ["Does an Ethernet port need a protector?", "ITU-T K.98: the signal transformer is generally sufficient against line-to-earth surges; PoE equipment may need an engineered solution{{B101}}; the ITU-T K.85 worked example assumed the Ethernet port would not need protection.{{B045}}", "DEHN: with copper cabling of about 100 m (horizontal) a direct strike to the building can exceed the insulation strength of a network card, so distributor and terminal equipment need protection{{D059}}; ITU-T K.85 suggests always assuming a 10 m² loop for Ethernet ports.{{B050}}"]
+            - ["Ethernet cable outdoors?", "TP-Link: using Ethernet cables outdoors is not recommended; when cabling outdoors a signal lightning arrester should be used.{{E027}}", "Southwest Microwave specifies shielded outdoor Ethernet in permanently earthed metal conduit{{C003}}; Ubiquiti fits one protector near the outdoor device and one at the building entry.{{E065}}"]
+            - ["Shield earthed at both ends?", "DEHN: a cable shield must be earthed at least at both ends.{{D031}}", "ITU-T K.73 also describes a screen bonded at one end with the other end insulated{{B085}}, and galvanic isolation of the screen between buildings.{{B083}}"]
+            - ["Copper cable between buildings?", "ITU-T K.73 does not recommend a metallic cable between two buildings for privately owned telecommunication equipment{{B088}}; DEHN: optical fibre should be used between buildings.{{D092}}", "Motorola R56 (US practice): primary SPD on each end of the run in lightning-prone areas{{D142}}; DEHN: a bus cable in a shielded duct or metal pipe earthed at both ends needs only surge arresters.{{D088}}"]
+            - ["Separate earth for surveillance network equipment?", "TP-Link Omada: the grounding system for surveillance equipment should be separate from the grounding systems of other electrical equipment.{{E045}}", "ITU-T K.66: every earth point bonded to the main earth bar{{B002}}; ITU-T K.85: a stand-alone earth electrode is most likely unsuitable for customer premises equipment.{{B033}}"]
+
+  - title: "12  Installation checklist"
+    blocks:
+      - checklist:
+          - "Telecom primary protector near the mains entrance, bonded to the main earth terminal with a conductor under 1.5 m.{{B014}}"
+          - "No separate earth electrode for the primary protector; every earth point bonded to the main earth bar.{{B015, B002}}"
+          - "Equipment with mains and data ports fed through a combined (multiservice) protector plugged into an earthed power point.{{A010, B049}}"
+          - "Inter-building cables connected only to external ports, intra-building cables only to internal ports.{{B097}}"
+          - "Signal lightning arrester matches the port rate, is installed near the protected device and has a short ground cable.{{E042, E043}}"
+          - "Shielded cable with shielded or metal-bodied connectors; shield earthing arrangement chosen with equalising currents in mind.{{C044, C043, D033}}"
+          - "Switch or PoE midspan earthed: earthed socket, or a separate earth conductor for a switch without one.{{C015, C016}}"
+          - "Outdoor radio, antennas and mast grounded; lightning arresters on all external antenna cables.{{C021, C022}}"
+          - "Between buildings: optical fibre, or copper with an SPD on each end and a parallel bonding conductor where screen current is unacceptable.{{D092, D142, B090}}"
+          - "Power and data lines laid close together and shielded; protected and unprotected cables kept apart.{{D024, D062}}"
+          - "No cables run down the outside of the building to connect devices on different floors.{{E029}}"

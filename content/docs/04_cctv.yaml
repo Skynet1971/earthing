@@ -1,0 +1,94 @@
+# Document definition. Rules: .claude/skills/colour-pdf/SKILL.md and CLAUDE.md.
+# Every technical statement carries a {{FACT_ID}} citation; IDs come from content/facts.json.
+id: "04"
+slug: cctv_cameras_recorders
+badge: "SHEET 04 · CCTV"
+title: "CCTV cameras, recorders and PoE switches"
+subtitle: "Earthing, bonding and surge protection of IP / PoE cameras on walls and poles, their cables, recorders and switches"
+applies_to: "IP and PoE cameras on buildings and poles, coaxial and RS-485 camera lines, network video recorders, PoE switches and midspans"
+accent: teal
+version: "1.0"
+contents: true
+sections:
+  - title: "1  How cameras are damaged"
+    lead: "Outdoor cameras sit at the end of long cables that leave the building. The sources name three ways a lightning flash reaches them: a direct strike, voltage induced into the cable by a nearby strike, and a difference in earth potential between the two ends of the cable.{{E059}}"
+    blocks:
+      - numbers:
+          - value: "3"
+            label: "damage mechanisms: direct strike, induction, earth-potential difference{{E059}}"
+          - value: "2 ends"
+            label: "surge protectors at the camera and at the building end of the cable{{E003}}"
+          - value: "≤ 0.91 m"
+            label: "outdoor PoE suppressor from the device, Southwest Microwave rule{{C002}}"
+      - facts: [C008, C009, C010, E061, E062, E060, D083]
+      - callout:
+          kind: note
+          title: "A surge protector reduces risk; it does not guarantee survival"
+          text: "i-PRO states that surge protectors cannot prevent damage from a direct strike{{E060}} and does not guarantee protection even when its examples are followed.{{E064}}"
+
+  - title: "2  The protection scheme"
+    lead: "The sources read for this sheet describe the same basic layout: a protector near the camera, a second protector where the cable enters the building, and earthed equipment at both ends. The section on where the sources disagree lists the exceptions."
+    blocks:
+      - diagram:
+          name: camera_both_ends
+          caption: "Concept sketch, not a product wiring diagram. (1) protector near the camera{{E065, C002}} (2) protector at the building entry, bonded to the main earthing bar with a short conductor{{C005, B014}} (3) the PoE switch or recorder is earthed so that the cable shield has a path to earth{{C012, C014}} (4) the camera pole or pipe is earthed and the camera is bonded to it.{{E052}}"
+      - h2: "Protect both ends of the cable"
+      - facts: [E001, E002, E003, D077, D078, D148, D150, E065, C004, C005, C020]
+      - h2: "Cameras on a pole or mast"
+      - facts: [E004, E005, D079, E006, D080]
+      - h2: "Cameras on a building wall"
+      - facts: [E007, D081, E008, E009, D082]
+
+  - title: "3  Cable, shield and routing"
+    blocks:
+      - callout:
+          kind: do
+          title: "Use shielded cable and keep the shield continuous to an earthed switch"
+          text: "Axis advises shielded (STP) cable throughout{{C007}}; the shield only works with an unbroken path to earth through the PoE switch or midspan{{C012}}, and every cable, patch panel and coupling in the path must be shielded.{{C017}}"
+      - facts: [C011, C013, C019, C003, D031, D032, D090, D026, D022, B010]
+      - h2: "Earth the switch or midspan"
+      - facts: [C014, C015, C016]
+      - h2: "Routing outdoors"
+      - facts: [E054, E055, E057, E056, E053, D062, D024, D089]
+      - callout:
+          kind: warn
+          title: "Shields bonded at both ends can carry current between two earths"
+          text: "DEHN notes that a shield earthed at both ends on earth systems at different potentials can carry equalising currents of up to a few amperes{{D033}}; it describes indirect earthing of the far end through a spark gap as one way to avoid this.{{D034}}"
+
+  - title: "4  Earthing the camera itself"
+    blocks:
+      - facts: [E051, E052, E047, E048, E049, E050, E058, D146, D147]
+      - h2: "Protector ratings quoted in the sources"
+      - table:
+          head: ["Line", "Rating as published", "Source"]
+          widths: [0.22, 0.58, 0.20]
+          rows:
+            - ["LAN / PoE (DEHN)", "Ethernet and PoE+ to 57 V, Cat. 6; 1 kA per line (10/350 µs), 2.5 kA line-to-ground and 10 kA total (8/20 µs){{E015, E016}}", "DEHN WP007"]
+            - ["Two-wire video / RS-485 (DEHN)", "9 kA total lightning impulse current (10/350 µs), 20 kA total nominal discharge current (8/20 µs){{E013}}", "DEHN WP007"]
+            - ["Power supply (DEHN)", "Type 1 + 2 combined arrester, Uc 255 V a.c., 25 kA total (10/350 µs); coordinated with terminal equipment within 5 m{{E012}}", "DEHN WP007"]
+            - ["Ethernet (Ubiquiti ETH-SP-G2)", "spark-over 90 V d.c. and 700 V impulse; 10 kA+ discharge; 802.3af PoE{{E068, E069, E070}}", "Ubiquiti"]
+          caption: "Values are those printed by each manufacturer for its own products; they are listed to show the order of magnitude, not as a specification."
+
+  - title: "5  Where the sources disagree"
+    lead: "The sources were written for different countries and kinds of site. Where they conflict, the wiring code that applies at the site decides; this table shows the conflict rather than choosing for you."
+    blocks:
+      - table:
+          head: ["Question", "One source says", "Other sources say"]
+          widths: [0.22, 0.39, 0.39]
+          rows:
+            - ["Separate earth for CCTV?", "TP-Link Omada: the surveillance earth should be separate from other electrical earths.{{E045}}", "TP-Link rack guide, ITU-T K.66 and DEHN: bond all earths to one point.{{E039, B002, D022}}"]
+            - ["Use the lightning protection earth?", "TP-Link Omada: using lightning rods or down conductors for equipment earthing is prohibited.{{E046}}", "The same guide connects a buried shielding wire to the lightning protection earth.{{E056}}"]
+            - ["Earth resistance target for the camera", "TP-Link Omada: below 4 ohm.{{E050}}", "No resistance value is given for cameras in DEHN, Axis or i-PRO; DEHN's general LPS recommendation is 10 ohm or less (see the fundamentals sheet)."]
+            - ["Protector at the mast junction box", "DEHN: not needed if the cable runs inside the bonded metal mast or tube and is only a few metres long.{{E005}}", "Ubiquiti and Southwest Microwave always fit one near the outdoor device.{{E065, C002}}"]
+
+  - title: "6  Installation checklist"
+    blocks:
+      - checklist:
+          - "Surge protector fitted near each outdoor camera and earthed to the pole, pipe or building metalwork.{{E065, E066, E058}}"
+          - "Second protector at the point where each camera cable enters the building, bonded with a short conductor to the main earthing bar.{{C005, B014}}"
+          - "Shielded cable, shielded connectors, shielded patch panels and couplers along the whole path.{{C007, C017}}"
+          - "PoE switch or midspan earthed (earthed socket, or a separate earth conductor for desktop switches).{{C015, C016}}"
+          - "Camera pole or mounting pipe earthed; camera case connected to it.{{E051, E052}}"
+          - "Cables buried or in earthed metal conduit; no cables run down the outside of the building.{{E054, E055, C003}}"
+          - "Signal and power cables kept apart, protected and unprotected cables kept apart.{{D062}}"
+          - "After any lightning damage: inspect and repair earth points, earth straps and surge protectors.{{C052}}"

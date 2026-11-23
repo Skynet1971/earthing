@@ -1,0 +1,209 @@
+# Document definition. Rules: .claude/skills/colour-pdf/SKILL.md and CLAUDE.md.
+# Every technical statement carries a {{FACT_ID}} citation; IDs come from content/facts.json.
+id: "10"
+slug: solar_pv_inverters_batteries
+badge: "SHEET 10 · SOLAR PV"
+title: "Solar PV arrays, inverters and batteries"
+subtitle: "Lightning exposure, frame bonding, d.c. and a.c. surge protection, inverter earthing and the hazards of the d.c. side of a rooftop PV system"
+applies_to: "Roof-mounted PV arrays and mounting rails, string and main d.c. cables, grid-tied and hybrid inverters (Sunsynk named where the statement is product-specific), battery banks, a.c. connection to the distribution board, inverter data lines"
+accent: orange
+version: "1.0"
+contents: true
+sections:
+  - title: "1  Does a PV array raise the lightning risk?"
+    lead: "DEHN states that, according to the state of scientific and technical knowledge, installing PV modules does not increase the risk of a lightning strike.{{H001}} The UK BRE guide accepts a very small increased risk for a typical roof-mounted system and lists situations where even that may not hold.{{H118, H119}}"
+    blocks:
+      - facts: [H001, D097, H118, H119, H116, H117, H043, H002, H003, H120, H041]
+      - callout:
+          kind: note
+          title: "The sources differ on strike risk and on who decides"
+          text: "The DEHN and BRE positions are set side by side in the chapter on where the sources disagree. SMA leaves the choice of measures for each system to an expert on lightning protection{{H041}}; BRE refers the frame-to-LPS question to a lightning protection installer.{{H120}}"
+
+  - title: "2  PV array with and without an external LPS"
+    lead: "DEHN distinguishes three cases: a building without external lightning protection, a building with external lightning protection where the separation distance s to the PV system is kept, and one where it cannot be kept. The type of d.c. surge protective device and its position follow from the case.{{H018, H031, H036}}"
+    blocks:
+      - numbers:
+          - value: "10 m"
+            label: "d.c. cable length beyond which DEHN requires a second d.c. SPD{{H018}}"
+          - value: "10 m"
+            label: "a.c. cable length beyond which DEHN requires an SPD at the inverter output{{H019}}"
+          - value: "0.9 m"
+            label: "separation distance in air that HVI insulated down conductors are equivalent to, up to{{H032}}"
+      - h2: "Building without an external lightning protection system"
+      - facts: [H018, H020, D102, H021, H019, H022, D101, H023]
+      - h2: "External LPS, separation distance kept"
+      - facts: [H024, H025, H013, A076, H026, H027, H042, H028, H031, H029, H030, H032, A089, H045]
+      - h2: "External LPS, separation distance not kept"
+      - facts: [H033, H034, H010, H011, H035, H036, H039, H037, H038, H044, H046]
+      - table:
+          head: ["Case (DEHN WPX029)", "d.c. side", "a.c. side"]
+          widths: [0.26, 0.40, 0.34]
+          rows:
+            - ["No external LPS", "Type 2 at each inverter d.c. input; an additional SPD at the PV generator if the d.c. cable exceeds the length threshold{{H018, H020}}", "SPD at the inverter a.c. output if the a.c. cable to the protected low-voltage input exceeds the length threshold{{H019}}"]
+            - ["External LPS, separation distance kept", "Type 2 PV arrester at the inverter d.c. side{{H031}}", "Multipole type 1 at the grid connection point; additional type 2 upstream of the devices for longer cables{{H029, H030}}"]
+            - ["External LPS, separation distance not kept", "Type 1 at the point where the PV lines enter the building; an additional SPD at the inverter if the d.c. cable exceeds the length threshold{{H036, H039}}", "Additional type 1 if the inverter or battery storage is beyond the distance threshold from the type 1 SPD at the grid connection point{{H037}}"]
+          caption: "Summary of the DEHN rooftop-PV white paper; the length thresholds are given in the bullet lists above."
+      - h2: "Minimum discharge capacity of a type 1 d.c. SPD"
+      - table:
+          head: ["Class of LPS (DEHN)", "Fewer than four down conductors", "Four or more down conductors"]
+          widths: [0.30, 0.35, 0.35]
+          rows:
+            - ["Class III and IV (100 kA, 10/350 µs)", "8.5 kA (8/20) / 5 kA (10/350) per path; 17 / 10 kA total{{H015}}", "5 / 2.5 kA per path; 10 / 5 kA total{{H015}}"]
+            - ["Class I or unknown (200 kA, 10/350 µs)", "17 kA (8/20) / 10 kA (10/350) per path; 34 / 20 kA total{{H016}}", "10 / 5 kA per path; 20 / 10 kA total{{H016}}"]
+          caption: "Values for a voltage-limiting type 1 d.c. SPD as printed in the DEHN rooftop-PV white paper.{{H015, H016}}"
+      - h2: "Air-termination rods and core shadows on the modules"
+      - numbers:
+          - value: "1.08 m"
+            label: "DEHN: distance at which a rod of 10 mm diameter casts only a diffuse shadow{{H014}}"
+          - value: "106 × d"
+            label: "SAPVIA (South Africa): minimum distance to avoid a core shadow, d = diameter of the shading object{{H087}}"
+      - facts: [H014, H087, H088]
+
+  - title: "3  Bonding module frames and mounting rails"
+    lead: "DEHN and SAPVIA require the mounting system to be connected with copper conductors; the UK BRE guide allows the array frame to be left floating in a defined case. The conflict is tabled at the end of this chapter.{{H008, H092, H107}}"
+    blocks:
+      - numbers:
+          - value: "6 mm²"
+            label: "copper, functional earthing of the mounting system (DEHN, citing IEC TR 63227){{H008}}"
+          - value: "16 mm²"
+            label: "copper, mounting system tied into a class III LPS (DEHN){{H012}}"
+          - value: "10 mm²"
+            label: "braid, array frame bond where the BRE decision tree requires one (UK){{H110}}"
+      - h2: "Functional earthing, no connection to an LPS (DEHN, SAPVIA)"
+      - facts: [H007, H008, H009, D099, H092, H093]
+      - h2: "Mounting system connected to the LPS (DEHN)"
+      - facts: [H010, H011, H012, D100, H034]
+      - h2: "UK practice: the BRE decision tree"
+      - facts: [H108, H107, H109, H110, H111, H112, H129, H120]
+      - table:
+          head: ["Question", "BRE PV guide (UK, 2006)", "DEHN WPX029 / SAPVIA (South Africa)"]
+          widths: [0.22, 0.39, 0.39]
+          rows:
+            - ["May the frame be left unearthed?", "Yes, with Class II modules, Class II d.c. cables and connectors and an inverter with an isolation transformer; this is the recommended approach.{{H107}}", "DEHN: the inverter insulation monitoring is only permanently effective if the mounting system is connected to earth.{{H007}} SAPVIA: the metal substructure must be bonded to potential equalisation.{{H092}}"]
+            - ["What decides?", "Electrical separation by an isolating transformer is the key factor{{H108}}; it does not override a need to connect the frame to earth for lightning protection.{{H129}}", "DEHN: functional earthing of the mounting system, and a lightning-current-capable connection when the separation distance cannot be kept.{{H008, H034}}"]
+            - ["Conductor", "10 mm² braid or equivalent where a bond is required.{{H110}}", "At least 6 mm² copper or equivalent{{H008, H092}}; at least 16 mm² copper for a class III LPS connection.{{H012}}"]
+            - ["Where the bond goes", "Floating, to an earth spike, or directly to the consumer earthing terminal; a PME earth must not leave the equipotential zone.{{H109, H110}}", "Rails permanently interconnected with conductors of the functional earthing cross-section{{H009}}; the module frame cannot be used for equalisation.{{H093}}"]
+          caption: "The BRE guide is UK guidance and treats PME supplies specifically{{H112}}; DEHN cites IEC TR 63227{{H008}}; SAPVIA is South African. The wiring code that applies at the site decides."
+
+  - title: "4  Surge protection on the d.c. side, the a.c. side and data lines"
+    blocks:
+      - diagram:
+          name: pv_protection
+          caption: "Concept sketch, not a product wiring diagram. (1) mounting-rail bonding conductor, at least 6 mm² copper for functional earthing{{H008, H009}} (2) d.c. SPD at the inverter d.c. input, one per MPP input{{H018, H020}} (3) additional d.c. SPD at the PV generator when the d.c. cable is longer than the threshold{{H018, H021}} (4) a.c. SPD at the inverter output when the a.c. cable to the protected input is longer than the threshold{{H019, H022}} (5) equipotential bonding bar for the inverter, its SPDs and the board: Sunsynk makes an earth cable to the inverter grid-side earth plate mandatory; ABB keeps the a.c. SPD connections to the earthing bar and to the inverter ground short and straight.{{H070, H057}}"
+      - h2: "Selecting the d.c. SPD"
+      - facts: [H017, H058, H040, H054, H046, H044]
+      - callout:
+          kind: note
+          title: "No selection rule for the d.c. continuous operating voltage"
+          text: "No fact in this library states how the maximum continuous operating voltage of a PV SPD is to be chosen relative to the array open-circuit voltage. The only values available are those ABB prints for its own example device.{{H058}}"
+      - h2: "Where the d.c. SPDs go"
+      - p: "The DEHN placement rules for each lightning protection case are listed in the chapter on PV arrays with and without an external LPS.{{H018, H039}}"
+      - facts: [H055, H127, H047, H051, H075, H125]
+      - h2: "The a.c. side"
+      - facts: [H048, H049, H053, H056, H057, H126]
+      - h2: "Data and sensor lines of the inverter"
+      - facts: [H050, H023, H038]
+
+  - title: "5  Cable routing"
+    blocks:
+      - callout:
+          kind: do
+          title: "Keep loops small and run the bonding conductor with the cables"
+          text: "BRE asks for short d.c. runs with positive and negative of the same string bundled together, including the associated earth/bonding conductors{{H122, H123}}; DEHN asks for power and data lines to run with the equipotential bonding conductors along their entire route.{{H006}}"
+      - facts: [H004, D098, H122, H123, H006, H005, H124, H121, H098]
+      - callout:
+          kind: warn
+          title: "Lead inductance adds to the protection level"
+          text: "SMA notes that during a surge voltage drops across the cable inductance, so a non-ideal SPD arrangement raises the protection level seen at the inverter{{H052}}; DEHN notes that the drop along SPD connecting leads is mainly inductive at high rates of current change.{{D056}}"
+
+  - title: "6  Inverter earthing, isolation, RCDs and batteries"
+    lead: "Statements in this chapter that name Sunsynk come from the Sunsynk 8 kW hybrid inverter manual and apply to that product only.{{H070}}"
+    blocks:
+      - h2: "Earth connection of the inverter"
+      - facts: [H070, H061, H080, H115]
+      - callout:
+          kind: note
+          title: "Protective conductor size not covered"
+          text: "No fact in this library gives the cross-section of the protective earth conductor to the inverter. The Sunsynk manual gives the a.c. cable size{{H068}} and requires wiring and cable sizes to comply with the country's wiring regulations.{{H069}}"
+      - h2: "Neutral-earth bond of a hybrid inverter (Sunsynk)"
+      - facts: [H071, H073, H074, H072]
+      - h2: "Residual current devices"
+      - facts: [H083, H084, H085, H086, H128, D048, D050]
+      - callout:
+          kind: warn
+          title: "RCD type: BRE and the Sunsynk manual name different types"
+          text: "BRE (UK) requires a type B RCD for fault protection where there is no at least simple separation between the a.c. and d.c. sides{{H128}}; the Sunsynk manual specifies an external RCD of Type A/AC{{H083}} and a Type A RCBO.{{H086}} No fact in this library states whether the Sunsynk inverter provides simple separation, so the facts alone do not settle which statement applies to it."
+      - h2: "Isolators and breakers"
+      - facts: [H060, H066, H067, H068, H075, H106, H089, H069]
+      - h2: "Battery wiring and fusing"
+      - facts: [H063, H065, H064, H078, H079, H130, H131]
+      - h2: "Functional earthing of the array poles"
+      - facts: [H077, H076, H113, H114]
+      - pagebreak: true
+
+  - title: "7  Inspection and testing, including after a strike"
+    blocks:
+      - callout:
+          kind: note
+          title: "No PV-specific post-strike procedure"
+          text: "None of the sources in this library gives an inspection procedure for a PV array or inverter after a lightning strike. The statements below are the general LPS and earthing inspection rules and the PV commissioning tests."
+      - h2: "After a strike"
+      - facts: [D066, D064, C052, D067]
+      - h2: "Insulation and earth checks on the PV system"
+      - facts: [H096, H081, H082, H080, H097, H136, H137, H138, H139, H140]
+
+  - title: "8  DANGER and WARNING statements"
+    lead: "BRE notes that the supply from PV modules cannot be switched off, so special precautions are needed.{{H101}}"
+    blocks:
+      - callout:
+          kind: dont
+          title: "WARNING (Sunsynk): do not earth a PV pole"
+          text: "Do not connect the PV array's positive or negative poles to ground, as this can seriously damage the inverter.{{H077}}"
+      - callout:
+          kind: dont
+          title: "WARNING (Sunsynk): not a DIY product"
+          text: "High life risk due to fire or electrocution; the inverter can only be installed by a qualified licensed electrical contractor.{{H059}}"
+      - h2: "Live d.c., shock and earthing cautions"
+      - facts: [H101, H100, H102, D046, H103, H132, H133, H134, H135, H062, H112, H121, D014]
+      - h2: "Labels and signs"
+      - facts: [H104, H105, H095]
+      - h2: "Arcing and fire"
+      - facts: [H091, H099, H090, H094]
+
+  - title: "9  Where the sources disagree"
+    lead: "The sources were written for different countries and dates: BRE for the UK, SAPVIA for South Africa, DEHN citing IEC and German supplements, and manufacturers for their own products. Where they conflict, the wiring code that applies at the site decides; this table shows the conflict rather than choosing for you."
+    blocks:
+      - table:
+          head: ["Question", "One source says", "Other sources say"]
+          widths: [0.22, 0.39, 0.39]
+          rows:
+            - ["Does PV raise the strike risk?", "DEHN: installing PV modules does not increase the risk of a lightning strike.{{H001, D097}}", "BRE (UK): a typical roof-mounted system presents a very small increased risk, which may not hold for large, tall or exposed systems.{{H118, H119}}"]
+            - ["Earth the array frame?", "BRE (UK): Class II modules and cabling with an isolating-transformer inverter permit a floating frame.{{H107}}", "DEHN: insulation monitoring is only permanently effective with an earthed mounting system.{{H007}} SAPVIA (South Africa): the substructure must be bonded.{{H092}}"]
+            - ["Frame bonding conductor", "BRE (UK): 10 mm² braid or equivalent.{{H110}}", "DEHN and SAPVIA: at least 6 mm² copper for functional earthing{{H008, H092}}; DEHN: at least 16 mm² copper when tied to a class III LPS.{{H012}}"]
+            - ["Separate earth for the array", "BRE (UK): one outcome is bonding the frame to an earth spike, since a PME earth must not leave the equipotential zone.{{H109, H112}}", "IEC/BS EN 62305-3 as summarised by Furse recommends a single integrated earth termination system.{{A075}}"]
+            - ["Earthing a d.c. pole", "BRE (UK): not recommended, permitted only with at least simple separation between the a.c. and d.c. sides.{{H113, H114}}", "Sunsynk: do not connect the positive or negative pole to ground.{{H077}}"]
+            - ["RCD type", "BRE (UK): type B where there is no simple separation (transformerless inverter).{{H128}}", "Sunsynk: external RCD Type A/AC{{H083}}; RCBO Type A.{{H086}}"]
+            - ["Second d.c. SPD at the array", "DEHN: required if the d.c. cable exceeds the length threshold{{H018, H021}}; ABB: if the array-to-inverter distance is less than 10 m, a PV SPD at only one end is recommended.{{H055}}", "BRE (UK): SPDs can be fitted at the inverter end and at the array, with no length threshold given.{{H127}}"]
+            - ["A.C. SPD", "ABB: a Type 1 SPD at the main board is mandatory when a lightning rod is present{{H053}}; SMA: SPDs on the d.c. side mean SPDs are also required on the a.c. side.{{H048}}", "BRE (UK): surge suppression devices may be fitted at the main incoming point of the a.c. supply.{{H126}}"]
+            - ["Lightning protection standard named", "BRE (UK, 2006): a separate LPS in accordance with BS 6651.{{H117}}", "DEHN: LPS class III per German DIN EN 62305-3 Supplement 5 meets the usual requirements for PV.{{H002}}"]
+            - ["Core shadow distance", "DEHN: 1.08 m for a 10 mm rod.{{H014}}", "SAPVIA (South Africa): 106 times the diameter of the shading object.{{H087}}"]
+          caption: "Figures are listed as printed by each source; jurisdiction and date are given where the source states them."
+
+
+  - title: "10  Installation checklist"
+    blocks:
+      - checklist:
+          - "Case identified: no external LPS, separation distance kept, or separation distance not kept.{{H018, H031, H036}}"
+          - "Each inverter MPP input has its own d.c. SPD of the type the case requires.{{H020, H047}}"
+          - "Second d.c. SPD at the generator end where the d.c. cable exceeds the DEHN length threshold.{{H018, H021}}"
+          - "SPD voltage protection level at least 20 % below the dielectric strength of the PV system.{{H017}}"
+          - "A.C. SPD at the grid connection point, plus one at the inverter output where the a.c. cable exceeds the length threshold.{{H029, H019}}"
+          - "Wired communication lines of the inverter protected.{{H050}}"
+          - "Mounting rails interconnected and bonded with the conductor size the applicable code requires.{{H009, H092, H110}}"
+          - "Positive and negative cables bundled, with the bonding conductor, in short runs.{{H122, H123}}"
+          - "Inverter earth connection made (Sunsynk: mandatory earth cable to the grid-side earth plate).{{H070}}"
+          - "Neutral-earth bond made only in island mode on a hybrid inverter (Sunsynk).{{H073}}"
+          - "Neither PV pole connected to earth on a Sunsynk inverter.{{H077}}"
+          - "Battery over-current protection and isolation between battery and inverter.{{H063, H065}}"
+          - "Voc, Isc, polarity and insulation checked per string before connection to the inverter.{{H096}}"
+          - "Warning signs at the inverter and the distribution board.{{H095}}"

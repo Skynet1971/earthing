@@ -1,0 +1,131 @@
+# Document definition. Rules: .claude/skills/colour-pdf/SKILL.md and CLAUDE.md.
+# Every technical statement carries a {{FACT_ID}} citation; IDs come from content/facts.json.
+id: "11"
+slug: racks_cabinets_bonding
+badge: "SHEET 11 · RACKS"
+title: "Equipment racks and cabinets"
+subtitle: "Bonding networks, bonding busbars and conductors for equipment racks, cabinets and rack-mounted network equipment"
+applies_to: "Equipment racks and cabinets, rack-mounted switches, routers and patch panels, bonding busbars, cable trays and the bonding conductors between them"
+accent: teal
+version: "1.0"
+contents: true
+sections:
+  - title: "1  Bonding networks: CBN, mesh-BN and IBN"
+    lead: "ITU-T K.27: in a telecommunication building the bonding and earthing network is the common bonding network (CBN), to which equipment is attached either by multiple connections (mesh-BN) or by a single point connection (IBN).{{C080}}"
+    blocks:
+      - numbers:
+          - value: "2 m"
+            label: "typical maximum dimension of the SPC window between an IBN and the CBN, ITU-T K.27{{C086}}"
+          - value: "No. 6 AWG"
+            label: "minimum rack bonding conductor, UFGS 27 05 26 (US){{C060}}"
+          - value: "1 A"
+            label: "maximum acceptable AC ground-loop current in the bonding conductors, UFGS 27 05 26 (US){{C079}}"
+      - h2: "Definitions (ITU-T K.27)"
+      - facts: [C081, C082, C087, C084, C083, C085]
+      - h2: "The same terms in the US guide specification"
+      - facts: [C053, C054]
+      - h2: "Mesh-BN"
+      - facts: [C096, C092, C090, D036, D037]
+      - h2: "Isolated bonding network (IBN)"
+      - facts: [C094, C095, C097, C100, C098]
+      - callout:
+          kind: note
+          title: "Equipotential bonding as TP-Link defines it"
+          text: "TP-Link defines equipotential bonding as intentionally connecting all earthed systems to the same grounding grid, or connecting their grounding grids together, to create an earthed equipotential zone.{{E039}}"
+
+  - title: "2  Bonding busbars and their names"
+    lead: "PBB, SBB, RBB and MGB are US terms from the UFGS 27 05 26 guide specification and Motorola R56{{C055, D132}}; the ITU-T documents use main earthing terminal and single point connection.{{B079, C085}}"
+    blocks:
+      - table:
+          head: ["Term", "Meaning or rule as published", "Source"]
+          widths: [0.20, 0.56, 0.24]
+          rows:
+            - ["PBB (formerly TMGB)", "Primary bonding busbar, formerly the telecommunications main grounding busbar; bonded by the telecommunications bonding conductor to the building's electrical service equipment ground.{{C055}}", "UFGS 27 05 26 (US)"]
+            - ["SBB (formerly TGB)", "Secondary bonding busbar, formerly the telecommunications grounding busbar; the common bonding point for telecommunications equipment in satellite telecommunications rooms.{{C056}}", "UFGS 27 05 26 (US)"]
+            - ["RBB", "Rack bonding busbar, installed in each telecommunications cabinet or rack.{{C069}}", "UFGS 27 05 26 (US)"]
+            - ["MGB", "Master ground bus bar: a single one installed for the communications system within a shelter, building, room or equipment area.{{D132}}", "Motorola R56 (US practice)"]
+            - ["MET", "Main earthing terminal, located as close as possible to the a.c. power and telecommunication cable entrance facilities.{{B079}}", "ITU-T K.73"]
+            - ["SPC bus-bar", "The unique location where an IBN connects to the CBN; usually a copper bus-bar rather than a literal point.{{C085}}", "ITU-T K.27"]
+      - facts: [C067, C064, C057]
+      - pagebreak: true
+
+  - title: "3  Conductors and how they are installed"
+    blocks:
+      - diagram:
+          name: rack_bonding
+          caption: "Concept sketch, not a product wiring diagram. (1) rack-mounted equipment with metallic parts and patch panels for shielded cabling bonded to the rack bonding busbar with a unit bonding conductor (UFGS 27 05 26, US){{C070}} (2) each cabinet and rack bonded to the bonding network or busbar with its own dedicated conductor, not daisy-chained (UFGS 27 05 26, US){{C071, C072}} (3) the PBB bonded by the telecommunications bonding conductor to the building's electrical service equipment ground (UFGS 27 05 26, US){{C055}}; Motorola R56 (US practice): conductor from the MGB to the grounding electrode system at least 35 mm² (#2 AWG) copper.{{D134}}"
+      - h2: "Sizes as published"
+      - table:
+          head: ["Conductor", "Size as published", "Source"]
+          widths: [0.32, 0.46, 0.22]
+          rows:
+            - ["TBB / BBC by linear length", "No. 6 AWG under 4 m, No. 4 AWG for 4-6 m, No. 3 AWG for 6-8 m{{C058}}", "UFGS 27 05 26 (US)"]
+            - ["Telecommunications bonding backbone (TBB)", "2 kcmil per linear foot, minimum No. 6 AWG, maximum 750 kcmil{{C059}}", "UFGS 27 05 26 (US)"]
+            - ["Rack bonding conductor (RBC)", "at least No. 6 AWG; not a substitute for a rack bonding busbar{{C060}}", "UFGS 27 05 26 (US)"]
+            - ["Telecommunications equipment bonding conductor (TEBC)", "continuous, not smaller than No. 6 AWG or the largest equipment grounding conductor of the branch circuits serving the line-up{{C061}}", "UFGS 27 05 26 (US)"]
+            - ["Cabinet or rack to the bonding network or busbar", "selected minimum size, offered default No. 6 AWG{{C071}}", "UFGS 27 05 26 (US)"]
+            - ["Jumper to a cabinet door or panel", "at least No. 12 AWG stranded insulated copper, green or green/yellow jacket{{C073}}", "UFGS 27 05 26 (US)"]
+            - ["MGB to the grounding electrode system", "at least 35 mm² (#2 AWG) copper{{D134}}", "Motorola R56 (US)"]
+            - ["Equipment grounding conductor for electronic equipment", "16 mm² (#6 AWG) or larger{{D136}}", "Motorola R56 (US)"]
+            - ["Cable tray system back to the MGB", "no smaller than 16 mm² (#6 AWG){{D138}}", "Motorola R56 (US)"]
+            - ["Equipotential bonding ground cable", "10 AWG or larger, as short as possible{{E040}}", "TP-Link"]
+            - ["Earthing cable for individual equipment units", "typically 16 mm² yellow/green{{C046}}", "WAPA (South Africa)"]
+            - ["Internal metal installations to the equipotential bonding bar", "6 mm² copper or 10 mm² aluminium{{D021}}", "DEHN (IEC 62305-3 Table 9)"]
+            - ["Between two equipotential bonding bars", "16 mm² copper{{D027}}", "DEHN (IEC 62305-3 Table 8)"]
+            - ["Equipotential bonding conductor of SPDs", "16 mm² copper for power supply SPDs, 6 mm² for information technology SPDs{{D068, D069}}", "DEHN"]
+          caption: "AWG and kcmil are US sizes and are given here as each source prints them; each value applies to the scope its source states."
+      - h2: "Installation rules"
+      - facts: [C066, C072, C037, C062, D137, C063, D135, D125, D114, C099]
+
+  - title: "4  Earthing a rack-mounted switch"
+    lead: "TP-Link's guide for rack-mountable devices: in an equipment room where a grounding bar is available, connecting the device's grounding terminal to the grounding bar is recommended.{{E038}}"
+    blocks:
+      - facts: [E036, E037, E040, E041, C070, C065]
+      - h2: "Switches that power cameras over PoE (Axis)"
+      - facts: [C014, C016]
+
+  - title: "5  Motorola R56 master ground bus bar (US practice)"
+    lead: "Per Motorola R56 (2005, US practice), a single master ground bus bar (MGB) shall be installed for the communications system within a shelter, building, room or equipment area.{{D132}}"
+    blocks:
+      - facts: [D133, D134, D136, D138, D151, D143, D144, D147, D113]
+
+  - title: "6  Labelling, testing and inspection"
+    blocks:
+      - numbers:
+          - value: "25 Ω"
+            label: "maximum building grounding electrode resistance before connection (5 Ω option), UFGS (US){{C077}}"
+          - value: "100 mΩ"
+            label: "recommended maximum from any point of the bonding system to the electrode system, UFGS (US){{C078}}"
+          - value: "1 mΩ"
+            label: "maximum bonding resistance of cable-tray bonding jumpers, UFGS (US){{C063}}"
+      - h2: "UFGS 27 05 26 (US)"
+      - facts: [C076, C077, C078, C079]
+      - h2: "IEC practice as summarised by DEHN"
+      - facts: [D019, D020, D067]
+      - h2: "WAPA (South Africa)"
+      - facts: [C050, C051, C052]
+
+  - title: "7  Where the sources disagree"
+    lead: "The sources were written for different countries and kinds of site. Where they conflict, the wiring code that applies at the site decides; this table shows the conflict rather than choosing for you."
+    blocks:
+      - table:
+          head: ["Question", "One source says", "Other sources say"]
+          widths: [0.22, 0.39, 0.39]
+          rows:
+            - ["Is the power-cord PE enough to earth the equipment?", "TP-Link: in a normal environment the device can be grounded via the PE conductor of its AC power supply{{E036}}, after making sure the PE in the outlet is well grounded.{{E037}}", "UFGS 27 05 26 (US): earthing through the AC power cord does not meet the specification; IT equipment must have a supplementary, dedicated ground path.{{C065}}"]
+            - ["One earthing bar or two?", "UFGS 27 05 26 (US): the PBB and the electrical service ground bar must be two separate busbars even in the same room{{C067}}, the PBB being bonded to the electrical service equipment ground.{{C055}}", "ITU-T K.98, citing IEC 60364-4-44: all protective and functional earthing conductors connect to one single main earth terminal{{B096}}; ITU-T K.66: every earth point bonded to the main earth bar.{{B002}}"]
+            - ["Minimum equipment bonding conductor", "TP-Link: 10 AWG or larger.{{E040}}", "UFGS 27 05 26 (US): offered default No. 6 AWG{{C071}}; Motorola R56 (US): 16 mm² (#6 AWG) or larger{{D136}}; WAPA: typically 16 mm².{{C046}}"]
+            - ["Acceptance value for bonding resistance", "DEHN: less than 1 ohm is considered sufficient for equipotential bonding connections.{{D019}}", "UFGS 27 05 26 (US): recommended maximum of 100 milliohms between any point of the telecommunications bonding system and the building grounding electrode system.{{C078}}"]
+
+  - title: "8  Installation checklist"
+    blocks:
+      - checklist:
+          - "Rack bonding busbar in each rack or cabinet; rack-mounted equipment and shielded patch panels bonded to it.{{C069, C070}}"
+          - "Each rack and cabinet on its own bonding conductor, no daisy-chaining.{{C072, C037}}"
+          - "Detachable doors and panels bonded with a jumper.{{C073}}"
+          - "Bonding conductors without splices, by the shortest straight-line route.{{C066}}"
+          - "Cable trays, cable shields and conduit not used in place of a bonding conductor.{{C062, D137}}"
+          - "Rack-mounted switch grounding terminal connected to the grounding bar where one is available.{{E038}}"
+          - "Bonding busbar bonded to the building's electrical service ground.{{C055}}"
+          - "Terminations on the busbar tagged against disconnection.{{C076}}"
+          - "Bonding continuity and ground-loop current measured and recorded.{{C078, C079}}"

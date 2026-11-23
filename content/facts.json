@@ -6295,5 +6295,2905 @@
   "id": "F235",
   "source": "28_Siemens_LOGO8_System_Manual_2023",
   "quote_sha256": "91dc0c680178a5c4"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): according to the state of scientific and technical knowledge, installing PV modules does not increase the risk of a lightning strike, so the need for lightning protection cannot be derived from the mere existence of a PV system.",
+  "quote": "the installation of PV modules does not increase the risk of a",
+  "page": 2,
+  "section": "Necessity of a rooftop lightning protection system",
+  "id": "H001",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "535f60e26770e202"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): citing Supplement 5 of the German DIN EN 62305-3, a lightning protection system designed for class of LPS III (LPL III) meets the usual requirements for PV systems.",
+  "quote": "protection system designed for class of LPS III (LPL III) meets",
+  "page": 2,
+  "section": "Necessity of a rooftop lightning protection system",
+  "id": "H002",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "070ae2381fceaf68"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): according to IEC 60364-4-44, surge protective devices must also be installed for buildings that have no external lightning protection system.",
+  "quote": "According to IEC 60364-4-44 standard, surge protective devices must also be installed for buildings without",
+  "page": 2,
+  "section": "Necessity of surge protection for PV systems",
+  "id": "H003",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "d16ed575c2a16cfe"
+ },
+ {
+  "topic": "SITE",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): PV cables must be routed so that large conductor loops are avoided, both when forming a string and when interconnecting several strings.",
+  "quote": "Cables must be routed in such a way that large conductor",
+  "page": 2,
+  "section": "Cable routing of PV systems",
+  "id": "H004",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "4a93932ad9a4adb7"
+ },
+ {
+  "topic": "DATA",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): data or sensor lines must not be routed across several strings where they would form large conductor loops with the string lines.",
+  "quote": "Moreover, data or sensor lines must not be routed over",
+  "page": 2,
+  "section": "Cable routing of PV systems",
+  "id": "H005",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "547b45c30ebe3631"
+ },
+ {
+  "topic": "SITE",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): power lines (DC and AC) and data lines (e.g. radiation sensor, yield monitoring) should be routed together with the equipotential bonding conductors along their entire route.",
+  "quote": "itoring) are routed together with the equipotential bonding",
+  "page": 2,
+  "section": "Cable routing of PV systems",
+  "id": "H006",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "e33d8d0a122ae8b8"
+ },
+ {
+  "topic": "SITE",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): the insulation monitoring integrated in inverters is only permanently effective if the PV mounting system is connected to earth.",
+  "quote": "nently effective if the mounting system is connected to earth.",
+  "page": 2,
+  "section": "Earthing of PV systems",
+  "id": "H007",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "0ba1c24f26474fe2"
+ },
+ {
+  "topic": "FUND",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): for functional earthing of the PV mounting system, Section 7 of IEC TR 63227 requires copper conductors of at least 6 mm2 cross-section or equivalent.",
+  "quote": "Section 7 of IEC TR 63227 requires copper con- ductors with a cross-section of at least 6 mm2 or equivalent for functional earthing (Figure 1).",
+  "page": 3,
+  "section": "Earthing of PV systems",
+  "id": "H008",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "2cf9d3fc67743d72"
+ },
+ {
+  "topic": "FUND",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): the PV mounting rails must also be permanently interconnected with conductors of the same cross-section as the functional earthing conductor (at least 6 mm2 copper).",
+  "quote": "The mounting rails also have to be permanently interconnected by means of conduc- tors of this cross-section.",
+  "page": 3,
+  "section": "Earthing of PV systems",
+  "id": "H009",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "2fe4b50ac240f085"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): if the PV mounting system is connected directly to the external lightning protection system because the separation distance s cannot be maintained, its bonding conductors become part of the lightning equipotential bonding system.",
+  "quote": "If the mounting system is directly connected to the external lightning protection system due to the fact that the separation distance s cannot be main- tained, these conductors become part of the lightning equi- potential bonding system.",
+  "page": 3,
+  "section": "Earthing of PV systems",
+  "id": "H010",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "59d3927a50231d6f"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): bonding conductors of a mounting system that is connected to the lightning protection system must be capable of carrying lightning currents.",
+  "quote": "Consequently, these elements must be capable of carrying lightning currents.",
+  "page": 3,
+  "section": "Earthing of PV systems",
+  "id": "H011",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "840ea5d80378f0b6"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): where the mounting system is tied into a class III lightning protection system, the minimum is a 16 mm2 copper conductor or equivalent, and the mounting rails must again be permanently interconnected.",
+  "quote": "16 mm2 or equivalent. Also in this case, the mounting rails",
+  "page": 3,
+  "section": "Earthing of PV systems",
+  "id": "H012",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "f5433d380071702e"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): the separation distance s between a lightning protection system and a PV system is the distance needed to avoid uncontrolled flashover to adjacent metal parts when lightning strikes the external lightning protection system.",
+  "quote": "distance required to avoid uncontrolled flashover to adjacent",
+  "page": 3,
+  "section": "Separation distance s as per IEC 62305-3",
+  "id": "H013",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "67503281bada68f9"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): for a 10 mm diameter air-termination rod, only a diffuse shadow (no core shadow) falls on a module once the rod is 1.08 m away.",
+  "quote": "distance from the module increases. After 1.08 m only a diffuse",
+  "page": 3,
+  "section": "Core shadows on solar cells",
+  "id": "H014",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "83caa1a739735fc1"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): for LPS class III and IV (100 kA, 10/350 us) the minimum discharge capacity of a voltage-limiting type 1 DC SPD is 8.5 kA (8/20) / 5 kA (10/350) per path and 17 / 10 kA total with fewer than 4 down conductors, and 5 / 2.5 kA per path and 10 / 5 kA total with 4 or more down conductors.",
+  "quote": "III and IV 100 kA 8.5 / 5 17 / 10 5 / 2.5 10 / 5",
+  "page": 4,
+  "section": "Table 1",
+  "id": "H015",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "18d6f0379311919e"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): for LPS class I or unknown class (200 kA, 10/350 us) the minimum type 1 DC SPD discharge capacity is 17 kA (8/20) / 10 kA (10/350) per path and 34 / 20 kA total with fewer than 4 down conductors, and 10 / 5 kA per path and 20 / 10 kA total with 4 or more down conductors.",
+  "quote": "I or unknown 200 kA 17 / 10 34 / 20 10 / 5 20 / 10",
+  "page": 4,
+  "section": "Table 1",
+  "id": "H016",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "6a495c17e4b3f90e"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): IEC 61643-32 requires the SPD voltage protection level Up to be at least 20 % lower than the dielectric strength of the PV system.",
+  "quote": "is at least 20 % lower than the dielectric strength of the PV sys-",
+  "page": 5,
+  "section": "Selection of SPDs according to the voltage protection level Up",
+  "id": "H017",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "840bf46c5150e37d"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): on a building without external LPS, the DC SPD goes at the DC input of the inverter, and if the DC cable length l1 to the PV generator exceeds 10 m an additional SPD is required at the PV generator.",
+  "quote": "DC input of the inverter (if l1 > 10 m, additional SPD required for the PV generator)",
+  "page": 6,
+  "section": "Figure 10 (building without external LPS)",
+  "id": "H018",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "9627b6d16b314487"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): an SPD at the AC output of the inverter is required if the AC cable length l2 back to the protected low-voltage input exceeds 10 m.",
+  "quote": "AC output of the inverter (required, if l2 > 10 m)",
+  "page": 6,
+  "section": "Figure 10 (building without external LPS)",
+  "id": "H019",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "18e499ff8cee8382"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): every DC input (MPPT) of the inverter must be protected by its own surge protective device (type 2 in the case without external LPS).",
+  "quote": "Every DC input (MPPT) of the inverter must be protected by a",
+  "page": 7,
+  "section": "Situation A",
+  "id": "H020",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "78d909b8a820f0b9"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): an additional type 2 DC arrester is to be installed on the module side if the distance between the inverter input and the PV generator exceeds 10 m.",
+  "quote": "tional type 2 DC arrester to be installed on the module side if",
+  "page": 7,
+  "section": "Situation A",
+  "id": "H021",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "197c57a09e0560a5"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): PV inverters and other electronics such as AC-coupled battery storage are sufficiently protected if they are no further than 10 m from the arrester at the grid connection point; with greater cable lengths an additional type 2 SPD must be installed.",
+  "quote": "further than 10 m away from where the arrester is installed at",
+  "page": 7,
+  "section": "Situation A",
+  "id": "H022",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "167b04944d846fcb"
+ },
+ {
+  "topic": "DATA",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): if inverters are connected to data and sensor lines for yield monitoring, suitable surge protective devices are required on those lines.",
+  "quote": "the yield, suitable surge protective devices are required. The",
+  "page": 7,
+  "section": "Situation A",
+  "id": "H023",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "a1872b880935e181"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): on a building with external LPS the PV system must itself be protected from direct strikes, meaning it must be installed within the protected volume of the external lightning protection system.",
+  "quote": "means that the PV system must be installed within the pro-",
+  "page": 7,
+  "section": "Building with external LPS and sufficient separation distance (situation B)",
+  "id": "H024",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "5f1e618342b79a62"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): a separation distance s must be maintained between all conductive parts of the PV system and the lightning protection system.",
+  "quote": "certain separation distance s must be maintained between all conductive parts of the PV system and the lightning protection system.",
+  "page": 8,
+  "section": "Situation B",
+  "id": "H025",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "69f1e4eba385e65c"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): lightning equipotential bonding must be implemented for all conductive systems and lines entering the building which may carry lightning currents.",
+  "quote": "It must be implemented for all con- ductive systems and lines entering the building which may carry lightning currents.",
+  "page": 8,
+  "section": "Situation B",
+  "id": "H026",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "52d417535f3413fd"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): lightning equipotential bonding is achieved by connecting all metal systems directly, and all energised systems indirectly via type 1 lightning current arresters, to the earth-termination system.",
+  "quote": "This is achieved by directly connecting all metal systems and indirectly connecting all energised sys- tems via type 1 lightning current arresters to the earth-ter- mination system.",
+  "page": 8,
+  "section": "Situation B",
+  "id": "H027",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "7148f43300e85a9c"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): lightning equipotential bonding should be implemented as close as possible to the point of entry into the building, to keep partial lightning currents out of the building.",
+  "quote": "Lightning equipotential bonding should be implemented as close as possible to the entrance point into",
+  "page": 8,
+  "section": "Situation B",
+  "id": "H028",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "fffe749eb0b0cc79"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): on a building with external LPS the grid connection point must be protected by a multipole type 1 SPD (for example a spark-gap-based combined arrester).",
+  "quote": "by a multipole type 1 SPD, for example a spark-gap-based",
+  "page": 9,
+  "section": "Situation B",
+  "id": "H029",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "7b782b4b3e8734d2"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): with external LPS, if the cable between the type 1 arrester at the grid connection point and the inverter or AC-coupled battery storage is less than 10 m, protection is sufficient; for longer cables additional type 2 SPDs must be installed upstream of the devices.",
+  "quote": "is less than 10 m, sufficient protection is provided. In case of",
+  "page": 9,
+  "section": "Situation B",
+  "id": "H030",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "14e63f7c5216d1f4"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): with external LPS and the separation distance kept, the DC side of the inverter must be protected by a type 2 PV arrester.",
+  "quote": "The DC side of the inverter must be protected by a type 2 PV",
+  "page": 9,
+  "section": "Situation B",
+  "id": "H031",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "9f99fae7423632e8"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): high-voltage-resistant insulated down conductors are an alternative way of keeping the separation distance, equivalent to a separation distance s of up to 0.9 m in air.",
+  "quote": "which make it possible to maintain a separation distance s up",
+  "page": 9,
+  "section": "High-voltage-resistant, insulated HVI Conductor",
+  "id": "H032",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "8e4e8f49caa3d7cb"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): if the roofing is made of metal or is formed by the PV system itself, the separation distance s cannot be maintained.",
+  "quote": "If the roofing is made of metal or is formed by the PV system itself, the",
+  "page": 9,
+  "section": "Building with external LPS and insufficient separation distance (situation C)",
+  "id": "H033",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "d6e77555f994d62d"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): when the separation distance cannot be kept, the metal components of the PV mounting system must be connected to the external LPS so that they can carry lightning currents, using a copper conductor of at least 16 mm2 or equivalent.",
+  "quote": "of the PV mounting system must be connected to the external lightning protection system in such a way that they can carry lightning currents (copper con- ductor with a cross-section of at least 16 mm2 or equivalent).",
+  "page": 9,
+  "section": "Situation C",
+  "id": "H034",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "93b09cf745209cd3"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): when the mounting system is connected to the LPS, lightning equipotential bonding must also be implemented for the PV lines entering the building from outside.",
+  "quote": "This means that lightning equipotential bonding must also be implemented for the PV lines entering the building from the outside (Figure 15).",
+  "page": 9,
+  "section": "Situation C",
+  "id": "H035",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "77d976be3a8155b8"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): when the separation distance is not kept, IEC 61643-32 and IEC TR 63227 require the DC lines to be protected by a type 1 SPD for PV systems.",
+  "quote": "According to IEC 61643-32 and IEC TR 63227, DC lines must be protected by a type 1 SPD for PV systems.",
+  "page": 9,
+  "section": "Situation C",
+  "id": "H036",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "92ebc970c6447db7"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): when the separation distance is not kept, if the inverter or battery storage system is more than 10 m from the type 1 SPD at the grid connection point, an additional type 1 SPD must be installed.",
+  "quote": "inverter and, for example, the battery storage system, are situated more than 10 m from the type 1 SPD installed",
+  "page": 9,
+  "section": "Situation C",
+  "id": "H037",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "6060f56e1528460d"
+ },
+ {
+  "topic": "DATA",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): when the separation distance is not kept, suitable surge protective devices must also be installed on the data lines used for yield monitoring.",
+  "quote": "Suitable surge protective devices must also be in- stalled to protect the relevant data lines for yield monitoring.",
+  "page": 9,
+  "section": "Situation C",
+  "id": "H038",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "790ff1397e67391a"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): when the separation distance is not kept, the type 1 DC SPD for the PV generator is placed at the point where the PV lines enter the building, and if the DC cable length l1 exceeds 10 m an additional SPD must be installed at the inverter.",
+  "quote": "PV generator at the entrance point of the building (if l1 > 10 m, an additional SPD must be installed at the inverter)",
+  "page": 11,
+  "section": "Table 3 (external LPS, separation distance not kept)",
+  "id": "H039",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "e8d658b3035f2d83"
+ },
+ {
+  "topic": "SPD",
+  "claim": "DEHN rooftop-PV white paper (WPX029, 2022): a fault-resistant Y circuit in a PV SPD prevents damage to the surge protective device in the event of insulation faults in the generator circuit.",
+  "quote": "Fault-resistant Y circuit prevents damage to the surge protective device in case of insulation faults in the generator circuit",
+  "page": 15,
+  "section": "Type 1 + type 2 PV combined arrester data sheet",
+  "id": "H040",
+  "source": "44_DEHN_WPX029_Lightning_Surge_Protection_Rooftop_PV",
+  "quote_sha256": "4077e48e2ebb72ad"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "SMA technical information (Overvoltage Protection, v1.3): an expert on lightning protection must determine for each PV system which lightning and overvoltage protection measures are necessary.",
+  "quote": "An expert on lightning protection must determine for each PV system which measures are necessary.",
+  "page": 1,
+  "section": "Content",
+  "id": "H041",
+  "source": "45_SMA_Lightning_Overvoltage_Protection_TI",
+  "quote_sha256": "ae9053d01fc24fe5"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "SMA technical information (Overvoltage Protection, v1.3): for internal lightning protection, metal and conductive parts such as water pipes are bonded directly to each other, while live cables such as the grid connection or telephone lines are connected indirectly to the grounding arrangement through an overvoltage protection device.",
+  "quote": "Metal and conductive system parts, e.g. water pipes, are connected directly with each other for this purpose. Live cables such as the grid connection or telephone lines are connected indirectly to the grounding arrangement using an overvoltage protection device.",
+  "page": 2,
+  "section": "1 Lightning Protection / Overvoltage Protection",
+  "id": "H042",
+  "source": "45_SMA_Lightning_Overvoltage_Protection_TI",
+  "quote_sha256": "e196623b34c895d6"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "SMA technical information (Overvoltage Protection, v1.3): if a building already has a lightning protection system, appropriate measures must also be implemented for a PV system erected on it.",
+  "quote": "If a lightning protection system is already present, appropriate measures must also be implemented for the PV system.",
+  "page": 3,
+  "section": "2 Reasons for Lightning Protection and Overvoltage Protection",
+  "id": "H043",
+  "source": "45_SMA_Lightning_Overvoltage_Protection_TI",
+  "quote_sha256": "2f4441c98672bf9a"
+ },
+ {
+  "topic": "SPD",
+  "claim": "SMA technical information (Overvoltage Protection, v1.3): type I SPDs are needed where lightning or partial lightning currents can flow via electrical cables, for example if the protected system is directly connected to the external LPS or the distance between the DC cables and the external lightning protection is too small.",
+  "quote": "This can be the case if the system to be protected is directly connected to the external lightning protection system or if, for example, the distance between the DC cables and the external lightning protection is too small.",
+  "page": 3,
+  "section": "3 SPD Type Classes",
+  "id": "H044",
+  "source": "45_SMA_Lightning_Overvoltage_Protection_TI",
+  "quote_sha256": "b7efed6f0a7651d9"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "SMA technical information (Overvoltage Protection, v1.3): because lightning-current-capable DC SPDs are costly, adapting the lightning protection system to increase the separation distance is in many cases the most economical solution.",
+  "quote": "In many cases, adapting the lightning protection system to increase the separation distance is the most economical solution.",
+  "page": 3,
+  "section": "3 SPD Type Classes",
+  "id": "H045",
+  "source": "45_SMA_Lightning_Overvoltage_Protection_TI",
+  "quote_sha256": "e24a94562b117953"
+ },
+ {
+  "topic": "SPD",
+  "claim": "SMA technical information (Overvoltage Protection, v1.3): an SPD type II is sufficient to protect an SMA inverter against overvoltages; if partial lightning currents are expected, an SPD type I followed by an SPD type II should be used.",
+  "quote": "If you wish to protect an SMA inverter against impacting overvoltages, an SPD type II is sufficient. If lightning partial currents are expected, an SPD type I with connected SPD type II should be used.",
+  "page": 4,
+  "section": "3 SPD Type Classes",
+  "id": "H046",
+  "source": "45_SMA_Lightning_Overvoltage_Protection_TI",
+  "quote_sha256": "9dfc7dc0f8c192cd"
+ },
+ {
+  "topic": "SPD",
+  "claim": "SMA technical information (Overvoltage Protection, v1.3): for inverters with multiple MPP trackers, an SPD or SPD combination should be planned for each input.",
+  "quote": "For inverters with multiple MPP trackers, an SPD or SPD combination should be planned for each input.",
+  "page": 5,
+  "section": "4 Combining SPD with Inverters",
+  "id": "H047",
+  "source": "45_SMA_Lightning_Overvoltage_Protection_TI",
+  "quote_sha256": "d66fe7701bf4b5a5"
+ },
+ {
+  "topic": "SPD",
+  "claim": "SMA technical information (Overvoltage Protection, v1.3): if SPDs are deployed on the DC side, SPDs are also required on the AC side because of potential differences.",
+  "quote": "If SPDs are deployed on the DC side, SPDs are required on the AC side due to potential differences.",
+  "page": 5,
+  "section": "4 Combining SPD with Inverters",
+  "id": "H048",
+  "source": "45_SMA_Lightning_Overvoltage_Protection_TI",
+  "quote_sha256": "c29b1feefa51bc9a"
+ },
+ {
+  "topic": "SPD",
+  "claim": "SMA technical information (Overvoltage Protection, v1.3): unlike the DC side, several inverters can be protected by a single SPD on the AC side because they are connected to the same grid voltage.",
+  "quote": "multiple inverters can be protected with one SPD on the AC side since they are connected to the same (grid) voltage.",
+  "page": 5,
+  "section": "4 Combining SPD with Inverters",
+  "id": "H049",
+  "source": "45_SMA_Lightning_Overvoltage_Protection_TI",
+  "quote_sha256": "5611a1250d57e8a7"
+ },
+ {
+  "topic": "DATA",
+  "claim": "SMA technical information (Overvoltage Protection, v1.3): wired communication connections of the inverter (e.g. RS485, Ethernet) must also be protected by overvoltage protection devices, otherwise potential differences can damage the inverter interfaces, the inverter and the connected communication device.",
+  "quote": "If there is wired communication in place (e.g. RS485, Ethernet), these connections must also be protected by means of overvoltage protection devices. Otherwise, damage could be caused to the interfaces in the inverter, to the inverter itself, and to the connected communication device due to potential differences.",
+  "page": 6,
+  "section": "4 Combining SPD with Inverters",
+  "id": "H050",
+  "source": "45_SMA_Lightning_Overvoltage_Protection_TI",
+  "quote_sha256": "f3d8850f188bc4e7"
+ },
+ {
+  "topic": "SPD",
+  "claim": "SMA technical information (Overvoltage Protection, v1.3): where string fuses are used, the SPD must be installed at the point of interconnection of the combined strings, after the fuses.",
+  "quote": "If you are using string fuses and an SPD, the SPD must be installed at the point of interconnection of the combined strings after the fuses",
+  "page": 6,
+  "section": "4 Combining SPD with Inverters",
+  "id": "H051",
+  "source": "45_SMA_Lightning_Overvoltage_Protection_TI",
+  "quote_sha256": "918850411238ad8c"
+ },
+ {
+  "topic": "SPD",
+  "claim": "SMA technical information (Overvoltage Protection, v1.3): during a surge, voltage drops across the cable inductance, so a non-ideal SPD arrangement raises the protection level seen at the inverter.",
+  "quote": "When excessive voltage is applied, voltage falls via the cable inductance. If the arrangement is not ideal, the protection level at the inverter is increased",
+  "page": 7,
+  "section": "4 Combining SPD with Inverters",
+  "id": "H052",
+  "source": "45_SMA_Lightning_Overvoltage_Protection_TI",
+  "quote_sha256": "aeb66dbdbc9e5f5b"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB solar brochure (Lightning and surge protective devices, 2011): for the AC-side SPD at the main board, a Type 1 SPD is mandatory when a lightning rod is present.",
+  "quote": "*: Type 1 mandatory in a presence of a lightning rod.",
+  "page": 2,
+  "section": "",
+  "id": "H053",
+  "source": "51_ABB_Solar_Lightning_Overvoltage_Protection",
+  "quote_sha256": "5e8e455edf2f9e56"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB solar brochure (Lightning and surge protective devices, 2011): every SPD using MOVs must have an internal thermal disconnection so that it can be disconnected at end of life.",
+  "quote": "Thus, every SPD using MOVs must have an internal thermal disconnection.",
+  "page": 3,
+  "section": "ABB specific OVR PV",
+  "id": "H054",
+  "source": "51_ABB_Solar_Lightning_Overvoltage_Protection",
+  "quote_sha256": "b317c6fbd2738521"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB solar brochure (Lightning and surge protective devices, 2011): SPD location A (array end) protects the PV cells; if the array-to-inverter distance L1 is less than 10 m, a PV SPD at only A or B is recommended, and its connection to the module chassis should be as short and straight as possible.",
+  "quote": "Protection of cells If the distance L1 < 10 m, Connection to the chassis should be as short",
+  "page": 7,
+  "section": "Configuration of the surge protective devices (table)",
+  "id": "H055",
+  "source": "51_ABB_Solar_Lightning_Overvoltage_Protection",
+  "quote_sha256": "ffa2f253dae7a037"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB solar brochure (Lightning and surge protective devices, 2011): AC head protection at the entrance of the building (location D) is a routine installation, and its connection to the earthing bar should be as short and straight as possible.",
+  "quote": "AC head protection Routine installation Connection to the earthing bar should be as",
+  "page": 5,
+  "section": "Configuration of the surge protective devices (table)",
+  "id": "H056",
+  "source": "51_ABB_Solar_Lightning_Overvoltage_Protection",
+  "quote_sha256": "dd54520751c02fb2"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB solar brochure (Lightning and surge protective devices, 2011): an SPD protecting the inverter output on the AC side (location C) is a routine installation; its connections to the earthing bar and to the ground of the inverter on the AC side should be as short and straight as possible.",
+  "quote": "inverter output on ground of the inverter on the AC side should",
+  "page": 5,
+  "section": "Configuration of the surge protective devices (table)",
+  "id": "H057",
+  "source": "51_ABB_Solar_Lightning_Overvoltage_Protection",
+  "quote_sha256": "8b3fee2cdfbd3f28"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB solar brochure (Lightning and surge protective devices, 2011): the example DC-side PV SPD for 600 V systems has Ucpv 670 V, Imax 40 kA, Up 1.4 kV and suits a PV short-circuit current Iscwpv up to 100 A (the 1000 V version has Up 3.8 kV).",
+  "quote": "670 V 40 kA 1.4 kV 100 A 2CTB 803 953 R5300 OVR PV 40-600 P",
+  "page": 5,
+  "section": "Selection of surge protective devices, DC portion",
+  "id": "H058",
+  "source": "51_ABB_Solar_Lightning_Overvoltage_Protection",
+  "quote_sha256": "0250e97442f7c24c"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: WARNING - high life risk due to fire or electrocution; the inverter can only be installed by a qualified licensed electrical contractor and is not a DIY product.",
+  "quote": "HIGH LIFE RISK DUE TO FIRE OR ELECTROCUTION. Sunsynk Single-Phase Hybrid Inverter can only be installed by a qualified licensed electrical contrac- tor. This is not a DIY product.",
+  "page": 6,
+  "section": "1.3 Safety Instructions",
+  "id": "H059",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "deacbdffcc4210e9"
+ },
+ {
+  "topic": "FUND",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: the inverter must have an individual supply line protected by a circuit breaker operating on all wires with a contact separation of at least 3 mm.",
+  "quote": "Always use an individual power supply line protected by a circuit breaker and operating on all wires with a distance between contacts of at least 3mm for this unit.",
+  "page": 6,
+  "section": "1.3 Safety Instructions",
+  "id": "H060",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "2fc9ac7e61204234"
+ },
+ {
+  "topic": "FUND",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: the unit must be correctly grounded, and the supply line must be equipped with a suitable breaker and RCD to protect people.",
+  "quote": "The unit must be correctly grounded, and the supply line must be equipped with a suitable breaker and RCD to protect people.",
+  "page": 6,
+  "section": "1.3 Safety Instructions",
+  "id": "H061",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "61e53f8696519be7"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: because the system can still hold residual energy, wait 5 minutes after turning off the power before touching electrical components.",
+  "quote": "Therefore, after turning off the power, always wait 5 minutes before touching electrical components.",
+  "page": 6,
+  "section": "1.3 Safety Instructions",
+  "id": "H062",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "20829988b6748e0a"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: a separate DC over-current protector or disconnect device is required between the battery and the inverter; even where a switching device is not required, over-current protection still is.",
+  "quote": "a separate DC over-current protector or disconnect device is required between the battery and the inverter. Switching devices may not be required in some applications, but over-current protectors are still required.",
+  "page": 17,
+  "section": "4.6 Battery Connection",
+  "id": "H063",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "9bf9d45bc9290006"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: the battery cable for the 8 kW model is 2 AWG / 50 mm2, with terminals torqued to 5.2 N.m maximum.",
+  "quote": "Model Wire Size Cable (mm2 ) Torque value (max.) 8kW 2 AWG 50 5.2N.m",
+  "page": 17,
+  "section": "4.6 Battery Connection",
+  "id": "H064",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "4963875d4519dd2f"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: the recommended DC battery protection diagram shows fuses and a two-pole DC isolator between the battery and the inverter.",
+  "quote": "4.6.1. Recommended DC Battery Protection ON 1 2 Inverter DC Isolator Fuses Two Pole",
+  "page": 18,
+  "section": "4.6.1 Recommended DC Battery Protection",
+  "id": "H065",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "75ab8e7c17cd22c0"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: a separate AC breaker must be installed between the inverter and the grid, and an AC breaker between the backup load and the inverter is recommended.",
+  "quote": "Before connecting to the grid, please install a separate AC breaker between the inverter and the grid. Also, it is recommended that installs an AC breaker between the backup load and inverter.",
+  "page": 21,
+  "section": "4.9 Connecting the AC",
+  "id": "H066",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "429098752fd48786"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: for the 8 kW model the recommended AC breaker is 63 A for the backup load and 63 A for the grid.",
+  "quote": "8KW model, the recommended AC breaker for backup load is 63A. For the 8KW model, the recommended AC breaker for the grid is 63A.",
+  "page": 21,
+  "section": "4.9 Connecting the AC",
+  "id": "H067",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "a768cf1089730fb7"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: the AC (grid/load/gen) cable for the 8 kW model is 10 AWG / 8 mm2, with terminals torqued to 1.2 N.m maximum.",
+  "quote": "Model Wire Size Cable (mm2 ) Torque value (max.) 8kW 10 AWG 8 1.2N.m",
+  "page": 21,
+  "section": "4.9 Connecting the AC",
+  "id": "H068",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "b474d82c49ee2ecc"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: CAUTION - wiring and cable sizes must comply with the country's wiring regulations, and suitable disconnection devices and RCDs must be fitted.",
+  "quote": "Ensure that suitable disconnection devices and RCDs are fitted.",
+  "page": 21,
+  "section": "4.9 Connecting the AC",
+  "id": "H069",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "e4ada7be884aae5b"
+ },
+ {
+  "topic": "FUND",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: the earth connection is mandatory: an earth cable shall be connected to the inverter's earth plate on the grid side to prevent electric shock if the original protective conductor fails.",
+  "quote": "An Earth Cable shall be connected to the earth plate on the grid size in order to prevent electric shock if the original protective conductor fails.",
+  "page": 25,
+  "section": "4.11 Earth Connection (MANDATORY)",
+  "id": "H070",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "e3c2b0bc9a025efa"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: all neutrals can be linked together to maintain the neutral bond, and a neutral-earth bond that is required for off-grid operation has to be removed in grid-tied operation.",
+  "quote": "All neutrals can be linked together to maintain the neutral bond. When a Neural Earth bond is required for an ‘Off-grid’ operation, then it has to be removed on",
+  "page": 25,
+  "section": "4.11 Earth Connection (MANDATORY)",
+  "id": "H071",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "d6bc4ae755478c96"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: for a hybrid system needing a neutral-earth bond, a permanent neutral-earth wire can cause faults with an RCD upstream of the inverter (the printed sentence reads 'you can have a permanent earth wire since this can cause faults', evidently meaning cannot).",
+  "quote": "If an Earth Bond is required between neutral and earth and your system is a hybrid system, then you can have a permanent earth wire since this can cause faults with an RCD before the inverter.",
+  "page": 25,
+  "section": "4.11 Earth Connection (MANDATORY)",
+  "id": "H072",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "543deffd45c1b600"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: because the inverter is a true hybrid, the neutral-earth bond must only be made when the inverter is operating in islanding mode.",
+  "quote": "Since the inverter is a true hybrid, then the bond must only be made when the inverter is operating in Island- ing Mode.",
+  "page": 25,
+  "section": "4.11 Earth Connection (MANDATORY)",
+  "id": "H073",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "883c30603b980f45"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: the inverter energises its A/T/S (ATS 240) output whenever it runs in island mode, so the coil of an AC relay connected there can make the neutral-earth bond only during islanding.",
+  "quote": "Sunsynk provides an AC output, which is connected to the A/T/S connec- tions whenever the inverter is running on Island Mode. Therefore, you can simply connect the coil of an AC relay to the ATS 240 connections.",
+  "page": 25,
+  "section": "4.11 Earth Connection (MANDATORY)",
+  "id": "H074",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "9342abfc76e45168"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: a separate DC circuit breaker must be installed between the inverter and the PV modules, and users are requested to install PV junction boxes with surge protection to protect the system from lightning.",
+  "quote": "Before connecting to PV panels, install a separate DC circuit breaker between the inverter and PV modules. In addition, we request users install PV junction boxes with surge protection to protect the system from a lightning strike.",
+  "page": 29,
+  "section": "4.14 PV Connection",
+  "id": "H075",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "8fe9a12c14b7f325"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: PV modules with possible current leakage must not be connected to the inverter; grounded PV modules, for example, will cause current leakage to the inverter.",
+  "quote": "do not connect any PV modules with possible current leakage to the inverter.",
+  "page": 29,
+  "section": "4.14 PV Connection",
+  "id": "H076",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "a97df79b330a897c"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: WARNING - do not connect the PV array's positive or negative poles to ground, as this can seriously damage the inverter.",
+  "quote": "Please do not connect the PV array's positive and negative poles to the ground. This can seriously damage the inverter.",
+  "page": 29,
+  "section": "4.14.2 PV Module Wiring",
+  "id": "H077",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "ca3ed06831d9a80a"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: for paralleled inverters all batteries must be connected in parallel, with a recommended minimum cable size of 50 mm2 and fuse isolators to each inverter.",
+  "quote": "It is recommended a minimum cable size of 50mm2 diameter with fuse isolators to each inverter.",
+  "page": 58,
+  "section": "Parallel inverters",
+  "id": "H078",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "0f66ffe85b97b414"
+ },
+ {
+  "topic": "SITE",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: in a parallel system each inverter requires a fuse isolator with surge protection and each group circuit requires an RCD.",
+  "quote": "Each invert will require a fuse isolator with surge protection and each group circuit will require an RCD.",
+  "page": 59,
+  "section": "Parallel inverters",
+  "id": "H079",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "575b40f44dadd952"
+ },
+ {
+  "topic": "TEST",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: fault F24 (DC insulation impedance failure, PV isolation resistance too low) calls for checking that the earth bond cable on the inverter is connected to ground.",
+  "quote": "2.Check if the earth bond cable on inverters is connected to the ground.",
+  "page": 66,
+  "section": "5.23 Fault Codes (F24)",
+  "id": "H080",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "63c579c888bf5c5b"
+ },
+ {
+  "topic": "TEST",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: before switching on, the installation engineer must have completed the earth bond, RCD and earth leakage tests, checked that the PV Voc does not exceed 480 V and checked the battery voltage.",
+  "quote": "Before switching on, the installation engineer must have completed the Earth Bond, RCD and earth leakage tests, checked that the solar panel Voc voltage does not exceed 480V and checked the battery voltage.",
+  "page": 68,
+  "section": "6.1 Start-Up / Shutdown Procedure",
+  "id": "H081",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "ed77cebb4decfd3e"
+ },
+ {
+  "topic": "TEST",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: before connecting to the grid the inverter measures the impedance of PV+ to ground and PV- to ground, and if either is below 33 kOhm it will not connect and reports error F24.",
+  "quote": "Before the inverter connects to the Grid, it will detect the impedance (effective resistance) of the solar PV + to Ground, and the impedance of the solar PV - to ground. If any of the impedance values are less than 33kΩ, the inverter will not connect to the Grid and will report an error F24 on its LCD.",
+  "page": 69,
+  "section": "6.3 GDFI Fault",
+  "id": "H082",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "89525d83a2ff761e"
+ },
+ {
+  "topic": "FUND",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: if an external RCD is used it should be of Type A/AC with a tripping current of 30 mA or higher.",
+  "quote": "If an external Residual Current Device (RCD) is used it should be of Type A/AC with a tripping current of 30mA or higher.",
+  "page": 71,
+  "section": "Appendix D",
+  "id": "H083",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "87fc96a8735d624b"
+ },
+ {
+  "topic": "FUND",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: an RCD installed for the inverter must disconnect all live conductors, including both active and neutral conductors (the manual cites AS/NZS 3000).",
+  "quote": "If an RCD is installed the engineer must: 1. Disconnect all live conductors (including both active and neutral conductors) and",
+  "page": 71,
+  "section": "Appendix D (Use of RCDs)",
+  "id": "H084",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "77d2aaae50203ba8"
+ },
+ {
+  "topic": "FUND",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: an RCD is recommended on all circuits and sub-circuits connected to the inverter.",
+  "quote": "We recommend the use of an RCD on all circuits and sub-circuits connected to the Sunsynk Inverter.",
+  "page": 71,
+  "section": "Appendix D (Use of RCDs)",
+  "id": "H085",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "011c70c5ef587123"
+ },
+ {
+  "topic": "FUND",
+  "claim": "Sunsynk 8 kW hybrid inverter manual: the recommended RCBO specification is earth-leakage class Type A, 30 mA sensitivity, curve C, AC network, 2-pole.",
+  "quote": "Earth-leakage protection class Type A Earth-leakage sensitivity 30mA Curve code C Network type AC Poles description 2P",
+  "page": 71,
+  "section": "Appendix D (Use of RCDs)",
+  "id": "H086",
+  "source": "46_Sunsynk_8kW_Hybrid_Inverter_Manual",
+  "quote_sha256": "9ac1b5cfdb862a9c"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): to avoid an umbra (core shadow) on the modules, the minimum distance must be 106 times the diameter of the shading object, which matters most for lightning rods and other roof structures.",
+  "quote": "It can be calculated that the minimum distance must be 106 times the diameter of the shading object; this is most important for lightning rods and other roof structures.",
+  "page": 12,
+  "section": "Shading effects",
+  "id": "H087",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "375d7f6339a6232c"
+ },
+ {
+  "topic": "SITE",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): the DC plan (module position, hook position, cable laying, inlets) should consider integration into the lightning protection where applicable.",
+  "quote": "Create a plan which includes module position, hook position, cable laying, and inlets. Consider integration into the lightning protection (where applicable).",
+  "page": 26,
+  "section": "DC-Balance of system (BOS) components",
+  "id": "H088",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "b91b024e3e3e43e9"
+ },
+ {
+  "topic": "SPD",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): surge-protection devices are among the DC-side balance-of-system components to be chosen and sized, together with DC isolators, DC fuses and junction boxes.",
+  "quote": "Choose and size all other BOS components on the DC side, such as surge-protection devices, DC- isolators, DC-fuses, and junction boxes.",
+  "page": 26,
+  "section": "DC-Balance of system (BOS) components",
+  "id": "H089",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "0d51d13a832bc7ad"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): module interconnection with pre-fitted connectors can be done by a trained non-electrician under supervision of an electrically skilled person only while there are no exposed live parts; additional wiring and assembly of plugs must be performed by an electrician.",
+  "quote": "can be done by a trained non-electrician under supervision of an electrically skilled person – as long as there are no exposed live parts. Additional wiring and assembly of plugs must be performed by an electrician who must also ensure correct wiring of the whole PV system.",
+  "page": 28,
+  "section": "Roof top PV system",
+  "id": "H090",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "4b52be7a41ec94e5"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): incorrect plug assembly and the use of incompatible connectors from third-party manufacturers are the main reasons for arcing and therefore fire.",
+  "quote": "Incorrect assembly and the use of incompatible connectors by third-party manufacturers are the main reasons for arcing and therefore fire.",
+  "page": 31,
+  "section": "Cable laying and module mounting",
+  "id": "H091",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "6fb448d2738766c3"
+ },
+ {
+  "topic": "FUND",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): the metal substructure of the PV array must be bonded to potential equalisation with 6 mm2 copper (or comparable).",
+  "quote": "A bonding of 6 mm² Cu (or comparable) of the metal substructure to potential equalisation must be performed.",
+  "page": 31,
+  "section": "Cable laying and module mounting",
+  "id": "H092",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "7cc9b7d20210173e"
+ },
+ {
+  "topic": "FUND",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): because of the anodised aluminium, the module frame cannot be used for equalisation, and the installer must ensure that all rails are correctly bonded.",
+  "quote": "Because of the anodised aluminium the module frame cannot be used for equalisation. The installer must ensure that all rails are correctly bonded.",
+  "page": 31,
+  "section": "Cable laying and module mounting",
+  "id": "H093",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "e051ba72ffcc5a97"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): the DC string or main cables must not be connected to the inverter before commissioning.",
+  "quote": "The DC string or main cables must not connect to the inverter before commissioning!",
+  "page": 33,
+  "section": "Inverter installation and AC connection",
+  "id": "H094",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "ad735a4c184c294c"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): although not mandatory in South Africa, warning signs should be attached near the inverter and at the distribution board indicating that a PV installation is on the roof and that the DC cables are energised even when the inverter is isolated from the grid.",
+  "quote": "These signs should clearly indicate that a PV installation is mounted on the roof and that the DC cables are energised",
+  "page": 33,
+  "section": "Inverter installation and AC connection",
+  "id": "H095",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "6f9b4edc8f5c2878"
+ },
+ {
+  "topic": "TEST",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): according to IEC 62446, for each string the measurement of Voc and Isc and a polarity and isolation (insulation) check are mandatory before the PV array is connected to the inverter.",
+  "quote": "According to the international standard IEC 62446, for each string the measurements of Voc and Isc and a polarity and isolation check are mandatory.",
+  "page": 34,
+  "section": "Commissioning",
+  "id": "H096",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "14b00638ca3d6567"
+ },
+ {
+  "topic": "TEST",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): the inverter automatically performs insulation checks for ground faults and issues a warning message when insulation resistance is insufficient, which should be addressed as soon as possible.",
+  "quote": "For some safety issues such as ground faults, insulation checks are performed by the inverter automatically. In case of insufficient insulation resistance, a warning message is initiated by the",
+  "page": 36,
+  "section": "Operation and maintenance",
+  "id": "H097",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "232ca7e6eaaefd70"
+ },
+ {
+  "topic": "SITE",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): cables and especially plugs must not be in direct contact with the roofing, in order to avoid insulation faults.",
+  "quote": "In addition, cables and especially plugs must not be in direct contact with the roofing in order to avoid isolation faults.",
+  "page": 37,
+  "section": "Typical electrical failures in PV installations",
+  "id": "H098",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "d727779dcd67e990"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "SAPVIA PV guidelines (South Africa, 2017): with earth faults or short circuits caused by insulation faults, arcing may occur, leading to a high risk of fire.",
+  "quote": "With earth faults or short circuits due to isolation faults arcing may occur – leading to a high risk of fire",
+  "page": 37,
+  "section": "Typical electrical failures in PV installations",
+  "id": "H099",
+  "source": "47_SAPVIA_Solar_PV_Installation_Guidelines",
+  "quote_sha256": "4aab52c64c06f394"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): PV modules are current-limiting devices, so fault protection needs a non-standard approach because fuses are not likely to blow under short-circuit conditions.",
+  "quote": "PV modules are current-limiting devices, which require a non-standard approach when designing fault protection systems, as fuses are not likely to blow under short-circuit conditions.",
+  "page": 5,
+  "section": "1.3 Safety",
+  "id": "H100",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "d4de07d0dae9122b"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): the supply from PV modules cannot be switched off, so special precautions are needed to ensure live parts are not accessible or cannot be touched during installation, use and maintenance.",
+  "quote": "The supply from PV modules cannot be switched off, so special precautions",
+  "page": 5,
+  "section": "1.3 Safety",
+  "id": "H101",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "806805d93c3653fb"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): risk data recommends keeping the potential d.c. shock level below 120 V d.c. if practicable; a 120 V d.c. shock is unlikely to kill but could cause the victim to lose balance or concentration, e.g. on a roof.",
+  "quote": "Risk data recommends reducing the potential shock level to below 120 Vd.c. if practicable. Although a shock of 120 Vd.c. is unlikely to kill, it could cause the victim to lose balance or concentration",
+  "page": 9,
+  "section": "2.1.3 PV Array Design (note)",
+  "id": "H102",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "e0feec3f371b5821"
+ },
+ {
+  "topic": "SITE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): double insulation, appropriate barriers and separation of parts must be applied to all PV systems with an open-circuit voltage above 120 V d.c.",
+  "quote": "appropriate barriers and separation of parts must be applied to all systems with an open-circuit voltage of >120 Vd.c..",
+  "page": 9,
+  "section": "2.1.3 PV Array Design",
+  "id": "H103",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "065e3562fd4ab8bc"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): where long d.c. cable runs are required it is good practice to label along the cables 'Danger solar PV array cable - high voltage d.c. - live during daylight'.",
+  "quote": "along the d.c. cables as follows: “Danger solar PV array cable – high voltage",
+  "page": 9,
+  "section": "2.1.4.2 Cable type and installation method (note)",
+  "id": "H104",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "0a45c3f32e1d4cc5"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): a sign 'Do not disconnect d.c. plugs and sockets under load - turn off a.c. supply first' must be fixed next to d.c. connectors that are accessible to untrained persons.",
+  "quote": "A sign, ‘Do not disconnect d.c. plugs and sockets under load – turn off",
+  "page": 11,
+  "section": "2.1.7 d.c. Plug and Socket Connectors",
+  "id": "H105",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "4685c65dcd9d9b4c"
+ },
+ {
+  "topic": "SITE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): the d.c. switch must be double pole so as to isolate both the PV array positive and the PV array negative.",
+  "quote": "The d.c. switch must be double pole – to effectively electrically isolate both PV array positive and PV array negative.",
+  "page": 12,
+  "section": "2.1.12 d.c. Switch",
+  "id": "H106",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "a6a14ac56fa1708b"
+ },
+ {
+  "topic": "FUND",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): an installation using Class II modules, Class II d.c. cables and connectors and an inverter with an isolation transformer is the recommended approach and permits the array frame to be left floating (unearthed).",
+  "quote": "The majority of installations will utilise class II modules, class II d.c. cables & connectors and be connected to the mains via an inverter with an isolation transformer. This approach is recommended and permits the array frame to be left floating.",
+  "page": 13,
+  "section": "2.2.1 Earthing of exposed conductive parts (array frame)",
+  "id": "H107",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "925a5c8a01d2dbdb"
+ },
+ {
+  "topic": "FUND",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): electrical separation of the mains from the d.c. side by an isolating transformer is the key determining factor when assessing whether the array frame needs earthing.",
+  "quote": "d.c. using an isolating transformer that is the key determining factor when assessing the requirement for array frame earthing.",
+  "page": 13,
+  "section": "2.2.1 Earthing of exposed conductive parts (array frame)",
+  "id": "H108",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "d8d3a08285275d83"
+ },
+ {
+  "topic": "FUND",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): the array frame earthing decision tree has three outcomes: leave the frame floating, install and bond to an earth spike, or bond directly to the consumer earthing terminal.",
+  "quote": "Leave Floating Install & bond to earth spike Bond direct to Consumer",
+  "page": 13,
+  "section": "Array Frame Earthing Decision Tree",
+  "id": "H109",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "fce2da9a9b0a3fea"
+ },
+ {
+  "topic": "FUND",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): where the decision tree requires the array frame to be bonded, the bond is to use 10 mm2 braid or equivalent, and a PME earth must not be taken out of the equipotential zone.",
+  "quote": "equipotential Zone) (Note: Use 10mm2 braid or equiv)",
+  "page": 13,
+  "section": "Array Frame Earthing Decision Tree",
+  "id": "H110",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "302a1774cafe43fb"
+ },
+ {
+  "topic": "FUND",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): if an earth spike is already installed for lightning protection, it is to be bonded to the array frame bonding braid.",
+  "quote": "(Note: If an earth spike is already installed for Lightning Protection, bond to this braid)",
+  "page": 13,
+  "section": "Array Frame Earthing Decision Tree",
+  "id": "H111",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "de438baa81ea6e31"
+ },
+ {
+  "topic": "FUND",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): where the incoming supply is PME (the majority of UK domestic supplies), the PME earth cannot be taken outside the equipotential zone, to prevent a shock hazard should the supply neutral ever be lost.",
+  "quote": "incoming supply is PME (the majority of domestic supply arrangements), the PME earth cannot be taken outside the equipotential zone. This is to prevent the potential shock hazard should the supply neutral ever be lost.",
+  "page": 13,
+  "section": "2.2.1 note c) PME",
+  "id": "H112",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "3f69c81428b29232"
+ },
+ {
+  "topic": "SITE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): bonding any of the current-carrying d.c. conductors of the PV array to earth is not recommended.",
+  "quote": "The bonding to earth of any of the current carrying d.c. conductors is not",
+  "page": 14,
+  "section": "2.2.2 System earthing (d.c. Conductor earthing)",
+  "id": "H113",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "157355fb46503eca"
+ },
+ {
+  "topic": "SITE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): earthing one of the live d.c. conductors is permitted only if there is at least simple separation between the a.c. side and the d.c. side, including in the inverter (i.e. not with a transformerless inverter).",
+  "quote": "conductors of the d.c. side is permitted, if there is at least simple separation between the a.c. side and the d.c. side, including in the inverter.",
+  "page": 14,
+  "section": "2.2.2 System earthing (d.c. Conductor earthing)",
+  "id": "H114",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "ff1d1402fa4df168"
+ },
+ {
+  "topic": "FUND",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): the inverter must be treated as standard electrical apparatus and (as the sentence continues) earthed as per BS 7671 if it is Class I.",
+  "quote": "The inverter must be treated as standard electrical apparatus and",
+  "page": 14,
+  "section": "2.2.3 Inverter Earthing",
+  "id": "H115",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "1e32b3f690d14fad"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): lightning can cause damage by a direct strike or by surges from a nearby strike, and induced surges are the more likely cause of lightning damage in the majority of installations.",
+  "quote": "nearby strike. Induced surges are the more likely cause of lightning damage in the",
+  "page": 14,
+  "section": "2.2.4 Lightning and surge protection",
+  "id": "H116",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "b96d5d8acc483176"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): where the PV system is perceived to increase the risk of a direct strike, lightning protection specialists should be consulted with a view to installing a separate lightning protection system in accordance with BS 6651.",
+  "quote": "of the installation of the PV system, specialists in lightning protection should be consulted with a view to installing a separate lightning protection system in accordance with BS 6651.",
+  "page": 14,
+  "section": "2.2.4.1 Lightning Protection Systems",
+  "id": "H117",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "483e106506b0858c"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): it is generally accepted that a typical roof-mounted PV system presents a very small increased risk of a direct lightning strike.",
+  "quote": "PV system presents a very small increased risk of a direct lightning strike.",
+  "page": 14,
+  "section": "2.2.4.1 Lightning Protection Systems (note)",
+  "id": "H118",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "b42cda81e6a44d79"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): the very small increased strike risk may not hold where the PV system is particularly large, is on top of a tall building, becomes the tallest structure in the vicinity, or is in an open area such as a field.",
+  "quote": "However, this may not necessarily be the case where the PV system is particularly large, where the PV system is installed on the top of a tall",
+  "page": 14,
+  "section": "2.2.4.1 Lightning Protection Systems (note)",
+  "id": "H119",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "3c0bf973d7a7c24b"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): if the building is fitted with a lightning protection system (LPS), a lightning protection installer should be consulted on whether the array frame should be connected to the LPS and with what size of conductor.",
+  "quote": "If the building or dwelling is fitted with a lightning protection system (LPS), a lightning protection installer should be consulted as to whether, in",
+  "page": 14,
+  "section": "2.2.4.1 Lightning Protection Systems",
+  "id": "H120",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "06d61fb9bb4d26a5"
+ },
+ {
+  "topic": "LIGHT",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): an inverter should not be mounted on an inside wall that has an LPS down lead running just the other side of the brickwork on the outside of the building.",
+  "quote": "inverter should not be mounted on an inside wall that has a down lead",
+  "page": 14,
+  "section": "2.2.4.1 Lightning Protection Systems",
+  "id": "H121",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "9f48ec8f78a581db"
+ },
+ {
+  "topic": "SITE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): all d.c. cables should be installed in runs as short as possible, and the positive and negative cables of the same string or main d.c. supply should be bundled together.",
+  "quote": "All d.c. cables should be installed to provide as short runs as possible, and positive and negative cables of the same string or main d.c. supply should",
+  "page": 14,
+  "section": "2.2.4.2 Surge Protection measures",
+  "id": "H122",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "a96cb81774eeda63"
+ },
+ {
+  "topic": "SITE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): bundling positive and negative d.c. cables avoids creating loops, and the requirement for short runs and bundling also includes any associated earth/bonding conductors.",
+  "quote": "be bundled together, avoiding the creation of loops in the system. This requirement for short runs and bundling includes any associated",
+  "page": 14,
+  "section": "2.2.4.2 Surge Protection measures",
+  "id": "H123",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "872cc06ef8f93db1"
+ },
+ {
+  "topic": "SITE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): long cables (e.g. PV main d.c. cables over about 50 m) should be installed in earthed metal conduit or trunking, or be screened cables such as mineral insulated or armoured.",
+  "quote": "Long cables (eg PV main d.c. cables over about 50 m) should be installed",
+  "page": 14,
+  "section": "2.2.4.2 Surge Protection measures",
+  "id": "H124",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "99a34c807deaf76b"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): most grid-connect inverters have some form of in-built surge suppression, but discrete devices may also be specified.",
+  "quote": "Most grid connect inverters have some form of in-built surge suppression, however discrete devices may also be specified.",
+  "page": 14,
+  "section": "2.2.4.2 Surge Protection measures",
+  "id": "H125",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "b6099d8016996e7f"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): to protect the a.c. system, surge suppression devices may be fitted at the main incoming point of the a.c. supply (at the consumer's cut-out).",
+  "quote": "main incoming point of a.c. supply (at the consumer’s cut-out).",
+  "page": 14,
+  "section": "2.2.4.2 Surge Protection measures (note)",
+  "id": "H126",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "04698d3e728146f1"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): to protect the d.c. system, surge suppression devices can be fitted at the inverter end of the d.c. cabling and at the array.",
+  "quote": "inverter end of the d.c. cabling and at the array.",
+  "page": 14,
+  "section": "2.2.4.2 Surge Protection measures (note)",
+  "id": "H127",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "4a250a11c1a96295"
+ },
+ {
+  "topic": "FUND",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): where a PV system has no at least simple separation between the a.c. and d.c. sides (transformerless inverter), an RCD installed for fault protection by automatic disconnection of supply must be a type B RCD.",
+  "quote": "Where an electrical installation includes a PV power supply system without at least simple separation between the a.c. side and the d.c. side, an RCD installed to provide fault protection by automatic disconnection of supply must be type B RCD",
+  "page": 15,
+  "section": "2.3.1 a.c. Cabling",
+  "id": "H128",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "4b7d2062da5f3893"
+ },
+ {
+  "topic": "FUND",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): an inverter with an isolating transformer removes the requirement to earth the array frame, but does not override any need to connect the frame to earth for lightning protection purposes.",
+  "quote": "array frame, but does not override any need to connect the frame to earth for lightning protection purposes.",
+  "page": 15,
+  "section": "2.3.3 Inverters",
+  "id": "H129",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "800e2912a1b703b5"
+ },
+ {
+  "topic": "SITE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): in battery systems an over-current device must be installed in all active (non-earthed) conductors between the battery and the charge controller.",
+  "quote": "An over current device must be installed in all active (non-earthed) conductors between the battery and the charge controller.",
+  "page": 17,
+  "section": "2.5.2 Battery over current protection",
+  "id": "H130",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "c8ecd5605ab8cd6f"
+ },
+ {
+  "topic": "SITE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): a means of manual isolation must be provided between the charge controller and the battery; the isolator must be double pole, d.c. rated and load-break.",
+  "quote": "or as a separate unit. The isolator must be double pole, d.c. rated and",
+  "page": 17,
+  "section": "2.5.3 Battery disconnection",
+  "id": "H131",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "56014f477eea0bad"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): always test for the presence of voltage on parts before touching any part of the PV system.",
+  "quote": "Always test for the presence of voltage of parts before touching any part of the system.",
+  "page": 21,
+  "section": "3.3.4 Shock hazard (safe working practices)",
+  "id": "H132",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "e0102ccec7fb2af7"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): an electric shock may be experienced from a capacitive discharge, because a charge may build up in the PV system due to its distributed capacitance to ground (more prevalent with thin-film modules with metal frames or steel backing).",
+  "quote": "An electric shock may be experienced from a capacitive discharge – a charge may",
+  "page": 21,
+  "section": "3.3.4 Shock hazard (safe working practices)",
+  "id": "H133",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "80bc2cd62895190b"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): an installer in contact with earthed metal (e.g. seated on an earthed metal roof) can get a shock to earth from PV cabling; insulated tools and gloves together with insulating matting to stand or sit on can mitigate this hazard.",
+  "quote": "The use of insulated tools and gloves, together with insulating matting to stand or sit on, can mitigate this hazard.",
+  "page": 21,
+  "section": "3.3.4 Shock hazard (safe working practices)",
+  "id": "H134",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "cfea6efe133203a9"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): an electric shock may also be experienced due to the PV array developing a ground leakage path, which good wiring practice, double insulation and Class II modules reduce but do not eliminate.",
+  "quote": "An electric shock may also be experienced due to the PV array developing a ground",
+  "page": 22,
+  "section": "3.3.4 Shock hazard (safe working practices)",
+  "id": "H135",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "9f19e12be82e6d2a"
+ },
+ {
+  "topic": "TEST",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): the installation check list covers, under protection against overvoltage/electric shock: array frame equipotential bonding present, surge protection devices present, RCD provided (each only if required), and frame correctly integrated with the existing LPS installation.",
+  "quote": "Array frame equipotential bonding present (only relevant if required) Surge protection devices present (only relevant if required) RCD provided (only relevant if required) Frame correctly integrated with existing LPS installation",
+  "page": 27,
+  "section": "Appendix C - PV system installation check list",
+  "id": "H136",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "200f8e12cb39003e"
+ },
+ {
+  "topic": "TEST",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): one permitted array insulation test method is a test between array negative and earth followed by a test between array positive and earth (the other is between earth and the short-circuited array positive and negative).",
+  "quote": "a) Test between Array Negative and Earth followed by a test between Array Positive and Earth",
+  "page": 28,
+  "section": "Appendix C - Field insulation test procedure",
+  "id": "H137",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "5d9a824b3e7e5237"
+ },
+ {
+  "topic": "TEST",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): before an array insulation resistance test, any equipment that could affect the measurement, i.e. overvoltage protection (SPDs) in the junction or combiner boxes, must be disconnected.",
+  "quote": "3) Disconnect any piece of equipment that could have impact on the insulation measurement (i.e. overvoltage protection) in the junction or combiner boxes.",
+  "page": 28,
+  "section": "Appendix C - Field insulation test procedure",
+  "id": "H138",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "8309bdb851c9a92a"
+ },
+ {
+  "topic": "TEST",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): for an array insulation test with positive and negative shorted together on a 120 V system, the test voltage is 250 V and the minimum insulation resistance is 0.25 megohm.",
+  "quote": "Array positive & negative 120V 250V 0.25 M",
+  "page": 29,
+  "section": "Appendix C - Table 1",
+  "id": "H139",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "eead94db5973cbc8"
+ },
+ {
+  "topic": "TEST",
+  "claim": "BRE PV guide (UK, 2nd ed. 2006): for separate insulation tests to array positive and array negative on systems below 600 V, the test voltage is 500 V minus Voc(stc) and the minimum insulation resistance is 0.5 megohm.",
+  "quote": "positive and Array negative <600V 500 - Voc stc 0.5M",
+  "page": 29,
+  "section": "Appendix C - Table 1",
+  "id": "H140",
+  "source": "49_BRE_Guide_to_Installation_of_PV_Systems_2nd_Ed",
+  "quote_sha256": "b8f574dc8e2a8af7"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): lightning transients are generally disturbances with respect to earth (common mode), whereas switching transients are disturbances between line and neutral (differential mode).",
+  "quote": "Lightning transients are generally disturbances with respect to Earth (common mode), whilst switching transients are disturbances between line and neutral (diﬀerential mode).",
+  "page": 8,
+  "section": "Terminology and definitions",
+  "id": "I001",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "23a4616ca819bc5e"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): the Type 1 SPD is recommended to protect installations against partial lightning currents from direct lightning strokes and is characterised by a 10/350 µs current wave.",
+  "quote": "The Type 1 SPD is recommended to protect electrical installations against partial lightning currents caused by direct lightning strokes. It can discharge the voltage from lightning spreading from the earth conductor to the network conductors. Type 1 SPD is characterised by a 10/350µs current wave.",
+  "page": 10,
+  "section": "1.2 Types of surge protection devices",
+  "id": "I002",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "f52ac45f1214ac3a"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): the Type 2 SPD is the main protection system for all low-voltage installations and is installed in each electrical switchboard to stop overvoltages spreading through the installation.",
+  "quote": "The Type 2 SPD is the main protection system for all low voltage electrical installations. Installed in each electrical switchboard, it prevents the spread of overvoltages in the electrical installations and protects the loads.",
+  "page": 10,
+  "section": "1.2 Types of surge protection devices",
+  "id": "I003",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "96f64b0ad4206389"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): Type 3 SPDs have a low discharge capacity and must only be installed as a supplement to a Type 2 SPD, in the vicinity of sensitive loads.",
+  "quote": "These SPDs have a low discharge capacity. They must therefore only be installed as a supplement to Type 2 SPD and in the vicinity of sensitive loads.",
+  "page": 11,
+  "section": "1.2 Types of surge protection devices",
+  "id": "I004",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "80694ec098f1d6be"
+ },
+ {
+  "topic": "DATA",
+  "claim": "BEAMA SPD guide (UK, 2018): resistively coupled transients can occur between separately earthed structures that are only metres apart, and affect both underground and overhead cables.",
+  "quote": "Resistively coupled transients can occur when separately earthed structures are only metres apart. Resistive coupling will aﬀect both underground and overhead cables.",
+  "page": 17,
+  "section": "3.1.2.1 Resistive coupling",
+  "id": "I005",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "0357e012dc4ea536"
+ },
+ {
+  "topic": "DATA",
+  "claim": "BEAMA SPD guide (UK, 2018): SPDs for data, signal and telephone lines are fitted in series in the line, adding a small series impedance and a capacitance across the line.",
+  "quote": "Note: SPDs for data communication signal and telephone lines (‘Lightning Barriers’) are ﬁtted into the line (i.e. in series). This introduces a small impedance into the line and a capacitance across the line.",
+  "page": 17,
+  "section": "3.1.2.1 Resistive coupling",
+  "id": "I006",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "d53a6bd590e92199"
+ },
+ {
+  "topic": "DATA",
+  "claim": "BEAMA SPD guide (UK, 2018): for impedance-matched systems such as Ethernet, the line protector must itself be impedance matched to avoid reflections.",
+  "quote": "For impedance matched systems (e.g. coaxially wired computer networks such as Ethernet) it is essential that the protector is impedance matched, in order to avoid reﬂections.",
+  "page": 17,
+  "section": "3.1.2.1 Resistive coupling",
+  "id": "I007",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "7aaa24ed7c18a977"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018) Table 2: typical mains SPD test currents per mode are 25 kA 10/350 at the service entrance / main distribution board (LPZ 0/1, Type 1), 40 kA 8/20 at sub-distribution (LPZ 1/2, Type 2) and 3 kA with 6 kV combination wave at terminal equipment such as socket outlets (LPZ 2/3, Type 3).",
+  "quote": "Service Entrance Sub-distribution Terminal Equipment Installation point (e.g. Main distribution board or telecom (e.g. socket outlet) board or telecom NTP) PBX frame Mains Test VI IV2 IIV3 Class/SPD Type ( 1) Surge test waveform 10/350 current 8/20 current Combination 8/20 current and 1.2/50 voltage Typical peak test 25kA (2) 40kA 3kA (with 6kV)",
+  "page": 29,
+  "section": "4.7 / Table 2",
+  "id": "I008",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "8b78878c896585e9"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): transient overvoltage SPDs (Type 2/3) protect against indirect lightning and switching transients and should be installed at sub-distribution boards and at equipment level for critical equipment.",
+  "quote": "Designed to protect electrical/electronic equipment from the secondary eﬀects of indirect lightning and against switching transients. SPDs should be installed at sub-distribution boards and at equipment level for critical equipment.",
+  "page": 30,
+  "section": "5.2 Transient overvoltage SPDs",
+  "id": "I009",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "76e4ce12e653664f"
+ },
+ {
+  "topic": "FUND",
+  "claim": "BEAMA SPD guide (UK, 2018): all incoming services (metallic water and gas pipes, power and data cables) should be bonded to a single earth reference point, which may be the main earthing terminal or a bonding ring conductor.",
+  "quote": "As Figure 23 illustrates, all incoming services (metallic water and gas pipes, power and data cables) should be bonded to a single earth reference point. This equipotential bonding bar may be the main earthing terminal, a bonding ring conductor or a partial ring conductor inside the outer walls of the structure.",
+  "page": 31,
+  "section": "5.3 Equipotential bonding to BS EN 62305",
+  "id": "I010",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "0b1966b408e8d2d1"
+ },
+ {
+  "topic": "DATA",
+  "claim": "BEAMA SPD guide (UK, 2018): the armouring of power and telecom cables can be bonded directly to the main earthing bar at the service entrance, but the live conductors within these cables cannot be bonded directly to earth.",
+  "quote": "The armouring of metallic electrical services such as power and telecommunication lines can be directly bonded to the main earthing bar at the service entrance. However the live conductors within these service cables cannot be directly bonded to earth.",
+  "page": 31,
+  "section": "5.3 Equipotential bonding to BS EN 62305",
+  "id": "I011",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "673b404ff31599ef"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018), quoting BS EN 62305-4: Type 1 SPDs alone provide no effective protection against failure of sensitive electrical or electronic systems; Type 2 and Type 3 SPDs are also needed.",
+  "quote": "However, the use of these Type 1 SPDs alone “provides no eﬀective protection against failure of sensitive electrical or electronic systems”",
+  "page": 31,
+  "section": "5.3 Equipotential bonding to BS EN 62305",
+  "id": "I012",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "db2e5f34f4f334d3"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): where a structural lightning protection system is required, lightning current (equipotential bonding) SPDs are always required on every metallic electrical service entering the structure: mains Type 1 and data/telecom Category D.",
+  "quote": "If the risk evaluation demands that a structural LPS is required then equipotential bonding or lightning current SPDs are always required for any metallic electrical service entering the structure (typically power and telecom lines where mains Type 1 SPDs and signal/data Category D tested SPDs are used respectively).",
+  "page": 32,
+  "section": "5.3.1.1",
+  "id": "I013",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "3e7ff6438b280970"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): for a worst-case 200 kA strike with a single three-phase power service, 50% (100 kA) is assumed to flow through the power line and share equally over 4 conductors, so each L-E and N-E SPD sees 25 kA (10/350).",
+  "quote": "50% or 100kA of the total lightning current is discharged through the power line. This is assumed to share equally between the 4 conductors within the power line, thus each SPD between line and earth and neutral and earth would be subject to 25kA (ie 100kA/4).",
+  "page": 33,
+  "section": "5.3.1.1 / Figure 25",
+  "id": "I014",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "e605142471269baf"
+ },
+ {
+  "topic": "DATA",
+  "claim": "BEAMA SPD guide (UK, 2018): the worst-case surge expected on a two-wire telephone or data line is 2.5 kA (10/350) per line to earth (Category D test) or 5 kA per pair.",
+  "quote": "the worst case surge that could be expected on a two-wire telephone or data line is 2.5kA (10/350µs) per line (Category D test to BS EN 61643-21) to earth or 5kA (10/350µs) per pair.",
+  "page": 34,
+  "section": "5.3.1.1",
+  "id": "I015",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "9f335cf6ea26b984"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): where no structural LPS is required but a service arrives by overhead line, lightning current SPDs are needed: 12.5 kA 10/350 per mode for mains Type 1 and 2.5 kA 10/350 per mode for signal/telecom SPDs.",
+  "quote": "any electrical services feeding the structure via an overhead line will require lightning current SPDs. For mains Type 1 SPDs the surge current rating per mode of protection is 12.5kA 10/350µs and for signal/telecom SPDs the surge current rating per mode of protection is 2.5kA 10/350µs.",
+  "page": 34,
+  "section": "5.3.1.1",
+  "id": "I016",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "27a70e0deec0b491"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): underground services without a structural LPS do not need lightning current SPDs; overvoltage (Type 2 / Category C) SPDs are sufficient.",
+  "quote": "Underground electrical services therefore do not have a requirement for lightning current SPDs where no structural LPS is present – overvoltage SPDs are suﬃcient to provide eﬀective protection.",
+  "page": 35,
+  "section": "5.3.1.1",
+  "id": "I017",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "4a281f988ddab258"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): poor coordination can expose a downstream overvoltage SPD to excess surge energy; appropriate SPDs should be fitted wherever services cross from one lightning protection zone to another.",
+  "quote": "Poor coordination could mean that an overvoltage SPD is subjected to an excess of surge energy placing both itself and connected equipment at risk from damage. Appropriate SPDs should be ﬁtted wherever services cross from one LPZ to another.",
+  "page": 35,
+  "section": "5.4 Coordinated SPDs",
+  "id": "I018",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "80d008f1fc4d1a91"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): if the distance from an SPD to the protected equipment is over 10 m, oscillations could double the voltage at the equipment.",
+  "quote": "oscillation protective distance – if the distance from the SPD to the equipment is over 10m, oscillations could lead to a doubling of voltage",
+  "page": 36,
+  "section": "6 Design considerations",
+  "id": "I019",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "fe9010fea0c40fef"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018) Table 5 (as BS 7671 Table 443.2) for 230/240 V: category IV 6 kV (electricity meter), III 4 kV (distribution board), II 2.5 kV (sub-distribution board / electrical equipment), I 1.5 kV (socket outlet / electronic equipment).",
+  "quote": "IV (equipment with very 6kV Electricity meter high overvoltage impulse) withstand III (equipment with high 4kV Distribution board overvoltage impulse) withstand II (equipment with normal 2.5kV Sub-distribution board/ overvoltage impulse) Electrical equipment withstand I (equipment with reduced 1.5kV Socket outlet/",
+  "page": 36,
+  "section": "6.1 / Table 5",
+  "id": "I020",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "0d828530a3ec265e"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018), citing BS 7671 443.1.1 Note 4: transient overvoltages transmitted by the supply system are not significantly attenuated downstream in most installations.",
+  "quote": "This concurs with BS 7671 443.1.1 Note 4 which states ‘Transient overvoltages transmitted by the supply distribution system are not signiﬁcantly attenuated downstream in most installations’.",
+  "page": 38,
+  "section": "6.1",
+  "id": "I021",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "d7dd46b41b290b40"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018 443.6.2): Category I equipment connected to the fixed installation must be protected against transient overvoltages, e.g. by an SPD installed external to the equipment.",
+  "quote": "However clause 443.6.2 makes it clear if Category I equipment is to be connected to the ﬁxed electrical installation, it must be protected against transient overvoltages. An SPD installed external to this equipment serves this purpose.",
+  "page": 38,
+  "section": "6.1",
+  "id": "I022",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "0152b773b533d77f"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): because electronic equipment has sensitive components connected between live conductors, SPDs with differential-mode (L-N) protection should be selected for it.",
+  "quote": "Diﬀerential mode transients, also due to electrical switching events, which present particular problems for electronic equipment where their sensitive electronic components are connected between live conductors and hence SPDs with diﬀerential mode protection should be selected to protect such equipment.",
+  "page": 38,
+  "section": "6.1",
+  "id": "I023",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "24fed8293b3cf267"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): supply-authority rules often prevent service-entrance (Type 1) SPDs being installed upstream of the electricity meter, so they are fitted at the main distribution board.",
+  "quote": "Often due to power supply authority regulations, the application of SPDs at the service entrance (typically the equipotential bonding Type 1 SPDs) cannot be installed upstream or before the electricity meter. Such SPDs are therefore ﬁtted at the main distribution board.",
+  "page": 39,
+  "section": "6.1",
+  "id": "I024",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "1734154e948462e0"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): a Type 1 SPD at the main distribution board (category III) must keep the voltage protection level well below the 4 kV rated impulse voltage to prevent flashover.",
+  "quote": "Conventionally the main distribution board falls within overvoltage impulse category III (see Table 5), the installed mains Type 1 SPD must ensure that during lightning activity, the voltage protection level is well below the rated impulse voltage value of 4kV to prevent dangerous sparking through insulation breakdown caused by ﬂashover.",
+  "page": 39,
+  "section": "6.1",
+  "id": "I025",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "34954df27287589f"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): terminal equipment at socket outlets is category I (1.5 kV), and a Type 3 SPD (Class III test, 6 kV 1.2/50 and 3 kA 8/20) is typically employed at that location.",
+  "quote": "rated impulse voltage of 1.5kV. An overvoltage mains Type 3 SPD (tested with the Class III test to BS EN 61643 which is a combination or hybrid waveform of 6kV (1.2/50µs voltage) and 3kA (8/20µs current) is typically employed at this location",
+  "page": 39,
+  "section": "6.1",
+  "id": "I026",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "3253e13fe41a72c7"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): lead inductance is taken as 1 µH/m, so an impulse current rising at 1 kA/µs adds approximately 1 kV per metre of SPD connecting lead.",
+  "quote": "As a general rule, the lead inductance (L) is assumed to be 1 µH/m. This inductive voltage drop, when caused by an impulse current with a rate of rise of 1 kA/µs will be approximately 1 kV/m of lead length.",
+  "page": 40,
+  "section": "6.2.1",
+  "id": "I027",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "5733ffa1e1267afe"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): SPD connecting leads shall be as short as possible, preferably not exceeding 0.5 m total lead length (l1 + l2).",
+  "quote": "Therefore in order to achieve optimum overvoltage protection, connecting leads of SPDs shall be as short as possible, preferably not exceeding 0,5 m for the total lead length (l1 + l2 see Figure 30).",
+  "page": 40,
+  "section": "6.2.1",
+  "id": "I028",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "cd528036472569af"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): SPD connecting leads should also be tightly bound together over as much of their length as possible (cable ties or spiral wrap) to cancel inductance.",
+  "quote": "In addition to keeping connecting leads short, they should be tightly bound together over as much of their length as possible, using cable ties or spiral wrap.",
+  "page": 40,
+  "section": "6.2.1",
+  "id": "I029",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "daf9182cb1f3d42c"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): in a 6 kV/3 kA test an SPD with Up 600 V fitted with its recommended 25 cm of bound connecting lead gave 630 V overall.",
+  "quote": "The SPD therefore has a protection level Up of 600V when measured across its terminals with a 6kV/3kA surge test. If this protector is ﬁtted with its recommended length (25 cm in this case) of bound connecting lead, the overall voltage of the SPD plus connecting leads is 630V as shown in Figure 33 graph.",
+  "page": 41,
+  "section": "6.2.1 / Figure 33",
+  "id": "I030",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "f5a30570e4ba1a9f"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): with unbound connecting leads the same SPD let through 810 V with 25 cm leads and 2,300 V with 2 m leads.",
+  "quote": "If these connecting leads are left unbound, then the overall voltage rises to 810V with the recommended connecting leads (25 cm), and to 2,300V with the 2 m leads.",
+  "page": 41,
+  "section": "6.2.1 / Figure 33",
+  "id": "I031",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "89bc46f389b81e67"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): where the SPD earth lead would be long, in metal enclosures use two earth conductors: one closely connected to the enclosure metalwork and one to the earth bar, which is itself connected directly to the metal of the assembly.",
+  "quote": "For metal cabinets and enclosures one conductor should be closely connected to the metalwork of the assembly, whilst the other should be connected directly to the earth bar. This, in turn, should be connected directly to the metal of the assembly.",
+  "page": 42,
+  "section": "6.2.1",
+  "id": "I032",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "6670e8c87a809366"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): series (in-line) SPDs, used for low-current power (typically 16 A or less), telecom, data and signal lines, are not affected by connecting lead length, but their earthing conductor must be kept as short as possible.",
+  "quote": "Low current SPDs for power (typically 16A or less), telecommunication, data and signal equipment are usually installed in series (in-line) with the equipment they are protecting and are not aﬀected by length of their connecting leads. However, the earthing conductors of series SPDs must be kept as short as possible as shown in Figure 34",
+  "page": 42,
+  "section": "6.2.1",
+  "id": "I033",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "7a02af994aa89087"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): oscillation (voltage doubling) may be disregarded for cable runs of less than 10 m from the SPD.",
+  "quote": "Oscillations may be disregarded for cable runs of less than 10m from the SPD. Some terminal equipment may have internal protective components for EMC purposes (for example Metal Oxide Varistors or MOVs) that will signiﬁcantly reduce oscillations even at longer distances.",
+  "page": 44,
+  "section": "6.2.2 Protective distance",
+  "id": "I034",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "6db54cd0f13005eb"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): Type 1 (lightning current) SPDs protect against common-mode surges, connected line to earth and neutral to earth on TN systems.",
+  "quote": "Equipotential bonding or lightning current SPDs protect against common mode surges. On a power supply for example, Type 1 SPDs protect between line to earth, and neutral to earth on TN earthing systems to prevent dangerous sparking.",
+  "page": 44,
+  "section": "6.2.3 Common and differential mode surges",
+  "id": "I035",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "4c3c78484b48a0d0"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): terminal equipment is more vulnerable to differential-mode surges, and downstream overvoltage SPDs protect against both common- and differential-mode surges.",
+  "quote": "Terminal equipment tends to be more vulnerable to diﬀerential mode surges. Downstream overvoltage SPDs protect against both common and diﬀerential mode surges",
+  "page": 44,
+  "section": "6.2.3",
+  "id": "I036",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "119c1a10ffc7342e"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): on a 230 V supply a service-entrance Type 1 SPD should have a voltage protection level of no more than 1600 V.",
+  "quote": "For example, in the case of a 230V mains supply a Type 1 SPD ﬁtted at the service entrance (for lightning equipotential bonding) should have a voltage protection level of no more than 1600V when tested in accordance with BS EN 61643 series (Class I Test).",
+  "page": 46,
+  "section": "7.1 Protection levels and enhanced SPDs",
+  "id": "I037",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "361feaeb73104a68"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): to allow for lead voltage and possible doubling, overvoltage SPDs should have a voltage protection level of no more than 600 V (1.5 kV x 0.8 / 2) in the Class III test.",
+  "quote": "overvoltage SPDs should have a voltage protection level of no more than 600V ((1.5kV x 0.8)/2) when tested in accordance with BS EN 61643 series (Class III test).",
+  "page": 46,
+  "section": "7.1",
+  "id": "I038",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "cc969f8bd8b921c0"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018): Section 534 requires installed SPDs to be protected against short-circuit by overcurrent protective devices (OCPDs).",
+  "quote": "BS 7671 Section 534 requires installed SPDs to be protected against short-circuit through the use of over current protective devices (OCPDs).",
+  "page": 48,
+  "section": "8.1 Protection against overcurrent",
+  "id": "I039",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "c986e4a0d42453e0"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018 Section 534): SPD connecting cables shall be at least 16 mm2 copper for Type 1 SPDs and 4 mm2 copper for Type 2 and Type 3 SPDs (or not less than the line conductor where that is below 4 mm2).",
+  "quote": "minimum cross-sectional areas of 16mm2 (copper) for the high energy Type 1 SPD and 4mm2 (copper) for Type 2 and Type 3 SPDs if the cross-sectional area of the line conductors is > 4mm2, or not less than that of the line conductor, where the line conductors have a cross- sectional area less than 4mm2.",
+  "page": 48,
+  "section": "8.1",
+  "id": "I040",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "2ebd16b2a39683ae"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): mains SPDs have internal overload (typically thermal) disconnection, so their connecting conductors need only short-circuit protection by an OCPD in line with the connecting cables.",
+  "quote": "In the event of an overload fault condition, BS EN 61643 SPD product test standards require mains power SPDs to have internal overload protection (typically a thermal disconnection). The connecting conductors to SPDs therefore need only be protected against short-circuit fault conditions by the use of an OCPD in-line with the connecting cables",
+  "page": 48,
+  "section": "8.1",
+  "id": "I041",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "b06fe5d6f55d6cea"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018) Figure 37: the preferred position for a parallel SPD with its dedicated OCPD is the outgoing way closest to the incomer.",
+  "quote": "1. main switch/isolator 4 2. main supply OCPD 3. preferred outgoing way OCPD (closest to incomer) 4. alternative outgoing way for SPD with dedicated OCPD OCPD 5. SPD with dedicated OCPD",
+  "page": 48,
+  "section": "8.1 / Figure 37",
+  "id": "I042",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "1f3374de05af3ba1"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): a typical Type 2 SPD rated 40 kA 8/20 is likely to state a maximum OCPD of 125 A and may recommend 10 mm2 connecting cables.",
+  "quote": "For example, a typical (industry common) Type 2 SPD with a peak surge current of 40kA 8/20 is likely to state a maximum OCPD rating of 125A and may recommend 10mm2 connecting cables.",
+  "page": 49,
+  "section": "8.1",
+  "id": "I043",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "9814e9a8016df68d"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): the maximum OCPD rating declared by the SPD manufacturer must never be exceeded.",
+  "quote": "It is important to ensure that the maximum OCPD rating declared by the SPD manufacturer is never exceeded.",
+  "page": 49,
+  "section": "8.2.1 SPD and OCPD coordination/discrimination",
+  "id": "I044",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "af03e95364cff97a"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): where upstream OCPD characteristics are not available (e.g. retrofit), the SPD's OCPD may be rated at half the nominal value of the immediate upstream OCPD to achieve discrimination.",
+  "quote": "Where manufacturer’s operating characteristics for the upstream OCPD are not available, for example a retroﬁt installation, it may be safely assumed that the OCPD for the SPD should be rated at half the nominal value of the immediate upstream OCPD.",
+  "page": 49,
+  "section": "8.2.1",
+  "id": "I045",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "4272ec1e2eb6eaf1"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018 534.2.3.4.1): Section 534 requires a minimum nominal discharge current In of 5 kA 8/20 for each mode of protection in the common CT1 configuration.",
+  "quote": "Section 534 requires a minimum Inspd of 5kA 8/20 for each SPD mode of protection on the common CT1 conﬁguration (534.2.3.4.1).",
+  "page": 50,
+  "section": "8.2.1",
+  "id": "I046",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "47f2dff14c495ef1"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): SPDs should wherever possible be installed upstream of RCDs to prevent unwanted RCD tripping caused by transient overvoltages.",
+  "quote": "SPDs should wherever possible be installed upstream of RCDs to prevent unwanted tripping caused by transient overvoltages.",
+  "page": 50,
+  "section": "8.3 SPDs and RCDs",
+  "id": "I047",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "21fe6fe9224330f7"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018 534.2.1): where SPDs are on the load side of an RCD, the RCD shall have a surge-current immunity of at least 3 kA 8/20; S-type RCDs satisfy this.",
+  "quote": "Where SPDs are installed in accordance with BS 7671 534.2.1 and are on the load side of a residual current device, an RCD having an immunity to surge currents of at least 3 kA 8/20, shall be used. NOTE 1: S-type RCDs satisfy this requirement.",
+  "page": 50,
+  "section": "8.3",
+  "id": "I048",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "759c380dc34362f4"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): if the SPD is downstream of the RCD, the RCD should be a time-delayed type with surge immunity of at least 3 kA 8/20.",
+  "quote": "If the SPD is installed downstream of the RCD, the RCD should be of the time delayed type with an immunity to surge currents of at least 3kA 8/20.",
+  "page": 50,
+  "section": "8.3",
+  "id": "I049",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "be289eecb5c1cc92"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018 534.2.2): connection type CT1 is used for TN-C-S/TN-S systems and for TT systems where the SPD is downstream of the RCD.",
+  "quote": "An SPD conﬁguration based on Connection Type 1 (CT1) is for TN-C-S/TN-S earthing arrangements as well the TT earthing arrangement where the SPD is ﬁtted downstream of the RCD.",
+  "page": 50,
+  "section": "8.3",
+  "id": "I050",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "df82c57f421d6598"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018): connection type CT2 is required on a TT system if the SPD is upstream of the RCD, because the downstream RCD would not operate if the SPD became defective.",
+  "quote": "An SPD conﬁguration based on Connection Type 2 (CT2) is required on a TT earth arrangement if the SPD is upstream of the RCD. The RCD being downstream of the SPD would not operate should the SPD become defective.",
+  "page": 50,
+  "section": "8.3",
+  "id": "I051",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "896ba9bfdbf9df27"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): a defective CT2 line-to-neutral SPD creates a short-circuit rather than an earth-fault current, so its in-line OCPD operates within the required disconnection time.",
+  "quote": "Should the SPD become defective it would therefore create a short-circuit current rather than an earth fault current and as such would ensure that the OCPD in-line with the SPD safely operates within the required disconnection time.",
+  "page": 51,
+  "section": "8.3",
+  "id": "I052",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "7de7f8a568838527"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): in CT2 a higher-energy SPD, typically a spark gap for Type 1, is used between neutral and the protective conductor because it sees up to 4 times the surge current of the line-to-neutral SPDs.",
+  "quote": "A higher energy SPD is used between neutral and the protective conductor. This higher energy SPD (typically a spark-gap for a Type 1 SPD) is required as lightning currents arise towards the protective conductor and as such this higher energy SPD sees up to 4 times the surge current of the SPDs connected between the live conductors.",
+  "page": 51,
+  "section": "8.3",
+  "id": "I053",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "19fb29d683432174"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018): if Iimp cannot be calculated, the N-PE SPD in a 3-phase CT2 installation is at least 50 kA 10/350 (4 x 12.5 kA of the L-N SPDs); CT2 is often called the '3+1' arrangement.",
+  "quote": "Iimp cannot be calculated, 534.2.3.4.3 advises that the minimum value Iimp for an SPD between neutral and the protective conductor is 50kA 10/350 for a 3 phase CT2 installation, 4 times 12.5kA 10/350 of the SPDs between the live conductors. The CT2 SPD conﬁguration is often referred the ‘3+1’ arrangement for a 3 phase supply.",
+  "page": 51,
+  "section": "8.3",
+  "id": "I054",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "a893c66663d826f9"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): technically, if SPDs are within 0.5 m of the PEN split into N and PE, no N-PE protection mode is needed.",
+  "quote": "From a technical point of view, if SPDs are applied within a 0.5m distance of the PEN split to separate N and PE, there is no need to have an SPD protection mode between N and PE as shown",
+  "page": 52,
+  "section": "8.3",
+  "id": "I055",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "bbb8de76390ddb3f"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): because UK SPDs can only be installed on the consumer side of a TN-C-S system, normally at the main board more than 0.5 m from the PEN split, an N-PE SPD is needed as in a TN-S system.",
+  "quote": "the distance between the SPD installation point and the PEN split will almost always be greater than 0.5m so there is a need to have an SPD between N and PE as required for a TN-S system.",
+  "page": 52,
+  "section": "8.3",
+  "id": "I056",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "5bea16634457b6db"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018): for Section 534, TN-C-S (PME) systems are treated the same as TN-S systems for selection and installation of SPDs.",
+  "quote": "In summary, as far as Section 534 is concerned, TN-C-S systems are treated the same as TN-S systems for the selection and installation of SPDs.",
+  "page": 52,
+  "section": "8.3",
+  "id": "I057",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "8843fe8a54db5a14"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018) Figure 40: if the cable length between SPD types is short (per manufacturer's data), a decoupling element is used to provide inductance for correct coordination.",
+  "quote": "NOTE: If the cable length between the SPD types is short (refer to manufacturers’ data), a decoupling element is employed to provide inductance for correct SPD co-ordination",
+  "page": 52,
+  "section": "Figure 40",
+  "id": "I058",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "2ae4a9658d597a9f"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): an SPD at the main intake panel or a distribution board should have a separate overcurrent protective device, depending on the prospective fault current there.",
+  "quote": "Where installed at the main intake switch panel or a distribution board the Surge Protection Device (SPD) should have a separate overcurrent protection device (OCPD), depending on the maximum prospective fault current at the point of installation.",
+  "page": 53,
+  "section": "9 Installation of SPDs",
+  "id": "I059",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "b565ae9a2b034ce8"
+ },
+ {
+  "topic": "TEST",
+  "claim": "BEAMA SPD guide (UK, 2018): provision should be made for readily disconnecting the neutral conductors for testing, by 2-pole or 4-pole means of isolation.",
+  "quote": "It is recommended that provision should be made for readily disconnecting the neutral conductors for testing purposes this should be achieved by 2-pole or 4-pole means of isolation.",
+  "page": 53,
+  "section": "9 Installation of SPDs",
+  "id": "I060",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "4fdeb01d7c53ee07"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): the total length L1 + L2 + L3 of SPD connections to the network and the earth terminal block should not exceed 50 cm.",
+  "quote": "The total length (L = L1 + L2 + L3) of SPD connections to the network and the earth terminal block should not exceed 50 cm",
+  "page": 53,
+  "section": "9.1 Connections",
+  "id": "I061",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "257d6077532a47b9"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018): where SPDs are installed, a durable notice complying with BS 7671 should be fixed adjacent to the distribution board(s).",
+  "quote": "Where SPDs are installed a durable notice should be ﬁxed adjacent to the distribution board(s) and equipment complying with the requirements of BS 7671.",
+  "page": 55,
+  "section": "9.2 Notice",
+  "id": "I062",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "1c674e2075415358"
+ },
+ {
+  "topic": "TEST",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018 612.3.2): where an SPD cannot practically be disconnected (e.g. a fixed surge-protected socket outlet), insulation resistance is tested at 250 V between live conductors and earth.",
+  "quote": "Where it is not practical to disconnect the SPD (e.g. a ﬁxed surge protected socket outlet), a 250V test should be applied between live conductors and Earth in accordance with BS 7671 Regulation 612.3.2.",
+  "page": 56,
+  "section": "10.1 Initial verification",
+  "id": "I063",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "0e4875ebf2569ea1"
+ },
+ {
+  "topic": "TEST",
+  "claim": "BEAMA SPD guide (UK, 2018): SPDs should be isolated during insulation resistance testing because they may operate on the test voltage.",
+  "quote": "WARNING : – SPDs should be isolated during insulation resistance testing, as the SPD could operate, by treating the test voltage applied to the system as a transient overvoltage, thus defeating the object of the test.",
+  "page": 56,
+  "section": "10.2 Periodic inspection & testing",
+  "id": "I064",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "e572d70c40efc6c6"
+ },
+ {
+  "topic": "TEST",
+  "claim": "BEAMA SPD guide (UK, 2018): periodic inspection first checks that the SPD's OCPD has not operated and that the SPD's fault indicator shows it serviceable.",
+  "quote": "Check that the OCPD has not operated and that the SPD is still in a serviceable condition. (SPDs have fault indicators that will show when the device has been damaged or destroyed by a surge).",
+  "page": 56,
+  "section": "10.2",
+  "id": "I065",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "8681a2621b2f4142"
+ },
+ {
+  "topic": "TEST",
+  "claim": "BEAMA SPD guide (UK, 2018): during periodic testing, with the SPD's OCPD open a 500 V insulation resistance test is applied between live conductors and earth, expecting more than 1 megohm (BS 7671 Table 61).",
+  "quote": "With the OCPD in the open position apply a 500V insulation resistance test between live conductors and earth. The resistance value should be >1MD, see BS 7671 Table 61.",
+  "page": 56,
+  "section": "10.2",
+  "id": "I066",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "e319e06c3cda0877"
+ },
+ {
+  "topic": "TEST",
+  "claim": "BEAMA SPD guide (UK, 2018): visual inspection of a surge protection system should verify that bonding conductors and cable shields are intact and cable segregation is maintained.",
+  "quote": "Visual inspections are very important, and should verify, for example, if bonding conductors and cable shields are intact and appropriate cable arrangements (segregation, etc) are maintained.",
+  "page": 57,
+  "section": "11 Inspection and maintenance of an SPM system",
+  "id": "I067",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "70ef28b9fea01630"
+ },
+ {
+  "topic": "TEST",
+  "claim": "BEAMA SPD guide (UK, 2018): inspection should catch later additions such as a power line to external CCTV cameras or car-park lighting that crosses a lightning protection zone and needs an SPD.",
+  "quote": "For example, a power supply line to external CCTV cameras or car park lighting may have been added as this line is likely to cross an LPZ. Suitable protection measures (e.g. SPD) should be employed to ensure the integrity of the complete SPM is not compromised.",
+  "page": 57,
+  "section": "11",
+  "id": "I068",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "c4dff88924867793"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018 Section 443): if there is a risk of a direct lightning strike to the structure or to overhead lines feeding it, SPDs are required per BS EN 62305.",
+  "quote": "Outside of such high risk installations, if there is a risk of direct lightning strike to the structure itself or to overhead lines to the structure SPDs will be required in accordance with BS EN62305.",
+  "page": 63,
+  "section": "Appendix B – Section 443",
+  "id": "I069",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "90c73e6cb316d336"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018 443.4): for a single dwelling unit the designer should complete a documented assessment of whether the installation and equipment value justifies SPDs or the consequential losses are tolerable.",
+  "quote": "This means that the electrical installation designer should complete a documented assessment for single dwelling units to determine if the total value of the electrical installation and the equipment connected therein necessitates the cost of SPDs or if the consequential losses are tolerable.",
+  "page": 63,
+  "section": "Appendix B – Single dwelling units",
+  "id": "I070",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "7eac6fd716662d5e"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018), citing IEC 60364-4-44: overvoltage protection is not required for a single dwelling where the total economic value of the installation is less than five times the value of the SPD at the origin.",
+  "quote": "This is further explained in IEC 60364-4-44 which states that overvoltage protection is not required for single dwelling units where the total economic value of the electrical installation to be protected is less than ﬁve times the economic value of the SPD located at the origin of the installation.",
+  "page": 63,
+  "section": "Appendix B – Single dwelling units",
+  "id": "I071",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "349369ffa0962912"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018 443.5): if the calculated risk level CRL is less than 1000 SPD protection shall be installed; at 1000 or higher it is not required.",
+  "quote": "If the CRL value is less than 1000 (or less than a 1 in 1000th chance) then SPD protection shall be installed. Similarly if the CRL value is 1000 or higher (or greater than a 1 in 1000th chance) then SPD protection is not required for the installation.",
+  "page": 65,
+  "section": "443.5 Calculated Risk Level",
+  "id": "I072",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "b8f443ac4de86793"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018): in CRL = fenv / (Lp x Ng) the environmental factor fenv is 85 for rural and suburban and 850 for urban locations.",
+  "quote": "Rural Area with a low Countryside 85 density of buildings Suburban Area with a medium Town outskirts 85 density of buildings Urban Area with a high Town centre 850",
+  "page": 65,
+  "section": "443.5 / Table 7",
+  "id": "I073",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "0ff7088d5140c70b"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018): the risk assessment length is Lp = 2 LPAL + LPCL + 0.4 LPAH + 0.2 LPCH (km), weighting low-voltage overhead line most heavily.",
+  "quote": "LP = 2 LPAL + LPCL + 0.4 LPAH + 0.2 LPCH (km) where: LPAL is the length (km) of low-voltage overhead line; LPCL is the length (km) of low-voltage underground cable; LPAH is the length (km) of high-voltage overhead line; LPCH is the length (km) of high-voltage underground cable",
+  "page": 65,
+  "section": "443.5",
+  "id": "I074",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "720c0ee9f0f9161d"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018 534.4.1.3): where the structure has an external LPS or needs protection against direct lightning on overhead lines, Type 1 SPDs shall be installed as close as possible to the origin of the installation.",
+  "quote": "Where the structure is equipped with an external lightning protection system LPS or protection against the effects of direct lightning on overhead lines Type 1 SPDs shall be installed as close as possible to the origin of the electrical installation. (534.4.1.3)",
+  "page": 68,
+  "section": "Flowchart 1",
+  "id": "I075",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "68ad274cf2c69bd3"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, BS 7671:2018 534.4.1.1): SPDs installed close to sensitive equipment against internally generated switching transients shall be Type 2 or Type 3.",
+  "quote": "SPDs installed close to sensitive equipment to further protect against (443.4) switching transients originating within the building shall be Type 2 or Type 3. (534.4.1.1)",
+  "page": 68,
+  "section": "Flowchart 1",
+  "id": "I076",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "53aff6d5ab147311"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide: the length of the SPD connections between the network (via the external short-circuit protective device) and the earthing terminal block should not exceed 50 cm.",
+  "quote": "The first rule to comply with is that the length of the SPD connections between the network (via the external SCPD) and the earthing terminal block should not exceed 50 cm.",
+  "page": 1,
+  "section": "Cabling rules – Rule 1",
+  "id": "I077",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "1f8865222bdd4c36"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide: protected outgoing feeders should be connected to the terminals of the external SCPD or the SPD and physically separated from the polluted incoming conductors.",
+  "quote": "The conductors of protected outgoing feeders: should be connected to the terminals of the external SCPD or the SPD; should be separated physically from the polluted incoming conductors.",
+  "page": 1,
+  "section": "Cabling rules – Rule 2",
+  "id": "I078",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "45b568063c860e0c"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide: the incoming phase, neutral and PE conductors should run beside one another to reduce loop area.",
+  "quote": "The incoming feeder phase, neutral and protection (PE) conductors should run one beside another in order to reduce the loop surface",
+  "page": 2,
+  "section": "Cabling rules – Rule 3",
+  "id": "I079",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "3f5ef86e330dcf76"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide: the SPD's incoming conductors should be kept remote from the protected outgoing conductors to avoid polluting them by coupling.",
+  "quote": "The incoming conductors of the SPD should be remote from the protected outgoing conductors to avoid polluting them by coupling",
+  "page": 2,
+  "section": "Cabling rules – Rule 4",
+  "id": "I080",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "e24ff0bd11d6da29"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide: cables should be pinned against the metal parts of the enclosure to minimise loop area, and switchboard and enclosure frames must be earthed via very short connections.",
+  "quote": "The cables should be pinned against the metallic parts of the enclosure (if any) in order to minimize the surface of the frame loop and hence benefit from a shielding effect against EM disturbances. In all cases, it must be checked that the frames of switchboards and enclosures are earthed via very short connections.",
+  "page": 2,
+  "section": "Cabling rules – Rule 5",
+  "id": "I081",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "884fee87c97fb2da"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide: SPD connection conductors have about 1 µH/m, so an 8 kA 8/20 µs current creates a voltage rise of 1000 V per metre of cable.",
+  "quote": "For high-frequency currents, the impedance per unit length of this connection is approximately 1 µH/m. Hence, applying Lenz's law to this connection: ΔU = L di/dt The normalized 8/20 µs current wave, with a current amplitude of 8 kA, accordingly creates a voltage rise of 1000 V per metre of cable.",
+  "page": 4,
+  "section": "Connection of SPD",
+  "id": "I082",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "dbe1bcffc030bcc2"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide: with 50 cm total connections and an 8 kA 8/20 µs surge, the voltage across the equipment terminals is Up + 500 V.",
+  "quote": "If L1+L2+L3 = 50 cm, and the wave is 8/20 µs with an amplitude of 8 kÂ, the voltage across the equipment terminals will be Up + 500 V.",
+  "page": 5,
+  "section": "Connection of SPD",
+  "id": "I083",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "2a866a657cb42a44"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide: in a metal switchgear enclosure it may be wise to connect the SPD directly to the enclosure, using the enclosure as the protective conductor (the assembly manufacturer must confirm this per IEC 61439-2).",
+  "quote": "In the case of a switchgear assembly in a metallic enclosure, it may be wise to connect the SPD directly to the metallic enclosure, with the enclosure being used as a protective conductor",
+  "page": 5,
+  "section": "Connection in metallic enclosure",
+  "id": "I084",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "463c7e9daff98ad9"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide (IEC 60364): minimum SPD connection cross-section at the incoming end is 4 mm2 copper for a Type 2 SPD and 16 mm2 copper for a Type 1 SPD (lightning protection system present).",
+  "quote": "IEC 60364 recommends at the installation incoming end a minimum cross section of: 4 mm2 (Cu) for connection of Type 2 SPD; 16 mm2 (Cu) for connection of Type 1 SPD (presence of lightning protection system).",
+  "page": 6,
+  "section": "Conductor cross section",
+  "id": "I085",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "87113116c990562a"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide (IEC 60364-5-53 Table 534.2): in TN and TT systems the minimum Uc is 1.1 U/√3 for L-N and L-PE SPDs and U/√3 for N-PE SPDs (U = line-to-line voltage).",
+  "quote": "Line conductor and neutral conductor 1.1 U / √3 1.1 U / √3 1.1 U / √3 Line conductor and PE conductor 1.1 U / √3 1.1 U / √3 1.1 U Line conductor and PEN conductor 1.1 U / √3 N/A N/A [a] [a] Neutral conductor and PE conductor U / √3 U / √3 1.1 U / √3",
+  "page": 8,
+  "section": "Fig. J23",
+  "id": "I086",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "a3f96f525584f904"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide: the most common SPD Uc values are 260, 320, 340 or 350 V for TT and TN systems and 440 or 460 V for IT systems.",
+  "quote": "The most common values of Uc chosen according to the system earthing arrangement. TT, TN: 260, 320, 340, 350 V IT: 440, 460 V",
+  "page": 8,
+  "section": "Fig. J23",
+  "id": "I087",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "4fb66afea437fcbd"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide: the installed voltage protection level generally adopted to protect sensitive equipment in 230/400 V installations is 2.5 kV (overvoltage category II).",
+  "quote": "The \"installed\" voltage protection level Up generally adopted to protect sensitive equipment in 230/400 V electrical installations is 2.5 kV (overvoltage category II, see Fig. J27).",
+  "page": 11,
+  "section": "Fig. J26",
+  "id": "I088",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "5a51a41ddcee51b8"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide Fig. J27: phase-to-earth protection is needed in TT, TN-C, TN-S and IT; neutral-to-earth in TT and TN-S (and IT if neutral distributed); phase-to-neutral is recommended in TT and TN-S.",
+  "quote": "Phase-to-neutral (DM) Recommended[a] - Recommended Not useful Phase-to-earth (PE or PEN) (CM) Yes Yes Yes Yes Neutral-to-earth (PE) (CM) Yes - Yes Yes[b]",
+  "page": 11,
+  "section": "Fig. J27",
+  "id": "I089",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "898e45ad16c02e59"
+ },
+ {
+  "topic": "SPD",
+  "claim": "Schneider Electrical Installation Guide: 2P/3P/4P SPDs (common-mode only) suit IT, TN-C and TN-C-S systems, while 1P+N and 3P+N SPDs suit TT and TN-S systems and protect in both common and differential mode.",
+  "quote": "2P, 3P and 4P SPDs (see Fig. J28) These are adapted to the IT, TN-C, TN-C-S systems. They provide protection merely against common-mode overvoltages. Fig. J28 – 1P, 2P, 3P, 4P SPDs 1P + N, 3P + N SPDs (see Fig. J29) These are adapted to the TT and TN-S systems. They provide protection against common-mode and differential-mode overvoltages",
+  "page": 12,
+  "section": "Fig. J28 / J29",
+  "id": "I090",
+  "source": "50_Schneider_EIG_SPD_Cabling_Connection_Characteristics",
+  "quote_sha256": "d79c6c96d3882b21"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: the follow-current interrupting rating Ifi of a spark-gap SPD should be equal to or higher than the prospective short-circuit current at the installation point, otherwise the upstream fuse will melt each time the spark gap ignites.",
+  "quote": "Ifi of the SPD should be equal to or higher than the prospective short-circuit current at the point of installation (Ip). If not, the upstream fuse will melt each time the spark-gap ignites.",
+  "page": 6,
+  "section": "Terminology – Ifi",
+  "id": "I091",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "56414c998c9f60e8"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: differential-mode overvoltages concern TT earthing systems, and also TN-S systems where there is a significant difference in length between the neutral and the PE conductor.",
+  "quote": "These overvoltages concern TT earthing systems. They also affect TN-S also non-earthed equipment (Class II) with insufficient electrical insulation systems if there is a significant difference in length between the neutral cable (a few kilovolts) located close to an earthed mass. and the protective cable (PE).",
+  "page": 6,
+  "section": "Protection in common and/or differential mode",
+  "id": "I092",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "9909d0005d23912e"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: whatever overvoltage protection is used, the maximum protection level corresponds to category II: Up max = 2500 V for Un = 230 V.",
+  "quote": "Whatever the type of overvoltage protection used, the maximum voltage corresponds to category II. Note: Up max = 2500 V if Un = 230 V.",
+  "page": 7,
+  "section": "Impulse withstand voltage of equipment",
+  "id": "I093",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "ebaa5d9514e2e37e"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: ABB recommends a minimum Iimp of 25 kA for Type 1 SPDs per pole, based on a 200 kA strike with 50% flowing to ground and 50% into the electrical network.",
+  "quote": "ABB recommends a minimum Iimp of 25 kA for Type 1 surge protective devices based on the following calculation : – Prospective direct lightning strike current I: 200 kA (only 1% of discharges > 200 kA). – Distribution of current within the building: 50 % to ground and 50 % to the electrical network",
+  "page": 7,
+  "section": "Selection – Choice of Iimp",
+  "id": "I094",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "6effd706fdd38864"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: suggested Type 2 ratings by ground flash density: Ng < 2 In 5 kA / Imax 15 kA; 2-3: 20/40 kA; 3-4: 30/70 kA; above 4: 60/120 kA.",
+  "quote": "Ng <2 2 < Ng < 3 3 < Ng <4 4 < Ng For a given Imax value, there is a In (kA) 5 20 30 60 corresponding nominal current Imax (kA) 15 40 70 120",
+  "page": 7,
+  "section": "Optimization of Imax for Type 2",
+  "id": "I095",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "ad8f8a748ba242c5"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: the SPD's mechanical end-of-life indicator changes from white to red at end of life, after which the SPD must be changed as protection is no longer guaranteed.",
+  "quote": "This option enables indication of the surge protective device’s state via a me- chanical indicator which changes from white to red as the surge protective de- vice comes to end-of-life. When this occurs, the surge protective device must be changed as protection is no longer guaranteed.",
+  "page": 8,
+  "section": "End of life indicator",
+  "id": "I096",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "1975ea5af02ff0f6"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: a faulty SPD wired for continuity of service simply disconnects itself without interrupting the supply, but the equipment is then no longer protected.",
+  "quote": "A faulty surge protective device does not not have to be isolated nor do the wires have to be removed. interrupt continuity of service (if wired such that priority is given to continuity of service), it Remote indication (TS) simply disconnects itself. But, the equipment is no longer protected.",
+  "page": 8,
+  "section": "Pluggable – NOTE",
+  "id": "I097",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "e94114ec1750aa12"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: the incoming SPD alone does not protect the whole installation; residual voltage can double if cable lengths exceed 10 m.",
+  "quote": "The incoming surge protective device does not provide effective protection for the whole in- devices is analysed using their respective maximum discharge currents Imax (8/20) stallation by itself. Certain electrical phenomena can double the protection’s residual voltage starting from the installation’s incoming if cable lengths exceed 10 m.",
+  "page": 9,
+  "section": "Coordination principle",
+  "id": "I098",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "08f964453abeb4fd"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: ABB Type 2 SPDs coordinate with each other when at least 1 m of cable separates them (e.g. 70 kA followed by 40 kA).",
+  "quote": "All Type 2 surge protective devices coordinate with each other by maintaining Coordination is required if the incoming surge protective device cannot achieve the protec- a minimum distance of 1m between them.",
+  "page": 9,
+  "section": "Coordination principle",
+  "id": "I099",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "0b16c910f2986b5e"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: a 25 kA Type 1 spark gap with Ifi 7 kA needs at least 5 m of cable between it and a downstream 40 kA Type 2 SPD, while the Ifi 50 kA version needs 0 m.",
+  "quote": "Type 1 ➤ L>0m ➤ (0 m minimum between the two devices) 25 kA (10/350) Ifi = 50 kA Type 2 Without Safety Reserve 40 kA (8/20) Type 1 ➤ L>5m (5 m minimum between the two devices) ➤ 25 kA (10/350) Ifi = 7 kA",
+  "page": 9,
+  "section": "Coordination between Type 1 and Type 2",
+  "id": "I100",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "e26d300fc8cab025"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: SPDs must be associated with a backup (overcurrent) protection and with residual current protection against indirect contact.",
+  "quote": "Surge protective devices must be associated with a backup protection and residual current protection against indirect contact (usually already present in the installation).",
+  "page": 10,
+  "section": "Choice of backup protection",
+  "id": "I101",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "161dca19cec35fc9"
+ },
+ {
+  "topic": "FUND",
+  "claim": "ABB OVR brochure: a residual current device is mandatory for TT systems, possible for TN-S, IT and TN-C-S systems, and not permitted for TN-C systems.",
+  "quote": "• Differential circuit breaker mandatory for TT systems • Differential circuit breaker possible for TN-S, IT and TN-C-5 systems Protection against • Differential circuit breaker not permitted for TN-C systems",
+  "page": 10,
+  "section": "Choice of backup protection",
+  "id": "I102",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "921cc6e92077e038"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: if a residual current device is used with SPDs a type S device is preferable; nuisance tripping may interrupt the circuit but does not make the SPD less effective.",
+  "quote": "If a differential circuit breaker is used, it is preferable to choose a type S device. There may be a risk of nuisance tripping, which may interrupt the circuit, but it will not make the surge protective device less effective.",
+  "page": 10,
+  "section": "Choice of backup protection",
+  "id": "I103",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "c9baff8c8a345eff"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: for ABB Type 2 SPDs the maximum backup is a 25 A C-curve MCB or 16 A gG fuse for prospective short-circuit 0.3-2 kA, 32 A / 25 A for 2-6 kA, and 50 A / 50 A above 6 kA.",
+  "quote": "OVR T2 pluggable or T2 & T3 non pluggable Imax(8/20): 10 kA, 15 kA, 40 kA, 70 kA or 120 kA • Ip = 0.3 kA to 2 kA ≤ 25 A ≤ 16 A • Ip = 2 kA to 6 kA ≤ 32 A ≤ 25 A • Ip = 6 kA to Iscw ≤ 50 A ≤ 50 A",
+  "page": 10,
+  "section": "Maximum circuit breaker or fuse protection",
+  "id": "I104",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "3e2e63855a8d7328"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: ABB 25 kA (10/350) Type 1 SPDs take a maximum backup fuse of 125 A gG.",
+  "quote": "Type 1 surge protective devices Circuit breaker (Curve C) Fuse (gG) OVR T1 / OVR T1+2 Iimp(10/350): 25 kA • Ip = 0.3 kA to Iscw ≤ 125 A",
+  "page": 10,
+  "section": "Maximum circuit breaker or fuse protection",
+  "id": "I105",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "50513f39be3489e8"
+ },
+ {
+  "topic": "SITE",
+  "claim": "ABB OVR brochure: very-low-voltage SPDs can be installed between a 230/48 V or 24 V supply transformer and protected equipment such as PLCs and sensors.",
+  "quote": "Telecoms, wind turbines, industrial applications under very low voltage \u0007 etween transformer 230/48 V or 24 V (AC-DC) and equipment to be B protected, for example: –– PLC’s –– Sensors",
+  "page": 23,
+  "section": "Applications – OVR in 75 V",
+  "id": "I106",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "7970c14d87f349d2"
+ },
+ {
+  "topic": "SPD",
+  "claim": "ABB OVR brochure: an additional Type 2 SPD close to the equipment is recommended when it is more than 10 m from the upstream SPD and compulsory above 30 m; below 10 m it is not necessary and shall not be installed for coordination reasons.",
+  "quote": "Additional Type 2 SPD close to the equipment to protect is recommended when this distance overcomes 10 meters and compulsory above 30 meters. Additional Type 2 SPD is not necessary when the distance is less than 10 meters and it shall not be installed for coordination reasons.",
+  "page": 25,
+  "section": "Additional SPD Type 2",
+  "id": "I107",
+  "source": "52_ABB_OVR_Surge_Protective_Devices_System_proM",
+  "quote_sha256": "cc7a692133c192e6"
+ },
+ {
+  "topic": "FUND",
+  "claim": "RR Kabel article: when everything shares one common earth path, drives and switching loads turn that common path into a highway for unwanted currents, making instrumentation fluctuate and networks show intermittent errors.",
+  "quote": "But when drives start operating or when switching loads create electrical noise, that common path becomes a highway for unwanted currents. Sensitive instrumentation begins to fluctuate. Communication networks show intermittent errors.",
+  "page": 1,
+  "section": "The 'One Earth for everything' problem",
+  "id": "I108",
+  "source": "42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables",
+  "quote_sha256": "c6e4b1ca4ecb6a86"
+ },
+ {
+  "topic": "SITE",
+  "claim": "RR Kabel article: in well-designed systems power, instrumentation and communication earthing are conceptually separate and bonded together at an equipotential point, not mixed randomly.",
+  "quote": "In well-designed systems, power earthing, instrumentation earthing and communication earthing are conceptually separated. They are bonded at an equipotential point and not mixed randomly throughout the installation.",
+  "page": 2,
+  "section": "The 'One Earth for everything' problem",
+  "id": "I109",
+  "source": "42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables",
+  "quote_sha256": "2060286464d7ea6a"
+ },
+ {
+  "topic": "FUND",
+  "claim": "RR Kabel article: on low-voltage systems cable armour is typically bonded at both ends so that fault current can return to the source and protective devices operate.",
+  "quote": "For low-voltage systems, armour is typically bonded at both ends so that any insulation failure allows sufficient fault current to flow back to the source, ensuring protective devices operate correctly.",
+  "page": 2,
+  "section": "How should armoured power cables be earthed?",
+  "id": "I110",
+  "source": "42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables",
+  "quote_sha256": "8595233e8c4f5898"
+ },
+ {
+  "topic": "FUND",
+  "claim": "RR Kabel article: armour bonded tightly at one end but loose or floating at the other can produce induced voltages or circulating currents.",
+  "quote": "Problems arise when termination is inconsistent i.e., tightly bonded at one end and loosely connected or floating at the other. This can produce induced voltages or circulating currents.",
+  "page": 2,
+  "section": "How should armoured power cables be earthed?",
+  "id": "I111",
+  "source": "42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables",
+  "quote_sha256": "51afe274a66b147d"
+ },
+ {
+  "topic": "FUND",
+  "claim": "RR Kabel article: in medium- and high-voltage systems, single-point bonding or cross-bonding of sheaths is used to control induced sheath voltages.",
+  "quote": "Techniques such as single-point bonding or cross-bonding are used to control induced sheath voltages.",
+  "page": 2,
+  "section": "How should armoured power cables be earthed?",
+  "id": "I112",
+  "source": "42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables",
+  "quote_sha256": "355776c00aa765fa"
+ },
+ {
+  "topic": "SITE",
+  "claim": "RR Kabel article: for low-frequency analogue instrumentation loops, earthing the shield at both ends often creates a ground loop that picks up interference and causes unstable readings.",
+  "quote": "For low-frequency analogue signals such as instrumentation loops, grounding the shield at both ends often creates a ground loop. This loop behaves like an antenna, picking up interference and causing unstable readings.",
+  "page": 2,
+  "section": "How should shielded or screened cables be grounded?",
+  "id": "I113",
+  "source": "42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables",
+  "quote_sha256": "67459a780cc05ddd"
+ },
+ {
+  "topic": "SITE",
+  "claim": "RR Kabel article: for such analogue loops the shield is earthed at one end, typically the control panel or receiving end, to prevent circulating currents while keeping shielding effective.",
+  "quote": "In such cases, grounding at one end, typically at the control panel or receiving end, prevents circulating currents while preserving shielding effectiveness.",
+  "page": 2,
+  "section": "How should shielded or screened cables be grounded?",
+  "id": "I114",
+  "source": "42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables",
+  "quote_sha256": "81cd7e16a9f8681c"
+ },
+ {
+  "topic": "DATA",
+  "claim": "RR Kabel article: for high-frequency or digital signals, bonding the shield at both ends may reduce impedance to high-frequency noise and improve performance.",
+  "quote": "For high-frequency or digital signals, the situation can reverse. Bonding the shield at both ends may reduce impedance to high-frequency noise and improve performance.",
+  "page": 2,
+  "section": "How should shielded or screened cables be grounded?",
+  "id": "I115",
+  "source": "42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables",
+  "quote_sha256": "5785482d9040bef1"
+ },
+ {
+  "topic": "SITE",
+  "claim": "RR Kabel article: the drain wire of a screened instrument cable should be connected to the designated earth terminal, not to random metal parts of the panel.",
+  "quote": "Best practice is to connect the drain wire to the designated earth terminal, not to random metallic parts of the panel.",
+  "page": 2,
+  "section": "What is the purpose of the drain wire",
+  "id": "I116",
+  "source": "42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables",
+  "quote_sha256": "66450296dc6525b6"
+ },
+ {
+  "topic": "DATA",
+  "claim": "RR Kabel article: unshielded twisted pair (UTP) cables do not require earthing, and earthing them externally can introduce imbalance and noise.",
+  "quote": "not require grounding. Attempting to earth them externally can introduce imbalance and additional noise.",
+  "page": 2,
+  "section": "Do LAN and communication cables need earthing?",
+  "id": "I117",
+  "source": "42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables",
+  "quote_sha256": "0b6c183fe76e0441"
+ },
+ {
+  "topic": "DATA",
+  "claim": "RR Kabel article: shielded STP, FTP and SF/UTP cables are earthed through connectors, patch panels and racks; arbitrary earthing at field points can increase interference.",
+  "quote": "Shielded variants such as STP, FTP and SF/UTP are designed to be grounded through connectors, patch panels and equipment racks. Their grounding path is built into the system architecture. Arbitrary earthing at field points can disrupt signal integrity and increase interference rather than reduce it.",
+  "page": 2,
+  "section": "Do LAN and communication cables need earthing?",
+  "id": "I118",
+  "source": "42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables",
+  "quote_sha256": "316dc9470fe26a19"
+ },
+ {
+  "topic": "FUND",
+  "claim": "RR Kabel article: bonding jumpers across cable-tray joints and earthing at defined intervals keep the cable infrastructure at one potential.",
+  "quote": "Installing bonding jumpers across tray joints and ensuring proper earthing at defined intervals keeps the entire infrastructure at the same electrical potential, preventing hard-to-trace problems later.",
+  "page": 3,
+  "section": "Equipotential bonding of cable infrastructure",
+  "id": "I119",
+  "source": "42_RR_Kabel_Earthing_in_Practice_Power_Instrumentation_Communication_Cables",
+  "quote_sha256": "8b5aacb9fa9e59ed"
+ },
+ {
+  "topic": "SITE",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): in practice the single clean earth cable is connected at one point only to the general earth, as close as practical to the general earth electrode connection.",
+  "quote": "cable is connected at one point only to equipment safety earth connections neutralises the source magnetic field. the general earth, this being as close as should be connected to the power Theoretically, there is no need to earth practical to the general earth electrode supply safety earth point.",
+  "page": 4,
+  "section": "VIII. Control systems 'clean' earthing",
+  "id": "I120",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "bb7c97c4fbaf4816"
+ },
+ {
+  "topic": "SITE",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): cable armouring and any electrical equipment safety earth connections should be connected to the power supply safety earth point, not to the clean earth.",
+  "quote": "Cable armouring and any electrical The screen generates a current which cable is connected at one point only to equipment safety earth connections neutralises the source magnetic field. the general earth, this being as close as should be connected to the power",
+  "page": 4,
+  "section": "VIII. Control systems 'clean' earthing",
+  "id": "I121",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "c38ca14cfad43d61"
+ },
+ {
+  "topic": "SITE",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): the generally accepted earth loop impedance for an intrinsic-safety (IS) earth is 1 ohm, with 0.1 ohm preferable and often achievable.",
+  "quote": "The generally accepted earth loop impedance for an IS earth is 1 ohm; however, 0.1 ohm is preferable and often achievable.",
+  "page": 4,
+  "section": "IX. Intrinsic safety systems earthing",
+  "id": "I122",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "cd3b7bc17e420608"
+ },
+ {
+  "topic": "SITE",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): IS barrier busbars are connected to the supply transformer neutral star point via a low-impedance earth path so that fault current is kept outside the hazardous area.",
+  "quote": "IS circuit protection modules are generally equipped with a busbar (see Figure 4), which when connected to the neutral star point of the grid transformer via a low impedance earth path ensures that any significant fault current is kept outside of the hazardous area.",
+  "page": 4,
+  "section": "IX. Intrinsic safety systems earthing",
+  "id": "I123",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "e302c698fb3dd10d"
+ },
+ {
+  "topic": "SITE",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): a separate clean earth electrode should be avoided because it may increase the system's susceptibility to electromagnetic coupling (EMC) problems.",
+  "quote": "separate clean earth electrode should be difference between the IS earth point at the supply transformer. The electrical avoided as it may result in increased the barriers and the supply transformer safety earth may also be subject to system susceptibility to electromagnetic",
+  "page": 4,
+  "section": "VIII. Control systems 'clean' earthing",
+  "id": "I124",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "94623d1499672605"
+ },
+ {
+  "topic": "SITE",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): 0 V earth connections must be individually wired and not daisy-chained to the reference (clean) earth busbar.",
+  "quote": "reference earth connections. 0 V earth power earth must be independent of control signals, including the failure of the connections must be individually wired each other and only meet at the ‘body of electronics. and not ‘daisy chained’ to a reference",
+  "page": 4,
+  "section": "VIII. Control systems 'clean' earthing",
+  "id": "I125",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "483cba83b8320058"
+ },
+ {
+  "topic": "SITE",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): to avoid contaminating the clean earth, only ELV 0 V DC supplies, cable screens and cable drain wires should be connected to it.",
+  "quote": "the clean earth, only the ELV 0 V DC electromagnetically screened to increase either already present or likely to be power supplies, cable screens and cable protection against magnetic coupling created when bonded to an electrical drain wires should be connected to it.",
+  "page": 4,
+  "section": "VIII. Control systems 'clean' earthing",
+  "id": "I126",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "755933ed7fa47021"
+ },
+ {
+  "topic": "SITE",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): a fundamental requirement is that the IS earth, the control-signal 0 V reference earth and the electrical power earth are independent of each other.",
+  "quote": "barriers is that the IS earth, control signal DC signals) on the 0 V reference, may voltage sources via their individual 0 V reference earth and the electrical lead to unexpected results affecting reference earth connections. 0 V earth power earth must be independent of",
+  "page": 4,
+  "section": "IX. Intrinsic safety systems earthing",
+  "id": "I127",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "c728be45d3fc7e75"
+ },
+ {
+  "topic": "DATA",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): theoretically an ELV signal cable screen need not be earthed, but it is common practice to bond it to a clean earth or to the IS earth.",
+  "quote": "Theoretically, there is no need to earth practical to the general earth electrode supply safety earth point. In the United this screen; however, it is common connection. This is necessary in order Kingdom, a ‘clean’ earth should be practice to bond it to a clean earth or IS",
+  "page": 4,
+  "section": "IX",
+  "id": "I128",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "4a7c709dfbd6c72b"
+ },
+ {
+  "topic": "DATA",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): unless the equipment manufacturer advises otherwise, instrument cable screens should only be earthed at one point.",
+  "quote": "equipment manufacturer, cable screens safely discharge it and eliminate these be subject to precautions as for should only be earthed at one point.",
+  "page": 5,
+  "section": "X. Earthing arrangements for instruments' field cable screens",
+  "id": "I129",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "006a0b633f980d0d"
+ },
+ {
+  "topic": "DATA",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): instrument cable screens are commonly earthed via the screen drain wire at the control system input/output marshalling cubicle.",
+  "quote": "Earthing via the screen drain wire is Control of Undesirable Static Electricity Where flexible/non-metallic pipe commonly carried out at the control (1991)8 contains detailed information on connections or in-line non-metallic system input/output marshalling cubicle",
+  "page": 5,
+  "section": "X",
+  "id": "I130",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "be0441302d47842c"
+ },
+ {
+  "topic": "DATA",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): the screen at the field-device end is left un-earthed and insulated.",
+  "quote": "with the screen at the field device being to prevent unwanted consequences the end flanges of these devices should left un-earthed and insulated.",
+  "page": 5,
+  "section": "X",
+  "id": "I131",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "c0fee3b310b83f86"
+ },
+ {
+  "topic": "DATA",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): earthing a screen at both ends lets plant-structure earth return current flow in it, and this earth loop current becomes a noise source on the signal conductors.",
+  "quote": "current that may arise if the screen was from static electricity is the retention of earthed at both ends. In this event, the charge on a single item of plant or earth loop current becomes a noise XII. Supply Transformer Star equipment (a conductor) because all of source affecting the signal conductors.",
+  "page": 5,
+  "section": "X",
+  "id": "I132",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "9aa63dfb4fe7032b"
+ },
+ {
+  "topic": "FUND",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): a soil resistivity test is the main factor in determining the type and extent of the earth electrode(s) required.",
+  "quote": "A soil resistivity test of the Control cabinets; interconnected cables. Metallic ground is the main factor in the Cable gland plates; enclosures forming a Faraday cage determination of the type and extent of which is locally earthed is one form of earth electrode/s required.",
+  "page": 3,
+  "section": "V. Earthing arrangements and protective conductors",
+  "id": "I133",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "47ccc382bdfd6be7"
+ },
+ {
+  "topic": "FUND",
+  "claim": "InstMC Tech Talk 12 (UK, 2017): to avoid potential differences between multiple earth electrodes, accepted practice is to connect all earthing systems to a single earth electrode connection point.",
+  "quote": "practice of connecting all Earth busbar to the Safety Earth is by 6. Towle LC. A definitive guide to earthing and bonding in hazardous areas, May 1997. ‘earthing’ systems to a single earth connection via the 0 V earth bar. Available online at http://www.casuarina. electrode connection point.",
+  "page": 6,
+  "section": "XII. Supply transformer star point earthing",
+  "id": "I134",
+  "source": "43_InstMC_Tech_Talk_12_Down_to_Earth",
+  "quote_sha256": "fdfba65e34b2bd22"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS X-Series installer manual: for optimum lightning protection a low-resistance earth is connected to the telephone communicator's earth input.",
+  "quote": "For optimum lightning protection, connect a low resistance earth to the communicator earth input.",
+  "page": 9,
+  "section": "Connecting the Telephone Communicator",
+  "id": "I135",
+  "source": "53_IDS_X-Series_Installer_Manual",
+  "quote_sha256": "717280c38fab0c4b"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS X-Series installer manual: when extra power supplies power any peripheral on the keypad bus, an IDS RS485 isolator must be used.",
+  "quote": "Note: When using extra power supplies to power any peripheral connected to the keypad bus an IDS RS485 isolator (860-06- 0557) must be used.",
+  "page": 8,
+  "section": "3. Installation and Wiring – Figure 1 note",
+  "id": "I136",
+  "source": "53_IDS_X-Series_Installer_Manual",
+  "quote_sha256": "c76863d9ba480eb3"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS X-Series installer manual: the panel must be powered from a 16 V AC ±10% transformer of at least 32 VA; 40 VA is recommended.",
+  "quote": "A suitable transformer with an output voltage of 16 VAC ±10% with a 32VA minimum rating must be used. A 40VA transformer is recommended.",
+  "page": 9,
+  "section": "Installation requirements",
+  "id": "I137",
+  "source": "53_IDS_X-Series_Installer_Manual",
+  "quote_sha256": "919cf76fa9c8f82f"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS XSeries serial installer manual: the serial X-Series panel uses an IDS 24 V 1.5 A DC power supply and a 12 V 7 Ah sealed lead-acid battery.",
+  "quote": "An IDS 24V 1.5A DC power supple ( 861-632). A 12V sealed lead acid battery with a capacity of 7AH must be used. The backup period after mains failure will depend on the number of keypads, sensors, and bus-wired peripheral devices connected to the system.",
+  "page": 9,
+  "section": "Installation requirements",
+  "id": "I138",
+  "source": "54_IDS_XSeries_Serial_Installer_Manual",
+  "quote_sha256": "a09c40883567cb4a"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS X-Series installer manual: a 12 V 7 Ah sealed lead-acid battery must be used; backup time after mains failure depends on the keypads, sensors and bus-wired devices connected.",
+  "quote": "A 12V sealed lead acid battery with a capacity of 7AH must be used. The backup period after mains failure will depend on the number of keypads, sensors, and bus-wired peripheral devices connected to the system.",
+  "page": 9,
+  "section": "Installation requirements",
+  "id": "I139",
+  "source": "53_IDS_X-Series_Installer_Manual",
+  "quote_sha256": "f293e47239c81677"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS X-Series installer manual: the panel supplies at most 750 mA continuous in total from its Aux 12 V terminals to bus-wired peripherals (keypads, receivers, passives).",
+  "quote": "The panel can supply a total continuous current of 750mA to bus-wired peripheral devices such as keypads, remotes, receivers, passives etc; from Aux 12V terminals.",
+  "page": 9,
+  "section": "Installation requirements",
+  "id": "I140",
+  "source": "53_IDS_X-Series_Installer_Manual",
+  "quote_sha256": "27b3eca4fc542dea"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS XSeries serial installer manual: the serial panel supplies at most 1 A continuous in total from its Aux 12 V terminals to bus-wired peripherals.",
+  "quote": "The panel can supply a total continuous current of 1A to bus-wired peripheral devices such as keypads, remotes, receivers, passives etc.; from Aux 12V terminals.",
+  "page": 9,
+  "section": "Installation requirements",
+  "id": "I141",
+  "source": "54_IDS_XSeries_Serial_Installer_Manual",
+  "quote_sha256": "167a742543fdbf12"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS X-Series installer manual: the siren output drives a 12 V self-driven or piezo siren, not a horn speaker.",
+  "quote": "Connect a 12V self-driven siren or piezo siren (not a horn speaker) to the siren output.",
+  "page": 9,
+  "section": "Installation requirements",
+  "id": "I142",
+  "source": "53_IDS_X-Series_Installer_Manual",
+  "quote_sha256": "bf133a146a652450"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS X-Series installer manual: every zone, used or unused, is terminated with a 3k3 end-of-line resistor, placed inside or as close to the sensor as possible.",
+  "quote": "All zones, whether they are used or unused, need to be terminated with a 3K3 resistor (resistor colour-code is orange, orange, red, gold). ➢ For maximum security, the end-of-line resistor must be placed inside or as close to the sensor as possible.",
+  "page": 9,
+  "section": "End-of-line resistors",
+  "id": "I143",
+  "source": "53_IDS_X-Series_Installer_Manual",
+  "quote_sha256": "056075adb7104ae9"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS X-Series installer manual: the telephone communicator is connected in line-seizure mode, never in parallel with the telephone.",
+  "quote": "Connect the telephone communicator in line seizure mode and never in parallel with the telephone.",
+  "page": 9,
+  "section": "Connecting the Telephone Communicator",
+  "id": "I144",
+  "source": "53_IDS_X-Series_Installer_Manual",
+  "quote_sha256": "7fb5e8023c305fa9"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS X-Series installer manual: a GSM transmitter is powered from the panel's TX terminal, protected by a 4 A fuse, and must not draw more than 1.5 A.",
+  "quote": "When connecting a GSM transmitter, use the TX terminal provided on the panel to supply power to the transmitter. This output is protected by a 4 Amp fuse. This will also help protect the battery by cutting power to it to stop it from being drained. Note: Do not use with high power transmitters that draw more than 1.5Amps.",
+  "page": 9,
+  "section": "Transmitter connection",
+  "id": "I145",
+  "source": "53_IDS_X-Series_Installer_Manual",
+  "quote_sha256": "96ef1669fb0f9199"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS X-Series installer manual: no more than 8 keypads may be connected to the keypad bus.",
+  "quote": "Check that you have not exceeded 8 keypads on the bus",
+  "page": 10,
+  "section": "Keypads – trouble shooting",
+  "id": "I146",
+  "source": "53_IDS_X-Series_Installer_Manual",
+  "quote_sha256": "bdac01b4d7389e46"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS X-Series installer manual: up to 4 IDS remote receivers may be connected to the keypad bus.",
+  "quote": "Up to 4 IDS Remote Receivers (P/N: 860-07-X02-DI) may be connected to the keypad Bus.",
+  "page": 9,
+  "section": "IDS Remote Receiver",
+  "id": "I147",
+  "source": "53_IDS_X-Series_Installer_Manual",
+  "quote_sha256": "e39ec2fe5d2b0e05"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS X-Series installer manual: the panel raises a bus-wired peripheral low-power trouble when the supply voltage at a peripheral drops below the recommended limit.",
+  "quote": "Bus-wired Peripheral Low Power / Battery Supply voltage to a peripheral has dropped below the recommended limit.",
+  "page": 19,
+  "section": "Explanation of trouble conditions",
+  "id": "I148",
+  "source": "53_IDS_X-Series_Installer_Manual",
+  "quote_sha256": "587ffed2dc46ab98"
+ },
+ {
+  "topic": "SAFE",
+  "claim": "IDS XSeries serial installer manual: the panel is a professional product that should only be installed by an accredited professional alarm installer.",
+  "quote": "This is a professional product, and due to the nature of the product, should only be installed by an accredited professional alarm installer.",
+  "page": 48,
+  "section": "Warranty / Warning",
+  "id": "I149",
+  "source": "54_IDS_XSeries_Serial_Installer_Manual",
+  "quote_sha256": "ac39dceefcb729a1"
+ },
+ {
+  "topic": "SITE",
+  "claim": "IDS XSeries serial installer manual: the 24-month warranty excludes damage from causes such as incorrect voltage and lightning damage.",
+  "quote": "defects in components and workmanship and NOT to damage due to causes beyond the control of Inhep Electronics Holdings, such as incorrect voltage, lightening damage, mechanical shock",
+  "page": 48,
+  "section": "Warranty",
+  "id": "I150",
+  "source": "54_IDS_XSeries_Serial_Installer_Manual",
+  "quote_sha256": "c591c7463376c0a3"
  }
 ]
