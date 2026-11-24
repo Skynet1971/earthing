@@ -46,6 +46,9 @@ sections:
   - title: "3  Equipment with both a mains and a data port"
     lead: "NIST (US) gives as the simple solution for equipment with both power and communications connections a special surge protector that combines, in one package, input/output connections for both systems.{{A010}}"
     blocks:
+      - explainer:
+          name: ex_potential_difference
+          caption: "ITU-T K.66 example: without a common bonding point, a 50 A surge from the telecom line through a 300 Ω earth electrode raises the telecom equipment 15 kV above the power network.{{B026}} Of the customer earthing practices K.66 examined, only the common earth bar with short bond wires protects equipment from surges entering on external cables without additional protection.{{B025}}"
       - facts: [A011, A008]
       - h2: "Multiservice surge protective devices (MSPDs)"
       - facts: [B028, B018, B016, B020, B021, B019, B048, B051, B041, B037, B011]

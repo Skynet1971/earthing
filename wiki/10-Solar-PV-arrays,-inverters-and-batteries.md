@@ -26,7 +26,8 @@ DEHN states that, according to the state of scientific and technical knowledge, 
 - BRE PV guide (UK, 2nd ed. 2006): if the building is fitted with a lightning protection system (LPS), a lightning protection installer should be consulted on whether the array frame should be connected to the LPS and with what size of conductor.<sup>[R49 p.14](#sources-cited-on-this-page)</sup>
 - SMA technical information (Overvoltage Protection, v1.3): an expert on lightning protection must determine for each PV system which lightning and overvoltage protection measures are necessary.<sup>[R45 p.1](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **The sources differ on strike risk and on who decides**
+> [!NOTE]
+> **NOTE: The sources differ on strike risk and on who decides**
 >
 > The DEHN and BRE positions are set side by side in the chapter on where the sources disagree. SMA leaves the choice of measures for each system to an expert on lightning protection<sup>[R45 p.1](#sources-cited-on-this-page)</sup>; BRE refers the frame-to-LPS question to a lightning protection installer.<sup>[R49 p.14](#sources-cited-on-this-page)</sup>
 
@@ -167,7 +168,8 @@ DEHN and SAPVIA require the mounting system to be connected with copper conducto
 - SMA technical information (Overvoltage Protection, v1.3): an SPD type II is sufficient to protect an SMA inverter against overvoltages; if partial lightning currents are expected, an SPD type I followed by an SPD type II should be used.<sup>[R45 p.4](#sources-cited-on-this-page)</sup>
 - SMA technical information (Overvoltage Protection, v1.3): type I SPDs are needed where lightning or partial lightning currents can flow via electrical cables, for example if the protected system is directly connected to the external LPS or the distance between the DC cables and the external lightning protection is too small.<sup>[R45 p.3](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **No selection rule for the d.c. continuous operating voltage**
+> [!NOTE]
+> **NOTE: No selection rule for the d.c. continuous operating voltage**
 >
 > No fact in this library states how the maximum continuous operating voltage of a PV SPD is to be chosen relative to the array open-circuit voltage. The only values available are those ABB prints for its own example device.<sup>[R51 p.5](#sources-cited-on-this-page)</sup>
 
@@ -199,7 +201,8 @@ The DEHN placement rules for each lightning protection case are listed in the ch
 
 ## 5  Cable routing
 
-> ✅ **DO** — **Keep loops small and run the bonding conductor with the cables**
+> [!TIP]
+> **DO: Keep loops small and run the bonding conductor with the cables**
 >
 > BRE asks for short d.c. runs with positive and negative of the same string bundled together, including the associated earth/bonding conductors<sup>[R49 p.14](#sources-cited-on-this-page)</sup><sup>[R49 p.14](#sources-cited-on-this-page)</sup>; DEHN asks for power and data lines to run with the equipotential bonding conductors along their entire route.<sup>[R44 p.2](#sources-cited-on-this-page)</sup>
 
@@ -213,7 +216,8 @@ The DEHN placement rules for each lightning protection case are listed in the ch
 - BRE PV guide (UK, 2nd ed. 2006): an inverter should not be mounted on an inside wall that has an LPS down lead running just the other side of the brickwork on the outside of the building.<sup>[R49 p.14](#sources-cited-on-this-page)</sup>
 - SAPVIA PV guidelines (South Africa, 2017): cables and especially plugs must not be in direct contact with the roofing, in order to avoid insulation faults.<sup>[R47 p.37](#sources-cited-on-this-page)</sup>
 
-> ⚠️ **WARNING** — **Lead inductance adds to the protection level**
+> [!WARNING]
+> **WARNING: Lead inductance adds to the protection level**
 >
 > SMA notes that during a surge voltage drops across the cable inductance, so a non-ideal SPD arrangement raises the protection level seen at the inverter<sup>[R45 p.7](#sources-cited-on-this-page)</sup>; DEHN notes that the drop along SPD connecting leads is mainly inductive at high rates of current change.<sup>[R6 p.238](#sources-cited-on-this-page)</sup>
 
@@ -228,7 +232,8 @@ Statements in this chapter that name Sunsynk come from the Sunsynk 8 kW hybrid i
 - Sunsynk 8 kW hybrid inverter manual: fault F24 (DC insulation impedance failure, PV isolation resistance too low) calls for checking that the earth bond cable on the inverter is connected to ground.<sup>[R46 p.66](#sources-cited-on-this-page)</sup>
 - BRE PV guide (UK, 2nd ed. 2006): the inverter must be treated as standard electrical apparatus and (as the sentence continues) earthed as per BS 7671 if it is Class I.<sup>[R49 p.14](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Protective conductor size not covered**
+> [!NOTE]
+> **NOTE: Protective conductor size not covered**
 >
 > No fact in this library gives the cross-section of the protective earth conductor to the inverter. The Sunsynk manual gives the a.c. cable size<sup>[R46 p.21](#sources-cited-on-this-page)</sup> and requires wiring and cable sizes to comply with the country's wiring regulations.<sup>[R46 p.21](#sources-cited-on-this-page)</sup>
 
@@ -249,7 +254,8 @@ Statements in this chapter that name Sunsynk come from the Sunsynk 8 kW hybrid i
 - In TN systems, type 1 and type 2 SPDs should be installed upstream of the RCD, because an RCD would see the discharged impulse current as residual current and could be mechanically damaged by partial lightning current.<sup>[R6 p.222](#sources-cited-on-this-page)</sup>
 - In TT systems type 1 and type 2 SPDs must always be installed upstream of the RCD.<sup>[R6 p.229](#sources-cited-on-this-page)</sup>
 
-> ⚠️ **WARNING** — **RCD type: BRE and the Sunsynk manual name different types**
+> [!WARNING]
+> **WARNING: RCD type: BRE and the Sunsynk manual name different types**
 >
 > BRE (UK) requires a type B RCD for fault protection where there is no at least simple separation between the a.c. and d.c. sides<sup>[R49 p.15](#sources-cited-on-this-page)</sup>; the Sunsynk manual specifies an external RCD of Type A/AC<sup>[R46 p.71](#sources-cited-on-this-page)</sup> and a Type A RCBO.<sup>[R46 p.71](#sources-cited-on-this-page)</sup> No fact in this library states whether the Sunsynk inverter provides simple separation, so the facts alone do not settle which statement applies to it.
 
@@ -283,7 +289,8 @@ Statements in this chapter that name Sunsynk come from the Sunsynk 8 kW hybrid i
 
 ## 7  Inspection and testing, including after a strike
 
-> ℹ️ **NOTE** — **No PV-specific post-strike procedure**
+> [!NOTE]
+> **NOTE: No PV-specific post-strike procedure**
 >
 > None of the sources in this library gives an inspection procedure for a PV array or inverter after a lightning strike. The statements below are the general LPS and earthing inspection rules and the PV commissioning tests.
 
@@ -311,11 +318,13 @@ Statements in this chapter that name Sunsynk come from the Sunsynk 8 kW hybrid i
 
 BRE notes that the supply from PV modules cannot be switched off, so special precautions are needed.<sup>[R49 p.5](#sources-cited-on-this-page)</sup>
 
-> ⛔ **DO NOT** — **WARNING (Sunsynk): do not earth a PV pole**
+> [!CAUTION]
+> **DO NOT: WARNING (Sunsynk): do not earth a PV pole**
 >
 > Do not connect the PV array's positive or negative poles to ground, as this can seriously damage the inverter.<sup>[R46 p.29](#sources-cited-on-this-page)</sup>
 
-> ⛔ **DO NOT** — **WARNING (Sunsynk): not a DIY product**
+> [!CAUTION]
+> **DO NOT: WARNING (Sunsynk): not a DIY product**
 >
 > High life risk due to fire or electrocution; the inverter can only be installed by a qualified licensed electrical contractor.<sup>[R46 p.6](#sources-cited-on-this-page)</sup>
 
@@ -401,4 +410,4 @@ The sources were written for different countries and dates: BRE for the UK, SAPV
 | R49 | **Photovoltaics in Buildings: Guide to the installation of PV systems, 2nd edition (DTI/Pub URN 06/1972)** — UK Department for Enterprise (DTI) / BRE · 2006 · UK · [link](https://files.bregroup.com/solar/Guide_to_the_installation_of_PV_systems_2nd_Edition.pdf) | 5, 9, 11-15, 17, 21-22, 27-29 |
 | R51 | **Solar energy: lightning and surge protective devices (brochure 1TXH 000 118 B0201)** — ABB · 2011 · IEC · [link](https://library.e.abb.com/public/77266805bb3868adc12578f10033b12b/1TXH%20000%20118%20B0201_Solar%20energy%20Lightning%20and%20overvoltage%20protection_br.pdf) | 2-3, 5, 7 |
 
-*Generated from `content/docs/10_solar_pv.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/10_solar_pv.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

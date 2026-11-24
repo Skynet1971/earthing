@@ -62,9 +62,11 @@ def render_doc(doc, catalog, facts):
                     body = T(wording) if isinstance(item, dict) else md_inline(html.escape(wording, quote=False))   # wording as markdown
                     out.append(f"- {body}{chip(*lab) if lab else ''}")   # bullet with chip
                 out.append("")   # blank line after the list
-            elif "callout" in b:   # callout as a quote block
+            elif "callout" in b:   # GitHub alert block: coloured box with an icon
                 cb = b["callout"]   # definition
-                out += [f"> {LABEL[cb['kind']]} — **{md_inline(cb.get('title', ''))}**", ">", f"> {T(cb.get('text', ''))}", ""]   # label, title, text
+                kind = {"do": "TIP", "dont": "CAUTION", "warn": "WARNING", "note": "NOTE", "site": "IMPORTANT"}[cb["kind"]]   # alert type per callout kind
+                body = [f"> **{LABEL[cb['kind']].split('**')[1]}: {md_inline(cb.get('title', ''))}**"] + ([">", f"> {T(cb['text'])}"] if cb.get("text") else [])   # title and text
+                out += [f"> [!{kind}]"] + body + [""]   # the alert
             elif "numbers" in b:   # key numbers as a one-row table
                 ns = b["numbers"]   # tiles
                 out += ["| " + " | ".join(f"**{cell(n['value'])}**" for n in ns) + " |", "|" + "---|" * len(ns),
@@ -79,6 +81,10 @@ def render_doc(doc, catalog, facts):
                 dg = b["diagram"]   # definition
                 out += [f'<a href="img/{dg["name"]}.svg"><img src="img/{dg["name"]}.svg" alt="{dg["name"]}" width="100%"></a>', "",
                         "*Click the diagram to open it full size.* " + f"*{T(dg.get('caption', ''))}*", ""]   # full-width image, click to enlarge, caption
+            elif "explainer" in b:   # animated SVG, full width, click to open
+                ex = b["explainer"]   # definition
+                out += [f'<a href="img/{ex["name"]}.svg"><img src="img/{ex["name"]}.svg" alt="{ex["name"]}" width="100%"></a>', "",
+                        f"*Animated: the steps play in a loop. Click to open full size.* {T(ex.get('caption', ''))}", ""]   # image and caption
             elif "checklist" in b:   # task list
                 out += [f"- [ ] {T(i)}" for i in b["checklist"]] + [""]   # unticked boxes
     out += ["## Sources cited on this page", "",
@@ -96,27 +102,41 @@ def main():
     for old in out_dir.glob("*.md"): old.unlink()   # pages are fully regenerated
     catalog, facts = c.load_catalog(), c.load_facts()   # public data only
     diagrams.export_svg(out_dir / "img")   # SVG diagrams
+    import explainers   # animated explainers (pure Python, no browser needed)
+    for name, fn in explainers.EXPLAINERS.items(): (out_dir / "img" / f"{name}.svg").write_text(fn()[0])   # animated SVG for the wiki
     docs = [d for d in c.load_docs() if not d.get("private")]   # public documents only
     index = []   # rows for the home page
     for doc in docs:   # one page per document
         text, cites = render_doc(doc, catalog, facts)   # render it
         name = page_name(doc); (out_dir / f"{name}.md").write_text(text)   # write the page
         index.append((doc, name, len(cites.used)))   # remember it for the index
-    home = [f"# {SERIES}", "",
-            "Colour PDF sheets and wiki pages on earthing, bonding, surge protection and lightning protection for a house and its "
-            "equipment. Every technical statement cites the source document and PDF page it comes from, and every cited "
-            "statement was checked against a verbatim quote on that page.", "",
-            "| Sheet | Wiki page | PDF | Sources |", "|---|---|---|---|"]   # home page header
-    for doc, name, n in index:   # one row per document
-        home.append(f"| {doc.get('badge', doc['id'])} | [{doc['title']}]({name}) | [PDF]({PDF_URL}{doc['id']}_{doc['slug']}.pdf) | {n} |")   # row
-    home += ["", f"[All {len(catalog)} source documents](Sources) · {len(facts)} verified facts · generated {datetime.date.today().isoformat()}", ""]   # footer
+    import wiki_graphics as wg   # banner and cards
+    (out_dir / "img" / "home_banner.svg").write_text(wg.banner(len(index), len(catalog), len(facts)))   # animated banner
+    for doc, name, _ in index: (out_dir / "img" / f'card_{doc["id"]}.svg').write_text(wg.card(doc))   # one card per document
+    def grid(rows):   # HTML table of linked cards, three per row
+        cells = [f'<td width="33%"><a href="{name}"><img src="img/card_{doc["id"]}.svg" width="100%" alt="{html.escape(doc["title"])}"></a></td>' for doc, name, _ in rows]   # one cell per card
+        return ["<table>"] + ["<tr>" + "".join(cells[i:i + 3]) + "</tr>" for i in range(0, len(cells), 3)] + ["</table>", ""]   # rows of three
+    guides = [r for r in index if r[0].get("badge", "").startswith("VISUAL")]   # animated visual guides
+    sheets = [r for r in index if not r[0].get("badge", "").startswith("VISUAL")]   # reference sheets
+    home = ['<a href="Sources"><img src="img/home_banner.svg" width="100%" alt="Earthing, bonding, surge and lightning protection library"></a>', "",
+            "> [!TIP]", "> **New here? Start with the three animated visual guides.** They show how earthing works, how a surge reaches a PoE camera and why surge-protector wires must be short. Every picture carries citations to its sources.", "",
+            "## ▶ Animated visual guides", ""] + grid(guides) + ["## 📚 Reference sheets", ""] + grid(sheets) + [
+            "## How to read these pages", "",
+            "> [!NOTE]", "> Every technical statement ends with a small citation such as <sup>R18 p.19</sup>: reference 18 on the [Sources](Sources) page, PDF page 19. "
+            "Each cited statement was checked against a verbatim quote from that page and reviewed independently.", "",
+            "> [!WARNING]", "> These pages summarise published guidance. They do not replace the wiring code that applies at the site, the product manuals, "
+            "or a qualified and registered person. Where sources from different countries disagree, each page shows both sides.", "",
+            "| Colour in the pictures | Meaning |", "|---|---|", "| 🔴 red line | power (line conductor) |", "| 🔵 blue line | neutral, data or signal |",
+            "| 🟠 orange line | photovoltaic d.c. |", "| 🟢🟡 green with yellow stripes | protective earth and bonding conductors |", "| 🟧 amber box | surge protective device (SPD) |", "",
+            f"[All {len(catalog)} source documents](Sources) · {len(facts)} verified facts · generated {datetime.date.today().isoformat()}", ""]   # home page
     (out_dir / "Home.md").write_text("\n".join(home))   # write the home page
     src = ["# Source documents", "", "Citation numbers (R..) are the same in every sheet. The PDFs themselves are not stored in the repository; "
            "`tools/download_references.py` downloads them from these URLs.", "", "| Ref | Document | Publisher | Edition | Jurisdiction |", "|---|---|---|---|---|"]   # sources page
     for s in sorted(catalog.values(), key=lambda x: x["ref"]):   # every catalogued source
         src.append(f"| R{s['ref']} | [{cell(s['title'])}]({s['url']}) | {cell(s['publisher'])} | {cell(s['edition'])} | {cell(s['jurisdiction'])} |")   # row
     (out_dir / "Sources.md").write_text("\n".join(src) + "\n")   # write the sources page
-    side = ["**[Home](Home)**", ""] + [f"- [{doc.get('badge', doc['id'])}]({name})" for doc, name, _ in index] + ["", "[Sources](Sources)"]   # sidebar
+    side = ["**[🏠 Home](Home)**", "", "**▶ Animated guides**", ""] + [f"- [{doc['title'].split(': ', 1)[-1]}]({name})" for doc, name, _ in index if doc.get("badge", "").startswith("VISUAL")] + \
+           ["", "**📚 Reference sheets**", ""] + [f"- [{doc.get('badge', doc['id'])}]({name})" for doc, name, _ in index if not doc.get("badge", "").startswith("VISUAL")] + ["", "[📖 Sources](Sources)"]   # sidebar: guides first
     (out_dir / "_Sidebar.md").write_text("\n".join(side) + "\n")   # write the sidebar
     print(f"wiki: {len(index)} pages + Home, Sources, _Sidebar, {len(diagrams.DIAGRAMS)} SVG diagrams -> {out_dir.relative_to(c.ROOT)}")   # summary
 

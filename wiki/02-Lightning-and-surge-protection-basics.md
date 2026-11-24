@@ -31,6 +31,10 @@ IEC/BS EN 62305 sets four lightning protection levels (LPL I to IV); their light
 
 Per IEC/BS EN 62305-4 as summarised by Furse, successive lightning protection zones (LPZ) use a combination of bonding, shielding and coordinated SPDs to reduce the severity of the lightning electromagnetic impulse (LEMP).<sup>[R12 p.14](#sources-cited-on-this-page)</sup>
 
+<a href="img/ex_lpz.svg"><img src="img/ex_lpz.svg" alt="ex_lpz" width="100%"></a>
+
+*Animated: the steps play in a loop. Click to open full size.* LPZ 0 is exposed to direct strokes and may carry the full lightning current<sup>[R12 p.14](#sources-cited-on-this-page)</sup>; LPZ 1 is subject to partial lightning currents<sup>[R12 p.14](#sources-cited-on-this-page)</sup>; LPZ 2 sees only remnants of the impulse currents.<sup>[R12 p.14](#sources-cited-on-this-page)</sup> The SPD at the LPZ 0/1 boundary provides lightning current protection, the SPD at the LPZ 1/2 boundary overvoltage protection<sup>[R12 p.14](#sources-cited-on-this-page)</sup>, and the zones combine bonding, shielding and coordinated SPDs.<sup>[R12 p.14](#sources-cited-on-this-page)</sup>
+
 <a href="img/lpz_zones.svg"><img src="img/lpz_zones.svg" alt="lpz_zones" width="100%"></a>
 
 *Click the diagram to open it full size.* *Concept sketch of the zone concept. (1) SPD where lines cross the LPZ 0/1 boundary: it provides lightning current protection<sup>[R12 p.14](#sources-cited-on-this-page)</sup>; DEHN's coaxial arresters for the 0A-1 boundary, for example, are lightning current arresters.<sup>[R27 p.14](#sources-cited-on-this-page)</sup> (2) SPD at the LPZ 1/2 boundary: it provides overvoltage protection<sup>[R12 p.14](#sources-cited-on-this-page)</sup>; DEHN lists surge arresters for the 1-2 boundary.<sup>[R27 p.14](#sources-cited-on-this-page)</sup>*
@@ -237,7 +241,8 @@ Per NIST (US), equipment connected to both power and a communications system can
 - ITU-T K.85 Annex B lists connecting an internal port to an external cable as a damaging practice; the remedies are to use an external interface, install an SPD to IEC 61643-21/-22, or use an isolation box.<sup>[R19 p.19](#sources-cited-on-this-page)</sup>
 - ITU-T K.98 says it is imperative to connect inter-building cables only to external ports and intra-building cables only to internal ports.<sup>[R25 p.29](#sources-cited-on-this-page)</sup>
 
-> ⚠️ **WARNING** — **Unplugging only the power cord can make it worse**
+> [!WARNING]
+> **WARNING: Unplugging only the power cord can make it worse**
 >
 > Per NIST (US), pulling out the power cord of an appliance that stays connected to a telephone line or cable TV might not be the best idea, because the appliance loses the grounding normally provided by the power cord.<sup>[R1 p.13](#sources-cited-on-this-page)</sup>
 
@@ -257,7 +262,8 @@ ITU-T K.85 defines a multiservice surge protective device (MSPD) as an SPD conta
 - ITU-T K.98 concludes that the ideal installation is class II equipment, with equipment clusters protected by an MSPD and the MSPD protected by primary protection when necessary.<sup>[R25 p.35](#sources-cited-on-this-page)</sup>
 - Per NIST (US), another way to reduce the shift in reference potentials is an integrated multi-utility surge protection device at the breaker panel covering AC power, telephone and cable TV with minimum bonding length.<sup>[R1 p.21](#sources-cited-on-this-page)</sup>
 
-> ⛔ **DO NOT** — **An MSPD needs an earthed power point**
+> [!CAUTION]
+> **DO NOT: An MSPD needs an earthed power point**
 >
 > ITU-T K.85 warns that MSPDs rely on a protective earth connection for safety; without it, users may be exposed to surges exceeding a few hundred volts.<sup>[R19 p.15](#sources-cited-on-this-page)</sup> If the power point feeding an MSPD is not earthed, equipment damage may not be reduced and users face a possible lightning safety risk.<sup>[R19 p.37](#sources-cited-on-this-page)</sup>
 
@@ -291,7 +297,8 @@ ITU-T K.85 defines a multiservice surge protective device (MSPD) as an SPD conta
 - BRE PV guide (UK, 2nd ed. 2006): the very small increased strike risk may not hold where the PV system is particularly large, is on top of a tall building, becomes the tallest structure in the vicinity, or is in an open area such as a field.<sup>[R49 p.14](#sources-cited-on-this-page)</sup>
 - DEHN rooftop-PV white paper (WPX029, 2022): citing Supplement 5 of the German DIN EN 62305-3, a lightning protection system designed for class of LPS III (LPL III) meets the usual requirements for PV systems.<sup>[R44 p.2](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Not covered by the sources in this library**
+> [!NOTE]
+> **NOTE: Not covered by the sources in this library**
 >
 > The sources quote the IEC/BS EN 62305 sources of damage<sup>[R12 p.2](#sources-cited-on-this-page)</sup> and BEAMA describes the BS 7671:2018 (UK) calculated risk level for SPDs<sup>[R48 p.65](#sources-cited-on-this-page)</sup>, but none sets out the full risk-assessment method of IEC 62305-2, and none describes the newest edition of IEC 62305 or what that edition changed. Check the edition that applies at the site.
 
@@ -333,4 +340,4 @@ The sources were written for different countries and kinds of site. Where they c
 | R51 | **Solar energy: lightning and surge protective devices (brochure 1TXH 000 118 B0201)** — ABB · 2011 · IEC · [link](https://library.e.abb.com/public/77266805bb3868adc12578f10033b12b/1TXH%20000%20118%20B0201_Solar%20energy%20Lightning%20and%20overvoltage%20protection_br.pdf) | 2-3 |
 | R52 | **System pro M compact: OVR surge protective devices (main catalogue 1TXH000083C0201)** — ABB · 2011 · IEC · [link](https://library.e.abb.com/public/d614bdefa272767ac125784c005b65e8/1TXH000083C0201_ABB%20OVR%20%20RANGE%20SYSTEM%20proM_2011.pdf) | 8-9, 25 |
 
-*Generated from `content/docs/02_lightning_surge_basics.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/02_lightning_surge_basics.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

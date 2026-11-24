@@ -1,22 +1,38 @@
-# Earthing, Bonding, Surge & Lightning Protection Library
+<a href="Sources"><img src="img/home_banner.svg" width="100%" alt="Earthing, bonding, surge and lightning protection library"></a>
 
-Colour PDF sheets and wiki pages on earthing, bonding, surge protection and lightning protection for a house and its equipment. Every technical statement cites the source document and PDF page it comes from, and every cited statement was checked against a verbatim quote on that page.
+> [!TIP]
+> **New here? Start with the three animated visual guides.** They show how earthing works, how a surge reaches a PoE camera and why surge-protector wires must be short. Every picture carries citations to its sources.
 
-| Sheet | Wiki page | PDF | Sources |
-|---|---|---|---|
-| SHEET 00 · INDEX | [Earthing, bonding, surge and lightning protection: library index](00-Earthing,-bonding,-surge-and-lightning-protection-library-index) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/00_library_index.pdf) | 0 |
-| SHEET 01 · EARTHING | [Earthing and bonding fundamentals](01-Earthing-and-bonding-fundamentals) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/01_earthing_bonding_fundamentals.pdf) | 23 |
-| SHEET 02 · LIGHTNING | [Lightning and surge protection basics](02-Lightning-and-surge-protection-basics) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/02_lightning_and_surge_basics.pdf) | 19 |
-| SHEET 03 · DB SURGE | [Surge protective devices in the distribution board](03-Surge-protective-devices-in-the-distribution-board) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/03_distribution_board_surge_protection.pdf) | 18 |
-| SHEET 04 · CCTV | [CCTV cameras, recorders and PoE switches](04-CCTV-cameras,-recorders-and-PoE-switches) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/04_cctv_cameras_recorders.pdf) | 11 |
-| SHEET 05 · DATA | [Data networks, telecom entry and PoE](05-Data-networks,-telecom-entry-and-PoE) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/05_data_network_poe.pdf) | 17 |
-| SHEET 06 · ANTENNAS | [Antennas, masts and dishes](06-Antennas,-masts-and-dishes) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/06_antennas_masts_dishes.pdf) | 10 |
-| SHEET 07 · GATES | [Gate motors, intercoms and public-address lines](07-Gate-motors,-intercoms-and-public-address-lines) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/07_gate_motors_intercoms.pdf) | 6 |
-| SHEET 08 · ALARMS & FENCES | [Electric fences and intruder alarms](08-Electric-fences-and-intruder-alarms) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/08_alarms_electric_fences.pdf) | 13 |
-| SHEET 09 · PLC & CONTROL | [PLCs, instrumentation and control cabling](09-PLCs,-instrumentation-and-control-cabling) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/09_plc_control_cabling.pdf) | 9 |
-| SHEET 10 · SOLAR PV | [Solar PV arrays, inverters and batteries](10-Solar-PV-arrays,-inverters-and-batteries) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/10_solar_pv_inverters_batteries.pdf) | 10 |
-| SHEET 11 · RACKS | [Equipment racks and cabinets](11-Equipment-racks-and-cabinets) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/11_racks_cabinets_bonding.pdf) | 10 |
-| SHEET 12 · TESTING | [Inspection, testing and maintenance](12-Inspection,-testing-and-maintenance) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/12_inspection_testing_maintenance.pdf) | 21 |
-| SHEET 13 · SOUTH AFRICA | [South Africa: supply earthing, Ekurhuleni rules and Gauteng lightning](13-South-Africa-supply-earthing,-Ekurhuleni-rules-and-Gauteng-lightning) | [PDF](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/13_south_africa_ekurhuleni_gauteng.pdf) | 11 |
+## ▶ Animated visual guides
 
-[All 56 source documents](Sources) · 1015 verified facts · generated 2026-11-23
+<table>
+<tr><td width="33%"><a href="14-Visual-guide-1-how-earthing-and-bonding-work"><img src="img/card_14.svg" width="100%" alt="Visual guide 1: how earthing and bonding work"></a></td><td width="33%"><a href="15-Visual-guide-2-lightning,-surges-and-surge-protectors"><img src="img/card_15.svg" width="100%" alt="Visual guide 2: lightning, surges and surge protectors"></a></td><td width="33%"><a href="16-Visual-guide-3-protecting-PoE-CCTV-cameras"><img src="img/card_16.svg" width="100%" alt="Visual guide 3: protecting PoE CCTV cameras"></a></td></tr>
+</table>
+
+## 📚 Reference sheets
+
+<table>
+<tr><td width="33%"><a href="00-Earthing,-bonding,-surge-and-lightning-protection-library-index"><img src="img/card_00.svg" width="100%" alt="Earthing, bonding, surge and lightning protection: library index"></a></td><td width="33%"><a href="01-Earthing-and-bonding-fundamentals"><img src="img/card_01.svg" width="100%" alt="Earthing and bonding fundamentals"></a></td><td width="33%"><a href="02-Lightning-and-surge-protection-basics"><img src="img/card_02.svg" width="100%" alt="Lightning and surge protection basics"></a></td></tr>
+<tr><td width="33%"><a href="03-Surge-protective-devices-in-the-distribution-board"><img src="img/card_03.svg" width="100%" alt="Surge protective devices in the distribution board"></a></td><td width="33%"><a href="04-CCTV-cameras,-recorders-and-PoE-switches"><img src="img/card_04.svg" width="100%" alt="CCTV cameras, recorders and PoE switches"></a></td><td width="33%"><a href="05-Data-networks,-telecom-entry-and-PoE"><img src="img/card_05.svg" width="100%" alt="Data networks, telecom entry and PoE"></a></td></tr>
+<tr><td width="33%"><a href="06-Antennas,-masts-and-dishes"><img src="img/card_06.svg" width="100%" alt="Antennas, masts and dishes"></a></td><td width="33%"><a href="07-Gate-motors,-intercoms-and-public-address-lines"><img src="img/card_07.svg" width="100%" alt="Gate motors, intercoms and public-address lines"></a></td><td width="33%"><a href="08-Electric-fences-and-intruder-alarms"><img src="img/card_08.svg" width="100%" alt="Electric fences and intruder alarms"></a></td></tr>
+<tr><td width="33%"><a href="09-PLCs,-instrumentation-and-control-cabling"><img src="img/card_09.svg" width="100%" alt="PLCs, instrumentation and control cabling"></a></td><td width="33%"><a href="10-Solar-PV-arrays,-inverters-and-batteries"><img src="img/card_10.svg" width="100%" alt="Solar PV arrays, inverters and batteries"></a></td><td width="33%"><a href="11-Equipment-racks-and-cabinets"><img src="img/card_11.svg" width="100%" alt="Equipment racks and cabinets"></a></td></tr>
+<tr><td width="33%"><a href="12-Inspection,-testing-and-maintenance"><img src="img/card_12.svg" width="100%" alt="Inspection, testing and maintenance"></a></td><td width="33%"><a href="13-South-Africa-supply-earthing,-Ekurhuleni-rules-and-Gauteng-lightning"><img src="img/card_13.svg" width="100%" alt="South Africa: supply earthing, Ekurhuleni rules and Gauteng lightning"></a></td></tr>
+</table>
+
+## How to read these pages
+
+> [!NOTE]
+> Every technical statement ends with a small citation such as <sup>R18 p.19</sup>: reference 18 on the [Sources](Sources) page, PDF page 19. Each cited statement was checked against a verbatim quote from that page and reviewed independently.
+
+> [!WARNING]
+> These pages summarise published guidance. They do not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person. Where sources from different countries disagree, each page shows both sides.
+
+| Colour in the pictures | Meaning |
+|---|---|
+| 🔴 red line | power (line conductor) |
+| 🔵 blue line | neutral, data or signal |
+| 🟠 orange line | photovoltaic d.c. |
+| 🟢🟡 green with yellow stripes | protective earth and bonding conductors |
+| 🟧 amber box | surge protective device (SPD) |
+
+[All 56 source documents](Sources) · 1015 verified facts · generated 2026-11-24

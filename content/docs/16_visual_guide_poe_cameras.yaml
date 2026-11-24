@@ -1,0 +1,44 @@
+id: "16"
+slug: visual_guide_poe_cctv_cameras
+badge: "VISUAL GUIDE 3 · POE CAMERAS"
+icon: play
+title: "Visual guide 3: protecting PoE CCTV cameras"
+subtitle: "Animated pictures of how a surge reaches a PoE camera, where the protectors divert it, and why the pole earth must be bonded"
+applies_to: "IP / PoE cameras on poles and walls, their cables, PoE switches and recorders"
+accent: teal
+version: "1.0"
+sections:
+  - title: "1  How a surge reaches the camera, and where it goes"
+    blocks:
+      - explainer:
+          name: ex_surge_camera
+          caption: "(1) The cable between camera and switch picks up strong nearby fields, producing transients that travel along it.{{C010}} (2)-(3) PoE surge protectors divert surges to ground while passing data and power{{C018}}; one goes near the outdoor device and one at the building entry.{{E065, C020}} (4) With shielded cable the shield captures induced energy and diverts it to ground{{C011}}, but only with an unbroken path to ground through an earthed PoE switch or midspan.{{C012, C014}}"
+  - title: "2  The complete protection layout"
+    blocks:
+      - diagram:
+          name: camera_both_ends
+          caption: "Concept sketch, not a product wiring diagram. (1) protector near the camera{{E065, C002}} (2) protector at the building entry, bonded to the main earthing bar with a short conductor{{C005, B014}} (3) the PoE switch or recorder is earthed so that the cable shield has a path to earth{{C012, C014}} (4) the camera pole or pipe is earthed and the camera is bonded to it.{{E052}}"
+      - numbers:
+          - value: "2"
+            label: "protectors per outdoor Ethernet run: device end and building entry{{E065}}"
+          - value: "≤ 0.91 m"
+            label: "outdoor PoE suppressor from the device (Southwest Microwave){{C002}}"
+          - value: "≥ 6 mm²"
+            label: "copper camera earth conductor (TP-Link Omada){{E048}}"
+  - title: "3  Why the pole earth must be bonded to the house earth"
+    blocks:
+      - explainer:
+          name: ex_potential_difference
+          caption: "The same principle as a camera pole with its own electrode: ITU-T K.66 shows 15 kV between equipment and the power network when a 50 A surge flows through a separate 300 Ω electrode{{B026}}, and only a common earth bar with short bonds protects without further measures.{{B025}} i-PRO names a potential difference in a separated earth line as a cause of equipment breakdown.{{E062}}"
+      - callout:
+          kind: warn
+          title: "The sources disagree on separate earths for CCTV"
+          text: "TP-Link Omada says the surveillance earth should be separate from other electrical earths{{E045}}; DEHN and ITU-T K.66 say every earth should be bonded to one point.{{D013, B002}} See Sheet 04."
+  - title: "4  Checklist"
+    blocks:
+      - checklist:
+          - "Surge protector near each outdoor camera, earthed to the pole, pipe or building metalwork.{{E065, E066, E058}}"
+          - "Second protector where the cable enters the building, bonded with a short conductor to the main earthing bar.{{C005, B014}}"
+          - "Shielded cable and shielded connectors along the whole path.{{C007, C017}}"
+          - "PoE switch or midspan earthed.{{C015, C016}}"
+          - "Camera pole earthed and bonded to the house earth.{{E052, B002}}"

@@ -54,7 +54,8 @@ Siemens describes LOGO! as double-insulated switchgear whose FE (functional eart
 - Siemens LOGO! 8 system manual: when connecting the Ethernet interface, the FE terminal is connected to earth ground and the network cable to the Ethernet interface.<sup>[R28 p.57](#sources-cited-on-this-page)</sup>
 - Siemens LOGO! 8 system manual: on the LOGO! CSM12/24 switch module, functional grounding can be achieved by a cable from terminal 3 (for example to the DIN rail) kept as short as possible, although grounding is stated as not necessary for interference-free operation.<sup>[R28 p.368](#sources-cited-on-this-page)</sup>
 
-> ✅ **DO** — **Connect FE even though the device is double-insulated**
+> [!TIP]
+> **DO: Connect FE even though the device is double-insulated**
 >
 > The LOGO! FE terminal must be connected to earth ground<sup>[R28 p.46](#sources-cited-on-this-page)</sup>; on the AM2 analog module the same terminal takes the shield of the analog measuring cable.<sup>[R28 p.22](#sources-cited-on-this-page)</sup>
 
@@ -74,7 +75,8 @@ Which LOGO! interfaces are galvanically isolated decides which devices may share
 - Siemens LOGO! 8 system manual: in relay-output (R) versions, the potential of the relay contacts is isolated from the power supply and the inputs.<sup>[R28 p.55](#sources-cited-on-this-page)</sup>
 - Siemens LOGO! 8 system manual: on LOGO! 230RCE/230RCEo the four relay outputs are electrically isolated, in groups of 1.<sup>[R28 p.347](#sources-cited-on-this-page)</sup>
 
-> ⛔ **DO NOT** — **Do not mix phases on an input group**
+> [!CAUTION]
+> **DO NOT: Do not mix phases on an input group**
 >
 > Siemens states that current safety regulations do not permit connecting different phases to a LOGO! AC input group (I1 to I4 or I5 to I8) or to the inputs of a digital module.<sup>[R28 p.52](#sources-cited-on-this-page)</sup>
 
@@ -205,13 +207,15 @@ For a measuring/control cable that runs outside a building with an external ligh
 - SMA technical information (Overvoltage Protection, v1.3): wired communication connections of the inverter (e.g. RS485, Ethernet) must also be protected by overvoltage protection devices, otherwise potential differences can damage the inverter interfaces, the inverter and the connected communication device.<sup>[R45 p.6](#sources-cited-on-this-page)</sup>
 - IDS X-Series installer manual: when extra power supplies power any peripheral on the keypad bus, an IDS RS485 isolator must be used.<sup>[R53 p.8](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Current-loop and fieldbus lines not covered**
+> [!NOTE]
+> **NOTE: Current-loop and fieldbus lines not covered**
 >
 > The sources in this library give no specific surge-protection or earthing rules for current-loop (milliampere) instrument signals or named fieldbus systems; the general DEHN rules for measuring and control lines and the references on serial bus lines are listed above.
 
 ## 8  Safety and installation warnings (LOGO! 8)
 
-> ⛔ **DO NOT** — **Never wire LOGO! with power applied**
+> [!CAUTION]
+> **DO NOT: Never wire LOGO! with power applied**
 >
 > Siemens requires power to be switched off before wiring or installing or removing a module<sup>[R28 p.31](#sources-cited-on-this-page)</sup>, and warns that working with power applied could cause electric shock or faulty operation.<sup>[R28 p.32](#sources-cited-on-this-page)</sup>
 
@@ -267,4 +271,4 @@ Screen earthing, the clean earth and armour bonding are the points where the sou
 | R45 | **Technical Information: Overvoltage Protection. Lightning Protection and Overvoltage Protection for Sunny Boy and Sunny Tripower (U_Schutz-TI-en-13)** — SMA Solar Technology AG · version 1.3 · International · [link](https://files.sma.de/downloads/U_Schutz-TI-en-13.pdf) | 6 |
 | R53 | **IDS X-Series Installer Manual 700-398-02O** — Inhep Digital Security (IDS) · 700-398-02O · South Africa · [link](https://www.idsprotect.co.za/site-documents/product-download/intrusion/xseries/IDS%20X-Series%20Installer%20Manual.pdf) | 8 |
 
-*Generated from `content/docs/09_plc_control_cabling.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/09_plc_control_cabling.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

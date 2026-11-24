@@ -1,4 +1,12 @@
-**[Home](Home)**
+**[🏠 Home](Home)**
+
+**▶ Animated guides**
+
+- [how earthing and bonding work](14-Visual-guide-1-how-earthing-and-bonding-work)
+- [lightning, surges and surge protectors](15-Visual-guide-2-lightning,-surges-and-surge-protectors)
+- [protecting PoE CCTV cameras](16-Visual-guide-3-protecting-PoE-CCTV-cameras)
+
+**📚 Reference sheets**
 
 - [SHEET 00 · INDEX](00-Earthing,-bonding,-surge-and-lightning-protection-library-index)
 - [SHEET 01 · EARTHING](01-Earthing-and-bonding-fundamentals)
@@ -15,4 +23,4 @@
 - [SHEET 12 · TESTING](12-Inspection,-testing-and-maintenance)
 - [SHEET 13 · SOUTH AFRICA](13-South-Africa-supply-earthing,-Ekurhuleni-rules-and-Gauteng-lightning)
 
-[Sources](Sources)
+[📖 Sources](Sources)

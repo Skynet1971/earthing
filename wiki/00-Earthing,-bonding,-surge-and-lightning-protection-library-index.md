@@ -27,6 +27,9 @@
 | SHEET 11 · RACKS | **Equipment racks and cabinets** — Equipment racks and cabinets, rack-mounted switches, routers and patch panels, bonding busbars, cable trays and the bonding conductors between them | [11](11-Equipment-racks-and-cabinets) |
 | SHEET 12 · TESTING | **Inspection, testing and maintenance** — Earthing and bonding systems, earth electrodes, lightning protection systems, surge protective devices, RCDs and PV arrays of a house and its outbuildings | [12](12-Inspection,-testing-and-maintenance) |
 | SHEET 13 · SOUTH AFRICA | **South Africa: supply earthing, Ekurhuleni rules and Gauteng lightning** — Houses supplied by the City of Ekurhuleni or Eskom in Gauteng, including installations with inverters, batteries and solar PV | [13](13-South-Africa-supply-earthing,-Ekurhuleni-rules-and-Gauteng-lightning) |
+| VISUAL GUIDE 1 · EARTHING | **Visual guide 1: how earthing and bonding work** — Anyone who wants to see how the earth connection of a house works before reading the reference sheets | [14](14-Visual-guide-1-how-earthing-and-bonding-work) |
+| VISUAL GUIDE 2 · SURGES | **Visual guide 2: lightning, surges and surge protectors** — Anyone choosing or checking surge protective devices in a house distribution board | [15](15-Visual-guide-2-lightning,-surges-and-surge-protectors) |
+| VISUAL GUIDE 3 · POE CAMERAS | **Visual guide 3: protecting PoE CCTV cameras** — IP / PoE cameras on poles and walls, their cables, PoE switches and recorders | [16](16-Visual-guide-3-protecting-PoE-CCTV-cameras) |
 
 ## How to read a citation
 
@@ -34,35 +37,32 @@ Every technical statement ends with a small blue citation such as **[R18 p.19]**
 
 Each cited statement was extracted together with a verbatim quote from that page. A script checks that the quote appears on the page, and an independent review compared each statement with its page. Statements whose wording was changed in that review are listed in content/fact_corrections.json in the repository.
 
-> ℹ️ **NOTE** — **Sources from different countries**
+> [!NOTE]
+> **NOTE: Sources from different countries**
 >
 > The sources include international standards (IEC, ITU-T), national guidance (UK, USA, South Africa) and manufacturer documents. Each sheet names the origin of every statement where it matters, and a table at the end of each sheet lists where the sources disagree. Where they differ, the wiring code that applies at the site decides.
 
-> ⚠️ **WARNING** — **Information, not a design or a certificate**
+> [!WARNING]
+> **WARNING: Information, not a design or a certificate**
 >
 > The sheets summarise published guidance. They do not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person. Work inside distribution boards and on lightning protection systems is for qualified persons only.
 
 ## Colour key
 
-> ✅ **DO** — **Green: what the sources tell you to do**
->
-> 
+> [!TIP]
+> **DO: Green: what the sources tell you to do**
 
-> ⛔ **DO NOT** — **Red: what the sources tell you not to do**
->
-> 
+> [!CAUTION]
+> **DO NOT: Red: what the sources tell you not to do**
 
-> ⚠️ **WARNING** — **Amber: warnings and hazards**
->
-> 
+> [!WARNING]
+> **WARNING: Amber: warnings and hazards**
 
-> ℹ️ **NOTE** — **Blue: notes, limits of the sources and missing information**
->
-> 
+> [!NOTE]
+> **NOTE: Blue: notes, limits of the sources and missing information**
 
-> 📍 **CHECK ON SITE** — **Purple: items to check on site**
->
-> 
+> [!IMPORTANT]
+> **CHECK ON SITE: Purple: items to check on site**
 
 In the diagrams, red lines are power, blue lines are data or signal cables, orange lines are photovoltaic direct current, green lines with yellow dashes are protective earth and bonding conductors, and amber boxes are surge protective devices. Numbered markers on a diagram are explained, with citations, in its caption.
 
@@ -73,4 +73,4 @@ In the diagrams, red lines are power, blue lines are data or signal cables, oran
 | Ref | Document | PDF pages cited |
 |---|---|---|
 
-*Generated from `content/docs/00_library_index.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/00_library_index.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

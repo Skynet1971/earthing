@@ -1,0 +1,52 @@
+id: "14"
+slug: visual_guide_earthing_bonding
+badge: "VISUAL GUIDE 1 · EARTHING"
+icon: play
+title: "Visual guide 1: how earthing and bonding work"
+subtitle: "Animated pictures of the fault path, the supply earthing systems and why every earth must meet at one point"
+applies_to: "Anyone who wants to see how the earth connection of a house works before reading the reference sheets"
+accent: green
+version: "1.0"
+sections:
+  - title: "1  The earth path makes a fault switch itself off"
+    lead: "In a TN-C-S supply the PEN conductor provides the household earth and carries the earth-fault current back to the distribution transformer.{{J039}}"
+    blocks:
+      - explainer:
+          name: ex_fault_path
+          caption: "(1) In normal use the current returns on the neutral. (2) When a live conductor touches an earthed metal case, the fault current returns on the protective earth and the PEN to the transformer.{{J039}} TN-C-S is used so that this fault current does not depend on soil resistivity.{{J040}} (3) In TN systems, fault touch voltages in circuits with socket outlets must be disconnected automatically within 0.4 s.{{D047}}"
+      - numbers:
+          - value: "0.4 s"
+            label: "maximum disconnection time, socket-outlet circuits, TN systems{{D047}}"
+          - value: "0.35 Ω"
+            label: "maximum Ze for TN-C-S (PME) supplies, UK distributor figure{{A035}}"
+          - value: "0.8 Ω"
+            label: "maximum Ze for TN-S supplies, UK distributor figure{{A035}}"
+  - title: "2  Supply earthing systems at a glance"
+    blocks:
+      - diagram:
+          name: earthing_systems
+          caption: "Concept sketch. (2) TN-C-S: the PEN conductor of the supply provides the household earth, as Louw and Bokoro describe for South African networks.{{J039}} (3) TT: the consumer must provide their own connection to earth with a local earth electrode (UK guidance){{A037}}; the electrode resistance multiplied by the rated residual operating current of the protective device must not exceed 50 V (UK, BS 7671:2001).{{A048}}"
+      - facts: [A028, J039, J077, A048, A049]
+  - title: "3  Every earth meets at one point"
+    lead: "For electronic equipment the sources ask for one bonding point, short conductors, and no separate earth that is not bonded to it.{{B002, D013, B004}}"
+    blocks:
+      - diagram:
+          name: common_bonding
+          caption: "Concept sketch, not a wiring diagram. (1) all services connected with low-impedance bonding conductors to the main earth terminal, low impedance being obtained by keeping them shorter than 1.5 m (ITU-T K.66){{B004}} (2) earthing connects the earth bar to earth, usually via an installed electrode (ITU-T K.98){{B092}} (3) every earth point bonded to the main earth bar, with nothing connected to a separate electrode that is not bonded to it (ITU-T K.66).{{B002}}"
+      - explainer:
+          name: ex_potential_difference
+          caption: "ITU-T K.66 example: without a common bonding point, a 50 A surge from the telecom line through a 300 Ω earth electrode raises the telecom equipment 15 kV above the power network.{{B026}} Of the customer earthing practices K.66 examined, only the common earth bar with short bond wires protects equipment from surges entering on external cables without additional protection.{{B025}}"
+      - callout:
+          kind: dont
+          title: "No separate 'clean earth'"
+          text: "DEHN calls a separate clean earth for electronic equipment, kept apart from the lightning protection and protective earth, extremely unfavourable and potentially dangerous.{{D014}}"
+  - title: "4  Earth electrodes"
+    blocks:
+      - numbers:
+          - value: "15 mm"
+            label: "minimum diameter, solid round copper earth rod (IEC 62305-3 Table 7){{D015}}"
+          - value: "2.5 m"
+            label: "one permitted antenna earth electrode: a vertical rod this long (IEC 60728-11){{D070}}"
+          - value: "90 %"
+            label: "of the resistance lies within 5 m of a 20 cm sphere electrode (DEHN example){{D002}}"
+      - facts: [A031, A032, A043, A034, I133]

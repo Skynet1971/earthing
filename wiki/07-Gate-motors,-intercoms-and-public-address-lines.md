@@ -54,7 +54,8 @@ Motorola R56 is a standard for communication sites (US practice), not for domest
 - Per Motorola R56 (2005, US practice), all gate posts on both sides of a gate shall be bonded to the nearest point of the building ground ring with 35 mm2 (#2 AWG) or coarser tinned copper.<sup>[R5 p.164](#sources-cited-on-this-page)</sup>
 - Per Motorola R56 (2005, US practice), each gate shall be bonded to its supporting fence post with a flexible 16 mm2 (#6 AWG) or coarser stranded copper jumper.<sup>[R5 p.164](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Not covered for domestic sliding gates**
+> [!NOTE]
+> **NOTE: Not covered for domestic sliding gates**
 >
 > The facts extracted from the Centurion manuals do not say whether the gate leaf, the rack or the steel track is to be bonded to the operator earth, and they give no earth resistance value for the earth spike.
 
@@ -73,7 +74,8 @@ Both operators are fed through a double-pole mains isolator with three-core SWA 
 
 *Values as printed in each manufacturer's installation manual for its own product. The two manuals quote different mains voltages for the same cable specification.*
 
-> ✅ **DO** — **Earth the controller and the charger**
+> [!TIP]
+> **DO: Earth the controller and the charger**
 >
 > Centurion requires both the controller and the charger of the D5-Evo to be effectively earthed for improved lightning protection.<sup>[R33 p.31](#sources-cited-on-this-page)</sup> In the D6 SMART the earth harness runs from the mounting bolt on the right-hand side of the gearbox into the right-hand side of the charger.<sup>[R38 p.41](#sources-cited-on-this-page)</sup><sup>[R38 p.46](#sources-cited-on-this-page)</sup>
 
@@ -95,7 +97,8 @@ Cable types and core counts for the low-voltage cables that leave the operator, 
 - Centurion (D5-Evo sliding gate operator installation manual): SWA (steel wire armoured) cable is typically recommended; the armouring gives screening for better lightning protection, and one end of the screening is to be earthed.<sup>[R33 p.17](#sources-cited-on-this-page)</sup>
 - Centurion (D6 SMART sliding gate operator installation manual): SWA (steel wire armoured) cable is typically recommended; the armouring gives screening for better lightning protection, and one end of the screening is to be earthed.<sup>[R38 p.16](#sources-cited-on-this-page)</sup>
 
-> ⚠️ **WARNING** — **One-end screen earthing is a product instruction, not a universal rule**
+> [!WARNING]
+> **WARNING: One-end screen earthing is a product instruction, not a universal rule**
 >
 > DEHN states that only a shield connected at both ends can reduce inductive and capacitive coupling<sup>[R6 p.197](#sources-cited-on-this-page)</sup> and that a shield earthed at one end gives no protection against induction caused by lightning strikes.<sup>[R6 p.198](#sources-cited-on-this-page)</sup> The conflict is tabled in the chapter on where the sources disagree.
 
@@ -107,7 +110,8 @@ DEHN's white paper WPX012 covers public address systems and their connecting cab
 
 - DEHN (white paper WPX012, Surge protection for public address systems): for a public address system near a permanently manned workstation, the length of the connecting cable to the PC or intercom decides whether surge arresters must be installed on it.<sup>[R27 p.3](#sources-cited-on-this-page)</sup>
 
-> ⚠️ **WARNING** — **Two DEHN publications give different cable lengths**
+> [!WARNING]
+> **WARNING: Two DEHN publications give different cable lengths**
 >
 > White paper WPX012 requires surge protective devices on the PC / intercom connecting cable above 10 m<sup>[R27 p.3](#sources-cited-on-this-page)</sup>, while the DEHN Lightning Protection Guide gives 5 m for the same cable.<sup>[R6 p.307](#sources-cited-on-this-page)</sup>
 
@@ -131,11 +135,13 @@ DEHN's white paper WPX012 covers public address systems and their connecting cab
 - Centurion (D5-Evo sliding gate operator installation manual): the earthing system must be correctly constructed and all metal parts of the system suitably earthed.<sup>[R33 p.7](#sources-cited-on-this-page)</sup>
 - Personal protection (protection against electric shock) measures always take priority over surge protection measures.<sup>[R6 p.220](#sources-cited-on-this-page)</sup>
 
-> ⛔ **DO NOT** — **Never work on the operator with the mains connected**
+> [!CAUTION]
+> **DO NOT: Never work on the operator with the mains connected**
 >
 > Before electrical work on the D5-Evo, Centurion requires a check that the circuit breaker is OFF and that all high voltage circuits (more than 42.4 V) are completely isolated from the mains supply.<sup>[R33 p.31](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Lightning damage and the warranty**
+> [!NOTE]
+> **NOTE: Lightning damage and the warranty**
 >
 > Centurion states that the D6 SMART warranty may be voidable for damage caused by atmospheric conditions including lightning, or by power surges.<sup>[R38 p.64](#sources-cited-on-this-page)</sup>
 
@@ -175,4 +181,4 @@ The sources were written for different equipment and countries. Where they confl
 | R33 | **D5-Evo light-industrial sliding gate operator: installation manual** — Centurion Systems (Pty) Ltd · not stated on the pages read · South Africa · [link](https://cdn.shopify.com/s/files/1/0398/4615/0189/files/D5-Evo_Installation_Manual.pdf) | 6-7, 9, 17, 31, 37 |
 | R38 | **D6 SMART sliding gate operator: installation manual, doc number 1401.D.01.0012** — Centurion Systems (Pty) Ltd · 02 April 2024 · South Africa · [link](https://cdn.shopify.com/s/files/1/1794/9761/files/Centurion_D6_Smart_Installation_Manual.pdf) | 6, 8-9, 16, 41, 46, 55, 64 |
 
-*Generated from `content/docs/07_gate_motors_intercoms.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/07_gate_motors_intercoms.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

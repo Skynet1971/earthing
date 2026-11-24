@@ -48,7 +48,8 @@ On a building without a lightning protection system, DEHN states that the antenn
 - For an antenna on a mast near the building where lightning protection is not required (R1 ≤ RT1), ITU-T K.71 says protection may only be needed for electrical safety and it is not necessary to bond the tower earth electrode system to the building electrical installation earth.<sup>[R22 p.18](#sources-cited-on-this-page)</sup>
 - ITU-T K.71 requires an antenna mast bonding conductor to be installed straight and vertical so that it gives the shortest, most direct path to the LPS or building earthing system.<sup>[R22 p.20](#sources-cited-on-this-page)</sup>
 
-> ⛔ **DO NOT** — **No borrowed conductors for antenna bonding**
+> [!CAUTION]
+> **DO NOT: No borrowed conductors for antenna bonding**
 >
 > ITU-T K.71 forbids using the electricity supply's protective earth and/or neutral conductors, or the outer conductor of any coaxial cable, as the antenna bonding conductor; a dedicated bonding conductor must be used.<sup>[R22 p.21](#sources-cited-on-this-page)</sup>
 
@@ -102,7 +103,8 @@ ITU-T K.71 requires the outer conductors of all coaxial cables from the antenna 
 
 ## 4  Satellite dishes and TV coax
 
-> ℹ️ **NOTE** — **Not covered as a separate subject**
+> [!NOTE]
+> **NOTE: Not covered as a separate subject**
 >
 > No verified fact in this library deals with domestic satellite dishes as such. The only dish-specific fact is the US guide specification's bonding of a dish frame to a tower ring electrode, quoted below; the facts on cable television coax that follow are general.
 
@@ -207,4 +209,4 @@ The sources were written for different countries and kinds of site. Where they c
 | R26 | **White paper WP007: Surge protection for CCTV systems** — DEHN + SÖHNE · WP007/E/0615 (June 2015) · IEC / EN (Germany) · [link](https://www.dehn-international.com/sites/default/files/media/files/cctv-wp007-e.pdf) | 3 |
 | R27 | **White paper WPX012: Surge protection for public address systems** — DEHN SE · WPX012/EN/0122 (January 2022) · IEC / EN (Germany) · [link](https://www.dehn-international.com/sites/default/files/media/files/public-address-systems-wpx012-en.pdf) | 14 |
 
-*Generated from `content/docs/06_antennas_masts.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/06_antennas_masts.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

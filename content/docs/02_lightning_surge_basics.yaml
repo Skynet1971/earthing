@@ -27,6 +27,9 @@ sections:
   - title: "2  Lightning protection zones"
     lead: "Per IEC/BS EN 62305-4 as summarised by Furse, successive lightning protection zones (LPZ) use a combination of bonding, shielding and coordinated SPDs to reduce the severity of the lightning electromagnetic impulse (LEMP).{{A066}}"
     blocks:
+      - explainer:
+          name: ex_lpz
+          caption: "LPZ 0 is exposed to direct strokes and may carry the full lightning current{{A063}}; LPZ 1 is subject to partial lightning currents{{A064}}; LPZ 2 sees only remnants of the impulse currents.{{A065}} The SPD at the LPZ 0/1 boundary provides lightning current protection, the SPD at the LPZ 1/2 boundary overvoltage protection{{A067}}, and the zones combine bonding, shielding and coordinated SPDs.{{A066}}"
       - diagram:
           name: lpz_zones
           caption: "Concept sketch of the zone concept. (1) SPD where lines cross the LPZ 0/1 boundary: it provides lightning current protection{{A067}}; DEHN's coaxial arresters for the 0A-1 boundary, for example, are lightning current arresters.{{E026}} (2) SPD at the LPZ 1/2 boundary: it provides overvoltage protection{{A067}}; DEHN lists surge arresters for the 1-2 boundary.{{E026}}"

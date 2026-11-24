@@ -13,6 +13,9 @@ sections:
   - title: "1  How cameras are damaged"
     lead: "Outdoor cameras sit at the end of long cables that leave the building. The sources name three ways a lightning flash reaches them: a direct strike, voltage induced into the cable by a nearby strike, and a difference in earth potential between the two ends of the cable.{{E059}}"
     blocks:
+      - explainer:
+          name: ex_surge_camera
+          caption: "(1) The cable between camera and switch picks up strong nearby fields, producing transients that travel along it.{{C010}} (2)-(3) PoE surge protectors divert surges to ground while passing data and power{{C018}}; one goes near the outdoor device and one at the building entry.{{E065, C020}} (4) With shielded cable the shield captures induced energy and diverts it to ground{{C011}}, but only with an unbroken path to ground through an earthed PoE switch or midspan.{{C012, C014}}"
       - numbers:
           - value: "3"
             label: "damage mechanisms: direct strike, induction, earth-potential difference{{E059}}"
@@ -57,6 +60,9 @@ sections:
 
   - title: "4  Earthing the camera itself"
     blocks:
+      - explainer:
+          name: ex_potential_difference
+          caption: "ITU-T K.66 example: without a common bonding point, a 50 A surge from the telecom line through a 300 Ω earth electrode raises the telecom equipment 15 kV above the power network.{{B026}} Of the customer earthing practices K.66 examined, only the common earth bar with short bond wires protects equipment from surges entering on external cables without additional protection.{{B025}}"
       - facts: [E051, E052, E047, E048, E049, E050, E058, D146, D147]
       - h2: "Protector ratings quoted in the sources"
       - table:

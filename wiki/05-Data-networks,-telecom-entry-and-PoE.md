@@ -67,17 +67,23 @@ ITU-T K.66 says that locating the telecommunication primary protectors near the 
 - Per Motorola R56 (2005, US practice), the primary telephone/data SPD ground conductor shall be as short as possible, routed as directly as possible to the ground bus or MGB, and as free of bends as possible.<sup>[R5 p.345](#sources-cited-on-this-page)</sup>
 - Per US DoD guide spec UFGS 27 05 26, the primary (telecom) protector grounding conductor is bonded to the PBB and kept at least 30 cm (1 ft) from DC power cables, switchboard cable or high-frequency cables, even when in metal conduit.<sup>[R17 p.26](#sources-cited-on-this-page)</sup>
 
-> ⛔ **DO NOT** — **Do not earth the primary protector to its own electrode**
+> [!CAUTION]
+> **DO NOT: Do not earth the primary protector to its own electrode**
 >
 > ITU-T K.66 warns that earthing telecommunication primary protectors only to a separate earth electrode is not compatible with protecting equipment and may even cause a fire in the premises or injury or death of a person using telecommunication equipment.<sup>[R18 p.22](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **ADSL modems and fibre terminals**
+> [!NOTE]
+> **NOTE: ADSL modems and fibre terminals**
 >
 > No verified fact in this library gives a rule for the ADSL modem or the fibre network terminal itself. This sheet quotes the general rules for telecommunication lines, ports and equipment; fibre is treated in the chapter on fibre and wireless.
 
 ## 3  Equipment with both a mains and a data port
 
 NIST (US) gives as the simple solution for equipment with both power and communications connections a special surge protector that combines, in one package, input/output connections for both systems.<sup>[R1 p.14](#sources-cited-on-this-page)</sup>
+
+<a href="img/ex_potential_difference.svg"><img src="img/ex_potential_difference.svg" alt="ex_potential_difference" width="100%"></a>
+
+*Animated: the steps play in a loop. Click to open full size.* ITU-T K.66 example: without a common bonding point, a 50 A surge from the telecom line through a 300 Ω earth electrode raises the telecom equipment 15 kV above the power network.<sup>[R18 p.58](#sources-cited-on-this-page)</sup> Of the customer earthing practices K.66 examined, only the common earth bar with short bond wires protects equipment from surges entering on external cables without additional protection.<sup>[R18 p.56](#sources-cited-on-this-page)</sup>
 
 - Per NIST (US), with a combined protector each link (power and communications) is fed through the protector, which is inserted between the wall receptacles and the inputs of the appliance to be protected.<sup>[R1 p.14](#sources-cited-on-this-page)</sup>
 - Per NIST (US), pulling out the power cord of an appliance that stays connected to a telephone line or cable TV might not be the best idea, because the appliance loses the grounding normally provided by the power cord.<sup>[R1 p.13](#sources-cited-on-this-page)</sup>
@@ -96,7 +102,8 @@ NIST (US) gives as the simple solution for equipment with both power and communi
 - ITU-T K.85 summarises the two-stage scheme as: the MSPD protects the equipment and the primary (point-of-entry) protection protects the MSPD, both installed according to ITU-T K.66 when the risk assessment requires.<sup>[R19 p.15](#sources-cited-on-this-page)</sup>
 - Where short bond wires cannot be installed, ITU-T K.66 allows using the shortest possible bond wires plus additional SPDs at the equipment to achieve bonding there, and these additional SPDs must be coordinated with the upstream SPDs.<sup>[R18 p.20](#sources-cited-on-this-page)</sup>
 
-> ⚠️ **WARNING** — **An MSPD depends on an earthed socket**
+> [!WARNING]
+> **WARNING: An MSPD depends on an earthed socket**
 >
 > ITU-T K.85 warns that the MSPDs it refers to rely on a protective earth connection for safety<sup>[R19 p.15](#sources-cited-on-this-page)</sup>, and that if the power point feeding an MSPD is not earthed, equipment damage may not be reduced and users face a possible lightning safety risk.<sup>[R19 p.37](#sources-cited-on-this-page)</sup>
 
@@ -138,7 +145,8 @@ ITU-T K.98 says most Ethernet ports have a signal transformer that is generally 
 - Where SPDs are used, the copper earthing conductor for equipotential bonding must be at least 6 mm2 for SPDs in information technology systems (or as the installation instructions specify).<sup>[R6 p.288](#sources-cited-on-this-page)</sup>
 - TP-Link (Lightning Protection Guide for rack-mountable devices): a power lightning arrester should be used if an outdoor AC power cord is connected directly to the device.<sup>[R29 p.7](#sources-cited-on-this-page)</sup>
 
-> ⛔ **DO NOT** — **PoE source with its positive terminal on protective earth**
+> [!CAUTION]
+> **DO NOT: PoE source with its positive terminal on protective earth**
 >
 > MikroTik warns against powering its devices from PoE power sourcing equipment whose positive terminal is connected to protective earth, because it may cause a short circuit and harm the person and the device.<sup>[R21 p.2](#sources-cited-on-this-page)</sup>
 
@@ -176,7 +184,8 @@ DEHN states that a cable shield must be earthed at least at both ends, and that 
 
 *Each row is the arrangement as the cited source describes it; the sources do not rank these arrangements against each other.*
 
-> ⚠️ **WARNING** — **Equalising currents on shields bonded at both ends**
+> [!WARNING]
+> **WARNING: Equalising currents on shields bonded at both ends**
 >
 > DEHN notes that where a shield is earthed at both ends on earth-termination systems at different potentials, low-frequency equalising currents of up to a few amperes can flow in the shield, in extreme cases causing cable fires.<sup>[R6 p.199](#sources-cited-on-this-page)</sup> ITU-T K.73 uses a parallel bonding conductor to reduce the current on an inter-building cable screen.<sup>[R23 p.10](#sources-cited-on-this-page)</sup>
 
@@ -227,7 +236,8 @@ MikroTik requires that towers and masts carrying the shielded cable installation
 - Per Motorola R56 (2005, US practice), access points and wireless routers mounted on the side of a building shall be bonded directly to the building's common grounding electrode system with 16 mm2 (#6 AWG) or coarser copper.<sup>[R5 p.179](#sources-cited-on-this-page)</sup>
 - Per Motorola R56 (2005, US practice), SPDs should be installed on both ends of Ethernet, Power-over-Ethernet and AC cable runs serving pole-mounted access points and ground-based cabinets.<sup>[R5 p.354](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Radio product manuals**
+> [!NOTE]
+> **NOTE: Radio product manuals**
 >
 > Of Ubiquiti's documents, only the Ethernet surge protector datasheet is among the sources of this library; no Ubiquiti radio installation manual is. Masts and antenna cables are treated in the antennas sheet.
 
@@ -250,7 +260,8 @@ ITU-T K.73 explains that when equipment in different buildings is interconnected
 - Telecommunication lines are best installed in electrically connected, completely enclosed metal ducts that are earthed with low impedance as frequently as possible, at least at the beginning and the end.<sup>[R6 p.264](#sources-cited-on-this-page)</sup>
 - ITU-T K.85 notes that if two separate earth electrodes are not bonded together, a potential difference may arise between them and damage the ports of the equipment connected to each; a ring earth is offered as a solution.<sup>[R19 p.18](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Different earthing and power feeding**
+> [!NOTE]
+> **NOTE: Different earthing and power feeding**
 >
 > For buildings with different earthing and power feeding, ITU-T K.73 calls for the cable screen to be connected to the main earthing terminal at the entrance of each building and for measurement of the possible current between the two METs.<sup>[R23 p.10](#sources-cited-on-this-page)</sup>
 
@@ -334,7 +345,7 @@ The sources were written for different countries and kinds of site. Where they c
 | R10 | **Technical Note #1003: Best Practices for Surge and Lightning Suppression of POE Devices** — Southwest Microwave, Inc. · not stated in document · USA · [link](https://southwestmicrowave.com/pdfs/1003-Best-Practices-for-Surge-and-Lightning-Suppression.pdf) | 1 |
 | R13 | **Wireless High Site Engineering Guideline V1.0.0** — Wireless Access Providers' Association (South Africa) · V1.0.0, 2014-07-21 · South Africa · [link](https://wapa.org.za/sites/default/files/2018-08/WAPA%20Wireless%20High%20Site%20Engineering%20Guideline%20V1%200%200%2020140721.pdf) | 21-22, 28 |
 | R17 | **UFGS-27 05 26 Grounding and Bonding for Communications Systems** — USACE / NAVFAC / AFCEC (US Department of Defense) · November 2025 · USA (guide specification with designer-selectable options) · [link](https://www.wbdg.org/FFC/DOD/UFGS/UFGS%2027%2005%2026.pdf) | 22, 26 |
-| R18 | **Recommendation ITU-T K.66: Protection of customer premises from overvoltages** — International Telecommunication Union · 11/2019 · International · [link](https://www.itu.int/rec/T-REC-K.66-201911-I) | 9, 18-20, 22, 29-30, 32, 58, 60 |
+| R18 | **Recommendation ITU-T K.66: Protection of customer premises from overvoltages** — International Telecommunication Union · 11/2019 · International · [link](https://www.itu.int/rec/T-REC-K.66-201911-I) | 9, 18-20, 22, 29-30, 32, 56, 58, 60 |
 | R19 | **Recommendation ITU-T K.85: Requirements for the mitigation of lightning effects on home networks installed in customer premises** — International Telecommunication Union · 11/2011 · International · [link](https://www.itu.int/rec/T-REC-K.85-201111-I) | 11-16, 18-19, 29, 35, 37-38 |
 | R20 | **Power surges (white paper, web page)** — Axis Communications · web page as fetched 2026-11-23 · International · [link](https://whitepapers.axis.com/en/power-surges) | 2-3 |
 | R21 | **Grounding (RouterOS documentation, hardware section)** — MikroTik · page last updated 23 September 2025 · International · [link](https://help.mikrotik.com/docs/display/ROS/Grounding) | 1-2 |
@@ -346,4 +357,4 @@ The sources were written for different countries and kinds of site. Where they c
 | R41 | **Waterproof and Lightning Protection Installation Guide for Omada Security Devices** — TP-Link (Omada Network Support) · web page as fetched 2026-11-23 · International · [link](https://support.omadanetworks.com/za/document/44713/) | 3-4 |
 | R44 | **White paper WPX029: Lightning and surge protection for rooftop photovoltaic systems** — DEHN SE · WPX029/EN/0422 (April 2022) · IEC / EN (Germany) · [link](https://www.dehn-africa.com/sites/default/files/media/files/photovoltaic-wpx029-en.pdf) | 2 |
 
-*Generated from `content/docs/05_data_network_poe.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/05_data_network_poe.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

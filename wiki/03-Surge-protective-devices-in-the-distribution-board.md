@@ -36,7 +36,8 @@ Per NIST (US), surge protective devices neither suppress nor arrest a surge; the
 - Per IEC/BS EN 62305-4 as summarised by Furse, appropriate SPDs should be fitted wherever services cross from one LPZ to another.<sup>[R12 p.15](#sources-cited-on-this-page)</sup>
 - i-PRO (knowledge-base article 'Countermeasure for lightning surge'): a surge protector (SPD) is normally open circuit, becomes a short circuit when high voltage is applied, and returns to open circuit after the high voltage has passed; it is said to offer 'some protection'.<sup>[R39 p.4](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Lightning rods do not stop surges in the wiring**
+> [!NOTE]
+> **NOTE: Lightning rods do not stop surges in the wiring**
 >
 > Per NIST (US), lightning rods protect the structure of the house and avoid fires; they do not prevent surges from happening in the wiring.<sup>[R1 p.6](#sources-cited-on-this-page)</sup>
 
@@ -63,11 +64,13 @@ The rules in this chapter are UK rules from BS 7671:2018 Sections 443 and 534, a
 - BEAMA SPD guide (UK, 2018): underground services without a structural LPS do not need lightning current SPDs; overvoltage (Type 2 / Category C) SPDs are sufficient.<sup>[R48 p.35](#sources-cited-on-this-page)</sup>
 - BEAMA SPD guide (UK, BS 7671:2018 534.4.1.1): SPDs installed close to sensitive equipment against internally generated switching transients shall be Type 2 or Type 3.<sup>[R48 p.68](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Outside BS 7671**
+> [!NOTE]
+> **NOTE: Outside BS 7671**
 >
 > DEHN cites IEC 60364-4-44 as requiring SPDs also for buildings that have no external lightning protection system.<sup>[R44 p.2](#sources-cited-on-this-page)</sup> ITU-T K.85: regardless of the risk assessment result, a building with a lightning protection system should have primary protection bonded to protective earth at the point of entry for all services.<sup>[R19 p.15](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Calculated risk level: the inputs**
+> [!NOTE]
+> **NOTE: Calculated risk level: the inputs**
 >
 > In CRL = fenv / (Lp × Ng), fenv is 85 for rural and suburban and 850 for urban locations<sup>[R48 p.65](#sources-cited-on-this-page)</sup>, and Lp weights low-voltage overhead line most heavily.<sup>[R48 p.65](#sources-cited-on-this-page)</sup> SPD protection shall be installed if CRL is less than 1000.<sup>[R48 p.65](#sources-cited-on-this-page)</sup> The ground flash density Ng for a South African site is not covered by this sheet.
 
@@ -92,7 +95,8 @@ BEAMA (UK) distinguishes lightning transients, generally disturbances with respe
 - BEAMA SPD guide (UK, 2018): in CT2 a higher-energy SPD, typically a spark gap for Type 1, is used between neutral and the protective conductor because it sees up to 4 times the surge current of the line-to-neutral SPDs.<sup>[R48 p.51](#sources-cited-on-this-page)</sup>
 - BEAMA SPD guide (UK, BS 7671:2018): if Iimp cannot be calculated, the N-PE SPD in a 3-phase CT2 installation is at least 50 kA 10/350 (4 x 12.5 kA of the L-N SPDs); CT2 is often called the '3+1' arrangement.<sup>[R48 p.51](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Single-phase arrangement designations**
+> [!NOTE]
+> **NOTE: Single-phase arrangement designations**
 >
 > BEAMA names CT2 the '3+1' arrangement for a three-phase supply.<sup>[R48 p.51](#sources-cited-on-this-page)</sup> No verified fact in this library gives the designation used for a single-phase CT1 or CT2 arrangement.
 
@@ -124,13 +128,18 @@ BEAMA (UK) recommends installing SPDs upstream of RCDs wherever possible, to pre
 - ABB OVR brochure: SPDs must be associated with a backup (overcurrent) protection and with residual current protection against indirect contact.<sup>[R52 p.10](#sources-cited-on-this-page)</sup>
 - ABB OVR brochure: a residual current device is mandatory for TT systems, possible for TN-S, IT and TN-C-S systems, and not permitted for TN-C systems.<sup>[R52 p.10](#sources-cited-on-this-page)</sup>
 
-> ⚠️ **WARNING** — **TT: the RCD does not protect against a defective SPD upstream of it**
+> [!WARNING]
+> **WARNING: TT: the RCD does not protect against a defective SPD upstream of it**
 >
 > BEAMA (UK): CT2 is required on a TT system if the SPD is upstream of the RCD, because the downstream RCD would not operate if the SPD became defective.<sup>[R48 p.50](#sources-cited-on-this-page)</sup> A defective CT2 line-to-neutral SPD creates a short-circuit rather than an earth-fault current, so its in-line OCPD operates within the required disconnection time.<sup>[R48 p.51](#sources-cited-on-this-page)</sup>
 
 ## 5  Connecting leads and conductor sizes
 
 Schneider takes about 1 µH/m for SPD connection conductors, so an 8 kA 8/20 µs current creates a voltage rise of 1000 V per metre of cable<sup>[R50 p.4](#sources-cited-on-this-page)</sup>; with 50 cm of total connections the voltage across the equipment terminals is Up + 500 V.<sup>[R50 p.5](#sources-cited-on-this-page)</sup>
+
+<a href="img/ex_spd_leads.svg"><img src="img/ex_spd_leads.svg" alt="ex_spd_leads" width="100%"></a>
+
+*Animated: the steps play in a loop. Click to open full size.* BEAMA takes lead inductance as 1 µH/m, so an impulse rising at 1 kA/µs adds about 1 kV per metre of connecting lead<sup>[R48 p.40](#sources-cited-on-this-page)</sup>; leads should be as short as possible, preferably not over 0.5 m in total<sup>[R48 p.40](#sources-cited-on-this-page)</sup>, and bound together.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> In BEAMA's test an SPD with Up 600 V gave 630 V with 25 cm of bound lead<sup>[R48 p.41](#sources-cited-on-this-page)</sup>, 810 V with 25 cm unbound and 2,300 V with 2 m unbound.<sup>[R48 p.41](#sources-cited-on-this-page)</sup> Category I equipment at 230/240 V is rated 1.5 kV.<sup>[R48 p.36](#sources-cited-on-this-page)</sup>
 
 | **0.5 m** | **≈ 1 kV/m** | **16 mm²** | **4 mm²** |
 |---|---|---|---|
@@ -186,7 +195,8 @@ BEAMA (UK): mains SPDs have internal overload (typically thermal) disconnection,
 - BEAMA SPD guide (UK, 2018): where upstream OCPD characteristics are not available (e.g. retrofit), the SPD's OCPD may be rated at half the nominal value of the immediate upstream OCPD to achieve discrimination.<sup>[R48 p.49](#sources-cited-on-this-page)</sup>
 - ABB OVR brochure: the follow-current interrupting rating Ifi of a spark-gap SPD should be equal to or higher than the prospective short-circuit current at the installation point, otherwise the upstream fuse will melt each time the spark gap ignites.<sup>[R52 p.6](#sources-cited-on-this-page)</sup>
 
-> ⛔ **DO NOT** — **Never exceed the maximum backup rating**
+> [!CAUTION]
+> **DO NOT: Never exceed the maximum backup rating**
 >
 > BEAMA (UK): the maximum OCPD rating declared by the SPD manufacturer must never be exceeded.<sup>[R48 p.49](#sources-cited-on-this-page)</sup> A typical Type 2 SPD rated 40 kA 8/20 is likely to state a maximum OCPD of 125 A.<sup>[R48 p.49](#sources-cited-on-this-page)</sup>
 
@@ -222,7 +232,8 @@ BEAMA (UK): mains SPDs have internal overload (typically thermal) disconnection,
 - Schneider Electrical Installation Guide: the installed voltage protection level generally adopted to protect sensitive equipment in 230/400 V installations is 2.5 kV (overvoltage category II).<sup>[R50 p.11](#sources-cited-on-this-page)</sup>
 - ABB OVR brochure: whatever overvoltage protection is used, the maximum protection level corresponds to category II: Up max = 2500 V for Un = 230 V.<sup>[R52 p.7](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **The sources set different Up targets**
+> [!NOTE]
+> **NOTE: The sources set different Up targets**
 >
 > BEAMA (UK) works from the 1.5 kV category I withstand with allowance for lead voltage and possible doubling<sup>[R48 p.46](#sources-cited-on-this-page)</sup><sup>[R48 p.36](#sources-cited-on-this-page)</sup>; Schneider and ABB name 2.5 kV (category II).<sup>[R50 p.11](#sources-cited-on-this-page)</sup><sup>[R52 p.7](#sources-cited-on-this-page)</sup> See the chapter on where the sources disagree.
 
@@ -285,7 +296,8 @@ BEAMA (UK): if the distance from an SPD to the protected equipment is over 10 m,
 - Per NIST (US), when the protective element of a surge protector fails, the internal disconnect works in one of two ways depending on the design: some protectors cut off the output power completely, others disconnect the failed element but keep the output powered.<sup>[R1 p.9](#sources-cited-on-this-page)</sup>
 - Per NIST (US), specialists consider that most of the (rare) catastrophic failures of surge protectors are caused by excessively high line voltage occurring during a power-system fault, rather than by very large surges.<sup>[R1 p.18](#sources-cited-on-this-page)</sup>
 
-> ⚠️ **WARNING** — **A disconnected SPD can leave the supply on and the equipment unprotected**
+> [!WARNING]
+> **WARNING: A disconnected SPD can leave the supply on and the equipment unprotected**
 >
 > ABB: a faulty SPD wired for continuity of service disconnects itself without interrupting the supply, but the equipment is then no longer protected.<sup>[R52 p.8](#sources-cited-on-this-page)</sup> BEAMA's periodic inspection first checks that the SPD's OCPD has not operated and that the SPD's fault indicator shows it serviceable.<sup>[R48 p.56](#sources-cited-on-this-page)</sup>
 
@@ -301,7 +313,8 @@ BEAMA (UK): if the distance from an SPD to the protected equipment is over 10 m,
 - BEAMA SPD guide (UK, 2018): inspection should catch later additions such as a power line to external CCTV cameras or car-park lighting that crosses a lightning protection zone and needs an SPD.<sup>[R48 p.57](#sources-cited-on-this-page)</sup>
 - Per the South African WAPA high-site guideline, immediately after lightning damage, all earthing points, earth straps and surge protection devices should be inspected and repaired.<sup>[R13 p.30](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Not covered**
+> [!NOTE]
+> **NOTE: Not covered**
 >
 > The sources in this library give no inspection interval specific to SPDs in a distribution board, and no verified fact describes remote signalling contacts.
 
@@ -348,7 +361,8 @@ Per NIST (US), a surge protector at the service entrance is sufficient for appli
 - ITU-T K.85 says an MSPD protects equipment against surges magnetically coupled into building wiring and service lines, and may give some protection against direct strikes to the service plant only if the strike point is more than a few hundred metres from the building.<sup>[R19 p.18](#sources-cited-on-this-page)</sup>
 - ITU-T K.85 says adding an MSPD with protection for all ports provides equipotential bonding for non-earthed equipment, and protection of equipment and users should be effective if the MSPD is plugged into an earthed power point.<sup>[R19 p.37](#sources-cited-on-this-page)</sup>
 
-> ⛔ **DO NOT** — **Do not rely on a multiservice protector on an unearthed socket**
+> [!CAUTION]
+> **DO NOT: Do not rely on a multiservice protector on an unearthed socket**
 >
 > ITU-T K.85: the MSPDs it refers to rely on a protective earth connection for safety<sup>[R19 p.15](#sources-cited-on-this-page)</sup>; if the power point feeding an MSPD is not earthed, equipment damage may not be reduced and users face a possible lightning safety risk.<sup>[R19 p.37](#sources-cited-on-this-page)</sup>
 
@@ -409,4 +423,4 @@ The sources were written for different countries and purposes. The wiring code t
 | R51 | **Solar energy: lightning and surge protective devices (brochure 1TXH 000 118 B0201)** — ABB · 2011 · IEC · [link](https://library.e.abb.com/public/77266805bb3868adc12578f10033b12b/1TXH%20000%20118%20B0201_Solar%20energy%20Lightning%20and%20overvoltage%20protection_br.pdf) | 3 |
 | R52 | **System pro M compact: OVR surge protective devices (main catalogue 1TXH000083C0201)** — ABB · 2011 · IEC · [link](https://library.e.abb.com/public/d614bdefa272767ac125784c005b65e8/1TXH000083C0201_ABB%20OVR%20%20RANGE%20SYSTEM%20proM_2011.pdf) | 6-10, 25 |
 
-*Generated from `content/docs/03_db_surge_protection.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/03_db_surge_protection.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

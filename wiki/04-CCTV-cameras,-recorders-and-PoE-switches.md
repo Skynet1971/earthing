@@ -14,6 +14,10 @@
 
 Outdoor cameras sit at the end of long cables that leave the building. The sources name three ways a lightning flash reaches them: a direct strike, voltage induced into the cable by a nearby strike, and a difference in earth potential between the two ends of the cable.<sup>[R39 p.1](#sources-cited-on-this-page)</sup>
 
+<a href="img/ex_surge_camera.svg"><img src="img/ex_surge_camera.svg" alt="ex_surge_camera" width="100%"></a>
+
+*Animated: the steps play in a loop. Click to open full size.* (1) The cable between camera and switch picks up strong nearby fields, producing transients that travel along it.<sup>[R20 p.2](#sources-cited-on-this-page)</sup> (2)-(3) PoE surge protectors divert surges to ground while passing data and power<sup>[R20 p.3](#sources-cited-on-this-page)</sup>; one goes near the outdoor device and one at the building entry.<sup>[R34 p.2](#sources-cited-on-this-page)</sup><sup>[R20 p.3](#sources-cited-on-this-page)</sup> (4) With shielded cable the shield captures induced energy and diverts it to ground<sup>[R20 p.2](#sources-cited-on-this-page)</sup>, but only with an unbroken path to ground through an earthed PoE switch or midspan.<sup>[R20 p.2](#sources-cited-on-this-page)</sup><sup>[R20 p.3](#sources-cited-on-this-page)</sup>
+
 | **3** | **2 ends** | **≤ 0.91 m** |
 |---|---|---|
 | damage mechanisms: direct strike, induction, earth-potential difference<sup>[R39 p.1](#sources-cited-on-this-page)</sup> | surge protectors at the camera and at the building end of the cable<sup>[R26 p.3](#sources-cited-on-this-page)</sup> | outdoor PoE suppressor from the device, Southwest Microwave rule<sup>[R10 p.1](#sources-cited-on-this-page)</sup> |
@@ -26,7 +30,8 @@ Outdoor cameras sit at the end of long cables that leave the building. The sourc
 - i-PRO (knowledge-base article 'Countermeasure for lightning surge'): damage to electric equipment from the high voltage and current of a direct lightning stroke cannot be prevented by surge protectors.<sup>[R39 p.1](#sources-cited-on-this-page)</sup>
 - If lightning hits external equipment such as a camera mast, partial lightning currents flow into the building through the equipment's earth electrode and the connecting cables, and must not overload the SPD installed in the building.<sup>[R6 p.428](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **A surge protector reduces risk; it does not guarantee survival**
+> [!NOTE]
+> **NOTE: A surge protector reduces risk; it does not guarantee survival**
 >
 > i-PRO states that surge protectors cannot prevent damage from a direct strike<sup>[R39 p.1](#sources-cited-on-this-page)</sup> and does not guarantee protection even when its examples are followed.<sup>[R39 p.5](#sources-cited-on-this-page)</sup>
 
@@ -70,7 +75,8 @@ The sources read for this sheet describe the same basic layout: a protector near
 
 ## 3  Cable, shield and routing
 
-> ✅ **DO** — **Use shielded cable and keep the shield continuous to an earthed switch**
+> [!TIP]
+> **DO: Use shielded cable and keep the shield continuous to an earthed switch**
 >
 > Axis advises shielded (STP) cable throughout<sup>[R20 p.1](#sources-cited-on-this-page)</sup>; the shield only works with an unbroken path to earth through the PoE switch or midspan<sup>[R20 p.2](#sources-cited-on-this-page)</sup>, and every cable, patch panel and coupling in the path must be shielded.<sup>[R20 p.3](#sources-cited-on-this-page)</sup>
 
@@ -102,11 +108,16 @@ The sources read for this sheet describe the same basic layout: a protector near
 - To minimise induction loops inside a building, power and data lines should be laid spatially close together, but shielded.<sup>[R6 p.182](#sources-cited-on-this-page)</sup>
 - Shielded data cables and power lines should share the same riser duct, no more than 20 cm apart; separate opposing riser ducts must be avoided (to limit induction loops).<sup>[R6 p.321](#sources-cited-on-this-page)</sup>
 
-> ⚠️ **WARNING** — **Shields bonded at both ends can carry current between two earths**
+> [!WARNING]
+> **WARNING: Shields bonded at both ends can carry current between two earths**
 >
 > DEHN notes that a shield earthed at both ends on earth systems at different potentials can carry equalising currents of up to a few amperes<sup>[R6 p.199](#sources-cited-on-this-page)</sup>; it describes indirect earthing of the far end through a spark gap as one way to avoid this.<sup>[R6 p.199](#sources-cited-on-this-page)</sup>
 
 ## 4  Earthing the camera itself
+
+<a href="img/ex_potential_difference.svg"><img src="img/ex_potential_difference.svg" alt="ex_potential_difference" width="100%"></a>
+
+*Animated: the steps play in a loop. Click to open full size.* ITU-T K.66 example: without a common bonding point, a 50 A surge from the telecom line through a 300 Ω earth electrode raises the telecom equipment 15 kV above the power network.<sup>[R18 p.58](#sources-cited-on-this-page)</sup> Of the customer earthing practices K.66 examined, only the common earth bar with short bond wires protects equipment from surges entering on external cables without additional protection.<sup>[R18 p.56](#sources-cited-on-this-page)</sup>
 
 - TP-Link (Omada security devices waterproof and lightning protection installation guide): direct grounding: for a camera with a metal case, the case is connected to the grounding wire via the camera's grounding terminal.<sup>[R41 p.4](#sources-cited-on-this-page)</sup>
 - TP-Link (Omada security devices waterproof and lightning protection installation guide): alternatively the camera can be installed directly on a metal pipe, provided the metal pipe is grounded.<sup>[R41 p.4](#sources-cited-on-this-page)</sup>
@@ -161,7 +172,7 @@ The sources were written for different countries and kinds of site. Where they c
 | R6 | **Lightning Protection Guide, 3rd updated edition** — DEHN + SÖHNE · 2014 · IEC / EN 62305 (Germany) · [link](https://www.dehn-international.com/sites/default/files/media/files/lpg_en_complete.pdf) | 182, 184, 197-199, 262, 302-303, 321, 428 |
 | R10 | **Technical Note #1003: Best Practices for Surge and Lightning Suppression of POE Devices** — Southwest Microwave, Inc. · not stated in document · USA · [link](https://southwestmicrowave.com/pdfs/1003-Best-Practices-for-Surge-and-Lightning-Suppression.pdf) | 1 |
 | R13 | **Wireless High Site Engineering Guideline V1.0.0** — Wireless Access Providers' Association (South Africa) · V1.0.0, 2014-07-21 · South Africa · [link](https://wapa.org.za/sites/default/files/2018-08/WAPA%20Wireless%20High%20Site%20Engineering%20Guideline%20V1%200%200%2020140721.pdf) | 30 |
-| R18 | **Recommendation ITU-T K.66: Protection of customer premises from overvoltages** — International Telecommunication Union · 11/2019 · International · [link](https://www.itu.int/rec/T-REC-K.66-201911-I) | 18-19, 22 |
+| R18 | **Recommendation ITU-T K.66: Protection of customer premises from overvoltages** — International Telecommunication Union · 11/2019 · International · [link](https://www.itu.int/rec/T-REC-K.66-201911-I) | 18-19, 22, 56, 58 |
 | R20 | **Power surges (white paper, web page)** — Axis Communications · web page as fetched 2026-11-23 · International · [link](https://whitepapers.axis.com/en/power-surges) | 1-3 |
 | R26 | **White paper WP007: Surge protection for CCTV systems** — DEHN + SÖHNE · WP007/E/0615 (June 2015) · IEC / EN (Germany) · [link](https://www.dehn-international.com/sites/default/files/media/files/cctv-wp007-e.pdf) | 2-4, 8, 12 |
 | R29 | **Lightning Protection Guide: Rack-mountable Devices, 1910012320 REV1.0.1** — TP-Link Technologies Co., Ltd. · December 2017 · International · [link](https://static.tp-link.com/configurationguide/lightning_protection_guide.pdf) | 7 |
@@ -169,4 +180,4 @@ The sources were written for different countries and kinds of site. Where they c
 | R39 | **Countermeasure for lightning surge (knowledge base article)** — i-PRO Co., Ltd. · updated May 2025 · International · [link](https://i-pro.com/products_and_solutions/en/surveillance/learning-and-support/knowledge-base/technical-information/surge-protection) | 1-2, 5 |
 | R41 | **Waterproof and Lightning Protection Installation Guide for Omada Security Devices** — TP-Link (Omada Network Support) · web page as fetched 2026-11-23 · International · [link](https://support.omadanetworks.com/za/document/44713/) | 3-6 |
 
-*Generated from `content/docs/04_cctv.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/04_cctv.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

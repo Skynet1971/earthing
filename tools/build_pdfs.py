@@ -61,6 +61,7 @@ def lint(doc):
             if "callout" in b: need(w + " callout", b["callout"].get("title", "") + " " + b["callout"].get("text", ""))   # callout
             if "numbers" in b: [need(w + " tile", n["value"] + " " + n["label"]) for n in b["numbers"]]   # tiles
             if "diagram" in b: need(w + " caption", b["diagram"].get("caption", ""))   # figure caption
+            if "explainer" in b: need(w + " caption", b["explainer"].get("caption", ""))   # explainer caption
             if "checklist" in b: [need(w + " check", i) for i in b["checklist"]]   # checklist items
             if "table" in b:   # table rows (the caption may state a general note without numbers)
                 for ri, row in enumerate(b["table"]["rows"]): need(f"{w} row{ri}", " | ".join(map(str, row)))   # whole row
@@ -110,6 +111,14 @@ def build_doc(doc, catalog, facts):
                 fig = k.Figure(diagrams.DIAGRAMS[dg["name"]]())   # draw it
                 cap = Paragraph(T(dg.get("caption", "")), st["cap"])   # caption with citations
                 story.append(KeepTogether([Spacer(1, 4), fig, Spacer(1, 4), cap]))   # keep figure and caption together
+            elif "explainer" in b:   # still frame of an animated explainer (rendered by tools/render_explainers.py)
+                from reportlab.platypus import Image   # raster image flowable
+                ex = b["explainer"]; png = c.ROOT / "docs" / "img" / "explainers" / f'{ex["name"]}.png'   # still frame file
+                if not png.exists(): raise SystemExit(f'{doc["_file"]}: missing {png.relative_to(c.ROOT)}; run tools/render_explainers.py')   # stills are committed
+                from PIL import Image as PILImage   # read the pixel size
+                pw, ph = PILImage.open(png).size; w = k.FRAME_W; h = w * ph / pw   # scale to the text width
+                cap = Paragraph("<b>Animated in the wiki.</b> " + T(ex.get("caption", "")), st["cap"])   # caption with citations
+                story.append(KeepTogether([Spacer(1, 4), Image(str(png), width=w, height=h), Spacer(1, 4), cap]))   # image and caption kept together
             elif "checklist" in b:   # printable checklist
                 story += k.checklist(st, accent, [T(i) for i in b["checklist"]])   # tick-box list
             elif "index" in b:   # table of all public documents, generated from content/docs (no author text)

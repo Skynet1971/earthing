@@ -29,6 +29,9 @@ sections:
   - title: "2  Earthing systems: TN-S, TN-C-S (PME) and TT"
     lead: "BS 7671 (UK) names five earthing systems: TN-S, TN-C-S, TT, TN-C and IT.{{A028}} A UK public low-voltage supply is one of the first three.{{A029}}"
     blocks:
+      - explainer:
+          name: ex_fault_path
+          caption: "(1) In normal use the current returns on the neutral. (2) When a live conductor touches an earthed metal case, the fault current returns on the protective earth and the PEN to the transformer.{{J039}} TN-C-S is used so that this fault current does not depend on soil resistivity.{{J040}} (3) In TN systems, fault touch voltages in circuits with socket outlets must be disconnected automatically within 0.4 s.{{D047}}"
       - diagram:
           name: earthing_systems
           caption: "Concept sketch of the three supply earthing systems a UK low-voltage supply will use{{A029}}; TN-C-S is the system known in the UK as protective multiple earthing (PME).{{A036}} (3) TT: the consumer provides their own connection to earth with an earth electrode local to the installation.{{A037}} No verified fact in this library describes the conductor arrangements at markers (1) and (2); the drawing shows them by system name only."
@@ -126,6 +129,9 @@ sections:
   - title: "6  Why separate, unbonded earth electrodes harm equipment"
     lead: "ITU-T K.66 lists as good practice for every installation that every earth point is bonded to the main earth bar and that nothing is connected to a separate earth electrode that is not bonded to it.{{B002}}"
     blocks:
+      - explainer:
+          name: ex_potential_difference
+          caption: "ITU-T K.66 example: without a common bonding point, a 50 A surge from the telecom line through a 300 Ω earth electrode raises the telecom equipment 15 kV above the power network.{{B026}} Of the customer earthing practices K.66 examined, only the common earth bar with short bond wires protects equipment from surges entering on external cables without additional protection.{{B025}}"
       - callout:
           kind: dont
           title: "Do not install a separate 'clean earth' for electronics"

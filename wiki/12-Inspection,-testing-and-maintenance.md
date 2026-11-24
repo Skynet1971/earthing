@@ -25,13 +25,15 @@ DEHN states that inspection of a lightning protection system must be carried out
 - Siemens LOGO! 8 system manual: only qualified personnel who are familiar with and follow general engineering rules and the relevant regulations and standards may install LOGO! devices.<sup>[R28 p.31](#sources-cited-on-this-page)</sup>
 - SAPVIA PV guidelines (South Africa, 2017): module interconnection with pre-fitted connectors can be done by a trained non-electrician under supervision of an electrically skilled person only while there are no exposed live parts; additional wiring and assembly of plugs must be performed by an electrician.<sup>[R47 p.28](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Shock protection comes first**
+> [!NOTE]
+> **NOTE: Shock protection comes first**
 >
 > DEHN states that measures for protection against electric shock always take priority over surge protection measures.<sup>[R6 p.220](#sources-cited-on-this-page)</sup>
 
 ## 2  Safety before and during tests
 
-> ⚠️ **WARNING** — **Isolate before an earth electrode test, re-connect before energising**
+> [!WARNING]
+> **WARNING: Isolate before an earth electrode test, re-connect before energising**
 >
 > Per UK guidance (IEE Wiring Matters), the main switch-disconnector must be open before the measurement, because the installation is unprotected against earth faults during the test<sup>[R9 p.5](#sources-cited-on-this-page)</sup>; the means of earthing must be re-established before the installation is energised.<sup>[R9 p.5](#sources-cited-on-this-page)</sup>
 
@@ -67,7 +69,8 @@ DEHN states that inspection of a lightning protection system must be carried out
 
 ### After a lightning strike
 
-> ✅ **DO** — **Inspect after any strike or change to the building**
+> [!TIP]
+> **DO: Inspect after any strike or change to the building**
 >
 > DEHN: inspect the LPS whenever it is known to have been struck, and after changes of use, modifications, extensions or repairs to the structure.<sup>[R6 p.57](#sources-cited-on-this-page)</sup> WAPA (South Africa): immediately after lightning damage, inspect and repair all earthing points, earth straps and surge protection devices.<sup>[R13 p.30](#sources-cited-on-this-page)</sup>
 
@@ -97,7 +100,8 @@ BS 7671:2001 Regulation 713-10-01 (UK) requires the resistance to earth of an ea
 - Nemtek (Super Earthing Kit instruction manual): the bentonite backfill should cure for at least 24 hours before testing.<sup>[R32 p.2](#sources-cited-on-this-page)</sup>
 - MikroTik tells installers to make sure the grounding infrastructure they connect to is fully functional and not merely decorative.<sup>[R21 p.1](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Placing the current spike**
+> [!NOTE]
+> **NOTE: Placing the current spike**
 >
 > Per UK guidance (IEE Wiring Matters), reliable results may be expected if the current spike is at least ten times the maximum dimension of the electrode system away from the electrode under test, for example 30 m for a 3 m rod.<sup>[R9 p.4](#sources-cited-on-this-page)</sup>
 
@@ -137,7 +141,8 @@ BS 7671:2001 Regulation 713-10-01 (UK) requires the resistance to earth of an ea
 - BEAMA SPD guide (UK, 2018): inspection should catch later additions such as a power line to external CCTV cameras or car-park lighting that crosses a lightning protection zone and needs an SPD.<sup>[R48 p.57](#sources-cited-on-this-page)</sup>
 - BEAMA SPD guide (UK, BS 7671:2018): where SPDs are installed, a durable notice complying with BS 7671 should be fixed adjacent to the distribution board(s).<sup>[R48 p.55](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Not covered by the sources in this library**
+> [!NOTE]
+> **NOTE: Not covered by the sources in this library**
 >
 > No verified fact in this library describes remote signalling contacts on SPDs. Follow the SPD manufacturer's instructions for replacement.
 
@@ -224,4 +229,4 @@ The sources were written for different countries and kinds of site. Where they c
 | R51 | **Solar energy: lightning and surge protective devices (brochure 1TXH 000 118 B0201)** — ABB · 2011 · IEC · [link](https://library.e.abb.com/public/77266805bb3868adc12578f10033b12b/1TXH%20000%20118%20B0201_Solar%20energy%20Lightning%20and%20overvoltage%20protection_br.pdf) | 3 |
 | R52 | **System pro M compact: OVR surge protective devices (main catalogue 1TXH000083C0201)** — ABB · 2011 · IEC · [link](https://library.e.abb.com/public/d614bdefa272767ac125784c005b65e8/1TXH000083C0201_ABB%20OVR%20%20RANGE%20SYSTEM%20proM_2011.pdf) | 8 |
 
-*Generated from `content/docs/12_inspection_testing.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/12_inspection_testing.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

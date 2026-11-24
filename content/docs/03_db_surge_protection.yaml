@@ -89,6 +89,9 @@ sections:
   - title: "5  Connecting leads and conductor sizes"
     lead: "Schneider takes about 1 µH/m for SPD connection conductors, so an 8 kA 8/20 µs current creates a voltage rise of 1000 V per metre of cable{{I082}}; with 50 cm of total connections the voltage across the equipment terminals is Up + 500 V.{{I083}}"
     blocks:
+      - explainer:
+          name: ex_spd_leads
+          caption: "BEAMA takes lead inductance as 1 µH/m, so an impulse rising at 1 kA/µs adds about 1 kV per metre of connecting lead{{I027}}; leads should be as short as possible, preferably not over 0.5 m in total{{I028}}, and bound together.{{I029}} In BEAMA's test an SPD with Up 600 V gave 630 V with 25 cm of bound lead{{I030}}, 810 V with 25 cm unbound and 2,300 V with 2 m unbound.{{I031}} Category I equipment at 230/240 V is rated 1.5 kV.{{I020}}"
       - numbers:
           - value: "0.5 m"
             label: "total connecting lead length l1 + l2, preferably not exceeded, BEAMA (UK){{I028}}"

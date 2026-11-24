@@ -23,13 +23,18 @@ ITU-T K.98 separates the two terms: earthing connects the earth bar to earth, us
 - Per the South African WAPA high-site guideline, site earthing systems are needed both for the safety of personnel and for the protection of equipment.<sup>[R13 p.20](#sources-cited-on-this-page)</sup>
 - One earth-termination system must serve all earthing tasks of a structure (protective, lightning protection and functional earthing); otherwise potential differences can arise between installations earthed on different earth-termination systems.<sup>[R6 p.142](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Shock protection comes first**
+> [!NOTE]
+> **NOTE: Shock protection comes first**
 >
 > DEHN states that measures for protection against electric shock always take priority over surge protection measures.<sup>[R6 p.220](#sources-cited-on-this-page)</sup>
 
 ## 2  Earthing systems: TN-S, TN-C-S (PME) and TT
 
 BS 7671 (UK) names five earthing systems: TN-S, TN-C-S, TT, TN-C and IT.<sup>[R8 p.2](#sources-cited-on-this-page)</sup> A UK public low-voltage supply is one of the first three.<sup>[R8 p.2](#sources-cited-on-this-page)</sup>
+
+<a href="img/ex_fault_path.svg"><img src="img/ex_fault_path.svg" alt="ex_fault_path" width="100%"></a>
+
+*Animated: the steps play in a loop. Click to open full size.* (1) In normal use the current returns on the neutral. (2) When a live conductor touches an earthed metal case, the fault current returns on the protective earth and the PEN to the transformer.<sup>[R64 p.4](#sources-cited-on-this-page)</sup> TN-C-S is used so that this fault current does not depend on soil resistivity.<sup>[R64 p.4](#sources-cited-on-this-page)</sup> (3) In TN systems, fault touch voltages in circuits with socket outlets must be disconnected automatically within 0.4 s.<sup>[R6 p.220](#sources-cited-on-this-page)</sup>
 
 <a href="img/earthing_systems.svg"><img src="img/earthing_systems.svg" alt="earthing_systems" width="100%"></a>
 
@@ -65,7 +70,8 @@ BS 7671 (UK) names five earthing systems: TN-S, TN-C-S, TT, TN-C and IT.<sup>[R8
 - Type 3 SPDs are installed downstream of the RCD.<sup>[R6 p.222](#sources-cited-on-this-page)</sup>
 - ITU-T K.66 Annex A notes that a mains SPD may be installed before or after the earth leakage breaker, but installing it after may cause nuisance tripping, particularly if the breaker contains an RCD.<sup>[R18 p.33](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Edition of the rule quoted here**
+> [!NOTE]
+> **NOTE: Edition of the rule quoted here**
 >
 > The RA × IΔn ≤ 50 V rule above is quoted from BS 7671:2001 Regulation 413-02-20 as cited by IEE Wiring Matters (UK).<sup>[R9 p.5](#sources-cited-on-this-page)</sup> No public source in this library quotes the current edition of BS 7671 on this point; South African wiring-code requirements are handled in a separate document.
 
@@ -108,7 +114,8 @@ ITU-T K.66 requires overvoltage protection to start with bonding the metallic se
 - ITU-T K.98 notes that in structures relying on a bond to underground metallic services for their path to earth, that path may be missing if plastic pipes have been retrofitted or installed.<sup>[R25 p.39](#sources-cited-on-this-page)</sup>
 - ITU-T K.66 warns that national safety regulations may prohibit using a metallic water pipe as the main earth terminal.<sup>[R18 p.19](#sources-cited-on-this-page)</sup>
 
-> ⚠️ **WARNING** — **A metal water pipe is not automatically an earth**
+> [!WARNING]
+> **WARNING: A metal water pipe is not automatically an earth**
 >
 > K.66 warns that national safety regulations may prohibit a metallic water pipe as the main earth terminal<sup>[R18 p.19](#sources-cited-on-this-page)</sup>, and K.98 notes that a path to earth through underground metal services may be missing where plastic pipes have been fitted.<sup>[R25 p.39](#sources-cited-on-this-page)</sup>
 
@@ -209,7 +216,8 @@ Most of an electrode's resistance arises in the soil immediately around it: in D
 
 *Sizes are quoted with the jurisdiction and purpose of each source. They are not a sizing method for a particular installation; the wiring code that applies at the site decides.*
 
-> ℹ️ **NOTE** — **Not covered by the sources in this library**
+> [!NOTE]
+> **NOTE: Not covered by the sources in this library**
 >
 > The sources in this library give no rule for sizing the main earthing conductor or the main protective bonding conductors of a house installation. Use the wiring code that applies at the site.
 
@@ -217,7 +225,12 @@ Most of an electrode's resistance arises in the soil immediately around it: in D
 
 ITU-T K.66 lists as good practice for every installation that every earth point is bonded to the main earth bar and that nothing is connected to a separate earth electrode that is not bonded to it.<sup>[R18 p.18](#sources-cited-on-this-page)</sup>
 
-> ⛔ **DO NOT** — **Do not install a separate 'clean earth' for electronics**
+<a href="img/ex_potential_difference.svg"><img src="img/ex_potential_difference.svg" alt="ex_potential_difference" width="100%"></a>
+
+*Animated: the steps play in a loop. Click to open full size.* ITU-T K.66 example: without a common bonding point, a 50 A surge from the telecom line through a 300 Ω earth electrode raises the telecom equipment 15 kV above the power network.<sup>[R18 p.58](#sources-cited-on-this-page)</sup> Of the customer earthing practices K.66 examined, only the common earth bar with short bond wires protects equipment from surges entering on external cables without additional protection.<sup>[R18 p.56](#sources-cited-on-this-page)</sup>
+
+> [!CAUTION]
+> **DO NOT: Do not install a separate 'clean earth' for electronics**
 >
 > DEHN calls a separate clean earth for electronic equipment, kept apart from the lightning protection and protective earth, extremely unfavourable and possibly dangerous, because lightning can produce potential differences of up to some 100 kV in the earth-termination system.<sup>[R6 p.142](#sources-cited-on-this-page)</sup>
 
@@ -262,7 +275,7 @@ The sources were written for different countries and kinds of site. Where they c
 | R12 | **IEC/BS EN 62305 parts 1-4: technical reference (Furse)** — ABB Furse · not stated in document · IEC / BS EN 62305 (UK) · [link](https://library.e.abb.com/public/ee4d371685e544e09e8d9712fbd716c9/IEC%20BS%20EN%2062305%201%20-%204.pdf) | 1, 11-12 |
 | R13 | **Wireless High Site Engineering Guideline V1.0.0** — Wireless Access Providers' Association (South Africa) · V1.0.0, 2014-07-21 · South Africa · [link](https://wapa.org.za/sites/default/files/2018-08/WAPA%20Wireless%20High%20Site%20Engineering%20Guideline%20V1%200%200%2020140721.pdf) | 20, 22 |
 | R17 | **UFGS-27 05 26 Grounding and Bonding for Communications Systems** — USACE / NAVFAC / AFCEC (US Department of Defense) · November 2025 · USA (guide specification with designer-selectable options) · [link](https://www.wbdg.org/FFC/DOD/UFGS/UFGS%2027%2005%2026.pdf) | 22, 33 |
-| R18 | **Recommendation ITU-T K.66: Protection of customer premises from overvoltages** — International Telecommunication Union · 11/2019 · International · [link](https://www.itu.int/rec/T-REC-K.66-201911-I) | 9, 18-20, 22, 33, 58, 60 |
+| R18 | **Recommendation ITU-T K.66: Protection of customer premises from overvoltages** — International Telecommunication Union · 11/2019 · International · [link](https://www.itu.int/rec/T-REC-K.66-201911-I) | 9, 18-20, 22, 33, 56, 58, 60 |
 | R19 | **Recommendation ITU-T K.85: Requirements for the mitigation of lightning effects on home networks installed in customer premises** — International Telecommunication Union · 11/2011 · International · [link](https://www.itu.int/rec/T-REC-K.85-201111-I) | 14, 18-19, 37 |
 | R22 | **Recommendation ITU-T K.71: Protection of customer antenna installations** — International Telecommunication Union · 06/2011 · International · [link](https://www.itu.int/rec/T-REC-K.71-201106-I) | 18 |
 | R23 | **Recommendation ITU-T K.73: Shielding and bonding for cables between buildings** — International Telecommunication Union · 11/2019 · International · [link](https://www.itu.int/rec/T-REC-K.73-201911-I) | 8-9, 17 |
@@ -277,5 +290,6 @@ The sources were written for different countries and kinds of site. Where they c
 | R49 | **Photovoltaics in Buildings: Guide to the installation of PV systems, 2nd edition (DTI/Pub URN 06/1972)** — UK Department for Enterprise (DTI) / BRE · 2006 · UK · [link](https://files.bregroup.com/solar/Guide_to_the_installation_of_PV_systems_2nd_Edition.pdf) | 13 |
 | R50 | **Electrical Installation Guide (wiki): Cabling rules of SPD; Connection of SPD; Common characteristics of SPDs according to the installation characteristics** — Schneider Electric · web pages as fetched 2026-11-23 · IEC 60364 / IEC 61643 · [link](https://www.electrical-installation.org/enwiki/Cabling_rules_of_Surge_Protection_Device) | 6 |
 | R52 | **System pro M compact: OVR surge protective devices (main catalogue 1TXH000083C0201)** — ABB · 2011 · IEC · [link](https://library.e.abb.com/public/d614bdefa272767ac125784c005b65e8/1TXH000083C0201_ABB%20OVR%20%20RANGE%20SYSTEM%20proM_2011.pdf) | 10 |
+| R64 | **An Alternative technique for the detection and mitigation of electricity theft in South Africa** — SAIEE Africa Research Journal (South African Institute of Electrical Engineers); authors Quentin Louw and Pitshou Bokoro · Vol.110 (4) December 2019 · South Africa · [link](https://scielo.org.za/pdf/arj/v110n4/03.pdf) | 4 |
 
-*Generated from `content/docs/01_earthing_bonding_fundamentals.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/01_earthing_bonding_fundamentals.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

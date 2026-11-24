@@ -24,7 +24,8 @@ The published South African wiring code (SANS 10142-1) and the supply-earthing s
 
 *Click the diagram to open it full size.* *Concept sketch. (2) TN-C-S: the PEN conductor of the supply provides the household earth, as Louw and Bokoro describe for South African networks.<sup>[R64 p.4](#sources-cited-on-this-page)</sup> (3) TT is shown for comparison only. Marker (1) is not described by a South African source in this library.*
 
-> ℹ️ **NOTE** — **No earth electrode value is required by these sources for a TN supply**
+> [!NOTE]
+> **NOTE: No earth electrode value is required by these sources for a TN supply**
 >
 > ECA(SA), quoting the wiring code, states that in a TN supply an earth electrode is normally not required in the installation.<sup>[R69 p.4](#sources-cited-on-this-page)</sup> Where one is installed, the bonding conductor size rule below applies.<sup>[R69 p.3](#sources-cited-on-this-page)</sup>
 
@@ -41,7 +42,8 @@ ECA(SA) published a clarification that quotes the relevant clauses of SANS 10142
 - ECA(SA) (2024) quoting SANS 10142-1 7.12.3.1.2: any earth leakage device shall be positioned so as to avoid incorrect operation due to a parallel neutral/earth path.<sup>[R69 p.4](#sources-cited-on-this-page)</sup>
 - ECA(SA) (2024) quoting SANS 10142-1 7.12.6.1 Note 1: suitable precautions against unintended parallel operation of an alternate supply include interlocks, a break-before-make changeover switch, or an inverter if it complies with IEC 62116.<sup>[R69 p.5](#sources-cited-on-this-page)</sup>
 
-> ⚠️ **WARNING** — **One neutral-earth bond at a time**
+> [!WARNING]
+> **WARNING: One neutral-earth bond at a time**
 >
 > No permanent bond between earth and neutral may exist downstream of the main switch.<sup>[R69 p.2](#sources-cited-on-this-page)</sup> An inverter's own bond must be absent while the grid is connected and present while islanded.<sup>[R69 p.2](#sources-cited-on-this-page)</sup>
 
@@ -83,7 +85,8 @@ ECA(SA) published a clarification that quotes the relevant clauses of SANS 10142
 - Eskom EGI report 240-153339608 Rev 1: for installations up to 1 kV a.c. / 1.5 kV d.c. the sign-off must be by a Department of Labour registered Installation Electrician or Master Electrician.<sup>[R63 p.2](#sources-cited-on-this-page)</sup>
 - Eskom EGI report 240-153339608 Rev 1, Part C checklist for non-inverter generators: anti-islanding protection must be verified to operate in under 2 seconds and the reconnection delay set and verified at 60 seconds or more (quote is the checklist text including its Y/N/N/A tick columns).<sup>[R63 p.6](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Who supplies the house decides whose rules apply**
+> [!NOTE]
+> **NOTE: Who supplies the house decides whose rules apply**
 >
 > Consumers inside the City's boundary who are supplied by Eskom apply to Eskom, not to the City, for consent to connect embedded generation.<sup>[R62 p.16](#sources-cited-on-this-page)</sup>
 
@@ -101,7 +104,8 @@ A Sparks Electrical News article (Crown Publications, 2023, enquiries to DEHN Af
 - Sparks Electrical News (2023): the total SPD connecting-lead length (live + earth, or neutral + earth) should not exceed 0.5 m to the earth bar; some manufacturers allow 1 m.<sup>[R70 p.3](#sources-cited-on-this-page)</sup>
 - Sparks Electrical News (2023): load-shedding supply switching causes switching surges resembling the 8/20 us waveshape, which Type 2 devices can partly mitigate.<sup>[R70 p.3](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Secondary source**
+> [!NOTE]
+> **NOTE: Secondary source**
 >
 > These are a trade article's statements about the wiring code, not the code itself. Check the current edition of SANS 10142-1 before relying on them.<sup>[R70 p.3](#sources-cited-on-this-page)</sup>
 
@@ -128,7 +132,8 @@ The South African Weather Service lightning detection network (SALDN) started in
 - Hunt, Schumann (Wits), Saba (INPE) and Warner (ZT Research), Johannesburg Lightning Laboratory abstract (Vaisala-hosted, circa 2020): Johannesburg has a lightning flash density between 15 and 20 flashes/km2/year; the abstract states no data period or source map for this range.<sup>[R67 p.1](#sources-cited-on-this-page)</sup>
 - JLL abstract (Wits): the Johannesburg Lightning Laboratory project started measuring in the summer thunderstorm season of 2019-2020.<sup>[R67 p.2](#sources-cited-on-this-page)</sup>
 
-> 📍 **CHECK ON SITE** — **No value for Ekurhuleni or Kempton Park**
+> [!IMPORTANT]
+> **CHECK ON SITE: No value for Ekurhuleni or Kempton Park**
 >
 > None of the sources gives a ground flash density for Ekurhuleni or Kempton Park; the maps name the southern parts of Gauteng within a band.<sup>[R60 p.8](#sources-cited-on-this-page)</sup><sup>[R66 p.3](#sources-cited-on-this-page)</sup> Do not interpolate a single value from them.
 
@@ -206,4 +211,4 @@ The South African Weather Service lightning detection network (SALDN) started in
 | R69 | **Neutral Earth Bonding Clarified** — Electrical Contractors' Association (South Africa), ECA(SA); author Nicholas McDiarmid · 18 January 2024 · South Africa · [link](https://ecasa.co.za/technical/neutral-earth-bonding-clarified/) | 2-5 |
 | R70 | **Using surge protection and how it is described in the wiring code (SANS 10142-1)** — Crown Publications, Sparks Electrical News (enquiries: DEHN Africa) · 01 March 2023 · South Africa · [link](https://www.crown.co.za/latest-news/sparks-electrical-news-latest-news/23866-using-surge-protection-and-how-it-is-described-in-the-wiring-code-sans-10142-1) | 2-3 |
 
-*Generated from `content/docs/13_south_africa_ekurhuleni.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/13_south_africa_ekurhuleni.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

@@ -48,7 +48,8 @@ Nemtek's Super Earthing Kit is offered for fences where earthing is poor or eart
 - Nemtek (Super Earthing Kit instruction manual): the 1.2 m spike is inserted vertically in the centre of the hole with 50 mm left above ground for future maintenance.<sup>[R32 p.2](#sources-cited-on-this-page)</sup>
 - Nemtek (Super Earthing Kit instruction manual): the bentonite backfill should cure for at least 24 hours before testing.<sup>[R32 p.2](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Spike spacing for fences is not covered**
+> [!NOTE]
+> **NOTE: Spike spacing for fences is not covered**
 >
 > The Nemtek manuals in this library do not state the spacing between fence earth spikes or a target earth resistance for the fence earth. The rules below are written for earth rods in general, not for fence energizers.
 
@@ -69,7 +70,8 @@ Nemtek's lightning inhibitor / diverter protects the energizer against surges ar
 - Nemtek (Lightning Inhibitor and Diverter LIDii instruction manual): one inhibitor/diverter is required for a single zone security energizer and two for a dual zone energizer.<sup>[R31 p.3](#sources-cited-on-this-page)</sup>
 - Nemtek (Lightning Inhibitor and Diverter LIDii instruction manual): the arc gap has three settings (14.5 kV, 16.0 kV, 18.5 kV); position 1 (14.5 kV) is recommended for most applications.<sup>[R31 p.3](#sources-cited-on-this-page)</sup>
 
-> ✅ **DO** — **Place the diverter at the earth spike, on the fence side**
+> [!TIP]
+> **DO: Place the diverter at the earth spike, on the fence side**
 >
 > Install it between the energizer and the beginning of the fence, closer to the fence than to the energizer<sup>[R31 p.2](#sources-cited-on-this-page)</sup>, as close to the earth spike as possible and no more than 2 m away.<sup>[R31 p.2](#sources-cited-on-this-page)</sup>
 
@@ -84,7 +86,8 @@ Nemtek's lightning inhibitor / diverter protects the energizer against surges ar
 - Nemtek (Druid LCD 2x installer manual): connecting leads run underground shall be in a conduit of insulating material, or insulated high voltage cable shall be used.<sup>[R30 p.25](#sources-cited-on-this-page)</sup>
 - Nemtek (Druid LCD 2x installer manual): fence connecting leads shall not be installed in the same conduit as mains supply wiring, communication cables or data cables.<sup>[R30 p.25](#sources-cited-on-this-page)</sup>
 
-> ⛔ **DO NOT** — **Never share a conduit or hole with low-voltage wiring**
+> [!CAUTION]
+> **DO NOT: Never share a conduit or hole with low-voltage wiring**
 >
 > Nemtek requires HT wire between fence and energizer, including the earth wire, and these wires must never share a conduit or hole with low voltage wiring.<sup>[R30 p.12](#sources-cited-on-this-page)</sup>
 
@@ -98,7 +101,8 @@ Nemtek's lightning inhibitor / diverter protects the energizer against surges ar
 
 For optimum lightning protection the IDS X-Series installer manual connects a low-resistance earth to the telephone communicator's earth input.<sup>[R53 p.9](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Not covered in the IDS facts**
+> [!NOTE]
+> **NOTE: Not covered in the IDS facts**
 >
 > The facts extracted from the IDS manuals do not cover earthing of the panel enclosure, the mains transformer or the screens of keypad-bus and zone cables, and give no earth resistance value.
 
@@ -129,7 +133,8 @@ For optimum lightning protection the IDS X-Series installer manual connects a lo
 - A bus cable run between buildings in a lightning-current-carrying shielded duct or metal pipe earthed at both ends does not need lightning equipotential bonding; surge arresters are then sufficient.<sup>[R6 p.315](#sources-cited-on-this-page)</sup>
 - A signal-line SPD should be installed as close as possible to the terminal device, which has a positive effect on the residual voltage.<sup>[R6 p.261](#sources-cited-on-this-page)</sup>
 
-> ⚠️ **WARNING** — **Installer and warranty**
+> [!WARNING]
+> **WARNING: Installer and warranty**
 >
 > IDS states that the serial X-Series panel should only be installed by an accredited professional alarm installer<sup>[R54 p.48](#sources-cited-on-this-page)</sup>, and that its 24-month warranty excludes lightning damage.<sup>[R54 p.48](#sources-cited-on-this-page)</sup>
 
@@ -182,4 +187,4 @@ The energizer manual keeps the fence earth away from other earths; the general b
 | R53 | **IDS X-Series Installer Manual 700-398-02O** — Inhep Digital Security (IDS) · 700-398-02O · South Africa · [link](https://www.idsprotect.co.za/site-documents/product-download/intrusion/xseries/IDS%20X-Series%20Installer%20Manual.pdf) | 8-10, 19 |
 | R54 | **IDS XSeries Serial Installer Manual 700-678-02A** — Inhep Digital Security (IDS) · 700-678-02A · South Africa · [link](https://www.idsprotect.co.za/za/en/product-assets/xseries/control-panels/860-1-864-xs-ids-x64-control-panel/assets/documents/IDS%20XSeries%20Serial%20Installer%20Manual.pdf) | 9, 48 |
 
-*Generated from `content/docs/08_alarms_electric_fences.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/08_alarms_electric_fences.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*

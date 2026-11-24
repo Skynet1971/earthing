@@ -48,7 +48,8 @@ ITU-T K.27: in a telecommunication building the bonding and earthing network is 
 - ITU-T K.27: equipment framework and structural metal of the CBN within two metres of an IBN should be bonded to the single point connection bus-bar for personnel safety.<sup>[R24 p.27](#sources-cited-on-this-page)</sup>
 - ITU-T K.27: a single point connection in an isolated DC return system can be verified with a DC clamp-on ammeter around the connecting conductor; zero current confirms the single point connection.<sup>[R24 p.18](#sources-cited-on-this-page)</sup>
 
-> ℹ️ **NOTE** — **Equipotential bonding as TP-Link defines it**
+> [!NOTE]
+> **NOTE: Equipotential bonding as TP-Link defines it**
 >
 > TP-Link defines equipotential bonding as intentionally connecting all earthed systems to the same grounding grid, or connecting their grounding grids together, to create an earthed equipotential zone.<sup>[R29 p.7](#sources-cited-on-this-page)</sup>
 
@@ -204,4 +205,4 @@ The sources were written for different countries and kinds of site. Where they c
 | R25 | **Recommendation ITU-T K.98: Overvoltage protection guide for telecommunication equipment installed in customer premises** — International Telecommunication Union · 08/2014 · International · [link](https://www.itu.int/rec/T-REC-K.98-201408-I) | 30 |
 | R29 | **Lightning Protection Guide: Rack-mountable Devices, 1910012320 REV1.0.1** — TP-Link Technologies Co., Ltd. · December 2017 · International · [link](https://static.tp-link.com/configurationguide/lightning_protection_guide.pdf) | 5-7 |
 
-*Generated from `content/docs/11_racks_cabinets.yaml` on 2026-11-23. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/11_racks_cabinets.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*
