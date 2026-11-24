@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install Python packages
-        run: pip install reportlab==4.2.5 pyyaml==6.0.2
+        run: pip install reportlab==4.2.5 pyyaml==6.0.2 pillow==11.1.0
       - name: Build public PDFs (private documents are skipped automatically)
         run: python3 tools/build_pdfs.py
       - name: Build wiki pages
