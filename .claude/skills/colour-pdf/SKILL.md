@@ -116,6 +116,29 @@ The owner could not read the first diagrams in the wiki. These rules exist so th
 6. **Check at real size before committing:** render with `tools/preview_diagrams.py` at 80 dpi and look at
    every diagram you changed. Text that is hard to read at 80 dpi is too small.
 
+## 4b. Animated explainers (`tools/explainers.py`)
+
+Animated SVGs for the wiki (CSS keyframes + SMIL `animateMotion`), with a still frame for the PDFs.
+
+1. **Every number or rule drawn in an explainer comes from a verified fact.** Name the fact IDs in the
+   function's docstring and cite them in the `explainer:` caption of every document that uses it.
+   Step texts inside the picture must not say more than those facts (no "small residual" unless a fact says so).
+2. **Canvas 960 px wide, text at least 17 px** (`Svg.text` enforces it), font chain `Segoe UI, Helvetica,
+   Arial, sans-serif`. Moving charges must not stop on top of labels (end their paths at box edges).
+3. **Steps:** use `phases()` windows and `step()` rows so the viewer sees what each phase means. The picture
+   must make sense at its **still time** (the second value returned), which is the PDF frame.
+4. Respect `prefers-reduced-motion` (already in the shared CSS).
+5. After a change run `python3 tools/render_explainers.py` (needs the local Chromium) and **commit the PNGs**
+   in `docs/img/explainers/`; CI has no browser. Look at every PNG before committing.
+6. Use in a document: `- explainer: {name: ex_fault_path, caption: "...{{J039}}"}`. The wiki shows the animated
+   SVG full width (click to enlarge); the PDF shows the still with "Animated in the wiki." in the caption.
+
+## 4c. Wiki front page and callouts
+
+- `tools/wiki_graphics.py` draws the animated banner and one colour card per document (icon per sheet id in
+  `ICON`). Documents whose badge starts with `VISUAL` are listed first with an "animated" ribbon.
+- Callouts become GitHub alert boxes: do = TIP, dont = CAUTION, warn = WARNING, note = NOTE, site = IMPORTANT.
+
 ## 5. Build and check
 
 ```bash
