@@ -1,5 +1,7 @@
 <a href="Sources"><img src="img/home_banner.svg" width="100%" alt="Earthing, bonding, surge and lightning protection library"></a>
 
+<a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a> <a href="pdf/all_pdfs.zip"><img src="img/btn_all.svg" height="64" alt="Download all PDFs"></a>
+
 > [!TIP]
 > **New here? Start with the three animated visual guides.** They show how earthing works, how a surge reaches a PoE camera and why surge-protector wires must be short. Every picture carries citations to its sources.
 

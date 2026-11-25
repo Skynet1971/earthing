@@ -1,3 +1,5 @@
+<a href="pdf/08_alarms_electric_fences.pdf"><img src="img/btn_08.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 08 · ALARMS & FENCES** · content version 1.0
 
 # Electric fences and intruder alarms
@@ -6,7 +8,6 @@
 
 **Applies to:** Nemtek Druid electric fence energizers, Nemtek lightning inhibitor / diverter and Super Earthing Kit, fence earth systems, IDS X-Series intruder alarm panels, keypad bus and sensor wiring
 
-📄 **PDF:** [08_alarms_electric_fences.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/08_alarms_electric_fences.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

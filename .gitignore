@@ -7,3 +7,7 @@ content/private/
 private/
 __pycache__/
 *.pyc
+# Generated in CI: PDF copies and covers inside the wiki, and the full-width site
+wiki/pdf/
+wiki/img/thumb_*.png
+site/

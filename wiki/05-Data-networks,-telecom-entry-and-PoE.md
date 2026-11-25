@@ -1,3 +1,5 @@
+<a href="pdf/05_data_network_poe.pdf"><img src="img/btn_05.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 05 · DATA** · content version 1.0
 
 # Data networks, telecom entry and PoE
@@ -6,7 +8,6 @@
 
 **Applies to:** Telephone and ADSL lines, fibre entries, routers and modems, Ethernet switches and PoE midspans, shielded and unshielded twisted-pair cabling, outdoor radios and access points, data links between buildings
 
-📄 **PDF:** [05_data_network_poe.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/05_data_network_poe.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

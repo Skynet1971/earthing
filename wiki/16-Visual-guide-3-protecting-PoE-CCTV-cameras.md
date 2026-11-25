@@ -1,3 +1,5 @@
+<a href="pdf/16_visual_guide_poe_cctv_cameras.pdf"><img src="img/btn_16.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **VISUAL GUIDE 3 · POE CAMERAS** · content version 1.0
 
 # Visual guide 3: protecting PoE CCTV cameras
@@ -6,7 +8,6 @@
 
 **Applies to:** IP / PoE cameras on poles and walls, their cables, PoE switches and recorders
 
-📄 **PDF:** [16_visual_guide_poe_cctv_cameras.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/16_visual_guide_poe_cctv_cameras.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

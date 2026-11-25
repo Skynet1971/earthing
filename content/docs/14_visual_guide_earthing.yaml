@@ -50,3 +50,35 @@ sections:
           - value: "90 %"
             label: "of the resistance lies within 5 m of a 20 cm sphere electrode (DEHN example){{D002}}"
       - facts: [A031, A032, A043, A034, I133]
+  - title: "5  Where the house earth comes from, and what joins it"
+    lead: "In a TN-C-S supply the earth arrives on the supply cable: the PEN conductor provides the household earth{{J039}}, and at the supply point the neutral and earth are joined and taken into the soil through an earthing arrangement, typically below 10 Ω.{{J041, J042}}"
+    blocks:
+      - explainer:
+          name: ex_supply_earth
+          caption: "(1) At the supply point the neutral terminal and earth conductor are bonded together and earthed, typically below 10 Ω.{{J041, J042}} (2) The PEN conductor provides the household earth and carries earth-fault current back to the transformer.{{J039}} (3) All earth electrodes associated with a building should be interconnected{{B096}}, including those of external equipment such as camera masts{{D085}} and an existing earth spike at a PV array.{{H111}} (4) Exception: a security-fence earth stays at least 2 m from any other earth system.{{E077}}"
+      - h2: "Do all earths connect to the supply earth?"
+      - facts: [J039, J076, J077, B096, D013, D085, B040]
+      - callout:
+          kind: dont
+          title: "Only one neutral-earth link"
+          text: "No permanent neutral-earth bond downstream of the main switch.{{J071}} An inverter relies on the supply's neutral-earth bond while the grid is connected; its own bond may be present only while it runs islanded.{{J073}}"
+      - callout:
+          kind: warn
+          title: "The electric-fence earth is the exception"
+          text: "Keep the energizer's earth electrode at least 2 m from any other earth system for a security fence, 10 m for an agricultural fence.{{E077}}"
+      - h2: "Added earth bars"
+      - p: "ITU-T K.66: bond all earth points to the main earth bar, which may be via added earth bars.{{B002}} An added earth bar is any intermediate earth bar or terminal that is itself bonded back to the main earth bar, such as the earth bar of each sub-distribution board. Where services enter at different points, each bonding bar is connected to the earthing system and the bars are bonded together.{{B008}}"
+      - h2: "Wire sizes stated in the public sources"
+      - table:
+          head: ["Connection", "Smallest copper size", "Source"]
+          widths: [0.4, 0.4, 0.2]
+          rows:
+            - ["Antenna system to the main earth terminal, against mains contact", "2.5 mm² in most cases{{B071}}", "ITU-T K.71"]
+            - ["Internal metal installations to the equipotential bonding bar (with LPS)", "6 mm²{{D021}}", "IEC 62305-3 via DEHN"]
+            - ["Between two equipotential bonding bars (with LPS)", "16 mm²{{D027}}", "IEC 62305-3 via DEHN"]
+            - ["Camera earth wire", "6 mm², insulated{{E048}}", "TP-Link"]
+            - ["Antenna bond carrying partial lightning current", "5 mm²{{B070}}", "ITU-T K.71"]
+            - ["Added earth electrode to the consumer's earth terminal", "at least half the phase-conductor size, not less than 6 mm²{{J076}}", "ECA(SA) quoting SANS 10142-1"]
+            - ["PV mounting rails / substructure", "6 mm²{{H092, D099}}", "SAPVIA, DEHN"]
+            - ["Type 2 SPD connecting cables", "4 mm² (advised){{I040}}; 6 mm²{{J086}}", "BEAMA (UK); Sparks (SA)"]
+          caption: "The size of the earth conductor between distribution boards follows the protective-conductor table of the wiring code that applies at the site; that table is not in the public library."

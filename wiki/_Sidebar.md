@@ -1,5 +1,7 @@
 **[🏠 Home](Home)**
 
+**[📥 PDF library](PDF-library)**
+
 **▶ Animated guides**
 
 - [how earthing and bonding work](14-Visual-guide-1-how-earthing-and-bonding-work)

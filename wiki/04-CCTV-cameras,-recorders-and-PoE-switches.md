@@ -1,3 +1,5 @@
+<a href="pdf/04_cctv_cameras_recorders.pdf"><img src="img/btn_04.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 04 · CCTV** · content version 1.0
 
 # CCTV cameras, recorders and PoE switches
@@ -6,7 +8,6 @@
 
 **Applies to:** IP and PoE cameras on buildings and poles, coaxial and RS-485 camera lines, network video recorders, PoE switches and midspans
 
-📄 **PDF:** [04_cctv_cameras_recorders.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/04_cctv_cameras_recorders.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

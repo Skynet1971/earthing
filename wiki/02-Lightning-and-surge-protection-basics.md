@@ -1,3 +1,5 @@
+<a href="pdf/02_lightning_and_surge_basics.pdf"><img src="img/btn_02.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 02 · LIGHTNING** · content version 1.0
 
 # Lightning and surge protection basics
@@ -6,7 +8,6 @@
 
 **Applies to:** Houses and small buildings with or without an external lightning protection system, their power, telecom, antenna and data lines, and equipment connected to more than one service
 
-📄 **PDF:** [02_lightning_and_surge_basics.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/02_lightning_and_surge_basics.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

@@ -69,3 +69,12 @@ def banner(n_docs, n_sources, n_facts):
 <rect x="242" y="208" width="190" height="40" rx="20" fill="#0E7490"/><text x="337" y="234" fill="white" text-anchor="middle">{n_sources} sources</text>
 <rect x="444" y="208" width="230" height="40" rx="20" fill="#D97706"/><text x="559" y="234" fill="white" text-anchor="middle">{n_facts} cited facts</text></g>
 </svg>'''   # banner document
+
+def button(label, accent="navy"):
+    """Rounded colour button with a download arrow (height 64, width follows the label)."""
+    col = ACC.get(accent, accent)   # button colour
+    w = 90 + int(len(label) * 12.5)   # approximate width for 22 px bold text
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} 64" width="{w}" height="64" font-family="{FONT}">'
+            f'<style>text{{font-family:{FONT}}}</style><rect x="2" y="2" width="{w - 4}" height="60" rx="30" fill="{col}"/>'
+            f'<g stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M38 18v22M28 31l10 10 10-10M26 47h24"/></g>'
+            f'<text x="62" y="40" font-size="22" font-weight="700" fill="white">{html.escape(label)}</text></svg>')   # button document

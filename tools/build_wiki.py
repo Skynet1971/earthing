@@ -11,7 +11,7 @@ import content as c   # catalogue, facts, citations
 import diagrams   # diagram registry (exported as SVG)
 
 REPO_URL = "https://github.com/Skynet1971/earthing"   # main repository (PDF links)
-PDF_URL = REPO_URL + "/raw/HEAD/docs/pdf/"   # HEAD = the repository's default branch
+PDF_URL = "pdf/"   # PDFs are copied into the wiki itself (wiki/pdf/), so they open from the wiki
 SERIES = "Earthing, Bonding, Surge & Lightning Protection Library"   # same series name as the PDFs
 LABEL = {"do": "✅ **DO**", "dont": "⛔ **DO NOT**", "warn": "⚠️ **WARNING**", "note": "ℹ️ **NOTE**", "site": "📍 **CHECK ON SITE**"}   # callout labels
 
@@ -43,7 +43,8 @@ def render_doc(doc, catalog, facts):
     out = [f"> {SERIES} · **{doc.get('badge', '')}** · content version {doc.get('version', '1.0')}", "",
            f"# {doc['title']}", "", f"*{doc.get('subtitle', '')}*", "",
            f"**Applies to:** {doc.get('applies_to', '')}", "",
-           f"📄 **PDF:** [{doc['id']}_{doc['slug']}.pdf]({PDF_URL}{doc['id']}_{doc['slug']}.pdf)", "",
+           f'<a href="{PDF_URL}{doc["id"]}_{doc["slug"]}.pdf"><img src="img/btn_{doc["id"]}.svg" height="64" alt="Download the PDF"></a> '
+           f'<a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>', "",
            "> ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the "
            "wiring code that applies at the site, the product manuals, or a qualified and registered person.", ""]   # page header
     for sec in doc["sections"]:   # every chapter
@@ -94,6 +95,8 @@ def render_doc(doc, catalog, facts):
         out.append(f"| R{s['ref']} | **{cell(s['title'])}** — {cell(s['publisher'])} · {cell(s['edition'])} · {cell(s['jurisdiction'])} · [link]({s['url']}) | {c.page_ranges(pages)} |")   # one row
     out += ["", f"*Generated from `content/docs/{doc['_file']}` on {datetime.date.today().isoformat()}. Do not edit this page in the wiki; edit the content file.*", ""]   # footer
     if cites.missing: raise SystemExit(f"{doc['_file']}: unknown fact IDs {sorted(cites.missing)}")   # same check as the PDF build
+    btn = next(i for i, l in enumerate(out) if 'img/btn_' in l)   # the download-button line
+    out.insert(0, out.pop(btn)); out.insert(1, "")   # buttons first on the page
     return "\n".join(out), cites   # page text
 
 def main():
@@ -111,6 +114,28 @@ def main():
         name = page_name(doc); (out_dir / f"{name}.md").write_text(text)   # write the page
         index.append((doc, name, len(cites.used)))   # remember it for the index
     import wiki_graphics as wg   # banner and cards
+    import shutil, subprocess, zipfile   # copying, thumbnails, zip
+    pdf_dir = out_dir / "pdf"; pdf_dir.mkdir(exist_ok=True)   # PDFs inside the wiki
+    for old in pdf_dir.glob("*"): old.unlink()   # fully regenerated
+    from pypdf import PdfReader   # page counts for the buttons
+    pages = {}   # document id -> page count
+    for doc, name, _ in index:   # every public document
+        src = c.ROOT / "docs" / "pdf" / f'{doc["id"]}_{doc["slug"]}.pdf'   # built PDF
+        if not src.exists(): continue   # not built (should not happen in CI)
+        shutil.copy2(src, pdf_dir / src.name); pages[doc["id"]] = len(PdfReader(str(src)).pages)   # copy and count
+        (out_dir / "img" / f'btn_{doc["id"]}.svg').write_text(wg.button(f'Download PDF · {pages[doc["id"]]} pages', doc.get("accent", "navy")))   # download button
+        if shutil.which("pdftoppm"):   # cover thumbnail (poppler-utils)
+            subprocess.run(["pdftoppm", "-png", "-r", "45", "-f", "1", "-l", "1", "-singlefile", str(src), str(out_dir / "img" / f'thumb_{doc["id"]}')], check=True)   # first page as PNG
+    (out_dir / "img" / "btn_library.svg").write_text(wg.button("All PDFs", "navy"))   # library button
+    with zipfile.ZipFile(pdf_dir / "all_pdfs.zip", "w", zipfile.ZIP_DEFLATED) as z:   # everything in one download
+        for f in sorted(pdf_dir.glob("*.pdf")): z.write(f, f.name)   # add each PDF
+    lib = ["# 📥 PDF library", "", f'<a href="{PDF_URL}all_pdfs.zip"><img src="img/btn_all.svg" height="64" alt="Download all PDFs"></a>', "",
+           "Every sheet as a colour PDF. Click a cover to open the PDF; the wiki page has the animated version.", "", "<table>"]   # library page
+    (out_dir / "img" / "btn_all.svg").write_text(wg.button(f"Download all {len(pages)} PDFs (zip)", "green"))   # zip button
+    cells = [f'<td width="25%" align="center"><a href="{PDF_URL}{doc["id"]}_{doc["slug"]}.pdf"><img src="img/thumb_{doc["id"]}.png" width="100%" alt="{html.escape(doc["title"])}"></a><br>'
+             f'<b>{html.escape(doc.get("badge", ""))}</b><br>{html.escape(doc["title"])}<br><a href="{name}">wiki page</a> · {pages.get(doc["id"], "?")} pages</td>' for doc, name, _ in index if doc["id"] in pages]   # one cell per PDF
+    lib += ["<tr>" + "".join(cells[i:i + 4]) + "</tr>" for i in range(0, len(cells), 4)] + ["</table>", ""]   # rows of four
+    (out_dir / "PDF-library.md").write_text("\n".join(lib))   # write the library page
     (out_dir / "img" / "home_banner.svg").write_text(wg.banner(len(index), len(catalog), len(facts)))   # animated banner
     for doc, name, _ in index: (out_dir / "img" / f'card_{doc["id"]}.svg').write_text(wg.card(doc))   # one card per document
     def grid(rows):   # HTML table of linked cards, three per row
@@ -119,6 +144,7 @@ def main():
     guides = [r for r in index if r[0].get("badge", "").startswith("VISUAL")]   # animated visual guides
     sheets = [r for r in index if not r[0].get("badge", "").startswith("VISUAL")]   # reference sheets
     home = ['<a href="Sources"><img src="img/home_banner.svg" width="100%" alt="Earthing, bonding, surge and lightning protection library"></a>', "",
+            '<a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a> <a href="pdf/all_pdfs.zip"><img src="img/btn_all.svg" height="64" alt="Download all PDFs"></a>', "",
             "> [!TIP]", "> **New here? Start with the three animated visual guides.** They show how earthing works, how a surge reaches a PoE camera and why surge-protector wires must be short. Every picture carries citations to its sources.", "",
             "## ▶ Animated visual guides", ""] + grid(guides) + ["## 📚 Reference sheets", ""] + grid(sheets) + [
             "## How to read these pages", "",
@@ -135,7 +161,7 @@ def main():
     for s in sorted(catalog.values(), key=lambda x: x["ref"]):   # every catalogued source
         src.append(f"| R{s['ref']} | [{cell(s['title'])}]({s['url']}) | {cell(s['publisher'])} | {cell(s['edition'])} | {cell(s['jurisdiction'])} |")   # row
     (out_dir / "Sources.md").write_text("\n".join(src) + "\n")   # write the sources page
-    side = ["**[🏠 Home](Home)**", "", "**▶ Animated guides**", ""] + [f"- [{doc['title'].split(': ', 1)[-1]}]({name})" for doc, name, _ in index if doc.get("badge", "").startswith("VISUAL")] + \
+    side = ["**[🏠 Home](Home)**", "", "**[📥 PDF library](PDF-library)**", "", "**▶ Animated guides**", ""] + [f"- [{doc['title'].split(': ', 1)[-1]}]({name})" for doc, name, _ in index if doc.get("badge", "").startswith("VISUAL")] + \
            ["", "**📚 Reference sheets**", ""] + [f"- [{doc.get('badge', doc['id'])}]({name})" for doc, name, _ in index if not doc.get("badge", "").startswith("VISUAL")] + ["", "[📖 Sources](Sources)"]   # sidebar: guides first
     (out_dir / "_Sidebar.md").write_text("\n".join(side) + "\n")   # write the sidebar
     print(f"wiki: {len(index)} pages + Home, Sources, _Sidebar, {len(diagrams.DIAGRAMS)} SVG diagrams -> {out_dir.relative_to(c.ROOT)}")   # summary

@@ -1,3 +1,5 @@
+<a href="pdf/01_earthing_bonding_fundamentals.pdf"><img src="img/btn_01.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 01 · EARTHING** · content version 1.0
 
 # Earthing and bonding fundamentals
@@ -6,7 +8,6 @@
 
 **Applies to:** The earthing and protective bonding of a house: supply earthing system, main earthing terminal, bonding of incoming services, earth electrodes, and the earth references of connected equipment
 
-📄 **PDF:** [01_earthing_bonding_fundamentals.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/01_earthing_bonding_fundamentals.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

@@ -1,3 +1,5 @@
+<a href="pdf/13_south_africa_ekurhuleni_gauteng.pdf"><img src="img/btn_13.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 13 · SOUTH AFRICA** · content version 1.0
 
 # South Africa: supply earthing, Ekurhuleni rules and Gauteng lightning
@@ -6,7 +8,6 @@
 
 **Applies to:** Houses supplied by the City of Ekurhuleni or Eskom in Gauteng, including installations with inverters, batteries and solar PV
 
-📄 **PDF:** [13_south_africa_ekurhuleni_gauteng.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/13_south_africa_ekurhuleni_gauteng.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

@@ -1,3 +1,5 @@
+<a href="pdf/11_racks_cabinets_bonding.pdf"><img src="img/btn_11.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 11 · RACKS** · content version 1.0
 
 # Equipment racks and cabinets
@@ -6,7 +8,6 @@
 
 **Applies to:** Equipment racks and cabinets, rack-mounted switches, routers and patch panels, bonding busbars, cable trays and the bonding conductors between them
 
-📄 **PDF:** [11_racks_cabinets_bonding.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/11_racks_cabinets_bonding.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

@@ -1,3 +1,5 @@
+<a href="pdf/03_distribution_board_surge_protection.pdf"><img src="img/btn_03.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 03 · DB SURGE** · content version 1.0
 
 # Surge protective devices in the distribution board
@@ -6,7 +8,6 @@
 
 **Applies to:** Main and sub-distribution boards of houses and small buildings on TN-S, TN-C-S (PME) and TT supplies, socket-outlet and plug-in protectors, equipment connected to power and communication lines
 
-📄 **PDF:** [03_distribution_board_surge_protection.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/03_distribution_board_surge_protection.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

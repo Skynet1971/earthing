@@ -1,3 +1,5 @@
+<a href="pdf/06_antennas_masts_dishes.pdf"><img src="img/btn_06.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 06 · ANTENNAS** · content version 1.0
 
 # Antennas, masts and dishes
@@ -6,7 +8,6 @@
 
 **Applies to:** Roof and wall antennas, antenna masts near the building, radio towers and high sites, coaxial antenna cables, satellite dishes, outdoor radios and cameras on masts
 
-📄 **PDF:** [06_antennas_masts_dishes.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/06_antennas_masts_dishes.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

@@ -1,3 +1,5 @@
+<a href="pdf/09_plc_control_cabling.pdf"><img src="img/btn_09.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 09 · PLC & CONTROL** · content version 1.0
 
 # PLCs, instrumentation and control cabling
@@ -6,7 +8,6 @@
 
 **Applies to:** Siemens LOGO! 8 base modules, expansion modules, TDE and CSM, their power supplies and I/O cabling; instrumentation and control cables, cable screens and armour; measuring, control, bus and RS-485 lines
 
-📄 **PDF:** [09_plc_control_cabling.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/09_plc_control_cabling.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

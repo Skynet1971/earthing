@@ -1,3 +1,5 @@
+<a href="pdf/15_visual_guide_lightning_surges_spds.pdf"><img src="img/btn_15.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **VISUAL GUIDE 2 · SURGES** · content version 1.0
 
 # Visual guide 2: lightning, surges and surge protectors
@@ -6,7 +8,6 @@
 
 **Applies to:** Anyone choosing or checking surge protective devices in a house distribution board
 
-📄 **PDF:** [15_visual_guide_lightning_surges_spds.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/15_visual_guide_lightning_surges_spds.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

@@ -23,7 +23,9 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install Python packages
-        run: pip install reportlab==4.2.5 pyyaml==6.0.2 pillow==11.1.0
+        run: pip install reportlab==4.2.5 pyyaml==6.0.2 pillow==11.1.0 pypdf==5.1.0 markdown==3.7
+      - name: Install poppler (PDF cover thumbnails)
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
       - name: Build public PDFs (private documents are skipped automatically)
         run: python3 tools/build_pdfs.py
       - name: Build wiki pages
@@ -33,6 +35,12 @@ jobs:
         with:
           name: pdfs
           path: docs/pdf/*.pdf
+      - name: Build the full-width site (GitHub Pages)
+        run: python3 tools/build_site.py
+      - name: Upload the site for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
       - name: Publish to the GitHub wiki
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -46,3 +54,17 @@ jobs:
           if git diff --cached --quiet; then echo "wiki unchanged"; exit 0; fi
           git commit -m "Regenerate wiki from ${GITHUB_SHA::7}"
           git push
+  pages:
+    # Full-width website. One-time setup: Settings > Pages > Source: GitHub Actions.
+    needs: build
+    continue-on-error: true   # the wiki is still published if Pages is not enabled yet
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

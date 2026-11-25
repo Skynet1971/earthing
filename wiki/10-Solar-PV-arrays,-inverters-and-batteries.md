@@ -1,3 +1,5 @@
+<a href="pdf/10_solar_pv_inverters_batteries.pdf"><img src="img/btn_10.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 10 · SOLAR PV** · content version 1.0
 
 # Solar PV arrays, inverters and batteries
@@ -6,7 +8,6 @@
 
 **Applies to:** Roof-mounted PV arrays and mounting rails, string and main d.c. cables, grid-tied and hybrid inverters (Sunsynk named where the statement is product-specific), battery banks, a.c. connection to the distribution board, inverter data lines
 
-📄 **PDF:** [10_solar_pv_inverters_batteries.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/10_solar_pv_inverters_batteries.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

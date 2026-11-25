@@ -295,6 +295,49 @@ def ex_bound_leads():
     s.step(40, 578, 3, "Bound: tied side by side, the opposite fields cancel and the voltage drops.", "green", "s3")   # step 3
     return s.render(), 7.5   # SVG and still time
 
+def ex_supply_earth():
+    """Where the house earth comes from and what joins it. Facts: J041/J042 (supply point: neutral and earth bonded,
+    earthing arrangement typically below 10 ohm), J039 (PEN provides the household earth in TN-C-S), B096/D085/H111/J076
+    (all electrodes interconnected with the house earth), E077 (fence earth at least 2 m from other earths, security fence),
+    J071 (no permanent neutral-earth bond downstream of the main switch)."""
+    s = Svg("Where the house earth comes from, and what joins it", "green", h=664)   # canvas
+    phases(s, 12, [(0.0, 0.25), (0.25, 0.5), (0.5, 0.75), (0.75, 1.0)])   # four steps
+    s.add(f'<rect x="20" y="380" width="920" height="26" fill="{C["soil"]}"/>')   # ground
+    s.add(f'<circle cx="80" cy="190" r="30" fill="none" stroke="{C["ink"]}" stroke-width="4"/><circle cx="80" cy="232" r="30" fill="none" stroke="{C["ink"]}" stroke-width="4"/>')   # transformer
+    s.text(80, 124, "Supply", 18, "ink", "middle", "700").text(80, 145, "transformer", 17, "muted", "middle")   # label
+    s.pe([(80, 262), (80, 392)]); s.earth(80, 392, 13)   # supply earth at the transformer
+    s.add(f'<g class="s1"><rect x="92" y="300" width="182" height="58" rx="8" fill="{C["mint"]}" stroke="{C["green"]}" stroke-width="2"/>'
+          f'<text x="183" y="324" font-size="17" text-anchor="middle" font-weight="700" fill="{C["green"]}">N and earth joined</text>'
+          f'<text x="183" y="346" font-size="17" text-anchor="middle" fill="{C["ink"]}">typically &lt; 10 Ω</text></g>')   # supply earth label
+    s.line([(110, 232), (300, 232)], "blue", 7); s.line([(110, 232), (300, 232)], "green", 3, dash="12 12")   # PEN cable
+    s.text(205, 220, "PEN cable", 17, "blue", "middle", "700")   # PEN label
+    s.dots("M110,232 L300,232", "amber", 3, 1.5, r=7, cls="p2")   # earth arriving on the PEN
+    s.add(f'<rect x="300" y="96" width="420" height="284" rx="12" fill="{C["paper"]}" stroke="{C["navy"]}" stroke-width="3"/>')   # house
+    s.text(510, 124, "House", 20, "navy", "middle", "700")   # house label
+    s.box(320, 200, 150, 64, ["Supply-entry", "board"], fill="sand", stroke="amber", size=17)   # main board
+    s.text(395, 290, "no N-E link after", 17, "red", "middle", "700").text(395, 311, "the main switch", 17, "red", "middle", "700")   # J071 reminder
+    s.box(500, 214, 200, 40, "Main earth bar", fill="mint", stroke="green", size=18)   # consumer's earth terminal
+    s.pe([(470, 234), (500, 234)])   # board to earth bar
+    s.box(560, 140, 140, 40, "Other boards", fill="white", stroke="ink", size=17); s.pe([(630, 180), (630, 214)])   # added earth bars
+    s.pe([(600, 254), (600, 392)]); s.earth(600, 392, 13); s.text(612, 372, "house rod", 17, "green", weight="700")   # house electrode
+    s.add(f'<polygon points="760,150 820,96 880,150" fill="{C["sky"]}" stroke="{C["blue"]}" stroke-width="2"/>'); s.text(820, 140, "PV", 17, "blue", "middle", "700")   # roof PV
+    s.add(f'<rect x="772" y="196" width="8" height="184" fill="{C["line"]}"/>'); s.box(744, 160, 64, 32, "Cam", fill="sky", stroke="blue", size=17)   # camera pole
+    s.pe([(820, 150), (820, 392)]); s.earth(820, 392, 13); s.text(832, 300, "PV spike", 17, "green", weight="700")   # PV spike
+    s.pe([(776, 380), (776, 392)]); s.earth(776, 392, 11)   # pole rod
+    s.add(f'<g class="p3">'); s.pe([(700, 234), (900, 234)], width=7); s.add('</g>')   # bonding conductor (visible in step 3+)
+    s.pe([(600, 418), (920, 418)], width=4)   # buried bond joining the rods
+    s.pe([(776, 410), (776, 418)], width=4); s.pe([(820, 410), (820, 418)], width=4)   # rods to the buried bond
+    s.dots("M600,418 L920,418", "green", 4, 2.0, r=6, cls="p3")   # bonding highlight
+    s.add(f'<rect x="20" y="430" width="250" height="44" rx="10" fill="{C["lilac"]}" stroke="{C["purple"]}" stroke-width="2"/>')   # fence panel
+    s.text(145, 458, "Fence energizer rods", 17, "purple", "middle", "700")   # fence label
+    s.add(f'<g class="p4"><line x1="270" y1="452" x2="590" y2="452" stroke="{C["red"]}" stroke-width="3" stroke-dasharray="8 6"/>'
+          f'<text x="430" y="444" font-size="18" fill="{C["red"]}" text-anchor="middle" font-weight="700">keep ≥ 2 m away, not joined</text></g>')   # fence separation
+    s.step(40, 516, 1, "The supply earth starts at the transformer: neutral and earth joined, into the soil.", "green", "s1")   # step 1
+    s.step(40, 558, 2, "In TN-C-S the PEN cable brings that earth to the house.", "blue", "s2")   # step 2
+    s.step(40, 600, 3, "Every rod of the installation joins the house earth: house rod, PV spike, camera pole.", "teal", "s3")   # step 3
+    s.step(40, 642, 4, "Exception: the electric-fence earth stays at least 2 m away (security fence).", "purple", "s4")   # step 4
+    return s.render(), 7.0   # SVG and still time
+
 def ex_lpz():
     """Lightning protection zones. Facts: A063 (LPZ 0 full lightning current), A064 (LPZ 1 partial currents),
     A065 (LPZ 2 only remnants), A067 (SPD at 0/1 lightning current protection, at 1/2 overvoltage protection)."""
@@ -322,4 +365,5 @@ EXPLAINERS = {   # name used in content files -> function returning (svg text, s
     "ex_spd_leads": ex_spd_leads,
     "ex_bound_leads": ex_bound_leads,
     "ex_lpz": ex_lpz,
+    "ex_supply_earth": ex_supply_earth,
 }

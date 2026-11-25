@@ -1,3 +1,5 @@
+<a href="pdf/12_inspection_testing_maintenance.pdf"><img src="img/btn_12.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 12 · TESTING** · content version 1.0
 
 # Inspection, testing and maintenance
@@ -6,7 +8,6 @@
 
 **Applies to:** Earthing and bonding systems, earth electrodes, lightning protection systems, surge protective devices, RCDs and PV arrays of a house and its outbuildings
 
-📄 **PDF:** [12_inspection_testing_maintenance.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/12_inspection_testing_maintenance.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 

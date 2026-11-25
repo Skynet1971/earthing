@@ -1,3 +1,5 @@
+<a href="pdf/07_gate_motors_intercoms.pdf"><img src="img/btn_07.svg" height="64" alt="Download the PDF"></a> <a href="PDF-library"><img src="img/btn_library.svg" height="64" alt="All PDFs"></a>
+
 > Earthing, Bonding, Surge & Lightning Protection Library · **SHEET 07 · GATES** · content version 1.0
 
 # Gate motors, intercoms and public-address lines
@@ -6,7 +8,6 @@
 
 **Applies to:** Centurion D5-Evo and D6 SMART sliding gate operators, gate intercoms, safety beams, keypads, access control devices, pillar lights, public-address and intercom connecting cables
 
-📄 **PDF:** [07_gate_motors_intercoms.pdf](https://github.com/Skynet1971/earthing/raw/HEAD/docs/pdf/07_gate_motors_intercoms.pdf)
 
 > ℹ️ Information only. Every technical statement cites a source and PDF page; it does not replace the wiring code that applies at the site, the product manuals, or a qualified and registered person.
 
