@@ -367,6 +367,33 @@ def plc_cabling():
     g.legend([("power", "power"), ("data", "signal"), ("pe", "earth / FE"), ("spd", "SPD")], y=6)   # legend
     return g.d   # finished drawing
 
+def site_alarm_cctv():
+    """House with a pole camera, PoE switch / DVR, alarm panel and main board, all on one earthing system."""
+    g = Dg(480, 300, "One earth for camera pole, DVR, alarm and board")   # canvas
+    g.soil(44)   # ground strip
+    g.d.add(Rect(44, 45, 7, 185, fillColor=hx("line"), strokeColor=hx("muted"), strokeWidth=0.6))   # camera pole
+    g.box(16, 228, 64, 24, ["Camera"], fill="sky", stroke="blue", size=7.2)   # camera on top of the pole
+    g.spd(78, 196, "SPD 1", w=34)   # protector on the pole
+    g.wire([48, 228, 48, 196, 61, 196], "blue", 1.6)   # camera to SPD 1
+    g.pe([78, 188, 78, 170, 51, 170])   # SPD 1 bonded to the pole
+    g.pe([47, 45, 47, 38]); g.earth(47, 38)   # pole earth electrode
+    g.d.add(Rect(160, 45, 310, 205, fillColor=hx("paper"), strokeColor=hx("navy"), strokeWidth=1.3))   # house
+    g.text(315, 238, "House", size=8, color="navy", anchor="middle", bold=True)   # house label
+    g.wire([95, 196, 160, 196], "blue", 1.6); g.spd(176, 196, "SPD 2", w=34)   # camera cable to the entry protector
+    g.wire([193, 196, 212, 196], "blue", 1.6)   # entry protector to the switch
+    g.box(212, 182, 70, 30, ["PoE switch", "/ DVR"], fill="sky", stroke="blue", size=6.8)   # PoE switch / recorder
+    g.box(300, 182, 70, 30, ["Alarm panel"], fill="lilac", stroke="purple", size=6.8)   # alarm panel
+    g.text(335, 167, "Ground terminal", size=6.5, color="purple", anchor="middle")   # its earth terminal
+    g.box(392, 150, 66, 62, ["Main", "board", "+ SPD"], fill="sand", stroke="amber", size=6.8)   # distribution board with SPD
+    g.box(180, 70, 270, 18, ["Main earthing terminal / earth bar"], fill="mint", stroke="green", size=6.8)   # MET
+    g.pe([176, 188, 176, 88]); g.pe([247, 182, 247, 88]); g.pe([335, 182, 335, 88]); g.pe([425, 150, 425, 88])   # SPD 2, switch PE, alarm earth and board earth to the MET
+    g.pe([315, 70, 315, 38]); g.earth(315, 38)   # house earth electrode
+    g.pe([47, 31, 47, 27, 315, 27, 315, 31])   # buried bond between pole earth and house earth
+    g.text(180, 15, "", size=6.5)   # spacer (keeps the legend clear)
+    g.tag(60, 50, 1); g.tag(176, 216, 2); g.tag(260, 120, 3); g.tag(350, 120, 4); g.tag(440, 125, 5); g.tag(190, 34, 6)   # markers
+    g.legend([("data", "camera cable"), ("pe", "earth / bonding"), ("spd", "surge protector")], y=6)   # legend
+    return g.d   # finished drawing
+
 DIAGRAMS = {   # registry: name used in content files -> drawing function
     "camera_both_ends": camera_both_ends,
     "common_bonding": common_bonding,
@@ -380,6 +407,7 @@ DIAGRAMS = {   # registry: name used in content files -> drawing function
     "antenna_mast": antenna_mast,
     "rack_bonding": rack_bonding,
     "plc_cabling": plc_cabling,
+    "site_alarm_cctv": site_alarm_cctv,
 }
 
 def export_svg(out_dir):
