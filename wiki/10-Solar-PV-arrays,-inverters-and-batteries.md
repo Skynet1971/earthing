@@ -410,4 +410,4 @@ The sources were written for different countries and dates: BRE for the UK, SAPV
 | R49 | **Photovoltaics in Buildings: Guide to the installation of PV systems, 2nd edition (DTI/Pub URN 06/1972)** — UK Department for Enterprise (DTI) / BRE · 2006 · UK · [link](https://files.bregroup.com/solar/Guide_to_the_installation_of_PV_systems_2nd_Edition.pdf) | 5, 9, 11-15, 17, 21-22, 27-29 |
 | R51 | **Solar energy: lightning and surge protective devices (brochure 1TXH 000 118 B0201)** — ABB · 2011 · IEC · [link](https://library.e.abb.com/public/77266805bb3868adc12578f10033b12b/1TXH%20000%20118%20B0201_Solar%20energy%20Lightning%20and%20overvoltage%20protection_br.pdf) | 2-3, 5, 7 |
 
-*Generated from `content/docs/10_solar_pv.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/10_solar_pv.yaml` on 2026-11-25. Do not edit this page in the wiki; edit the content file.*

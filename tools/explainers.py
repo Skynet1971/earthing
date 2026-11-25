@@ -221,36 +221,79 @@ def ex_potential_difference():
     return s.render(), 5.0   # SVG and still time
 
 def ex_spd_leads():
-    """Why SPD leads must be short. Facts: I027 (1 µH/m, about 1 kV per metre at 1 kA/µs), I028 (0.5 m),
-    I030 (Up 600 V with 25 cm bound leads gave 630 V), I031 (unbound: 810 V with 25 cm, 2300 V with 2 m),
-    I020 (category I equipment 1.5 kV at 230/240 V)."""
-    s = Svg("Why SPD wires must be short and bound together (BEAMA test results)", "amber")   # canvas
-    s.css.append(".bar{transform-box:fill-box;transform-origin:bottom;animation:grow 7s infinite}"
-                 "@keyframes grow{0%{transform:scaleY(0)}18%,92%{transform:scaleY(1)}100%{transform:scaleY(1)}}"
-                 ".b2{animation-delay:.5s}.b3{animation-delay:1s}.b4{animation-delay:1.5s}")   # bars grow one after another
-    s.add(f'<rect x="30" y="90" width="330" height="420" rx="12" fill="{C["paper"]}" stroke="{C["navy"]}" stroke-width="2"/>')   # left panel
-    s.text(195, 122, "In the distribution board", 19, "navy", "middle", "700")   # panel title
-    s.line([(60, 170), (330, 170)], "red", 7); s.text(64, 160, "line busbar", 17, "red")   # busbar
-    s.box(130, 245, 130, 60, "SPD", fill="sand", stroke="amber", size=21)   # SPD
-    s.line([(195, 170), (195, 245)], "red", 5, cls="flow")   # lead l1
-    s.box(90, 380, 210, 40, "Earth bar", fill="mint", stroke="green", size=18)   # earth bar
-    s.pe([(195, 305), (195, 380)])   # lead l2
-    s.text(215, 215, "l1", 19, "amber", weight="700").text(215, 350, "l2", 19, "amber", weight="700")   # lead labels
-    s.text(195, 455, "about 1 kV per metre of lead", 18, "ink", "middle", "700")   # rule of thumb
-    s.text(195, 480, "at 1 kA/µs (1 µH/m)", 17, "muted", "middle")   # basis
-    s.text(195, 502, "preferably l1 + l2 ≤ 0.5 m", 18, "green", "middle", "700")   # recommendation
-    x0, y0, hmax, vmax = 430, 470, 330, 2500   # chart origin, height, top of scale
-    s.line([(x0, y0), (920, y0)], "ink", 2); s.line([(x0, y0), (x0, y0 - hmax - 10)], "ink", 2)   # axes
+    """Why SPD leads must be short and bound. Facts: I027 (1 µH/m, about 1 kV per metre at 1 kA/µs), I028 (0.5 m),
+    I030 (Up 600 V; 25 cm bound gave 630 V), I031 (unbound: 810 V with 25 cm, 2300 V with 2 m), K009 (2 m bound: 1200 V),
+    K008 (equipment immunity 700 V in that example), I020 (category I equipment 1.5 kV)."""
+    s = Svg("SPD wire length: BEAMA test results (bound vs unbound)", "amber")   # canvas
+    s.css.append(".bar{transform-box:fill-box;transform-origin:bottom;animation:grow 8s infinite}"
+                 "@keyframes grow{0%{transform:scaleY(0)}16%,94%{transform:scaleY(1)}100%{transform:scaleY(1)}}"
+                 ".b2{animation-delay:.4s}.b3{animation-delay:.8s}.b4{animation-delay:1.2s}.b5{animation-delay:1.6s}")   # bars grow one after another
+    s.add(f'<rect x="20" y="86" width="300" height="430" rx="12" fill="{C["paper"]}" stroke="{C["navy"]}" stroke-width="2"/>')   # left panel
+    s.text(170, 116, "In the distribution board", 19, "navy", "middle", "700")   # panel title
+    s.line([(44, 160), (296, 160)], "red", 7); s.text(48, 150, "line (point A)", 17, "red")   # busbar
+    s.box(105, 232, 130, 56, "SPD", fill="sand", stroke="amber", size=21)   # SPD
+    s.line([(170, 160), (170, 232)], "red", 5, cls="flow")   # lead l1
+    s.box(70, 360, 200, 40, "Earth bar (point B)", fill="mint", stroke="green", size=17)   # earth bar
+    s.pe([(170, 288), (170, 360)])   # lead l2
+    s.text(190, 204, "l1", 19, "amber", weight="700").text(190, 332, "l2", 19, "amber", weight="700")   # lead labels
+    s.text(170, 436, "≈ 1 kV per metre of lead", 18, "ink", "middle", "700")   # rule of thumb
+    s.text(170, 460, "at 1 kA/µs (1 µH/m)", 17, "muted", "middle")   # basis
+    s.text(170, 492, "preferably l1 + l2 ≤ 0.5 m", 18, "green", "middle", "700")   # recommendation
+    x0, y0, hmax, vmax = 410, 450, 320, 2500   # chart origin, height, top of scale
+    s.line([(x0, y0), (940, y0)], "ink", 2); s.line([(x0, y0), (x0, y0 - hmax - 10)], "ink", 2)   # axes
     for v in (500, 1000, 1500, 2000, 2500):   # gridlines
-        y = y0 - hmax * v / vmax; s.line([(x0, y), (920, y)], "line", 1); s.text(x0 - 8, y + 6, f"{v} V", 17, "muted", "end")   # gridline + label
-    yc = y0 - hmax * 1500 / vmax   # category I level
-    s.line([(x0, yc), (920, yc)], "red", 3, dash="10 8"); s.text(x0 + 10, yc - 10, "equipment category I: 1.5 kV", 17, "red", "start", "700")   # withstand line
-    bars = [("SPD alone", "Up 600 V", 600, "navy"), ("25 cm, bound", "630 V", 630, "green"), ("25 cm, loose", "810 V", 810, "amber"), ("2 m, loose", "2 300 V", 2300, "red")]   # BEAMA results
-    for i, (lab, val, v, col) in enumerate(bars):   # one bar each
-        bx = x0 + 30 + i * 118; h = hmax * v / vmax   # position and height
-        s.add(f'<rect class="bar b{i + 1}" x="{bx}" y="{y0 - h}" width="80" height="{h}" rx="6" fill="{C[col]}"/>')   # bar
-        s.text(bx + 40, y0 - h - 10, val, 18, col, "middle", "700").text(bx + 40, y0 + 26, lab, 17, "ink", "middle")   # value and label
+        y = y0 - hmax * v / vmax; s.line([(x0, y), (940, y)], "line", 1); s.text(x0 - 8, y + 6, f"{v} V", 17, "muted", "end")   # gridline + label
+    for v, lab, col in ((700, "equipment in this test: 700 V", "green"), (1500, "category I equipment: 1.5 kV", "red")):   # reference levels
+        y = y0 - hmax * v / vmax; s.line([(x0, y), (940, y)], col, 3, dash="10 8")   # dashed level line
+        ly = 92 if v == 1500 else 116; s.line([(x0 + 10, ly - 6), (x0 + 60, ly - 6)], col, 3, dash="10 8"); s.text(x0 + 70, ly, lab, 17, col, "start", "700")   # legend entry above the chart
+    bars = [("SPD", "alone", "600 V", 600, "navy"), ("25 cm", "bound", "630 V", 630, "green"), ("25 cm", "unbound", "810 V", 810, "amber"),
+            ("2 m", "bound", "1 200 V", 1200, "orange"), ("2 m", "unbound", "2 300 V", 2300, "red")]   # BEAMA results
+    for i, (l1, l2, val, v, col) in enumerate(bars):   # one bar each
+        bx = x0 + 22 + i * 104; h = hmax * v / vmax   # position and height
+        s.add(f'<rect class="bar b{i + 1}" x="{bx}" y="{y0 - h}" width="70" height="{h}" rx="6" fill="{C[col]}"/>')   # bar
+        s.text(bx + 35, y0 - h + 26, val.replace(" V", ""), 18, "white", "middle", "700").text(bx + 35, y0 - h + 46, "V", 17, "white", "middle", "700")   # value inside the bar
+        s.text(bx + 35, y0 + 26, l1, 17, "ink", "middle", "700").text(bx + 35, y0 + 48, l2, 17, "ink", "middle")   # two-line label
     return s.render(), 6.0   # SVG and still time
+
+def ex_bound_leads():
+    """What bound and unbound leads are. Facts: K004 (currents in and out of a shunt SPD flow in opposite directions),
+    K005/K006 (close conductors: opposing fields cancel, inductance cancels), I029 (bind with cable ties or spiral wrap),
+    I030 (25 cm bound 630 V), I031 (25 cm unbound 810 V)."""
+    s = Svg("Bound or unbound (loose) SPD wires: what the words mean", "amber", h=600)   # canvas
+    phases(s, 9, [(0.0, 0.33), (0.33, 0.66), (0.66, 1.0)])   # three steps
+    s.css.append(".ring{animation:ring 1.2s ease-out infinite}@keyframes ring{0%{opacity:.9;transform:scale(.4)}100%{opacity:0;transform:scale(1.4)}}"
+                 ".ring{transform-box:fill-box;transform-origin:center}")   # pulsing magnetic-field rings
+    for x0, title, bound in ((20, "UNBOUND (loose): wires apart", False), (490, "BOUND: wires tied together", True)):   # two panels
+        col = "green" if bound else "red"   # panel colour
+        s.add(f'<rect x="{x0}" y="76" width="450" height="372" rx="12" fill="{C["mint"] if bound else C["rose"]}" stroke="{C[col]}" stroke-width="3"/>')   # panel
+        s.text(x0 + 225, 108, title, 21, col, "middle", "700")   # panel title
+        s.box(x0 + 20, 148, 110, 44, "A: line", fill="white", stroke="red", size=18)   # line connection
+        s.box(x0 + 20, 330, 110, 44, "B: earth bar", fill="mint", stroke="green", size=17)   # earth bar
+        s.box(x0 + 330, 220, 100, 80, "SPD", fill="sand", stroke="amber", size=22)   # SPD
+        if bound:   # leads side by side
+            ya, yb = 252, 268   # the two leads 16 px apart
+            s.line([(x0 + 130, 170), (x0 + 160, 170), (x0 + 160, ya), (x0 + 330, ya)], "red", 6)   # l1
+            s.pe([(x0 + 130, 352), (x0 + 180, 352), (x0 + 180, yb), (x0 + 330, yb)], width=6)   # l2
+            for tx in (x0 + 215, x0 + 260, x0 + 305): s.add(f'<rect x="{tx - 5}" y="{ya - 10}" width="10" height="{yb - ya + 20}" rx="3" fill="{C["ink"]}"/>')   # cable ties
+            s.text(x0 + 258, 216, "cable ties", 17, "ink", "middle", "700")   # tie label
+            s.add(f'<g class="p2 p3"><circle class="ring" cx="{x0 + 250}" cy="{(ya + yb) / 2}" r="22" fill="none" stroke="{C["blue"]}" stroke-width="2" opacity=".4"/></g>')   # small residual field
+            s.text(x0 + 225, 410, "opposite fields cancel: 630 V (25 cm)", 18, "green", "middle", "700")   # result
+            path_in, path_out = f"M{x0 + 130},170 L{x0 + 160},170 L{x0 + 160},{ya} L{x0 + 330},{ya}", f"M{x0 + 330},{yb} L{x0 + 180},{yb} L{x0 + 180},352 L{x0 + 130},352"   # current paths
+        else:   # leads apart, large loop
+            s.line([(x0 + 130, 170), (x0 + 380, 170), (x0 + 380, 220)], "red", 6)   # l1 along the top
+            s.pe([(x0 + 380, 300), (x0 + 380, 352), (x0 + 130, 352)], width=6)   # l2 along the bottom
+            for cx, cy in ((x0 + 255, 170), (x0 + 255, 352)):   # a field ring around each wire
+                s.add(f'<g class="p2 p3"><circle class="ring" cx="{cx}" cy="{cy}" r="40" fill="none" stroke="{C["blue"]}" stroke-width="3"/></g>')   # field
+            s.text(x0 + 175, 268, "big loop: fields", 17, "red", "middle", "700").text(x0 + 175, 290, "do not cancel", 17, "red", "middle", "700")   # loop label
+            s.text(x0 + 225, 410, "810 V with the same 25 cm leads", 18, "red", "middle", "700")   # result
+            path_in, path_out = f"M{x0 + 130},170 L{x0 + 380},170 L{x0 + 380},220", f"M{x0 + 380},300 L{x0 + 380},352 L{x0 + 130},352"   # current paths
+        s.dots(path_in, "amber", 3, 1.4, r=8, cls="p1"); s.dots(path_out, "amber", 3, 1.4, r=8, cls="p1")   # current in on l1, out on l2
+        s.text(x0 + (170 if not bound else 300), 160 if not bound else 238, "l1 in", 17, "red", "middle", "700")   # l1 label
+        s.text(x0 + (170 if not bound else 300), 344 if not bound else 292, "l2 out", 17, "green", "middle", "700")   # l2 label
+    s.step(40, 494, 1, "The surge current flows into the SPD on l1 and out on l2: opposite directions.", "amber", "s1")   # step 1
+    s.step(40, 536, 2, "Unbound (loose): the wires are apart, so their opposite fields do not cancel.", "red", "s2")   # step 2
+    s.step(40, 578, 3, "Bound: tied side by side, the opposite fields cancel and the voltage drops.", "green", "s3")   # step 3
+    return s.render(), 7.5   # SVG and still time
 
 def ex_lpz():
     """Lightning protection zones. Facts: A063 (LPZ 0 full lightning current), A064 (LPZ 1 partial currents),
@@ -277,5 +320,6 @@ EXPLAINERS = {   # name used in content files -> function returning (svg text, s
     "ex_surge_camera": ex_surge_camera,
     "ex_potential_difference": ex_potential_difference,
     "ex_spd_leads": ex_spd_leads,
+    "ex_bound_leads": ex_bound_leads,
     "ex_lpz": ex_lpz,
 }

@@ -187,4 +187,4 @@ The energizer manual keeps the fence earth away from other earths; the general b
 | R53 | **IDS X-Series Installer Manual 700-398-02O** — Inhep Digital Security (IDS) · 700-398-02O · South Africa · [link](https://www.idsprotect.co.za/site-documents/product-download/intrusion/xseries/IDS%20X-Series%20Installer%20Manual.pdf) | 8-10, 19 |
 | R54 | **IDS XSeries Serial Installer Manual 700-678-02A** — Inhep Digital Security (IDS) · 700-678-02A · South Africa · [link](https://www.idsprotect.co.za/za/en/product-assets/xseries/control-panels/860-1-864-xs-ids-x64-control-panel/assets/documents/IDS%20XSeries%20Serial%20Installer%20Manual.pdf) | 9, 48 |
 
-*Generated from `content/docs/08_alarms_electric_fences.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/08_alarms_electric_fences.yaml` on 2026-11-25. Do not edit this page in the wiki; edit the content file.*

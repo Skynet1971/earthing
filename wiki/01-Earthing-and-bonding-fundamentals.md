@@ -292,4 +292,4 @@ The sources were written for different countries and kinds of site. Where they c
 | R52 | **System pro M compact: OVR surge protective devices (main catalogue 1TXH000083C0201)** — ABB · 2011 · IEC · [link](https://library.e.abb.com/public/d614bdefa272767ac125784c005b65e8/1TXH000083C0201_ABB%20OVR%20%20RANGE%20SYSTEM%20proM_2011.pdf) | 10 |
 | R64 | **An Alternative technique for the detection and mitigation of electricity theft in South Africa** — SAIEE Africa Research Journal (South African Institute of Electrical Engineers); authors Quentin Louw and Pitshou Bokoro · Vol.110 (4) December 2019 · South Africa · [link](https://scielo.org.za/pdf/arj/v110n4/03.pdf) | 4 |
 
-*Generated from `content/docs/01_earthing_bonding_fundamentals.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/01_earthing_bonding_fundamentals.yaml` on 2026-11-25. Do not edit this page in the wiki; edit the content file.*

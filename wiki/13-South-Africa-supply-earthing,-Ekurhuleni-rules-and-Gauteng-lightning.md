@@ -211,4 +211,4 @@ The South African Weather Service lightning detection network (SALDN) started in
 | R69 | **Neutral Earth Bonding Clarified** — Electrical Contractors' Association (South Africa), ECA(SA); author Nicholas McDiarmid · 18 January 2024 · South Africa · [link](https://ecasa.co.za/technical/neutral-earth-bonding-clarified/) | 2-5 |
 | R70 | **Using surge protection and how it is described in the wiring code (SANS 10142-1)** — Crown Publications, Sparks Electrical News (enquiries: DEHN Africa) · 01 March 2023 · South Africa · [link](https://www.crown.co.za/latest-news/sparks-electrical-news-latest-news/23866-using-surge-protection-and-how-it-is-described-in-the-wiring-code-sans-10142-1) | 2-3 |
 
-*Generated from `content/docs/13_south_africa_ekurhuleni.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/13_south_africa_ekurhuleni.yaml` on 2026-11-25. Do not edit this page in the wiki; edit the content file.*

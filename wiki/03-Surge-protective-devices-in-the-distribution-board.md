@@ -139,7 +139,17 @@ Schneider takes about 1 µH/m for SPD connection conductors, so an 8 kA 8/20 µs
 
 <a href="img/ex_spd_leads.svg"><img src="img/ex_spd_leads.svg" alt="ex_spd_leads" width="100%"></a>
 
-*Animated: the steps play in a loop. Click to open full size.* BEAMA takes lead inductance as 1 µH/m, so an impulse rising at 1 kA/µs adds about 1 kV per metre of connecting lead<sup>[R48 p.40](#sources-cited-on-this-page)</sup>; leads should be as short as possible, preferably not over 0.5 m in total<sup>[R48 p.40](#sources-cited-on-this-page)</sup>, and bound together.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> In BEAMA's test an SPD with Up 600 V gave 630 V with 25 cm of bound lead<sup>[R48 p.41](#sources-cited-on-this-page)</sup>, 810 V with 25 cm unbound and 2,300 V with 2 m unbound.<sup>[R48 p.41](#sources-cited-on-this-page)</sup> Category I equipment at 230/240 V is rated 1.5 kV.<sup>[R48 p.36](#sources-cited-on-this-page)</sup>
+*Animated: the steps play in a loop. Click to open full size.* BEAMA takes lead inductance as 1 µH/m, so an impulse rising at 1 kA/µs adds about 1 kV per metre of connecting lead<sup>[R48 p.40](#sources-cited-on-this-page)</sup>; leads should be as short as possible, preferably not over 0.5 m in total<sup>[R48 p.40](#sources-cited-on-this-page)</sup>, and bound together.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> In BEAMA's test an SPD with Up 600 V gave 630 V with 25 cm of bound lead<sup>[R48 p.41](#sources-cited-on-this-page)</sup>, 810 V with 25 cm unbound and 2,300 V with 2 m unbound.<sup>[R48 p.41](#sources-cited-on-this-page)</sup> Category I equipment at 230/240 V is rated 1.5 kV.<sup>[R48 p.36](#sources-cited-on-this-page)</sup> In the same test, 2 m of bound lead gave 1,200 V<sup>[R48 p.41](#sources-cited-on-this-page)</sup>; the equipment in that test had an immunity level of 700 V.<sup>[R48 p.41](#sources-cited-on-this-page)</sup>
+
+<a href="img/ex_bound_leads.svg"><img src="img/ex_bound_leads.svg" alt="ex_bound_leads" width="100%"></a>
+
+*Animated: the steps play in a loop. Click to open full size.* (1) The surge current goes into a parallel (shunt) SPD on one lead and out on the other, in opposite directions, so the two leads carry opposing magnetic fields.<sup>[R48 p.41](#sources-cited-on-this-page)</sup> (2) Unbound: the leads run apart and their fields do not cancel. (3) Bound: with the conductors close together, by twisting or binding<sup>[R48 p.41](#sources-cited-on-this-page)</sup>, the opposing fields cancel and so does the inductance.<sup>[R48 p.41](#sources-cited-on-this-page)</sup> With 25 cm leads BEAMA measured 630 V bound and 810 V unbound.<sup>[R48 p.41](#sources-cited-on-this-page)</sup><sup>[R48 p.41](#sources-cited-on-this-page)</sup>
+
+- BEAMA SPD guide (UK, 2018): during operation a parallel (shunt) installed SPD has currents going in and out of it in opposite directions, so its two connecting leads carry opposing electromagnetic fields.<sup>[R48 p.41](#sources-cited-on-this-page)</sup>
+- BEAMA SPD guide (UK, 2018): the inductive voltage drop is reduced by placing the two conductors close together, by twisting or binding the connecting leads together.<sup>[R48 p.41](#sources-cited-on-this-page)</sup>
+- BEAMA SPD guide (UK, 2018): when the wires are brought close together the opposing electromagnetic fields interact and cancel, and because inductance relates to the field it also tends to be cancelled.<sup>[R48 p.41](#sources-cited-on-this-page)</sup>
+- BEAMA SPD guide (UK, 2018): a practical problem in distribution boards is that the SPD earth lead may need to be significantly longer than the line and neutral connections and longer than 25 cm.<sup>[R48 p.42](#sources-cited-on-this-page)</sup>
+- BEAMA SPD guide (UK, 2018): where the metal-enclosure method is not possible, two connections can be made to the earth bar, one within the set of bound conductors and the other separate.<sup>[R48 p.42](#sources-cited-on-this-page)</sup>
 
 | **0.5 m** | **≈ 1 kV/m** | **16 mm²** | **4 mm²** |
 |---|---|---|---|
@@ -423,4 +433,4 @@ The sources were written for different countries and purposes. The wiring code t
 | R51 | **Solar energy: lightning and surge protective devices (brochure 1TXH 000 118 B0201)** — ABB · 2011 · IEC · [link](https://library.e.abb.com/public/77266805bb3868adc12578f10033b12b/1TXH%20000%20118%20B0201_Solar%20energy%20Lightning%20and%20overvoltage%20protection_br.pdf) | 3 |
 | R52 | **System pro M compact: OVR surge protective devices (main catalogue 1TXH000083C0201)** — ABB · 2011 · IEC · [link](https://library.e.abb.com/public/d614bdefa272767ac125784c005b65e8/1TXH000083C0201_ABB%20OVR%20%20RANGE%20SYSTEM%20proM_2011.pdf) | 6-10, 25 |
 
-*Generated from `content/docs/03_db_surge_protection.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/03_db_surge_protection.yaml` on 2026-11-25. Do not edit this page in the wiki; edit the content file.*

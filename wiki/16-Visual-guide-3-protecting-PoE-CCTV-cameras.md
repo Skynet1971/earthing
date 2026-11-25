@@ -59,4 +59,4 @@
 | R39 | **Countermeasure for lightning surge (knowledge base article)** — i-PRO Co., Ltd. · updated May 2025 · International · [link](https://i-pro.com/products_and_solutions/en/surveillance/learning-and-support/knowledge-base/technical-information/surge-protection) | 2 |
 | R41 | **Waterproof and Lightning Protection Installation Guide for Omada Security Devices** — TP-Link (Omada Network Support) · web page as fetched 2026-11-23 · International · [link](https://support.omadanetworks.com/za/document/44713/) | 3-4, 6 |
 
-*Generated from `content/docs/16_visual_guide_poe_cameras.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/16_visual_guide_poe_cameras.yaml` on 2026-11-25. Do not edit this page in the wiki; edit the content file.*

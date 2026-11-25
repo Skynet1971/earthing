@@ -209,4 +209,4 @@ The sources were written for different countries and kinds of site. Where they c
 | R26 | **White paper WP007: Surge protection for CCTV systems** — DEHN + SÖHNE · WP007/E/0615 (June 2015) · IEC / EN (Germany) · [link](https://www.dehn-international.com/sites/default/files/media/files/cctv-wp007-e.pdf) | 3 |
 | R27 | **White paper WPX012: Surge protection for public address systems** — DEHN SE · WPX012/EN/0122 (January 2022) · IEC / EN (Germany) · [link](https://www.dehn-international.com/sites/default/files/media/files/public-address-systems-wpx012-en.pdf) | 14 |
 
-*Generated from `content/docs/06_antennas_masts.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/06_antennas_masts.yaml` on 2026-11-25. Do not edit this page in the wiki; edit the content file.*

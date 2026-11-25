@@ -28,14 +28,49 @@
 
 <a href="img/ex_spd_leads.svg"><img src="img/ex_spd_leads.svg" alt="ex_spd_leads" width="100%"></a>
 
-*Animated: the steps play in a loop. Click to open full size.* BEAMA takes lead inductance as 1 µH/m, so an impulse rising at 1 kA/µs adds about 1 kV per metre of connecting lead<sup>[R48 p.40](#sources-cited-on-this-page)</sup>; leads should be as short as possible, preferably not over 0.5 m in total<sup>[R48 p.40](#sources-cited-on-this-page)</sup>, and bound together.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> In BEAMA's test an SPD with Up 600 V gave 630 V with 25 cm of bound lead<sup>[R48 p.41](#sources-cited-on-this-page)</sup>, 810 V with 25 cm unbound and 2,300 V with 2 m unbound.<sup>[R48 p.41](#sources-cited-on-this-page)</sup> Category I equipment at 230/240 V is rated 1.5 kV.<sup>[R48 p.36](#sources-cited-on-this-page)</sup>
+*Animated: the steps play in a loop. Click to open full size.* BEAMA takes lead inductance as 1 µH/m, so an impulse rising at 1 kA/µs adds about 1 kV per metre of connecting lead<sup>[R48 p.40](#sources-cited-on-this-page)</sup>; leads should be as short as possible, preferably not over 0.5 m in total<sup>[R48 p.40](#sources-cited-on-this-page)</sup>, and bound together.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> In BEAMA's test an SPD with Up 600 V gave 630 V with 25 cm of bound lead<sup>[R48 p.41](#sources-cited-on-this-page)</sup>, 810 V with 25 cm unbound and 2,300 V with 2 m unbound.<sup>[R48 p.41](#sources-cited-on-this-page)</sup> Category I equipment at 230/240 V is rated 1.5 kV.<sup>[R48 p.36](#sources-cited-on-this-page)</sup> In the same test, 2 m of bound lead gave 1,200 V<sup>[R48 p.41](#sources-cited-on-this-page)</sup>; the equipment in that test had an immunity level of 700 V.<sup>[R48 p.41](#sources-cited-on-this-page)</sup>
 
 > [!TIP]
 > **DO: Short, straight, tied together**
 >
 > Keep the total lead length as short as possible, preferably under 0.5 m<sup>[R48 p.40](#sources-cited-on-this-page)</sup>, and tie the two leads together along their length.<sup>[R48 p.40](#sources-cited-on-this-page)</sup>
 
-## 3  Where the SPD goes in the board
+## 3  'Bound' and 'unbound (loose)' wires: what they mean and where
+
+Both words describe the two connecting wires of a surge protector in the board: l1 from the line connection to the SPD, and l2 from the SPD to the earth bar.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> 'Bound' means these two wires are tied tightly together; 'unbound' (we also say 'loose') means they run apart.<sup>[R48 p.40](#sources-cited-on-this-page)</sup>
+
+<a href="img/ex_bound_leads.svg"><img src="img/ex_bound_leads.svg" alt="ex_bound_leads" width="100%"></a>
+
+*Animated: the steps play in a loop. Click to open full size.* (1) The surge current goes into a parallel (shunt) SPD on one lead and out on the other, in opposite directions, so the two leads carry opposing magnetic fields.<sup>[R48 p.41](#sources-cited-on-this-page)</sup> (2) Unbound: the leads run apart and their fields do not cancel. (3) Bound: with the conductors close together, by twisting or binding<sup>[R48 p.41](#sources-cited-on-this-page)</sup>, the opposing fields cancel and so does the inductance.<sup>[R48 p.41](#sources-cited-on-this-page)</sup> With 25 cm leads BEAMA measured 630 V bound and 810 V unbound.<sup>[R48 p.41](#sources-cited-on-this-page)</sup><sup>[R48 p.41](#sources-cited-on-this-page)</sup>
+
+| Word | What it means | Where |
+|---|---|---|
+| l1 | Connecting lead between the line connection (point A) and the SPD.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> | Line (and neutral) connection side of the SPD.<sup>[R48 p.40](#sources-cited-on-this-page)</sup><sup>[R48 p.42](#sources-cited-on-this-page)</sup> |
+| l2 | Connecting lead between the SPD and earth (point B). BEAMA notes the earth lead often has to be longer than the line and neutral connections.<sup>[R48 p.42](#sources-cited-on-this-page)</sup> | From the SPD earth terminal to the earth bar.<sup>[R48 p.42](#sources-cited-on-this-page)</sup> |
+| Bound | l1 and l2 tightly bound together over as much of their length as possible, using cable ties or spiral wrap.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> BEAMA also names twisting them together.<sup>[R48 p.41](#sources-cited-on-this-page)</sup> | Along the whole run of the two leads.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> |
+| Unbound (loose) | BEAMA's word for leads that are not bound together; 'loose' in these pages means the same. With 25 cm leads the voltage rose from 630 V (bound) to 810 V (unbound).<sup>[R48 p.41](#sources-cited-on-this-page)</sup><sup>[R48 p.41](#sources-cited-on-this-page)</sup> | Anywhere the two leads take separate routes. |
+| Long earth lead | In a metal enclosure: one conductor to the metalwork and one to the earth bar.<sup>[R48 p.42](#sources-cited-on-this-page)</sup> Otherwise: two connections to the earth bar, one inside the bound set and one separate.<sup>[R48 p.42](#sources-cited-on-this-page)</sup> | Earth side of the SPD.<sup>[R48 p.42](#sources-cited-on-this-page)</sup> |
+
+| **630 V** | **810 V** | **1 200 V** | **2 300 V** |
+|---|---|---|---|
+| 25 cm leads, bound<sup>[R48 p.41](#sources-cited-on-this-page)</sup> | 25 cm leads, unbound<sup>[R48 p.41](#sources-cited-on-this-page)</sup> | 2 m leads, bound<sup>[R48 p.41](#sources-cited-on-this-page)</sup> | 2 m leads, unbound<sup>[R48 p.41](#sources-cited-on-this-page)</sup> |
+
+> [!TIP]
+> **DO: Keep the SPD wires short and tie them together**
+>
+> Connecting leads as short as possible, preferably not over 0.5 m in total<sup>[R48 p.40](#sources-cited-on-this-page)</sup>, and tightly bound together over as much of their length as possible with cable ties or spiral wrap.<sup>[R48 p.40](#sources-cited-on-this-page)</sup>
+
+> [!NOTE]
+> **NOTE: In-line protectors are different**
+>
+> In-line (series) SPDs, used for low-current power (typically 16 A or less), telecom, data and signal lines, are not affected by connecting lead length, but their earthing conductor must be kept as short as possible.<sup>[R48 p.42](#sources-cited-on-this-page)</sup>
+
+- BEAMA SPD guide (UK, 2018): the voltage passed to the protected equipment (UAB) is the sum of the SPD voltage protection level Up and the inductive voltage drop along the connecting leads (Ul1 + Ul2).<sup>[R48 p.40](#sources-cited-on-this-page)</sup>
+- BEAMA SPD guide (UK, 2018): binding the leads together is very effective in cancelling inductance and hence the inductive voltage dropped on the connecting leads.<sup>[R48 p.40](#sources-cited-on-this-page)</sup>
+- BEAMA SPD guide (UK, 2018): the lead-length test applied a 6 kV/3 kA combination wave (Class III test to BS EN 61643-11) to a parallel installed SPD for a 230 V mains supply.<sup>[R48 p.41](#sources-cited-on-this-page)</sup>
+- BEAMA SPD guide (UK, 2018): in the lead-length test example the equipment to be protected has a susceptibility (immunity) level of 700 V.<sup>[R48 p.41](#sources-cited-on-this-page)</sup>
+
+## 4  Where the SPD goes in the board
 
 <a href="img/spd_db_wiring.svg"><img src="img/spd_db_wiring.svg" alt="spd_db_wiring" width="100%"></a>
 
@@ -55,6 +90,6 @@
 | R6 | **Lightning Protection Guide, 3rd updated edition** — DEHN + SÖHNE · 2014 · IEC / EN 62305 (Germany) · [link](https://www.dehn-international.com/sites/default/files/media/files/lpg_en_complete.pdf) | 206, 222, 229 |
 | R12 | **IEC/BS EN 62305 parts 1-4: technical reference (Furse)** — ABB Furse · not stated in document · IEC / BS EN 62305 (UK) · [link](https://library.e.abb.com/public/ee4d371685e544e09e8d9712fbd716c9/IEC%20BS%20EN%2062305%201%20-%204.pdf) | 14 |
 | R18 | **Recommendation ITU-T K.66: Protection of customer premises from overvoltages** — International Telecommunication Union · 11/2019 · International · [link](https://www.itu.int/rec/T-REC-K.66-201911-I) | 33 |
-| R48 | **BEAMA Guide to Surge Protection Devices (SPDs): selection, application and theory** — BEAMA Ltd (UK) · July 2018 · UK (BS 7671:2018) · [link](https://www.beama.org.uk/static/uploaded/0125b82e-8c76-4106-88bedb0f4fc85d52.pdf) | 29, 36, 39-41, 48-49, 68 |
+| R48 | **BEAMA Guide to Surge Protection Devices (SPDs): selection, application and theory** — BEAMA Ltd (UK) · July 2018 · UK (BS 7671:2018) · [link](https://www.beama.org.uk/static/uploaded/0125b82e-8c76-4106-88bedb0f4fc85d52.pdf) | 29, 36, 39-42, 48-49, 68 |
 
-*Generated from `content/docs/15_visual_guide_surges.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/15_visual_guide_surges.yaml` on 2026-11-25. Do not edit this page in the wiki; edit the content file.*

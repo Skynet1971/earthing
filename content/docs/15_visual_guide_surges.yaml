@@ -23,12 +23,45 @@ sections:
     blocks:
       - explainer:
           name: ex_spd_leads
-          caption: "BEAMA takes lead inductance as 1 µH/m, so an impulse rising at 1 kA/µs adds about 1 kV per metre of connecting lead{{I027}}; leads should be as short as possible, preferably not over 0.5 m in total{{I028}}, and bound together.{{I029}} In BEAMA's test an SPD with Up 600 V gave 630 V with 25 cm of bound lead{{I030}}, 810 V with 25 cm unbound and 2,300 V with 2 m unbound.{{I031}} Category I equipment at 230/240 V is rated 1.5 kV.{{I020}}"
+          caption: "BEAMA takes lead inductance as 1 µH/m, so an impulse rising at 1 kA/µs adds about 1 kV per metre of connecting lead{{I027}}; leads should be as short as possible, preferably not over 0.5 m in total{{I028}}, and bound together.{{I029}} In BEAMA's test an SPD with Up 600 V gave 630 V with 25 cm of bound lead{{I030}}, 810 V with 25 cm unbound and 2,300 V with 2 m unbound.{{I031}} Category I equipment at 230/240 V is rated 1.5 kV.{{I020}} In the same test, 2 m of bound lead gave 1,200 V{{K009}}; the equipment in that test had an immunity level of 700 V.{{K008}}"
       - callout:
           kind: do
           title: "Short, straight, tied together"
           text: "Keep the total lead length as short as possible, preferably under 0.5 m{{I028}}, and tie the two leads together along their length.{{I029}}"
-  - title: "3  Where the SPD goes in the board"
+  - title: "3  'Bound' and 'unbound (loose)' wires: what they mean and where"
+    lead: "Both words describe the two connecting wires of a surge protector in the board: l1 from the line connection to the SPD, and l2 from the SPD to the earth bar.{{K002}} 'Bound' means these two wires are tied tightly together; 'unbound' (we also say 'loose') means they run apart.{{I029}}"
+    blocks:
+      - explainer:
+          name: ex_bound_leads
+          caption: "(1) The surge current goes into a parallel (shunt) SPD on one lead and out on the other, in opposite directions, so the two leads carry opposing magnetic fields.{{K004}} (2) Unbound: the leads run apart and their fields do not cancel. (3) Bound: with the conductors close together, by twisting or binding{{K005}}, the opposing fields cancel and so does the inductance.{{K006}} With 25 cm leads BEAMA measured 630 V bound and 810 V unbound.{{I030, I031}}"
+      - table:
+          head: ["Word", "What it means", "Where"]
+          widths: [0.17, 0.5, 0.33]
+          rows:
+            - ["l1", "Connecting lead between the line connection (point A) and the SPD.{{K002}}", "Line (and neutral) connection side of the SPD.{{K002, K010}}"]
+            - ["l2", "Connecting lead between the SPD and earth (point B). BEAMA notes the earth lead often has to be longer than the line and neutral connections.{{K010}}", "From the SPD earth terminal to the earth bar.{{K010}}"]
+            - ["Bound", "l1 and l2 tightly bound together over as much of their length as possible, using cable ties or spiral wrap.{{I029}} BEAMA also names twisting them together.{{K005}}", "Along the whole run of the two leads.{{I029}}"]
+            - ["Unbound (loose)", "BEAMA's word for leads that are not bound together; 'loose' in these pages means the same. With 25 cm leads the voltage rose from 630 V (bound) to 810 V (unbound).{{I030, I031}}", "Anywhere the two leads take separate routes."]
+            - ["Long earth lead", "In a metal enclosure: one conductor to the metalwork and one to the earth bar.{{I032}} Otherwise: two connections to the earth bar, one inside the bound set and one separate.{{K011}}", "Earth side of the SPD.{{K010}}"]
+      - numbers:
+          - value: "630 V"
+            label: "25 cm leads, bound{{I030}}"
+          - value: "810 V"
+            label: "25 cm leads, unbound{{I031}}"
+          - value: "1 200 V"
+            label: "2 m leads, bound{{K009}}"
+          - value: "2 300 V"
+            label: "2 m leads, unbound{{I031}}"
+      - callout:
+          kind: do
+          title: "Keep the SPD wires short and tie them together"
+          text: "Connecting leads as short as possible, preferably not over 0.5 m in total{{I028}}, and tightly bound together over as much of their length as possible with cable ties or spiral wrap.{{I029}}"
+      - callout:
+          kind: note
+          title: "In-line protectors are different"
+          text: "In-line (series) SPDs, used for low-current power (typically 16 A or less), telecom, data and signal lines, are not affected by connecting lead length, but their earthing conductor must be kept as short as possible.{{I033}}"
+      - facts: [K001, K003, K007, K008]
+  - title: "4  Where the SPD goes in the board"
     blocks:
       - diagram:
           name: spd_db_wiring

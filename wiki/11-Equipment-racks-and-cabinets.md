@@ -205,4 +205,4 @@ The sources were written for different countries and kinds of site. Where they c
 | R25 | **Recommendation ITU-T K.98: Overvoltage protection guide for telecommunication equipment installed in customer premises** — International Telecommunication Union · 08/2014 · International · [link](https://www.itu.int/rec/T-REC-K.98-201408-I) | 30 |
 | R29 | **Lightning Protection Guide: Rack-mountable Devices, 1910012320 REV1.0.1** — TP-Link Technologies Co., Ltd. · December 2017 · International · [link](https://static.tp-link.com/configurationguide/lightning_protection_guide.pdf) | 5-7 |
 
-*Generated from `content/docs/11_racks_cabinets.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/11_racks_cabinets.yaml` on 2026-11-25. Do not edit this page in the wiki; edit the content file.*

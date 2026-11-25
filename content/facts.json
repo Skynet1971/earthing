@@ -10092,5 +10092,115 @@
   "id": "J088",
   "source": "70_Crown_Sparks_Surge_Protection_SANS_10142-1",
   "quote_sha256": "38ded0ba50724aa6"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): the voltage passed to the protected equipment (UAB) is the sum of the SPD voltage protection level Up and the inductive voltage drop along the connecting leads (Ul1 + Ul2).",
+  "quote": "The residual voltage transferred to the protected equipment (UAB) will be the sum of the SPD voltage protection level Up (relative to the applied surge current Isurge) and the inductive voltage drop along the connecting leads (Ul1 + Ul2).",
+  "page": 40,
+  "section": "Figure 30",
+  "id": "K001",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "f11c36e3f8f44b66"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): l1 and l2 are the two connecting lead lengths of the SPD (Figure 30), and the inductive voltages Ul1 and Ul2 are dropped on them.",
+  "quote": "Ul1, Ul2 inductive voltage dropped on corresponding lead lengths l1 + l2",
+  "page": 40,
+  "section": "Figure 30 key",
+  "id": "K002",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "482280cedb49af5b"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): binding the leads together is very effective in cancelling inductance and hence the inductive voltage dropped on the connecting leads.",
+  "quote": "This is very effective in cancelling inductance and hence inductive voltage dropped onto the connecting leads as explained below.",
+  "page": 40,
+  "section": "",
+  "id": "K003",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "37e2a006f507d303"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): during operation a parallel (shunt) installed SPD has currents going in and out of it in opposite directions, so its two connecting leads carry opposing electromagnetic fields.",
+  "quote": "A parallel-connected or shunt installed SPD will, during operation, have currents going in and out of it in opposing directions and thus connecting leads with opposing electromagnetic fields as shown in Figure 32 below.",
+  "page": 41,
+  "section": "Figure 32",
+  "id": "K004",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "b2fb4051b0a02261"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): the inductive voltage drop is reduced by placing the two conductors close together, by twisting or binding the connecting leads together.",
+  "quote": "placing the conductors in close proximity, through twisting or binding the connecting leads together",
+  "page": 41,
+  "section": "Figure 32",
+  "id": "K005",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "f1c3161acfac768e"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): when the wires are brought close together the opposing electromagnetic fields interact and cancel, and because inductance relates to the field it also tends to be cancelled.",
+  "quote": "If the wires are brought close together, the opposing electromagnetic fields interact and cancel. Since inductance relates to electromagnetic field it too tends to be cancelled.",
+  "page": 41,
+  "section": "Figure 32",
+  "id": "K006",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "93c286cfe6ae7840"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): the lead-length test applied a 6 kV/3 kA combination wave (Class III test to BS EN 61643-11) to a parallel installed SPD for a 230 V mains supply.",
+  "quote": "we applied a 6kV/3kA combination wave surge test (Class III test to BS EN 61643-11) to a parallel installed SPD for a 230V mains power supply",
+  "page": 41,
+  "section": "Figure 33",
+  "id": "K007",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "aa09707fec127ca7"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): in the lead-length test example the equipment to be protected has a susceptibility (immunity) level of 700 V.",
+  "quote": "In this example, the equipment to be protected has a susceptibility or immunity level of 700V",
+  "page": 41,
+  "section": "Figure 33",
+  "id": "K008",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "2e3309f6f21237bc"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): in the same test, unacceptably long 2 m bound connecting leads doubled the overall voltage to 1,200 V.",
+  "quote": "However the overall voltage doubles to 1,200V with unacceptably long, 2 m, bound connecting leads.",
+  "page": 41,
+  "section": "Figure 33",
+  "id": "K009",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "6d6f8ca76ce20c0a"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): a practical problem in distribution boards is that the SPD earth lead may need to be significantly longer than the line and neutral connections and longer than 25 cm.",
+  "quote": "One problem which can occur is that the earth lead needs to be significantly longer than the line and neutral connections and longer than 25cm.",
+  "page": 42,
+  "section": "",
+  "id": "K010",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "7e50c30747b58ab7"
+ },
+ {
+  "topic": "SPD",
+  "claim": "BEAMA SPD guide (UK, 2018): where the metal-enclosure method is not possible, two connections can be made to the earth bar, one within the set of bound conductors and the other separate.",
+  "quote": "If this is not possible, two connections can be made to the earth bar. One of these should be within the set of bound conductors, whilst the other should be separate.",
+  "page": 42,
+  "section": "",
+  "id": "K011",
+  "source": "48_BEAMA_Guide_to_Surge_Protection_Devices_2018",
+  "quote_sha256": "f0e6b98ece01124d"
  }
 ]

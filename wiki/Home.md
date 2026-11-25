@@ -35,4 +35,4 @@
 | 🟢🟡 green with yellow stripes | protective earth and bonding conductors |
 | 🟧 amber box | surge protective device (SPD) |
 
-[All 56 source documents](Sources) · 1015 verified facts · generated 2026-11-24
+[All 56 source documents](Sources) · 1026 verified facts · generated 2026-11-25

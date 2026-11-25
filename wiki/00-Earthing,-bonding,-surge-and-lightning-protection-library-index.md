@@ -73,4 +73,4 @@ In the diagrams, red lines are power, blue lines are data or signal cables, oran
 | Ref | Document | PDF pages cited |
 |---|---|---|
 
-*Generated from `content/docs/00_library_index.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/00_library_index.yaml` on 2026-11-25. Do not edit this page in the wiki; edit the content file.*

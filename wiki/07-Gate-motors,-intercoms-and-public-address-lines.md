@@ -181,4 +181,4 @@ The sources were written for different equipment and countries. Where they confl
 | R33 | **D5-Evo light-industrial sliding gate operator: installation manual** — Centurion Systems (Pty) Ltd · not stated on the pages read · South Africa · [link](https://cdn.shopify.com/s/files/1/0398/4615/0189/files/D5-Evo_Installation_Manual.pdf) | 6-7, 9, 17, 31, 37 |
 | R38 | **D6 SMART sliding gate operator: installation manual, doc number 1401.D.01.0012** — Centurion Systems (Pty) Ltd · 02 April 2024 · South Africa · [link](https://cdn.shopify.com/s/files/1/1794/9761/files/Centurion_D6_Smart_Installation_Manual.pdf) | 6, 8-9, 16, 41, 46, 55, 64 |
 
-*Generated from `content/docs/07_gate_motors_intercoms.yaml` on 2026-11-24. Do not edit this page in the wiki; edit the content file.*
+*Generated from `content/docs/07_gate_motors_intercoms.yaml` on 2026-11-25. Do not edit this page in the wiki; edit the content file.*
