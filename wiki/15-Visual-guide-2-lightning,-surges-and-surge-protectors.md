@@ -47,9 +47,14 @@ Both words describe the two connecting wires of a surge protector in the board: 
 |---|---|---|
 | l1 | Connecting lead between the line connection (point A) and the SPD.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> | Line (and neutral) connection side of the SPD.<sup>[R48 p.40](#sources-cited-on-this-page)</sup><sup>[R48 p.42](#sources-cited-on-this-page)</sup> |
 | l2 | Connecting lead between the SPD and earth (point B). BEAMA notes the earth lead often has to be longer than the line and neutral connections.<sup>[R48 p.42](#sources-cited-on-this-page)</sup> | From the SPD earth terminal to the earth bar.<sup>[R48 p.42](#sources-cited-on-this-page)</sup> |
-| Bound | l1 and l2 tightly bound together over as much of their length as possible, using cable ties or spiral wrap.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> BEAMA also names twisting them together.<sup>[R48 p.41](#sources-cited-on-this-page)</sup> | Along the whole run of the two leads.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> |
+| Bound | The SPD's own connecting leads tightly bound together over as much of their length as possible, using cable ties or spiral wrap.<sup>[R48 p.40](#sources-cited-on-this-page)</sup> BEAMA also names twisting them together.<sup>[R48 p.41](#sources-cited-on-this-page)</sup> The earth lead belongs in the bundle: the current goes in on the line (or neutral) lead and out on the earth lead<sup>[R48 p.41](#sources-cited-on-this-page)</sup>, and BEAMA places an earth connection within the set of bound conductors.<sup>[R48 p.42](#sources-cited-on-this-page)</sup> | Along the whole run of the line, neutral and earth leads of the SPD.<sup>[R48 p.40](#sources-cited-on-this-page)</sup><sup>[R48 p.42](#sources-cited-on-this-page)</sup> |
 | Unbound (loose) | BEAMA's word for leads that are not bound together; 'loose' in these pages means the same. With 25 cm leads the voltage rose from 630 V (bound) to 810 V (unbound).<sup>[R48 p.41](#sources-cited-on-this-page)</sup><sup>[R48 p.41](#sources-cited-on-this-page)</sup> | Anywhere the two leads take separate routes. |
 | Long earth lead | In a metal enclosure: one conductor to the metalwork and one to the earth bar.<sup>[R48 p.42](#sources-cited-on-this-page)</sup> Otherwise: two connections to the earth bar, one inside the bound set and one separate.<sup>[R48 p.42](#sources-cited-on-this-page)</sup> | Earth side of the SPD.<sup>[R48 p.42](#sources-cited-on-this-page)</sup> |
+
+> [!NOTE]
+> **NOTE: Only the short SPD wires, not the house wiring**
+>
+> Binding is about the SPD's own connecting leads (preferably 0.5 m or less in total<sup>[R48 p.40](#sources-cited-on-this-page)</sup>): its line, neutral and earth leads tied together as one bundle. Tying the live and neutral together without the earth lead does not do this, because the surge current returns on the earth lead.<sup>[R48 p.41](#sources-cited-on-this-page)</sup>
 
 | **630 V** | **810 V** | **1 200 V** | **2 300 V** |
 |---|---|---|---|
